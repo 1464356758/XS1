@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "501722ea-99aa-49f7-8c25-a18f199cc960",
   "title": "和离以后，我买下了前夫的粮仓",
-  "revision": 5,
+  "revision": 6,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -21,7 +21,18 @@
     "opening_impact_max_han": 3000,
     "narrative_review_required": true
   },
-  "chapters": {},
+  "chapters": {
+    "1": {
+      "title": "和离书与欠粮契",
+      "stage": "S01",
+      "text_path": "chapters/CH001_4174034be8c1d2ef710265988df24945132fb099e262f5bd3442b0c43d4576cb.txt",
+      "text_sha256": "4174034be8c1d2ef710265988df24945132fb099e262f5bd3442b0c43d4576cb",
+      "record_path": "records/CH001_e4088fb2199a5c6f927ea2a32b237636141ce7c9c7cc692c692a45762cc9b14c.json",
+      "record_sha256": "e4088fb2199a5c6f927ea2a32b237636141ce7c9c7cc692c692a45762cc9b14c",
+      "han_count": 9194,
+      "adopted_at": "2026-10-28T15:00:02+00:00"
+    }
+  },
   "checkpoints": [],
   "needs_revalidation": [],
   "inputs": {
@@ -64,15 +75,120 @@
       "reason": "作者要求按原V4.3重建T05长线因果、十阶段、承诺和前五章滚动路线"
     }
   ],
-  "tasks": {},
+  "tasks": {
+    "1": {
+      "task_id": "404b7ab3-34f4-4082-93ea-23981f76c781",
+      "chapter": 1,
+      "mode": "write",
+      "phase": "adopted",
+      "repairs": 0,
+      "history": [
+        {
+          "sha256": "4174034be8c1d2ef710265988df24945132fb099e262f5bd3442b0c43d4576cb",
+          "reason": "初稿",
+          "repairs": 0
+        }
+      ],
+      "candidate_sha256": "4174034be8c1d2ef710265988df24945132fb099e262f5bd3442b0c43d4576cb",
+      "candidate_path": "candidates/CH001_4174034be8c1d2ef710265988df24945132fb099e262f5bd3442b0c43d4576cb.txt"
+    }
+  },
   "completion": null,
   "serialization": {
     "schema_version": 1,
     "enabled": true,
-    "frozen": {},
+    "frozen": {
+      "1": {
+        "text_sha256": "4174034be8c1d2ef710265988df24945132fb099e262f5bd3442b0c43d4576cb",
+        "record_sha256": "e4088fb2199a5c6f927ea2a32b237636141ce7c9c7cc692c692a45762cc9b14c"
+      }
+    },
     "published": {},
-    "gates": {},
-    "promises": {},
+    "gates": {
+      "1": {
+        "path": "releases/CH001_57b59c746065a2b7685ad6a21caeefd10aaf8976fab37d695ec04c9c5a3eeb10.json",
+        "sha256": "57b59c746065a2b7685ad6a21caeefd10aaf8976fab37d695ec04c9c5a3eeb10",
+        "used": true
+      }
+    },
+    "promises": {
+      "P01-补注与见证": {
+        "history": [
+          {
+            "id": "P01-补注与见证",
+            "action": "set",
+            "deadline_chapter": 3,
+            "reason": "契背约补注与柳复见证待三章内初核；实际原契见到了补注但不能确认真伪。",
+            "evidence": {
+              "chapter": 1,
+              "sha256": "4174034be8c1d2ef710265988df24945132fb099e262f5bd3442b0c43d4576cb",
+              "quote": "依先存押次序核给"
+            },
+            "chapter": 1
+          }
+        ],
+        "deadline_chapter": 3,
+        "status": "open",
+        "last_reviewed_chapter": 1
+      },
+      "P10-和离不回头": {
+        "history": [
+          {
+            "id": "P10-和离不回头",
+            "action": "complete",
+            "deadline_chapter": null,
+            "reason": "本章双方和离已签、已离府，首要身份承诺已兑现；后续是否复婚的长期边界仍由canon约束。",
+            "evidence": {
+              "chapter": 1,
+              "sha256": "4174034be8c1d2ef710265988df24945132fb099e262f5bd3442b0c43d4576cb",
+              "quote": "自这一刻起，她不再是侯府世子夫人。"
+            },
+            "chapter": 1
+          }
+        ],
+        "deadline_chapter": null,
+        "status": "closed",
+        "last_reviewed_chapter": 1
+      },
+      "P11-契到仓交易": {
+        "history": [
+          {
+            "id": "P11-契到仓交易",
+            "action": "set",
+            "deadline_chapter": 10,
+            "reason": "本章只收到索债旧契和有限货位收益担保，必须在8—10章安排有付款和交割的购仓，不能以本章当已买。",
+            "evidence": {
+              "chapter": 1,
+              "sha256": "4174034be8c1d2ef710265988df24945132fb099e262f5bd3442b0c43d4576cb",
+              "quote": "本次归还旧契，仅为保管文书退还，不确认仓屋产权及货物归属。"
+            },
+            "chapter": 1
+          }
+        ],
+        "deadline_chapter": 10,
+        "status": "open",
+        "last_reviewed_chapter": 1
+      },
+      "P12-七日债": {
+        "history": [
+          {
+            "id": "P12-七日债",
+            "action": "set",
+            "deadline_chapter": 7,
+            "reason": "D7到期真实催账已出现，至第7章前至少拿出实付或可核缓债安排，不得无限延期。",
+            "evidence": {
+              "chapter": 1,
+              "sha256": "4174034be8c1d2ef710265988df24945132fb099e262f5bd3442b0c43d4576cb",
+              "quote": "七日后须付四百二十两：北埠许家粮栈上批货款三百两"
+            },
+            "chapter": 1
+          }
+        ],
+        "deadline_chapter": 7,
+        "status": "open",
+        "last_reviewed_chapter": 1
+      }
+    },
     "incidents": {}
   },
   "writing_briefs": {

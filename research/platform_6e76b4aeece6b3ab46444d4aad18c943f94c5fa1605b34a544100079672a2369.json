@@ -1,0 +1,371 @@
+{
+  "platform": "qimao",
+  "checked_at": "2026-10-28T17:24:00+08:00",
+  "coverage_status": "partial",
+  "sources": [
+    {
+      "id": "R1",
+      "title": "男频大热日榜",
+      "url": "https://www.qimao.com/paihang/boy/hot/date/",
+      "accessed_at": "2026-10-28T17:24:00+08:00"
+    },
+    {
+      "id": "R2",
+      "title": "女频大热日榜",
+      "url": "https://www.qimao.com/paihang/girl/hot/date/",
+      "accessed_at": "2026-10-28T17:24:00+08:00"
+    },
+    {
+      "id": "R3",
+      "title": "男频新书日榜",
+      "url": "https://www.qimao.com/paihang/boy/new/date/",
+      "accessed_at": "2026-10-28T17:24:00+08:00"
+    },
+    {
+      "id": "R4",
+      "title": "女频新书日榜",
+      "url": "https://www.qimao.com/paihang/girl/new/date/",
+      "accessed_at": "2026-10-28T17:24:00+08:00"
+    },
+    {
+      "id": "R5",
+      "title": "七猫2025年作家签约政策（当前公开页）",
+      "url": "https://www.qimao.com/fuli/",
+      "accessed_at": "2026-10-28T17:24:00+08:00"
+    },
+    {
+      "id": "R6",
+      "title": "七猫作家帮助中心",
+      "url": "https://zuozhe.qimao.com/front/help-center",
+      "accessed_at": "2026-10-28T17:24:00+08:00"
+    },
+    {
+      "id": "R7",
+      "title": "七猫作家助手用户服务协议",
+      "url": "https://zhushou.qimao.com/writer-rules/68464fdfe4a81e7ec312f874/",
+      "accessed_at": "2026-10-28T17:24:00+08:00"
+    },
+    {
+      "id": "R8",
+      "title": "七猫原创作品登载规则",
+      "url": "https://zuozhe.qimao.com/front/page/agreement/publish",
+      "accessed_at": "2026-10-28T17:24:00+08:00"
+    },
+    {
+      "id": "R9",
+      "title": "七猫作家助手成为作者入口",
+      "url": "https://zhushou.qimao.com/become-author",
+      "accessed_at": "2026-10-28T17:24:00+08:00"
+    }
+  ],
+  "rules": [
+    {
+      "topic": "平台收稿方向",
+      "status": "verified",
+      "source_id": "R5",
+      "conclusion": "官网公开页列示男频都市、玄幻、历史、网游、系统、脑洞等；女频总裁、权谋、宅斗、种田、年代等及特色品类。"
+    },
+    {
+      "topic": "签约与投稿字数",
+      "status": "verified",
+      "source_id": "R6",
+      "conclusion": "作家帮助中心说明七猫站内直投需正文满2万字；帮助中心另显示编辑邮箱内投准备开篇1万字+完整大纲。"
+    },
+    {
+      "topic": "官网2025签约福利页投稿材料",
+      "status": "verified",
+      "source_id": "R5",
+      "conclusion": "当前可见的2025福利政策页写开篇2万字正文+大纲+申请表，与作家帮助中心内投1万字的表述不一致；内投前以编辑确认的最新要求为准。"
+    },
+    {
+      "topic": "签约类别与全勤条件",
+      "status": "verified",
+      "source_id": "R5",
+      "conclusion": "官网列出保底+超保底分成、纯分成、超级纯分成；全勤与合同类别、日更字数、留存率等有关，页面列日更4000字及若干更高档位，符合条件才适用；不是保证收益。"
+    },
+    {
+      "topic": "新书榜定义",
+      "status": "verified",
+      "source_id": "R3",
+      "conclusion": "男频新书榜标明总字数低于50万且每天更新的七猫原创作品；女频新书榜同样标明。"
+    },
+    {
+      "topic": "版权与原创责任",
+      "status": "verified",
+      "source_id": "R8",
+      "conclusion": "平台要求内容合法合规并具备授权权利；签约后版权合作以实际协议为准。官网福利页严禁“工作室”多人写同一本书及抄袭。"
+    },
+    {
+      "topic": "AI生成内容标识",
+      "status": "verified",
+      "source_id": "R7",
+      "conclusion": "七猫作家助手用户服务协议1.3.1涉及生成式人工智能与合成内容标识，要求相关内容以显著方式标识，不得将合成内容谎称自然内容。"
+    },
+    {
+      "topic": "纯AI生成长篇能否签约、申报方式",
+      "status": "unknown",
+      "source_id": null,
+      "conclusion": "未发现明确适用于本书“以AI撰写大部分正文”的可签约肯定规则；投稿前须向平台编辑确认是否接受、如何标识及授权边界。"
+    },
+    {
+      "topic": "全站每个题材真实独立阅读人数",
+      "status": "unknown",
+      "source_id": null,
+      "conclusion": "官方公开榜单为热度，详情页显示“次阅读”与累计人气值，不是唯一读者或完整全站题材人数，不可据此推算总读者规模。"
+    }
+  ],
+  "rank_samples": [
+    {
+      "title": "盖世神医",
+      "author": "狐颜乱语",
+      "genre": "都市高武",
+      "list_name": "男频大热日榜",
+      "rank": 1,
+      "heat_wan": 117.4,
+      "heat_unit": "万热度",
+      "observed_at": "2026-10-28T17:24:00+08:00",
+      "source_id": "R1",
+      "book_url": "https://www.qimao.com/shuku/195958/",
+      "reads_wan": 74.8,
+      "reads_unit": "万次阅读（详情页字段，非独立人数）",
+      "market_mechanism": "遭遇背叛、医武成长、对抗权势"
+    },
+    {
+      "title": "警报！真龙出狱！",
+      "author": "红透半边天",
+      "genre": "都市高手",
+      "list_name": "男频大热日榜",
+      "rank": 2,
+      "heat_wan": 74.9,
+      "heat_unit": "万热度",
+      "observed_at": "2026-10-28T17:24:00+08:00",
+      "source_id": "R1",
+      "book_url": "https://www.qimao.com/shuku/1834789/",
+      "reads_wan": 54.0,
+      "reads_unit": "万次阅读（详情页字段，非独立人数）",
+      "market_mechanism": "出狱归来、保护亲近者、复仇逆袭"
+    },
+    {
+      "title": "鸿蒙霸体诀",
+      "author": "鱼初见",
+      "genre": "东方玄幻",
+      "list_name": "男频大热日榜",
+      "rank": 3,
+      "heat_wan": 51.3,
+      "heat_unit": "万热度",
+      "observed_at": "2026-10-28T17:24:00+08:00",
+      "source_id": "R1",
+      "book_url": "https://www.qimao.com/shuku/1655407/",
+      "reads_wan": 32.0,
+      "reads_unit": "万次阅读（详情页字段，非独立人数）",
+      "market_mechanism": "废柴逆袭、修炼规则、跨境界挑战"
+    },
+    {
+      "title": "让你当个替身，你咋君临天下",
+      "author": "骑着蜗牛追奔驰",
+      "genre": "架空历史",
+      "list_name": "男频大热日榜",
+      "rank": 5,
+      "heat_wan": 38.5,
+      "heat_unit": "万热度",
+      "observed_at": "2026-10-28T17:24:00+08:00",
+      "source_id": "R1",
+      "book_url": "https://www.qimao.com/shuku/12647139/",
+      "reads_wan": 23.4,
+      "reads_unit": "万次阅读（详情页字段，非独立人数）",
+      "market_mechanism": "身份错位、权力失控、逐级破局"
+    },
+    {
+      "title": "夫人反差太大，司总沦陷了！",
+      "author": "九九月",
+      "genre": "总裁豪门",
+      "list_name": "女频大热日榜",
+      "rank": 1,
+      "heat_wan": 75.5,
+      "heat_unit": "万热度",
+      "observed_at": "2026-10-28T17:24:00+08:00",
+      "source_id": "R2",
+      "book_url": "https://www.qimao.com/shuku/13030701/",
+      "reads_wan": 42.4,
+      "reads_unit": "万次阅读（详情页字段，非独立人数）",
+      "market_mechanism": "婚姻危机、内外人设反差、关系反转"
+    },
+    {
+      "title": "离婚后她惊艳了世界",
+      "author": "明婳",
+      "genre": "总裁豪门",
+      "list_name": "女频大热日榜",
+      "rank": 2,
+      "heat_wan": 71.6,
+      "heat_unit": "万热度",
+      "observed_at": "2026-10-28T17:24:00+08:00",
+      "source_id": "R2",
+      "book_url": "https://www.qimao.com/shuku/222767/",
+      "reads_wan": 45.7,
+      "reads_unit": "万次阅读（详情页字段，非独立人数）",
+      "market_mechanism": "离婚之后的事业独立、追妻与自我价值"
+    },
+    {
+      "title": "皇叔借点功德，王妃把符画猛了",
+      "author": "安卿心",
+      "genre": "宫闱宅斗",
+      "list_name": "女频大热日榜",
+      "rank": 3,
+      "heat_wan": 70.1,
+      "heat_unit": "万热度",
+      "observed_at": "2026-10-28T17:24:00+08:00",
+      "source_id": "R2",
+      "book_url": "https://www.qimao.com/shuku/1803283/",
+      "reads_wan": 44.6,
+      "reads_unit": "万次阅读（详情页字段，非独立人数）",
+      "market_mechanism": "受辱退婚、玄学能力、权势合作"
+    },
+    {
+      "title": "错嫁随军：新婚夜冷面军少沦陷了",
+      "author": "桃三月",
+      "genre": "年代重生",
+      "list_name": "女频大热日榜",
+      "rank": 4,
+      "heat_wan": 55.5,
+      "heat_unit": "万热度",
+      "observed_at": "2026-10-28T17:24:00+08:00",
+      "source_id": "R2",
+      "book_url": "https://www.qimao.com/shuku/12792057/",
+      "reads_wan": 33.6,
+      "reads_unit": "万次阅读（详情页字段，非独立人数）",
+      "market_mechanism": "换婚、年代生活、错位认知与甜宠"
+    },
+    {
+      "title": "我的倾城野妻",
+      "author": "浑水摸虾",
+      "genre": "都市高手",
+      "list_name": "男频新书日榜",
+      "rank": 1,
+      "heat_wan": 14.6,
+      "heat_unit": "万热度",
+      "observed_at": "2026-10-28T17:24:00+08:00",
+      "source_id": "R3",
+      "book_url": "https://www.qimao.com/shuku/12973059/",
+      "reads_wan": 9.4,
+      "reads_unit": "万次阅读（详情页字段，非独立人数）",
+      "market_mechanism": "偶然机遇到阶层跃迁"
+    },
+    {
+      "title": "趁校花一贫如洗，忽悠她以身相许",
+      "author": "不吃鱼肉",
+      "genre": "热血校园",
+      "list_name": "男频新书日榜",
+      "rank": 2,
+      "heat_wan": 8.7,
+      "heat_unit": "万热度",
+      "observed_at": "2026-10-28T17:24:00+08:00",
+      "source_id": "R3",
+      "book_url": "https://www.qimao.com/shuku/12896292/",
+      "reads_wan": 5.5,
+      "reads_unit": "万次阅读（详情页字段，非独立人数）",
+      "market_mechanism": "重生校园、关系与事业重来"
+    },
+    {
+      "title": "魔天鼎：我能炼化万物",
+      "author": "晨弈",
+      "genre": "东方玄幻",
+      "list_name": "男频新书日榜",
+      "rank": 5,
+      "heat_wan": 5.1,
+      "heat_unit": "万热度",
+      "observed_at": "2026-10-28T17:24:00+08:00",
+      "source_id": "R3",
+      "book_url": "https://www.qimao.com/shuku/13297746/",
+      "reads_wan": 1.8,
+      "reads_unit": "万次阅读（详情页字段，非独立人数）",
+      "market_mechanism": "独特修行器物、能力成长"
+    },
+    {
+      "title": "寇天子",
+      "author": "烟水寒",
+      "genre": "架空历史",
+      "list_name": "男频新书日榜",
+      "rank": 6,
+      "heat_wan": 4.3,
+      "heat_unit": "万热度",
+      "observed_at": "2026-10-28T17:24:00+08:00",
+      "source_id": "R3",
+      "book_url": "https://www.qimao.com/shuku/12817968/",
+      "market_mechanism": "乱世低位起步、军政扩张"
+    },
+    {
+      "title": "夫人反差太大，司总沦陷了！",
+      "author": "九九月",
+      "genre": "总裁豪门",
+      "list_name": "女频新书日榜",
+      "rank": 1,
+      "heat_wan": 75.5,
+      "heat_unit": "万热度",
+      "observed_at": "2026-10-28T17:24:00+08:00",
+      "source_id": "R4",
+      "book_url": "https://www.qimao.com/shuku/13030701/",
+      "reads_wan": 42.4,
+      "reads_unit": "万次阅读（详情页字段，非独立人数）",
+      "market_mechanism": "新书榜与大热榜重叠，不能重复算书"
+    },
+    {
+      "title": "错嫁随军：新婚夜冷面军少沦陷了",
+      "author": "桃三月",
+      "genre": "年代重生",
+      "list_name": "女频新书日榜",
+      "rank": 2,
+      "heat_wan": 55.5,
+      "heat_unit": "万热度",
+      "observed_at": "2026-10-28T17:24:00+08:00",
+      "source_id": "R4",
+      "book_url": "https://www.qimao.com/shuku/12792057/",
+      "reads_wan": 33.6,
+      "reads_unit": "万次阅读（详情页字段，非独立人数）",
+      "market_mechanism": "新书榜与大热榜重叠，不能重复算书"
+    },
+    {
+      "title": "谢总，夫人已改嫁，让你跪远点",
+      "author": "乐希",
+      "genre": "总裁豪门",
+      "list_name": "女频新书日榜",
+      "rank": 3,
+      "heat_wan": 32.8,
+      "heat_unit": "万热度",
+      "observed_at": "2026-10-28T17:24:00+08:00",
+      "source_id": "R4",
+      "book_url": "https://www.qimao.com/shuku/13156719/",
+      "market_mechanism": "先离婚后反转、失去与追悔"
+    },
+    {
+      "title": "嫡姐惨死？王妃她杀爆京城",
+      "author": "青黛",
+      "genre": "古代情缘",
+      "list_name": "女频新书日榜",
+      "rank": 4,
+      "heat_wan": 31.0,
+      "heat_unit": "万热度",
+      "observed_at": "2026-10-28T17:24:00+08:00",
+      "source_id": "R4",
+      "book_url": "https://www.qimao.com/shuku/13021647/",
+      "market_mechanism": "亲人之死、复仇、权力与正义"
+    }
+  ],
+  "trend_summary": {
+    "method": "根据男/女大热日榜及男/女新书日榜共16条榜单记录观察；其中有2部作品跨榜重复，不能当作16本不同书。热度均取当日网页数值，不等于读者人数；详情页展示“次阅读”，同样不等于去重读者。",
+    "male": "都市高武/都市高手具头部热度，历史架空和东方玄幻也在热门榜前列；新书榜前列都市占较多，玄幻与历史亦有样本。",
+    "female": "豪门婚恋、离婚逆袭、古言宅斗与玄学、年代军婚在热门榜与新书榜均有可见样本。",
+    "commercial_hypotheses": [
+      "开局强危机+主角被迫行动",
+      "反转具有因果成本而非一次性打脸",
+      "长篇动力来自阶层、关系、制度或世界边界逐步扩展"
+    ],
+    "not_platform_population_statistics": true
+  },
+  "gaps": [
+    "未获取平台官方按题材划分的独立活跃读者数、全站阅读UV、完读率与收入数据。",
+    "福利网页标题为2025年，虽在本次可访问，未确认是否存在覆盖全部细则的2026修订公告。",
+    "编辑内投要求在帮助中心与福利页口径不同，投稿前需确认。",
+    "平台AI大比例生成正文可否签约、合规标注方式需向编辑确认。",
+    "采样仅16条榜单记录（14部不同作品），非全站题材市场份额；2026年10月28日访问的日榜按昨日热度排序。"
+  ]
+}

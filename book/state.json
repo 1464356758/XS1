@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "book_id": "501722ea-99aa-49f7-8c25-a18f199cc960",
+  "title": "和离以后，我买下了前夫的粮仓",
+  "revision": 3,
+  "config": {
+    "target_chapters": 100,
+    "target_han": 900000,
+    "chapter_han_min": 8000,
+    "chapter_han_max": 10000,
+    "book_han_min": 880000,
+    "book_han_max": 920000,
+    "strict_length": true,
+    "review_interval": 5,
+    "max_local_repairs": 3,
+    "serial_mode": true,
+    "serial_stage_size": 10,
+    "serial_lookahead": 3,
+    "opening_hook_max_han": 800,
+    "opening_core_max_han": 3000,
+    "opening_impact_max_han": 3000,
+    "narrative_review_required": true
+  },
+  "chapters": {},
+  "checkpoints": [],
+  "needs_revalidation": [],
+  "inputs": {
+    "canon": {
+      "kind": "canon",
+      "path": "inputs/canon_97aef77dca9848ceb080681be290059371951efaaac5bf0a4269b3aae17505c5.md",
+      "sha256": "97aef77dca9848ceb080681be290059371951efaaac5bf0a4269b3aae17505c5",
+      "reason": "沿用此前作者已授权选题的未定稿设定，由原V4.3流程登记，非已写正文事实"
+    },
+    "roadmap": {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_257cc87a6b884a42172037150dcab7ede9df40c4222cec83f6f5ca6d7b59a84e.md",
+      "sha256": "257cc87a6b884a42172037150dcab7ede9df40c4222cec83f6f5ca6d7b59a84e",
+      "reason": "原V4.3系统长篇路线登记，均为未来计划，章节0未采用"
+    }
+  },
+  "input_history": [
+    {
+      "kind": "canon",
+      "path": "inputs/canon_97aef77dca9848ceb080681be290059371951efaaac5bf0a4269b3aae17505c5.md",
+      "sha256": "97aef77dca9848ceb080681be290059371951efaaac5bf0a4269b3aae17505c5",
+      "reason": "沿用此前作者已授权选题的未定稿设定，由原V4.3流程登记，非已写正文事实"
+    },
+    {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_257cc87a6b884a42172037150dcab7ede9df40c4222cec83f6f5ca6d7b59a84e.md",
+      "sha256": "257cc87a6b884a42172037150dcab7ede9df40c4222cec83f6f5ca6d7b59a84e",
+      "reason": "原V4.3系统长篇路线登记，均为未来计划，章节0未采用"
+    }
+  ],
+  "tasks": {},
+  "completion": null,
+  "serialization": {
+    "schema_version": 1,
+    "enabled": true,
+    "frozen": {},
+    "published": {},
+    "gates": {},
+    "promises": {},
+    "incidents": {}
+  }
+}

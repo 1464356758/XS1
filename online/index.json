@@ -1,0 +1,608 @@
+{
+  "schema_version": 1,
+  "system_version": "4.3-quality",
+  "initialized": true,
+  "book": {
+    "id": "501722ea-99aa-49f7-8c25-a18f199cc960",
+    "title": "和离以后，我买下了前夫的粮仓",
+    "platform": "qimao",
+    "selected_topic_id": "T05"
+  },
+  "source": {
+    "repository_url": "https://github.com/1464356758/XS1",
+    "branch": "main",
+    "generated_at": "2026-10-28T11:12:57+00:00",
+    "state_revision": 3,
+    "workflow_revision": 5,
+    "state_sha256": "01375532bb2f8d4e91ad7d947687d04587e8861e73058ff998b575acdab74d4f",
+    "workflow_sha256": "2e25d73d4d5975671269cc1fc7c1c6819653693432a9f3904ff21fa65b85f4dd",
+    "manuscript_storage": "plain_files_v1",
+    "requires_reader_key": false
+  },
+  "progress": {
+    "target_chapters": 100,
+    "adopted_chapters": 0,
+    "target_han": 900000,
+    "actual_han": 0,
+    "completed": false,
+    "needs_revalidation": [],
+    "reviewed_until": 0,
+    "window_review_due": false,
+    "unresolved_reviews": [],
+    "serial_mode": true,
+    "frozen_chapters": 0,
+    "published_chapters": 0,
+    "publication_status": "只统计真实回执；无回执不等于未发布",
+    "open_incidents": 0,
+    "narrative_review_required": true,
+    "release_check_required": true
+  },
+  "task": {
+    "phase": "PLANNING",
+    "label": "长篇规划",
+    "chapter": 1,
+    "detail": "已核对并由原V4.3登记选题、研究、设定和路线；尚待远程仓库完整安装；正文0章",
+    "next_action": "先完整部署原始系统并完成回读，再按brief-request/brief-check写第一章",
+    "updated_at": "2026-10-28T11:12:56+00:00"
+  },
+  "chapters": [],
+  "topics": [
+    {
+      "id": "T01",
+      "title": "边关断粮：我靠一本烂账册杀穿乱世",
+      "genre": "男频｜架空历史·边军谋略·底层逆袭",
+      "target_readers": "喜欢边军、乱世经营、权谋反转的男频读者",
+      "pitch": "敌军围城还有七日，遭贬的军需吏陆斩在仓底找到半本假账：全城断粮不是天灾，而是有人在拿边军性命做买卖。他要凭一册账本，从被处死的粮吏变成能决定天下粮路的人。",
+      "character_conflict": "陆斩想救边城却必须查封恩人仓库；守城将领只信武力，敌国商队也握着足以诛灭他的另半本账。",
+      "reader_promise": "首章断粮倒计时、三章内用反向运粮局救下一支队伍；之后每一场翻盘都需付钱、付人情或付性命。",
+      "long_form_engine": "粮草、兵员、商路、封地、海运、官制和战争利益网逐级打开。每次破一桩案会触动更大利益集团，单靠记账不能赢战场，主角必须学会用人、布局并承担决策。",
+      "stage_variation": "1边仓绝境→2守住关隘→3肃清军中黑市→4经营边贸→5多郡联军→6朝堂夺粮权→7诸国贸易战→8内战与盟友分裂→9重塑国库制度→10终战。",
+      "midpoint_crisis": "他发现供养边军的暗线也依赖黑市；若全盘揭发，前线可能先饿死。",
+      "ending_direction": "拒绝成为新粮阀，推动受约束的军需制度，保住边关而不彻底屈服皇权。",
+      "risk": "财税与军事推演需要扎实逻辑；如果每章都靠账册秒破案会重复。与架空历史爆款共享底层逆袭机制，但核心是粮路利益和道德困境。",
+      "source_ids": [
+        "R1",
+        "R3",
+        "R5"
+      ]
+    },
+    {
+      "id": "T02",
+      "title": "全城骂我造假，国宝却指认了真凶",
+      "genre": "男频｜都市逆袭·古玩修复·家族悬疑",
+      "target_readers": "喜欢都市打脸、手艺逆袭、悬疑揭秘的男频读者",
+      "pitch": "文物修复师许述被公开指控用赝品掉包国宝，失去工作与婚约。三年后，一件被当废铁卖掉的铜钟在他手里敲出了只有凶手知道的声音。",
+      "character_conflict": "他要洗清污名，却发现导师当年顶罪保护他；旧案中所谓受害者正利用文物拍卖资金洗掉更深的罪证。",
+      "reader_promise": "开篇就是职业毁灭；先破身边一件伪证，再逐件修复不同残缺器物，每件牵出一个人生选择。",
+      "long_form_engine": "从民间旧物、城市古董局到跨国走私链、博物馆争议和家族秘密，案件改变同伴关系、名誉与资产，手艺始终有失败代价。",
+      "stage_variation": "1假货指控→2民间小铺→3地方鉴定风波→4导师旧案→5博物馆招标→6身份与证据冲突→7跨省走私网→8伙伴反目→9归还国宝→10公开真相。",
+      "midpoint_crisis": "最关键的一次复原会永久毁坏证明导师清白的另一份证据。",
+      "ending_direction": "公开真凶并建立公开透明的修复记录体系，主角放弃靠独占秘技成名。",
+      "risk": "专业知识和相关法律要核实；纯鉴宝重复打脸的天花板低。以都市逆袭吸引读者，差异在可验证的修复工序和跨案人物关系。",
+      "source_ids": [
+        "R1",
+        "R3"
+      ]
+    },
+    {
+      "id": "T03",
+      "title": "废脉入宗那天，我替天道收债",
+      "genre": "男频｜东方玄幻·规则系成长·因果修真",
+      "target_readers": "喜欢废柴逆袭、强设定、代价明确修炼体系的男频读者",
+      "pitch": "凡界人人向天道借命。废脉少年沈烬却能看见别人欠下的“诺债”。他第一次收债换来一口灵气，也失去了母亲的声音。",
+      "character_conflict": "沈烬要救被献祭的妹妹，却每收一笔债就抹去自己一段珍贵记忆；宗门高层为了维持天地灵脉故意纵容失信之人。",
+      "reader_promise": "首章以被退宗和妹妹倒计时入局；每次收债都遵循可追溯的约定，赢得力量也失去人性里的某种珍重。",
+      "long_form_engine": "道债、宗债、王朝国运债、仙门天地债分层递进，修炼战斗之外需取证、谈判、识别伪誓与承担伦理困局。",
+      "stage_variation": "1退宗→2债灵觉醒→3宗门审判→4州域契约→5故友失忆→6发现天道可被篡改→7仙界逆约→8群生清算→9记忆与妹妹二选一→10新秩序。",
+      "midpoint_crisis": "妹妹救回后却发现她也是契约核心，取消契约会让凡界灵气枯竭。",
+      "ending_direction": "让契约由众生共同约束而非由天道单方面裁决，保留不可逆的私人牺牲。",
+      "risk": "规则系容易读不懂，必须每个能力尽早展示并重复验证；与玄幻爆款共享废柴变强，但金手指以失忆与规则代价构成差异。",
+      "source_ids": [
+        "R1",
+        "R3"
+      ]
+    },
+    {
+      "id": "T04",
+      "title": "重生八二：我从一艘破渔船翻身",
+      "genre": "男频｜年代重生·沿海创业·家庭成长",
+      "target_readers": "喜欢年代生活、创业奋斗、保护家人的男频读者",
+      "pitch": "1982年，离婚协议和报废渔船同时摆在周海生面前。上辈子他选择卖船跑去城里，这辈子他先拦住妻子那班夜船。",
+      "character_conflict": "周海生想守住妻女和祖船，但父亲只信旧规矩；妻子不愿再次把青春押在他的空头承诺上。",
+      "reader_promise": "第一章返乡救人，十章内让破船完成一次合法、艰险且真正赚钱的出海；回归家庭不靠口头认错。",
+      "long_form_engine": "小渔村捕捞、渔港冷链、沿海运输、个体经营、市场变迁、家庭不同价值观，让每次产业升级带来不同的对手。",
+      "stage_variation": "1救人保船→2修船与信任→3第一网渔获→4冷库合作→5港口竞争→6家庭分歧→7台风损失→8远洋线→9供销体系变局→10百船联盟。",
+      "midpoint_crisis": "妻子拿到独立创业机会，主角必须选择支持她离开共同事业，或重复上辈子的控制。",
+      "ending_direction": "家人有各自人生，事业走向互助型沿海企业而不是个人帝国。",
+      "risk": "年代政策、技术、物价需逐项查证，回避现代知识瞬间降维；读者群与都市/年代样本有交叉，但海洋产业区别于常见打猎空间。",
+      "source_ids": [
+        "R3",
+        "R5"
+      ]
+    },
+    {
+      "id": "T05",
+      "title": "和离以后，我买下了前夫的粮仓",
+      "genre": "女频｜古言宅斗·和离逆袭·商贸权谋",
+      "target_readers": "偏爱清醒女主、宅斗、古代经营与情感拉扯的女频读者",
+      "pitch": "和离当日，沈青蘅带走的不是嫁妆，而是一张被前夫嘲笑的欠粮契。半个月后全城断粮，只有她知道粮仓真正的主人是谁。",
+      "character_conflict": "她要救被权贵压迫的粮商母亲，也要避免自己成为新的粮霸；旧婚姻掏空了她的名声，新盟友的身份却和灾荒背后的官仓舞弊有关。",
+      "reader_promise": "开篇和离、契约反杀、失去婚姻后真正在事业上立住；感情有吸引力但不靠男主替女主解决核心问题。",
+      "long_form_engine": "一家粮铺到地方粮价、女户契约、漕运、赈灾、士绅与边军粮饷，商战和宅斗交织且每笔交易影响普通人。",
+      "stage_variation": "1和离拿契→2保住母亲粮铺→3平息抢粮风波→4揭官仓假账→5开辟水路→6身世与恩人冲突→7百城粮荒→8皇权夺粮→9商会崩解→10重建立约。",
+      "midpoint_crisis": "为了证明官仓贪腐，她必须交出能救一州饥民的暗仓位置，导致百姓短期受困。",
+      "ending_direction": "成立共同治理的粮行，女主选爱情但不回到依附婚姻的旧身份。",
+      "risk": "商贸制度须写得可信，避免女主金手指无限供应粮食；从古言和离爽文切入，长篇由粮价与救民伦理延展。",
+      "source_ids": [
+        "R2",
+        "R4",
+        "R5"
+      ]
+    },
+    {
+      "id": "T06",
+      "title": "八零错婚：先把我的录取通知书还来",
+      "genre": "女频｜年代重生·女性成长·军婚情感",
+      "target_readers": "偏爱年代、家属院、清醒女主、事业与感情并进的女频读者",
+      "pitch": "1980年，顾知禾拿到了本该属于继妹的婚约，却丢了自己考上的大学。她没有先去争丈夫，而是提着证据闯进招生办公室。",
+      "character_conflict": "她要继续学业，家族却希望拿婚姻换军区资源；名义丈夫维护规矩却逐步发现他以为保护的人才是合谋者。",
+      "reader_promise": "第一章录取通知书被调包，前三章决定不认命；十章内将假证据送到能查的地方，爱情在共同担当中长出。",
+      "long_form_engine": "从招生复查、家属院关系、大学求学、科技项目、改革时期工作到家人与职业长期选择；女主持续学习而非靠贵人提携。",
+      "stage_variation": "1失书夺证→2婚姻对抗→3复学→4家属院风波→5科研实习→6家庭创业分歧→7项目事故→8事业与爱情取舍→9反击旧案→10独立成名。",
+      "midpoint_crisis": "查明调包牵连最爱她的长辈，而她拿到的证据会连累无辜学生。",
+      "ending_direction": "真相公开、事业自主、关系建立在双方平等选择上。",
+      "risk": "年代背景与招生规则须精确，穿帮风险大；与年代军婚榜单共享错位人生与甜宠机制，创新在女性教育机会与共同责任。",
+      "source_ids": [
+        "R2",
+        "R4",
+        "R5"
+      ]
+    },
+    {
+      "id": "T07",
+      "title": "离婚后，我接手了前夫不敢查的案子",
+      "genre": "女频｜都市婚恋·女性成长·行业悬疑",
+      "target_readers": "喜欢离婚清醒女主、职场事业、双强关系和持续悬疑的女频读者",
+      "pitch": "离婚当天，档案核查员林晚舟在旧楼拆迁名单上看到自己的死亡证明。她曾经的丈夫是一名律师，却劝她千万别查。",
+      "character_conflict": "她要证明自己活着且过去未被冒名，前夫隐瞒十年前的人命交易，新搭档的亲人可能就是造成身份错置的人。",
+      "reader_promise": "一页死亡证明的悬念、婚姻决裂后的自救；每解决一份档案案卷都付出职场、家庭或情感代价。",
+      "long_form_engine": "档案失踪案扩展到地产旧城、户籍冒用、历史工厂事故与家族隐瞒，法律关系与证据链分层升级，现代爱情线不遮蔽悬疑主线。",
+      "stage_variation": "1假死亡证明→2离婚后追索→3老街口供→4第一宗替名案→5前夫牵连→6母亲证词反转→7团伙与大企业→8反转受害者身份→9庭审公示→10建立真实档案。",
+      "midpoint_crisis": "真相证明女主旧名义下有刑事责任，她必须承担公开身份后的社会后果。",
+      "ending_direction": "她以真实身份生活，前夫没有轻易获得原谅，新关系建立于并肩选择。",
+      "risk": "跨题材易失焦，法律手续要查证，悬疑不能无限套娃；与离婚逆袭热点共享情绪开局，但独特案件结构更费设计。",
+      "source_ids": [
+        "R2",
+        "R4"
+      ]
+    },
+    {
+      "id": "T08",
+      "title": "全京城的命书，只有我能改最后一页",
+      "genre": "女频｜古言玄学·宅斗·高概念双强",
+      "target_readers": "偏爱玄学马甲、强女主、危险关系与命运反转的古言读者",
+      "pitch": "替嫡姐下葬的苏照晚发现，人人的命书只写到死前一夜。她能替人改最后一页，却每改一次就必须代受一段对方最痛的记忆。",
+      "character_conflict": "她要找出母亲“意外死亡”的真相，可唯一不显命书的摄政王坚持要她判自己一死。",
+      "reader_promise": "第一章送葬变冥婚，三章内救下第一个明知必死的人；命书不是万能改命，失败必须付代价。",
+      "long_form_engine": "从家宅冤魂到京城命案、宫廷继位与天下寿数契约，各案有独立感情完成度，逐步导向主线“谁在改众生命书”。",
+      "stage_variation": "1冥婚破局→2救命立名→3家族旧案→4京城命册→5皇子结盟→6母亲真相→7寿数交易→8摄政王抉择→9命书毁灭→10众生自定。",
+      "midpoint_crisis": "她发现自己的能力源自母亲当年的不义之举，继续救人等于延续另一批人的痛苦。",
+      "ending_direction": "打破预定命数，把选择归还个人；爱情不是命定绑定，而是彼此重新决定。",
+      "risk": "玄学规则复杂、易神力泛滥；与古言玄学热书共享爽点，但核心悬念是记忆代价与真实选择。",
+      "source_ids": [
+        "R2",
+        "R4",
+        "R5"
+      ]
+    }
+  ],
+  "research": {
+    "platform": "qimao",
+    "checked_at": "2026-10-28T17:24:00+08:00",
+    "coverage_status": "partial",
+    "sources": [
+      {
+        "id": "R1",
+        "title": "男频大热日榜",
+        "url": "https://www.qimao.com/paihang/boy/hot/date/",
+        "accessed_at": "2026-10-28T17:24:00+08:00"
+      },
+      {
+        "id": "R2",
+        "title": "女频大热日榜",
+        "url": "https://www.qimao.com/paihang/girl/hot/date/",
+        "accessed_at": "2026-10-28T17:24:00+08:00"
+      },
+      {
+        "id": "R3",
+        "title": "男频新书日榜",
+        "url": "https://www.qimao.com/paihang/boy/new/date/",
+        "accessed_at": "2026-10-28T17:24:00+08:00"
+      },
+      {
+        "id": "R4",
+        "title": "女频新书日榜",
+        "url": "https://www.qimao.com/paihang/girl/new/date/",
+        "accessed_at": "2026-10-28T17:24:00+08:00"
+      },
+      {
+        "id": "R5",
+        "title": "七猫2025年作家签约政策（当前公开页）",
+        "url": "https://www.qimao.com/fuli/",
+        "accessed_at": "2026-10-28T17:24:00+08:00"
+      },
+      {
+        "id": "R6",
+        "title": "七猫作家帮助中心",
+        "url": "https://zuozhe.qimao.com/front/help-center",
+        "accessed_at": "2026-10-28T17:24:00+08:00"
+      },
+      {
+        "id": "R7",
+        "title": "七猫作家助手用户服务协议",
+        "url": "https://zhushou.qimao.com/writer-rules/68464fdfe4a81e7ec312f874/",
+        "accessed_at": "2026-10-28T17:24:00+08:00"
+      },
+      {
+        "id": "R8",
+        "title": "七猫原创作品登载规则",
+        "url": "https://zuozhe.qimao.com/front/page/agreement/publish",
+        "accessed_at": "2026-10-28T17:24:00+08:00"
+      },
+      {
+        "id": "R9",
+        "title": "七猫作家助手成为作者入口",
+        "url": "https://zhushou.qimao.com/become-author",
+        "accessed_at": "2026-10-28T17:24:00+08:00"
+      }
+    ],
+    "rules": [
+      {
+        "topic": "平台收稿方向",
+        "status": "verified",
+        "source_id": "R5",
+        "conclusion": "官网公开页列示男频都市、玄幻、历史、网游、系统、脑洞等；女频总裁、权谋、宅斗、种田、年代等及特色品类。"
+      },
+      {
+        "topic": "签约与投稿字数",
+        "status": "verified",
+        "source_id": "R6",
+        "conclusion": "作家帮助中心说明七猫站内直投需正文满2万字；帮助中心另显示编辑邮箱内投准备开篇1万字+完整大纲。"
+      },
+      {
+        "topic": "官网2025签约福利页投稿材料",
+        "status": "verified",
+        "source_id": "R5",
+        "conclusion": "当前可见的2025福利政策页写开篇2万字正文+大纲+申请表，与作家帮助中心内投1万字的表述不一致；内投前以编辑确认的最新要求为准。"
+      },
+      {
+        "topic": "签约类别与全勤条件",
+        "status": "verified",
+        "source_id": "R5",
+        "conclusion": "官网列出保底+超保底分成、纯分成、超级纯分成；全勤与合同类别、日更字数、留存率等有关，页面列日更4000字及若干更高档位，符合条件才适用；不是保证收益。"
+      },
+      {
+        "topic": "新书榜定义",
+        "status": "verified",
+        "source_id": "R3",
+        "conclusion": "男频新书榜标明总字数低于50万且每天更新的七猫原创作品；女频新书榜同样标明。"
+      },
+      {
+        "topic": "版权与原创责任",
+        "status": "verified",
+        "source_id": "R8",
+        "conclusion": "平台要求内容合法合规并具备授权权利；签约后版权合作以实际协议为准。官网福利页严禁“工作室”多人写同一本书及抄袭。"
+      },
+      {
+        "topic": "AI生成内容标识",
+        "status": "verified",
+        "source_id": "R7",
+        "conclusion": "七猫作家助手用户服务协议1.3.1涉及生成式人工智能与合成内容标识，要求相关内容以显著方式标识，不得将合成内容谎称自然内容。"
+      },
+      {
+        "topic": "纯AI生成长篇能否签约、申报方式",
+        "status": "unknown",
+        "source_id": null,
+        "conclusion": "未发现明确适用于本书“以AI撰写大部分正文”的可签约肯定规则；投稿前须向平台编辑确认是否接受、如何标识及授权边界。"
+      },
+      {
+        "topic": "全站每个题材真实独立阅读人数",
+        "status": "unknown",
+        "source_id": null,
+        "conclusion": "官方公开榜单为热度，详情页显示“次阅读”与累计人气值，不是唯一读者或完整全站题材人数，不可据此推算总读者规模。"
+      }
+    ],
+    "rank_samples": [
+      {
+        "title": "盖世神医",
+        "author": "狐颜乱语",
+        "genre": "都市高武",
+        "list_name": "男频大热日榜",
+        "rank": 1,
+        "heat_wan": 117.4,
+        "heat_unit": "万热度",
+        "observed_at": "2026-10-28T17:24:00+08:00",
+        "source_id": "R1",
+        "book_url": "https://www.qimao.com/shuku/195958/",
+        "reads_wan": 74.8,
+        "reads_unit": "万次阅读（详情页字段，非独立人数）",
+        "market_mechanism": "遭遇背叛、医武成长、对抗权势"
+      },
+      {
+        "title": "警报！真龙出狱！",
+        "author": "红透半边天",
+        "genre": "都市高手",
+        "list_name": "男频大热日榜",
+        "rank": 2,
+        "heat_wan": 74.9,
+        "heat_unit": "万热度",
+        "observed_at": "2026-10-28T17:24:00+08:00",
+        "source_id": "R1",
+        "book_url": "https://www.qimao.com/shuku/1834789/",
+        "reads_wan": 54.0,
+        "reads_unit": "万次阅读（详情页字段，非独立人数）",
+        "market_mechanism": "出狱归来、保护亲近者、复仇逆袭"
+      },
+      {
+        "title": "鸿蒙霸体诀",
+        "author": "鱼初见",
+        "genre": "东方玄幻",
+        "list_name": "男频大热日榜",
+        "rank": 3,
+        "heat_wan": 51.3,
+        "heat_unit": "万热度",
+        "observed_at": "2026-10-28T17:24:00+08:00",
+        "source_id": "R1",
+        "book_url": "https://www.qimao.com/shuku/1655407/",
+        "reads_wan": 32.0,
+        "reads_unit": "万次阅读（详情页字段，非独立人数）",
+        "market_mechanism": "废柴逆袭、修炼规则、跨境界挑战"
+      },
+      {
+        "title": "让你当个替身，你咋君临天下",
+        "author": "骑着蜗牛追奔驰",
+        "genre": "架空历史",
+        "list_name": "男频大热日榜",
+        "rank": 5,
+        "heat_wan": 38.5,
+        "heat_unit": "万热度",
+        "observed_at": "2026-10-28T17:24:00+08:00",
+        "source_id": "R1",
+        "book_url": "https://www.qimao.com/shuku/12647139/",
+        "reads_wan": 23.4,
+        "reads_unit": "万次阅读（详情页字段，非独立人数）",
+        "market_mechanism": "身份错位、权力失控、逐级破局"
+      },
+      {
+        "title": "夫人反差太大，司总沦陷了！",
+        "author": "九九月",
+        "genre": "总裁豪门",
+        "list_name": "女频大热日榜",
+        "rank": 1,
+        "heat_wan": 75.5,
+        "heat_unit": "万热度",
+        "observed_at": "2026-10-28T17:24:00+08:00",
+        "source_id": "R2",
+        "book_url": "https://www.qimao.com/shuku/13030701/",
+        "reads_wan": 42.4,
+        "reads_unit": "万次阅读（详情页字段，非独立人数）",
+        "market_mechanism": "婚姻危机、内外人设反差、关系反转"
+      },
+      {
+        "title": "离婚后她惊艳了世界",
+        "author": "明婳",
+        "genre": "总裁豪门",
+        "list_name": "女频大热日榜",
+        "rank": 2,
+        "heat_wan": 71.6,
+        "heat_unit": "万热度",
+        "observed_at": "2026-10-28T17:24:00+08:00",
+        "source_id": "R2",
+        "book_url": "https://www.qimao.com/shuku/222767/",
+        "reads_wan": 45.7,
+        "reads_unit": "万次阅读（详情页字段，非独立人数）",
+        "market_mechanism": "离婚之后的事业独立、追妻与自我价值"
+      },
+      {
+        "title": "皇叔借点功德，王妃把符画猛了",
+        "author": "安卿心",
+        "genre": "宫闱宅斗",
+        "list_name": "女频大热日榜",
+        "rank": 3,
+        "heat_wan": 70.1,
+        "heat_unit": "万热度",
+        "observed_at": "2026-10-28T17:24:00+08:00",
+        "source_id": "R2",
+        "book_url": "https://www.qimao.com/shuku/1803283/",
+        "reads_wan": 44.6,
+        "reads_unit": "万次阅读（详情页字段，非独立人数）",
+        "market_mechanism": "受辱退婚、玄学能力、权势合作"
+      },
+      {
+        "title": "错嫁随军：新婚夜冷面军少沦陷了",
+        "author": "桃三月",
+        "genre": "年代重生",
+        "list_name": "女频大热日榜",
+        "rank": 4,
+        "heat_wan": 55.5,
+        "heat_unit": "万热度",
+        "observed_at": "2026-10-28T17:24:00+08:00",
+        "source_id": "R2",
+        "book_url": "https://www.qimao.com/shuku/12792057/",
+        "reads_wan": 33.6,
+        "reads_unit": "万次阅读（详情页字段，非独立人数）",
+        "market_mechanism": "换婚、年代生活、错位认知与甜宠"
+      },
+      {
+        "title": "我的倾城野妻",
+        "author": "浑水摸虾",
+        "genre": "都市高手",
+        "list_name": "男频新书日榜",
+        "rank": 1,
+        "heat_wan": 14.6,
+        "heat_unit": "万热度",
+        "observed_at": "2026-10-28T17:24:00+08:00",
+        "source_id": "R3",
+        "book_url": "https://www.qimao.com/shuku/12973059/",
+        "reads_wan": 9.4,
+        "reads_unit": "万次阅读（详情页字段，非独立人数）",
+        "market_mechanism": "偶然机遇到阶层跃迁"
+      },
+      {
+        "title": "趁校花一贫如洗，忽悠她以身相许",
+        "author": "不吃鱼肉",
+        "genre": "热血校园",
+        "list_name": "男频新书日榜",
+        "rank": 2,
+        "heat_wan": 8.7,
+        "heat_unit": "万热度",
+        "observed_at": "2026-10-28T17:24:00+08:00",
+        "source_id": "R3",
+        "book_url": "https://www.qimao.com/shuku/12896292/",
+        "reads_wan": 5.5,
+        "reads_unit": "万次阅读（详情页字段，非独立人数）",
+        "market_mechanism": "重生校园、关系与事业重来"
+      },
+      {
+        "title": "魔天鼎：我能炼化万物",
+        "author": "晨弈",
+        "genre": "东方玄幻",
+        "list_name": "男频新书日榜",
+        "rank": 5,
+        "heat_wan": 5.1,
+        "heat_unit": "万热度",
+        "observed_at": "2026-10-28T17:24:00+08:00",
+        "source_id": "R3",
+        "book_url": "https://www.qimao.com/shuku/13297746/",
+        "reads_wan": 1.8,
+        "reads_unit": "万次阅读（详情页字段，非独立人数）",
+        "market_mechanism": "独特修行器物、能力成长"
+      },
+      {
+        "title": "寇天子",
+        "author": "烟水寒",
+        "genre": "架空历史",
+        "list_name": "男频新书日榜",
+        "rank": 6,
+        "heat_wan": 4.3,
+        "heat_unit": "万热度",
+        "observed_at": "2026-10-28T17:24:00+08:00",
+        "source_id": "R3",
+        "book_url": "https://www.qimao.com/shuku/12817968/",
+        "market_mechanism": "乱世低位起步、军政扩张"
+      },
+      {
+        "title": "夫人反差太大，司总沦陷了！",
+        "author": "九九月",
+        "genre": "总裁豪门",
+        "list_name": "女频新书日榜",
+        "rank": 1,
+        "heat_wan": 75.5,
+        "heat_unit": "万热度",
+        "observed_at": "2026-10-28T17:24:00+08:00",
+        "source_id": "R4",
+        "book_url": "https://www.qimao.com/shuku/13030701/",
+        "reads_wan": 42.4,
+        "reads_unit": "万次阅读（详情页字段，非独立人数）",
+        "market_mechanism": "新书榜与大热榜重叠，不能重复算书"
+      },
+      {
+        "title": "错嫁随军：新婚夜冷面军少沦陷了",
+        "author": "桃三月",
+        "genre": "年代重生",
+        "list_name": "女频新书日榜",
+        "rank": 2,
+        "heat_wan": 55.5,
+        "heat_unit": "万热度",
+        "observed_at": "2026-10-28T17:24:00+08:00",
+        "source_id": "R4",
+        "book_url": "https://www.qimao.com/shuku/12792057/",
+        "reads_wan": 33.6,
+        "reads_unit": "万次阅读（详情页字段，非独立人数）",
+        "market_mechanism": "新书榜与大热榜重叠，不能重复算书"
+      },
+      {
+        "title": "谢总，夫人已改嫁，让你跪远点",
+        "author": "乐希",
+        "genre": "总裁豪门",
+        "list_name": "女频新书日榜",
+        "rank": 3,
+        "heat_wan": 32.8,
+        "heat_unit": "万热度",
+        "observed_at": "2026-10-28T17:24:00+08:00",
+        "source_id": "R4",
+        "book_url": "https://www.qimao.com/shuku/13156719/",
+        "market_mechanism": "先离婚后反转、失去与追悔"
+      },
+      {
+        "title": "嫡姐惨死？王妃她杀爆京城",
+        "author": "青黛",
+        "genre": "古代情缘",
+        "list_name": "女频新书日榜",
+        "rank": 4,
+        "heat_wan": 31.0,
+        "heat_unit": "万热度",
+        "observed_at": "2026-10-28T17:24:00+08:00",
+        "source_id": "R4",
+        "book_url": "https://www.qimao.com/shuku/13021647/",
+        "market_mechanism": "亲人之死、复仇、权力与正义"
+      }
+    ],
+    "trend_summary": {
+      "method": "根据男/女大热日榜及男/女新书日榜共16条榜单记录观察；其中有2部作品跨榜重复，不能当作16本不同书。热度均取当日网页数值，不等于读者人数；详情页展示“次阅读”，同样不等于去重读者。",
+      "male": "都市高武/都市高手具头部热度，历史架空和东方玄幻也在热门榜前列；新书榜前列都市占较多，玄幻与历史亦有样本。",
+      "female": "豪门婚恋、离婚逆袭、古言宅斗与玄学、年代军婚在热门榜与新书榜均有可见样本。",
+      "commercial_hypotheses": [
+        "开局强危机+主角被迫行动",
+        "反转具有因果成本而非一次性打脸",
+        "长篇动力来自阶层、关系、制度或世界边界逐步扩展"
+      ],
+      "not_platform_population_statistics": true
+    },
+    "gaps": [
+      "未获取平台官方按题材划分的独立活跃读者数、全站阅读UV、完读率与收入数据。",
+      "福利网页标题为2025年，虽在本次可访问，未确认是否存在覆盖全部细则的2026修订公告。",
+      "编辑内投要求在帮助中心与福利页口径不同，投稿前需确认。",
+      "平台AI大比例生成正文可否签约、合规标注方式需向编辑确认。",
+      "采样仅16条榜单记录（14部不同作品），非全站题材市场份额；2026年10月28日访问的日榜按昨日热度排序。"
+    ]
+  },
+  "history": [
+    {
+      "at": "2026-10-28T11:10:47+00:00",
+      "phase": "WAITING_PLATFORM",
+      "label": "等待选择平台",
+      "detail": "系统已准备好，请先选择创作平台。"
+    },
+    {
+      "at": "2026-10-28T11:12:00+00:00",
+      "phase": "RESEARCH_PLATFORM",
+      "label": "核查平台规则",
+      "detail": "已选择七猫中文网，正在等待核查现行规则。"
+    },
+    {
+      "at": "2026-10-28T11:12:13+00:00",
+      "phase": "SCANNING_RANKINGS",
+      "label": "研究榜单",
+      "detail": "规则和榜单资料已保存；存在待核实项。"
+    },
+    {
+      "at": "2026-10-28T11:12:13+00:00",
+      "phase": "WAITING_TOPIC",
+      "label": "等待选择题材",
+      "detail": "已准备8个原创选题，等待作者选择。"
+    },
+    {
+      "at": "2026-10-28T11:12:14+00:00",
+      "phase": "PLANNING",
+      "label": "长篇规划",
+      "detail": "已选定《和离以后，我买下了前夫的粮仓》，准备长篇规划。"
+    },
+    {
+      "at": "2026-10-28T11:12:56+00:00",
+      "phase": "PLANNING",
+      "label": "长篇规划",
+      "detail": "已核对并由原V4.3登记选题、研究、设定和路线；尚待远程仓库完整安装；正文0章"
+    }
+  ]
+}

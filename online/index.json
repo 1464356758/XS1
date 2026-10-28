@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-10-28T11:23:55+00:00",
-    "state_revision": 3,
-    "workflow_revision": 6,
-    "state_sha256": "b43b82b4b61039bc6d7bf1e057476fcc2e0ea0bead8a3bd1b31177b39092330c",
-    "workflow_sha256": "60727f3cea0ef8a0a4be56b0929239cbcf588d29b19fc4f207ab4009a31c7448",
+    "generated_at": "2026-10-28T14:32:02+00:00",
+    "state_revision": 5,
+    "workflow_revision": 7,
+    "state_sha256": "80cb198b3bf7ded9e9243c3b579e9cfea55fd85e294c257197ee38ad2111f2c9",
+    "workflow_sha256": "b24db38b449a9f603962e6494e1c858da37ea22813651bbd42235948ea10f509",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -41,9 +41,9 @@
     "phase": "WRITING",
     "label": "撰写正文",
     "chapter": 1,
-    "detail": "第一章已通过V4.3写前任务书及场景预算校验；开始按6场共8800汉字目标写作，正文尚无采用版",
-    "next_action": "完成第1章完整候选稿、反向提纲、限信息审读、release-check与adopt冻结；无成功远端同步不计采用",
-    "updated_at": "2026-10-28T11:23:55+00:00"
+    "detail": "T05依V4.3重建并登记最新版canon/roadmap及参考资料，CH001任务书已据新输入重新校验；未创作或采用正文",
+    "next_action": "读取最新canon与roadmap，按CH001写手资料完成一章8000—10000汉字候选稿，实际审读与release-check通过后才adopt",
+    "updated_at": "2026-10-28T14:32:01+00:00"
   },
   "chapters": [],
   "topics": [
@@ -609,6 +609,12 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "第一章已通过V4.3写前任务书及场景预算校验；开始按6场共8800汉字目标写作，正文尚无采用版"
+    },
+    {
+      "at": "2026-10-28T14:32:01+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "T05依V4.3重建并登记最新版canon/roadmap及参考资料，CH001任务书已据新输入重新校验；未创作或采用正文"
     }
   ]
 }

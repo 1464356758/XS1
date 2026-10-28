@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "501722ea-99aa-49f7-8c25-a18f199cc960",
   "title": "和离以后，我买下了前夫的粮仓",
-  "revision": 3,
+  "revision": 5,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -27,15 +27,15 @@
   "inputs": {
     "canon": {
       "kind": "canon",
-      "path": "inputs/canon_97aef77dca9848ceb080681be290059371951efaaac5bf0a4269b3aae17505c5.md",
-      "sha256": "97aef77dca9848ceb080681be290059371951efaaac5bf0a4269b3aae17505c5",
-      "reason": "沿用此前作者已授权选题的未定稿设定，由原V4.3流程登记，非已写正文事实"
+      "path": "inputs/canon_df4a82157c768ba3196a8544dbcdbef23252f6e977a1179493532a41d09b2a58.md",
+      "sha256": "df4a82157c768ba3196a8544dbcdbef23252f6e977a1179493532a41d09b2a58",
+      "reason": "作者要求按原V4.3重建T05完整写作参考：数值、契约、人物知情与硬边界"
     },
     "roadmap": {
       "kind": "roadmap",
-      "path": "inputs/roadmap_257cc87a6b884a42172037150dcab7ede9df40c4222cec83f6f5ca6d7b59a84e.md",
-      "sha256": "257cc87a6b884a42172037150dcab7ede9df40c4222cec83f6f5ca6d7b59a84e",
-      "reason": "原V4.3系统长篇路线登记，均为未来计划，章节0未采用"
+      "path": "inputs/roadmap_f18366875a227c6cfacfadddb9e151f3ea56f78cd634f8847d4672eafa0ea41c.md",
+      "sha256": "f18366875a227c6cfacfadddb9e151f3ea56f78cd634f8847d4672eafa0ea41c",
+      "reason": "作者要求按原V4.3重建T05长线因果、十阶段、承诺和前五章滚动路线"
     }
   },
   "input_history": [
@@ -50,6 +50,18 @@
       "path": "inputs/roadmap_257cc87a6b884a42172037150dcab7ede9df40c4222cec83f6f5ca6d7b59a84e.md",
       "sha256": "257cc87a6b884a42172037150dcab7ede9df40c4222cec83f6f5ca6d7b59a84e",
       "reason": "原V4.3系统长篇路线登记，均为未来计划，章节0未采用"
+    },
+    {
+      "kind": "canon",
+      "path": "inputs/canon_df4a82157c768ba3196a8544dbcdbef23252f6e977a1179493532a41d09b2a58.md",
+      "sha256": "df4a82157c768ba3196a8544dbcdbef23252f6e977a1179493532a41d09b2a58",
+      "reason": "作者要求按原V4.3重建T05完整写作参考：数值、契约、人物知情与硬边界"
+    },
+    {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_f18366875a227c6cfacfadddb9e151f3ea56f78cd634f8847d4672eafa0ea41c.md",
+      "sha256": "f18366875a227c6cfacfadddb9e151f3ea56f78cd634f8847d4672eafa0ea41c",
+      "reason": "作者要求按原V4.3重建T05长线因果、十阶段、承诺和前五章滚动路线"
     }
   ],
   "tasks": {},
@@ -62,5 +74,11 @@
     "gates": {},
     "promises": {},
     "incidents": {}
+  },
+  "writing_briefs": {
+    "1": {
+      "path": "briefs/CH001_5e7a9144fdf4e0f8cfdb14ff20ca3dbb2cc7b8e08879e781f3d9924728265e3f.json",
+      "sha256": "5e7a9144fdf4e0f8cfdb14ff20ca3dbb2cc7b8e08879e781f3d9924728265e3f"
+    }
   }
 }

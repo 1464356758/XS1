@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 5,
+  "revision": 6,
   "book_id": "501722ea-99aa-49f7-8c25-a18f199cc960",
-  "phase": "PLANNING",
+  "phase": "WRITING",
   "platform": "qimao",
   "selected_topic": {
     "id": "T05",
@@ -63,9 +63,15 @@
       "phase": "PLANNING",
       "label": "长篇规划",
       "detail": "已核对并由原V4.3登记选题、研究、设定和路线；尚待远程仓库完整安装；正文0章"
+    },
+    {
+      "at": "2026-10-28T11:23:55+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "第一章已通过V4.3写前任务书及场景预算校验；开始按6场共8800汉字目标写作，正文尚无采用版"
     }
   ],
-  "detail": "已核对并由原V4.3登记选题、研究、设定和路线；尚待远程仓库完整安装；正文0章",
-  "next_action": "先完整部署原始系统并完成回读，再按brief-request/brief-check写第一章",
-  "updated_at": "2026-10-28T11:12:56+00:00"
+  "detail": "第一章已通过V4.3写前任务书及场景预算校验；开始按6场共8800汉字目标写作，正文尚无采用版",
+  "next_action": "完成第1章完整候选稿、反向提纲、限信息审读、release-check与adopt冻结；无成功远端同步不计采用",
+  "updated_at": "2026-10-28T11:23:55+00:00"
 }

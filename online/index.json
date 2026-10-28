@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-10-28T11:12:57+00:00",
+    "generated_at": "2026-10-28T11:23:55+00:00",
     "state_revision": 3,
-    "workflow_revision": 5,
-    "state_sha256": "01375532bb2f8d4e91ad7d947687d04587e8861e73058ff998b575acdab74d4f",
-    "workflow_sha256": "2e25d73d4d5975671269cc1fc7c1c6819653693432a9f3904ff21fa65b85f4dd",
+    "workflow_revision": 6,
+    "state_sha256": "b43b82b4b61039bc6d7bf1e057476fcc2e0ea0bead8a3bd1b31177b39092330c",
+    "workflow_sha256": "60727f3cea0ef8a0a4be56b0929239cbcf588d29b19fc4f207ab4009a31c7448",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -38,12 +38,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "PLANNING",
-    "label": "长篇规划",
+    "phase": "WRITING",
+    "label": "撰写正文",
     "chapter": 1,
-    "detail": "已核对并由原V4.3登记选题、研究、设定和路线；尚待远程仓库完整安装；正文0章",
-    "next_action": "先完整部署原始系统并完成回读，再按brief-request/brief-check写第一章",
-    "updated_at": "2026-10-28T11:12:56+00:00"
+    "detail": "第一章已通过V4.3写前任务书及场景预算校验；开始按6场共8800汉字目标写作，正文尚无采用版",
+    "next_action": "完成第1章完整候选稿、反向提纲、限信息审读、release-check与adopt冻结；无成功远端同步不计采用",
+    "updated_at": "2026-10-28T11:23:55+00:00"
   },
   "chapters": [],
   "topics": [
@@ -603,6 +603,12 @@
       "phase": "PLANNING",
       "label": "长篇规划",
       "detail": "已核对并由原V4.3登记选题、研究、设定和路线；尚待远程仓库完整安装；正文0章"
+    },
+    {
+      "at": "2026-10-28T11:23:55+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "第一章已通过V4.3写前任务书及场景预算校验；开始按6场共8800汉字目标写作，正文尚无采用版"
     }
   ]
 }

@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "book_id": "501722ea-99aa-49f7-8c25-a18f199cc960",
+  "chapter": 2,
+  "base_revision": 6,
+  "task_id": "4128e7e6-2acd-4865-85e8-79573cfa3a11",
+  "repairs": 1,
+  "text_sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+  "record_sha256": "5e864790fdae8ebb4df5a4a24ad1539bcb11c56c2735318956e37b58723daba6",
+  "canon_sha256": "df4a82157c768ba3196a8544dbcdbef23252f6e977a1179493532a41d09b2a58",
+  "roadmap_sha256": "f18366875a227c6cfacfadddb9e151f3ea56f78cd634f8847d4672eafa0ea41c",
+  "narrative_review_version": 1,
+  "writing_brief_sha256": "333afb56c44c7b76334ff11df534dc7f7b51ab79ff94eb0edaf1f2f32db1fbcb",
+  "decision": "pending",
+  "read_full_text": false,
+  "blocking_issues": [
+    "尚未实际阅读检查"
+  ],
+  "read_coverage": {
+    "1": "4174034be8c1d2ef710265988df24945132fb099e262f5bd3442b0c43d4576cb",
+    "2": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4"
+  },
+  "reader_reason_to_continue": "",
+  "consequence": "",
+  "ending_runway": "",
+  "checks": {
+    "timeline": {
+      "decision": "pending",
+      "conclusion": "",
+      "evidence": [
+        {
+          "chapter": 2,
+          "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+          "quote": ""
+        }
+      ]
+    },
+    "knowledge": {
+      "decision": "pending",
+      "conclusion": "",
+      "evidence": [
+        {
+          "chapter": 2,
+          "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+          "quote": ""
+        }
+      ]
+    },
+    "props_resources": {
+      "decision": "pending",
+      "conclusion": "",
+      "evidence": [
+        {
+          "chapter": 2,
+          "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+          "quote": ""
+        }
+      ]
+    },
+    "causality": {
+      "decision": "pending",
+      "conclusion": "",
+      "evidence": [
+        {
+          "chapter": 2,
+          "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+          "quote": ""
+        }
+      ]
+    },
+    "power_rules": {
+      "decision": "pending",
+      "conclusion": "",
+      "evidence": [
+        {
+          "chapter": 2,
+          "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+          "quote": ""
+        }
+      ]
+    },
+    "promises": {
+      "decision": "pending",
+      "conclusion": "",
+      "evidence": [
+        {
+          "chapter": 2,
+          "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+          "quote": ""
+        }
+      ]
+    },
+    "anti_repeat": {
+      "decision": "pending",
+      "conclusion": "",
+      "evidence": [
+        {
+          "chapter": 2,
+          "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+          "quote": ""
+        }
+      ]
+    },
+    "character_agency": {
+      "decision": "pending",
+      "conclusion": "",
+      "evidence": [
+        {
+          "chapter": 2,
+          "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+          "quote": ""
+        }
+      ]
+    }
+  },
+  "comparison": [
+    {
+      "chapter": 1,
+      "sha256": "4174034be8c1d2ef710265988df24945132fb099e262f5bd3442b0c43d4576cb",
+      "quote": "",
+      "difference": ""
+    }
+  ],
+  "future_window": [
+    {
+      "chapter": 3,
+      "goal": "",
+      "change": "",
+      "ending_question": ""
+    },
+    {
+      "chapter": 4,
+      "goal": "",
+      "change": "",
+      "ending_question": ""
+    },
+    {
+      "chapter": 5,
+      "goal": "",
+      "change": "",
+      "ending_question": ""
+    }
+  ],
+  "promise_reviews": [
+    {
+      "id": "P01-补注与见证",
+      "action": "keep",
+      "deadline_chapter": 3,
+      "reason": "",
+      "evidence": {
+        "chapter": 2,
+        "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+        "quote": ""
+      }
+    },
+    {
+      "id": "P11-契到仓交易",
+      "action": "keep",
+      "deadline_chapter": 10,
+      "reason": "",
+      "evidence": {
+        "chapter": 2,
+        "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+        "quote": ""
+      }
+    },
+    {
+      "id": "P12-七日债",
+      "action": "keep",
+      "deadline_chapter": 7,
+      "reason": "",
+      "evidence": {
+        "chapter": 2,
+        "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+        "quote": ""
+      }
+    }
+  ],
+  "incident_actions": [],
+  "narrative_review": {
+    "schema_version": 1,
+    "actual_scenes": [
+      {
+        "event": "",
+        "choice": "",
+        "change": "",
+        "evidence": [
+          {
+            "chapter": 2,
+            "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+            "quote": ""
+          }
+        ]
+      }
+    ],
+    "plan_comparison": "",
+    "reader": {
+      "mode": "pending",
+      "limitation": "",
+      "coverage": {
+        "1": {
+          "text_sha256": "4174034be8c1d2ef710265988df24945132fb099e262f5bd3442b0c43d4576cb",
+          "mode": "full_text"
+        },
+        "2": {
+          "text_sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+          "mode": "full_text"
+        }
+      },
+      "understanding": "",
+      "information_load": "",
+      "promise_delivery": "",
+      "evidence": [
+        {
+          "chapter": 2,
+          "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+          "quote": ""
+        }
+      ],
+      "issues": []
+    },
+    "character_causality": {
+      "opposition": {
+        "status": "pending",
+        "conclusion": "",
+        "evidence": [
+          {
+            "chapter": 2,
+            "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+            "quote": ""
+          }
+        ]
+      },
+      "dialogue": {
+        "status": "pending",
+        "conclusion": "",
+        "evidence": [
+          {
+            "chapter": 2,
+            "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+            "quote": ""
+          }
+        ]
+      },
+      "aftermath": {
+        "status": "pending",
+        "conclusion": "",
+        "evidence": [
+          {
+            "chapter": 2,
+            "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+            "quote": ""
+          }
+        ]
+      }
+    },
+    "history": {
+      "index_sha256": "efdd0d1b6f53d779014d90978d225ed467fad8a82e3552dfefc11a9fbedf129f",
+      "queries": [
+        "旧契 归还 收条 侯府 商债结清",
+        "柳复 北埠 脚行 押记 先存押",
+        "现银 赊账 伙计 工钱 七日债",
+        "获安仓 两排货位 收益 担保"
+      ],
+      "comparisons": [],
+      "no_match_reason": ""
+    },
+    "reader_updates": [],
+    "reader_update_note": "",
+    "surface_findings": []
+  }
+}

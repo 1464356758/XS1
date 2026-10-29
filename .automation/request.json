@@ -1,11 +1,13 @@
 {
   "schema_version": 1,
-  "request_id": "preflight_redesign_20261029_xs1_01",
-  "base_sha": "f724038e25e36b41b0e44aa4859a680ca0ef9f8c",
+  "request_id": "xs1_20261030_fd7abe3c_preflight_01",
+  "base_sha": "ee26db3184f5709a6fe1a1a20b60c548ff0cc849",
   "book_id": "501722ea-99aa-49f7-8c25-a18f199cc960",
   "controller": {
-    "kind": "maintenance",
-    "session_id": "maintenance_redesign_20261029"
+    "kind": "automation",
+    "automation_id": "6ae210dfb6f08191bfddfddd1bf97564",
+    "session_id": "xs1_20261030_fd7abe3c_9f43c8a1",
+    "platform_run_id": "fd7abe3c-85ac-832c-98aa-a9e30da16e7e"
   },
   "phase": "preflight"
 }

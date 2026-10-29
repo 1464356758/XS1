@@ -11,104 +11,102 @@
   "roadmap_sha256": "f18366875a227c6cfacfadddb9e151f3ea56f78cd634f8847d4672eafa0ea41c",
   "narrative_review_version": 1,
   "writing_brief_sha256": "333afb56c44c7b76334ff11df534dc7f7b51ab79ff94eb0edaf1f2f32db1fbcb",
-  "decision": "pending",
-  "read_full_text": false,
-  "blocking_issues": [
-    "尚未实际阅读检查"
-  ],
+  "decision": "release",
+  "read_full_text": true,
+  "blocking_issues": [],
   "read_coverage": {
     "1": "4174034be8c1d2ef710265988df24945132fb099e262f5bd3442b0c43d4576cb",
     "2": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4"
   },
-  "reader_reason_to_continue": "",
-  "consequence": "",
-  "ending_runway": "",
+  "reader_reason_to_continue": "第二章已让读者看到真正成交的24石、实付40两以及三日议缓门槛并未变成延期；新冲突是魏记油坊对南二排的现行使用与旧收益押记不相同，韩守义只给有限来访摘录，柳复旧船的匿名威胁又使寻找见证人的风险具体化。第三章需要用柳复、旧押柜簿和裕成号书面回复验证，不能继续只争纸面称谓。",
+  "consequence": "母亲米行已实卖24石，按1两9钱每石共收45两6钱，较2两基准少2两4钱的名义价差；向许家实付40两使现金余额185两6钱、库存136石、D7应付380两，原债期未改，仍需D3再付60两才有再议机会。批发急售传言影响零卖客流，魏记认为核押会扰其生意；母女以有限授权分工，匿名警告来源未核。",
+  "ending_runway": "CH003核柳复、脚行送信年份、陈家河老陆和旧押簿可用性，明确担保不等于仓屋及现行领牌，催偿通知送达裕成号取收讫；CH004面对粮行对核验/授信的阻挡，确认寄储小户真实选择；CH005有成本地试一条运输/缓债方案，不能用虚构现银或谢怀砚特权解困。D3补付60两与D7余欠380两必须连续跟踪。",
   "checks": {
     "timeline": {
-      "decision": "pending",
-      "conclusion": "",
+      "decision": "pass",
+      "conclusion": "D0午前北埠问柳复、午后订货、傍晚许家议缓；D1清晨先实收现银交粮，再到许家实付40两，下午才到获安仓验房，傍晚回店。渡口因水浅减趟未强行当天来回，未让未知签押提前成定论。",
       "evidence": [
         {
           "chapter": 2,
           "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
-          "quote": ""
+          "quote": "第二日天刚亮，城西买主果然来了"
         }
       ]
     },
     "knowledge": {
-      "decision": "pending",
-      "conclusion": "",
+      "decision": "pass",
+      "conclusion": "沈青蘅只得知小石送信到老陆的转述，韩守义只告知现行领牌和旧副簿保管路径；柳复住址、先押顺位、匿名恐吓者均未知。赵素娘仅说明听过旧船争吵，没有冒充亲见开舱。",
       "evidence": [
         {
           "chapter": 2,
           "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
-          "quote": ""
+          "quote": "我只听过争吵，没见过开舱"
         }
       ]
     },
     "props_resources": {
-      "decision": "pending",
-      "conclusion": "",
+      "decision": "pass",
+      "conclusion": "24石按1两9钱为45两6钱，D1实收后现金225两6钱，实付许家40两后余185两6钱；自有粮160减24为136石，寄储货未动；许家300减40为260，连船栈120共380，到期日未改。",
       "evidence": [
         {
           "chapter": 2,
           "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
-          "quote": ""
+          "quote": "还欠许家二百六十，船栈一百二十，合三百八十"
         }
       ]
     },
     "causality": {
-      "decision": "pending",
-      "conclusion": "",
+      "decision": "pass",
+      "conclusion": "许家催款迫使母亲在守价与周转之间选择，买主有压价与撤单能力；母亲坚持现银交割并亲自决定付40，换来真实减债却未换得延期。查押又触及魏记现行经营，迫使女主限制自身主张。",
       "evidence": [
         {
           "chapter": 2,
           "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
-          "quote": ""
+          "quote": "我没拿四十两来买缓期"
         }
       ]
     },
     "power_rules": {
-      "decision": "pending",
-      "conclusion": "",
+      "decision": "pass",
+      "conclusion": "宁朝虚构商契里债权、货位收益、仓位使用与仓屋产权分离；韩守义无权随意开封他方押簿，赵素娘授权只问不签新契，邓账房只能收银不能改到期日。",
       "evidence": [
         {
           "chapter": 2,
           "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
-          "quote": ""
+          "quote": "你这张是债契，不是仓牌"
         }
       ]
     },
     "promises": {
-      "decision": "pending",
-      "conclusion": "",
+      "decision": "pass",
+      "conclusion": "P12已部分兑现实付40两，但D7仍余380两、D3议缓仍差60；P01柳复只找到送信路径未核补注，须CH003初核；P11现行魏记领牌不是旧押顺位或整仓产权，购仓仍在CH008—010。",
       "evidence": [
         {
           "chapter": 2,
           "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
-          "quote": ""
+          "quote": "三日内若再不到六十两，东家先前提的议缓条件便作罢"
         }
       ]
     },
     "anti_repeat": {
-      "decision": "pending",
-      "conclusion": "",
+      "decision": "pass",
+      "conclusion": "第一章的核心是以个人112两弃权换回原契、解除和离结清陷阱；本章是母亲商号真实售粮24石、实付40两、失去库存并承担价格声誉成本，另有仓位使用人的反对，不是同一纸面条款重复打脸。",
       "evidence": [
         {
           "chapter": 2,
           "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
-          "quote": ""
+          "quote": "四十两被记入许家柜账时"
         }
       ]
     },
     "character_agency": {
-      "decision": "pending",
-      "conclusion": "",
+      "decision": "pass",
+      "conclusion": "赵素娘独立定价、拒绝定银、决定40两实付并给限定授权；买主试压价、邓账房守权限、魏二维护正常仓位使用，韩守义拒绝越权盖印；沈青蘅在对手反对时不强搬粮。",
       "evidence": [
         {
           "chapter": 2,
           "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
-          "quote": ""
+          "quote": "我只认你这个经手人明日现付"
         }
       ]
     }
@@ -117,28 +115,28 @@
     {
       "chapter": 1,
       "sha256": "4174034be8c1d2ef710265988df24945132fb099e262f5bd3442b0c43d4576cb",
-      "quote": "",
-      "difference": ""
+      "quote": "我拿这一百一十二两的旧借款，换裕成号欠粮原契原样归还",
+      "difference": "CH001女主舍个人应收112两换取有边界书证，主线改变婚姻与证据；CH002母亲亲自交割24石、实付40两，现金与库存真变，外部买主/许家/魏记各有独立商业阻力，女主不靠同样的弃权换纸来破局。"
     }
   ],
   "future_window": [
     {
       "chapter": 3,
-      "goal": "",
-      "change": "",
-      "ending_question": ""
+      "goal": "核柳复是否能亲证三年前原契与补注，送达对裕成号催偿并取得收讫，追查获安仓旧押记的合法查验入口。",
+      "change": "从小石转述与韩守义有限来访摘录转为至少一份有明确见证范围的旧押事实；即使不能确证也须有可核拒绝及代价。",
+      "ending_question": "补注是何时、由谁依什么押簿添入，谁先于青禾取得两排收益？"
     },
     {
       "chapter": 4,
-      "goal": "",
-      "change": "",
-      "ending_question": ""
+      "goal": "接触清河粮行及获安仓寄储小户，面对穆远道授信/仓验限制，核现行领牌与寄储契。",
+      "change": "让一名寄储者或魏记有真实选择与损失，女主承认旧契不能代替仓权与寄粮所有权，转向可核的买仓筹资资格。",
+      "ending_question": "青禾能否不损害寄储人的货权，取得真正有资格处分仓屋的卖方信息？"
     },
     {
       "chapter": 5,
-      "goal": "",
-      "change": "",
-      "ending_question": ""
+      "goal": "用可付的成本谈一次有限运输与许家议缓，核D3追加60两能否实付，不虚增旧300石债权价值。",
+      "change": "一条实际交货或失败的运粮方案改变米行现金与声誉，船行拒绝免费冒险，官员只依职责验档。",
+      "ending_question": "在剩余七日债和新粮供应双重压力下，母女还能承担怎样的合伙代价？"
     }
   ],
   "promise_reviews": [
@@ -146,33 +144,33 @@
       "id": "P01-补注与见证",
       "action": "keep",
       "deadline_chapter": 3,
-      "reason": "",
+      "reason": "本章从脚行查得柳复前年六月离行及小石转递线索，仍未见柳复本人或旧押副簿，保留CH003初核期限，不以传言结案。",
       "evidence": {
         "chapter": 2,
         "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
-        "quote": ""
+        "quote": "老先生终于拿起笔，写下前年六月柳复自请离行"
       }
     },
     {
       "id": "P11-契到仓交易",
       "action": "keep",
       "deadline_chapter": 10,
-      "reason": "",
+      "reason": "韩守义展示魏记油坊现行领牌，仅说明使用登记，既不能证明旧押顺位也不能授仓屋产权，继续保留CH010真实买仓期限。",
       "evidence": {
         "chapter": 2,
         "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
-        "quote": ""
+        "quote": "使用是一回事，押债又是一回事"
       }
     },
     {
       "id": "P12-七日债",
       "action": "keep",
       "deadline_chapter": 7,
-      "reason": "",
+      "reason": "已向许家实付40两并取得收条，许家货款余额260两、船栈120两共380两仍D7到期，D3追加60两只是再议门槛，故部分推进不重置CH007期限。",
       "evidence": {
         "chapter": 2,
         "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
-        "quote": ""
+        "quote": "四十两被记入许家柜账时"
       }
     }
   ],
@@ -181,22 +179,94 @@
     "schema_version": 1,
     "actual_scenes": [
       {
-        "event": "",
-        "choice": "",
-        "change": "",
+        "event": "北埠脚行许伯核旧离行簿，小石提供送信线索",
+        "choice": "沈青蘅只要亲见离行证明，不逼许伯为赈运契书背书",
+        "change": "得前年六月离行日期与陈家河老陆线索，但未找到柳复",
         "evidence": [
           {
             "chapter": 2,
             "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
-            "quote": ""
+            "quote": "便只写离行簿"
+          }
+        ]
+      },
+      {
+        "event": "城西饭铺经手人以压价和定银要求订24石干粮",
+        "choice": "赵素娘拒收易争的定银，限定次日现银交割与干货封样",
+        "change": "形成待交货承诺但D0不提前计现金/库存变化",
+        "evidence": [
+          {
+            "chapter": 2,
+            "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+            "quote": "今天不收定银，明日午前先付后装"
+          }
+        ]
+      },
+      {
+        "event": "许家钱跑街递三日实付100两才肯再议的条件",
+        "choice": "母女拒绝把条件冒充正式延期，不押寄储货",
+        "change": "D7不变，D3需真实追加实付才可能议缓",
+        "evidence": [
+          {
+            "chapter": 2,
+            "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+            "quote": "说了，不等于我们答应了"
+          }
+        ]
+      },
+      {
+        "event": "D1买主验样压价，赵素娘守约并实际交割24石",
+        "choice": "母亲宁肯承受批发折价和急售流言，也要求先付现银",
+        "change": "库存160变136，现金180加45两6钱，买主自运",
+        "evidence": [
+          {
+            "chapter": 2,
+            "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+            "quote": "买主当面清点银子，四十五两六钱"
+          }
+        ]
+      },
+      {
+        "event": "许家邓账房收40两但拒绝替东家改债期",
+        "choice": "赵素娘实际付40两，沈青蘅只要求写清余额与到期",
+        "change": "许家余额260、总应付380、现银185两6钱，D7仍有效",
+        "evidence": [
+          {
+            "chapter": 2,
+            "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+            "quote": "四十两被记入许家柜账时"
+          }
+        ]
+      },
+      {
+        "event": "获安仓韩守义只展示魏记现行领牌，魏二抗议",
+        "choice": "沈青蘅不主张搬货、不逼开旧簿，取得有限来访摘录",
+        "change": "现行使用与旧押债权被明确分开，查证路径指向柳复和封存副簿",
+        "evidence": [
+          {
+            "chapter": 2,
+            "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+            "quote": "你这张是债契，不是仓牌"
+          }
+        ]
+      },
+      {
+        "event": "傍晚母女核余数，匿名纸条提柳复旧船",
+        "choice": "母亲签发催偿通知但不冒充已送达，女主保存威胁原纸并先核送信路径",
+        "change": "母女形成受限分工，风险从现金延伸到证人安全但来源未知",
+        "evidence": [
+          {
+            "chapter": 2,
+            "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+            "quote": "亲自签下名字、盖了商号印"
           }
         ]
       }
     ],
-    "plan_comparison": "",
+    "plan_comparison": "六个写前场景的主要功能均在正文实际发生：北埠查离行、母亲现货交易、许家有限议缓、次日现银交割、获安仓领牌争议、傍晚母女受限分工。相比计划，许家实付40两是新增的不可逆现金变化，匿名恐吓是额外悬念，必须在CH003核来源，不能让其替代押簿调查。",
     "reader": {
-      "mode": "pending",
-      "limitation": "",
+      "mode": "same_context_approximation",
+      "limitation": "同一模型已读canon、路线和前章，虽另行实际读取只含CH001/CH002正文的reader资料，仍不能真正遗忘既有知识，不冒充独立读者或真实用户试读。",
       "coverage": {
         "1": {
           "text_sha256": "4174034be8c1d2ef710265988df24945132fb099e262f5bd3442b0c43d4576cb",
@@ -207,49 +277,80 @@
           "mode": "full_text"
         }
       },
-      "understanding": "",
-      "information_load": "",
-      "promise_delivery": "",
+      "understanding": "不看未来设定，仅从两章正文能理解：沈青蘅已和离、拿回母家对裕成号的300石债契，但旧契只涉及两排收益担保；米行真正能用的现金与粮有限，D1卖24石收45两6钱、付许家40两后债仍有380两。柳复可能经陈家河老陆转递，韩守义只证明现行领牌，不证明旧押先后。",
+      "information_load": "商债、寄储货、货位收益、现行领牌与旧押簿五种概念较密，正文借买主、钱跑街、邓账房和魏二不同立场逐层呈现，主要数额有两次流水核对；读者可能暂时混淆D3再议门槛和D7真实到期，已在邓账房收条及傍晚账簿明确区分。",
+      "promise_delivery": "第2章没有假装完成购仓或还清七日债，而是交出24石现货、40两实付、三日议缓门槛和一个真实押记障碍；女主由前章个人舍银转向母亲自主经营和查证，末尾证人线索具体但未知。",
       "evidence": [
         {
           "chapter": 2,
           "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
-          "quote": ""
+          "quote": "还欠许家二百六十，船栈一百二十，合三百八十"
+        },
+        {
+          "chapter": 2,
+          "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+          "quote": "使用是一回事，押债又是一回事"
         }
       ],
-      "issues": []
+      "issues": [
+        {
+          "severity": "suggestion",
+          "status": "open",
+          "reason": "末尾匿名威胁‘若还想活着’情绪较强，可能让读者误以为幕后危险已证实。正文明确无落款、无来人且母女不认定柳复遇险；后续须用实际送信人或证据核实，不可把恐吓当真相。",
+          "evidence": {
+            "chapter": 2,
+            "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+            "quote": "柳复若还想活着，就别再问陈家河的旧船"
+          }
+        }
+      ]
     },
     "character_causality": {
       "opposition": {
-        "status": "pending",
-        "conclusion": "",
+        "status": "reviewed",
+        "conclusion": "城西买主试用隔街低价二次压价；许家跑街与邓账房严格守收银/改期权限；魏二为现行货位生意主动抗议，韩守义保护仓房账簿和自身差事。对手各有独立利益，不是等女主一句话认输。",
         "evidence": [
           {
             "chapter": 2,
             "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
-            "quote": ""
+            "quote": "今日隔街开一两八钱五分"
+          },
+          {
+            "chapter": 2,
+            "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+            "quote": "你这张是债契，不是仓牌"
           }
         ]
       },
       "dialogue": {
-        "status": "pending",
-        "conclusion": "",
+        "status": "reviewed",
+        "conclusion": "赵素娘讲现金、工钱和交易底线；沈青蘅问证据权限与原话；邓账房明确权限，魏二关心货位损失，韩守义不愿乱盖印。人物对白有不同目的，不全为作者讲解账法。",
         "evidence": [
           {
             "chapter": 2,
             "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
-            "quote": ""
+            "quote": "我做掌柜二十多年，不等你回来教我认银"
+          },
+          {
+            "chapter": 2,
+            "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+            "quote": "我不能丢这份差事"
           }
         ]
       },
       "aftermath": {
-        "status": "pending",
-        "conclusion": "",
+        "status": "reviewed",
+        "conclusion": "实卖造成库存下降和街客观望，实付40两造成现银与到期余额变化，仓房查问激起魏二担心停收油饼，母女仍需筹D3的60两；行动均有持续成本而非立刻重置。",
         "evidence": [
           {
             "chapter": 2,
             "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
-            "quote": ""
+            "quote": "有两个本想买米的客人听了，转身去等明日的价"
+          },
+          {
+            "chapter": 2,
+            "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+            "quote": "三日内若想换一次议缓机会，还要六十"
           }
         ]
       }
@@ -262,11 +363,71 @@
         "现银 赊账 伙计 工钱 七日债",
         "获安仓 两排货位 收益 担保"
       ],
-      "comparisons": [],
+      "comparisons": [
+        {
+          "source": {
+            "chapter": 1,
+            "sha256": "4174034be8c1d2ef710265988df24945132fb099e262f5bd3442b0c43d4576cb",
+            "quote": "我拿这一百一十二两的旧借款，换裕成号欠粮原契原样归还"
+          },
+          "current_evidence": {
+            "chapter": 2,
+            "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+            "quote": "四十两被记入许家柜账时"
+          },
+          "similarity": "两章都围绕凭据、债权与母女商业生存，均有当面签收和现金压力。",
+          "difference": "CH001放弃个人旧借银换回原契与身份决裂，无法立即兑现粮；CH002卖出24石实货并向真实债权人交40两，库存、现金、应付同步变动，新增魏记现行领牌人抵触和匿名风险，不是重复以弃权换契。"
+        }
+      ],
       "no_match_reason": ""
     },
-    "reader_updates": [],
-    "reader_update_note": "",
+    "reader_updates": [
+      {
+        "kind": "observed",
+        "statement": "D1米行实售24石、现银收45两6钱、向许家实付40两，库存余136石，许家余额260两、船栈120两，D7未改。",
+        "evidence": [
+          {
+            "chapter": 2,
+            "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+            "quote": "还欠许家二百六十，船栈一百二十，合三百八十"
+          }
+        ]
+      },
+      {
+        "kind": "observed",
+        "statement": "韩守义仅展示魏记油坊上月现行领牌，旧押簿仍封存；领牌不等于旧债先受偿。",
+        "evidence": [
+          {
+            "chapter": 2,
+            "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+            "quote": "上月有人凭牌来登记使用，牌上是魏记的名"
+          }
+        ]
+      },
+      {
+        "kind": "claim",
+        "statement": "小石声称曾向陈家河渡口卖绳老陆递过柳复的信，尚非柳复住址的独立证据。",
+        "evidence": [
+          {
+            "chapter": 2,
+            "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+            "quote": "我替人送过一次，送给渡口卖绳的老陆"
+          }
+        ]
+      },
+      {
+        "kind": "uncertain",
+        "statement": "匿名纸条威胁柳复，无法确认送纸者、柳复是否遇险或与旧船纠纷的关系。",
+        "evidence": [
+          {
+            "chapter": 2,
+            "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+            "quote": "柳复若还想活着，就别再问陈家河的旧船"
+          }
+        ]
+      }
+    ],
+    "reader_update_note": "本章读者实际获得现金/库存/应付可核变动、仓位使用与旧押区别、柳复可能的递信路线；不把匿名恐吓、补注真伪或旧押顺位冒充已证实答案。",
     "surface_findings": []
   }
 }

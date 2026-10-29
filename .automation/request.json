@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "request_id": "preflight_redesign_20261029_xs1_01",
+  "base_sha": "f724038e25e36b41b0e44aa4859a680ca0ef9f8c",
+  "book_id": "501722ea-99aa-49f7-8c25-a18f199cc960",
+  "controller": {
+    "kind": "maintenance",
+    "session_id": "maintenance_redesign_20261029"
+  },
+  "phase": "preflight"
+}

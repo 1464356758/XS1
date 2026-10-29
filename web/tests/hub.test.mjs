@@ -65,7 +65,7 @@ test('fixed feedback links survive validation while unsafe targets are rejected'
 });
 test('writing instructions reuse one task and never claim to set the model or original thread',()=>{
  const prompt=writingPrompt({...entry(),feedback_url:'https://chatgpt.com/c/task-feedback'},'https://github.com/example/manager');
- for(const required of ['已有就复用','recovered_completion','GitHub','最近三章全文','最多3轮','未验证','不承诺一定返回','task-feedback'])assert.ok(prompt.includes(required),required);
+ for(const required of ['已有就复用','recovered_completion','GitHub','最近三章全文','最多3轮','未验证','不承诺一定返回','task-feedback','novel-executor.yml','.automation/request.json','.automation/config.json','controller','单次网络或工具失败不得自行暂停'])assert.ok(prompt.includes(required),required);
 });
 test('execution verification is optional and proves real completion independent of query plan settings',async()=>{
  const f=await fixture(),r=await inspectExecution({...entry(),enabled:false,effective_from:'2099-01-01'},{now,client:f.client()});

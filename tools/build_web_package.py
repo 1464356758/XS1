@@ -12,7 +12,7 @@ HEADERS = "/*\n  Referrer-Policy: no-referrer\n  X-Content-Type-Options: nosniff
 
 
 def archive(out, files, kind):
-    manifest = {"format": "novel-workspace-package-v1", "package": kind, "version": "1.4.0", "contains_novel_data": False,
+    manifest = {"format": "novel-workspace-package-v1", "package": kind, "version": "1.4.1", "contains_novel_data": False,
                 "files": {name: hashlib.sha256(body).hexdigest() for name, body in files.items()}}
     files = dict(files, **{"PACKAGE_MANIFEST.json": (json.dumps(manifest, ensure_ascii=False, indent=2) + "\n").encode()})
     with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:

@@ -13,6 +13,9 @@ def build(root=ROOT,out=None):
     names=['AGENTS.md','README.md','启动新书.txt','每日一章指令.txt','docs/连载冻结与发布前检查.md','docs/写作与叙事检查.md','docs/专项技法.md','docs/每日自动更新.md','docs/旧书接入工作台.md','docs/管理端与代发端.md','docs/网页部署与首次使用.md','docs/工作台1.1交互与同步.md','docs/今日更新查询.md','docs/工作台1.3最终复查.md','docs/工作台搜索.md','docs/assets/novel-search-mobile-20261027.jpg','docs/assets/final-owner-mobile-20261027.jpg','执行规程.md','工具使用与数据格式.md','平台研究与选题.md','system_config.json','platforms.json','.gitignore','docs/线上同步协议.md','docs/正文直接读取.md','docs/私密稿保存.md','requirements-private.txt']
     files={name:(root/name).read_bytes() for name in names}
     files['docs/旧章只读核验.md']=(root/'docs/旧章只读核验.md').read_bytes()
+    files['docs/定时执行器.md']=(root/'docs/定时执行器.md').read_bytes()
+    files['.github/workflows/novel-executor.yml']=(root/'.github/workflows/novel-executor.yml').read_bytes()
+    files['.automation/config.json']=(json.dumps({'schema_version':1,'book_id':None,'automation_id':None},ensure_ascii=False,indent=2)+'\n').encode()
     for folder in ('tools','templates','tests'):
         for path in sorted((root/folder).glob('*')):
             if path.is_file() and path.suffix in ('.py','.mjs','.json','.md','.txt'):

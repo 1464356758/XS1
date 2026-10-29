@@ -68,9 +68,13 @@ class PackageTests(unittest.TestCase):
             out = Path(tmp) / "init.zip"
             initial.build(ROOT, out)
             with zipfile.ZipFile(out) as z:
-                for name in ("tools/check_updates.mjs", "tools/query_today.mjs", "web/dist/today-query.mjs", "web/dist/query-model.mjs", "tools/daily_update.py", "web/dist/hub-core.mjs", "web/dist/core.mjs", "web/dist/github-transport.mjs", "web/server/github-relay.mjs", "docs/每日自动更新.md", "docs/旧书接入工作台.md"):
+                for name in ("tools/check_updates.mjs", "tools/query_today.mjs", "web/dist/today-query.mjs", "web/dist/query-model.mjs", "tools/daily_update.py", "tools/task_executor.py", ".github/workflows/novel-executor.yml", "docs/定时执行器.md", "web/dist/hub-core.mjs", "web/dist/core.mjs", "web/dist/github-transport.mjs", "web/server/github-relay.mjs", "docs/每日自动更新.md", "docs/旧书接入工作台.md"):
                     self.assertIn(name, z.namelist())
+                binding = json.loads(z.read(".automation/config.json"))
+                self.assertIsNone(binding["book_id"])
+                self.assertIsNone(binding["automation_id"])
                 self.assertNotIn("book/daily/active.json", z.namelist())
+                self.assertNotIn(".automation/request.json", z.namelist())
                 z.extractall(Path(tmp) / "extracted")
             import shutil
             if shutil.which("node"):

@@ -97,16 +97,21 @@
       "chapter": 2,
       "mode": "write",
       "phase": "candidate",
-      "repairs": 0,
+      "repairs": 1,
       "history": [
         {
           "sha256": "c0a563173c9bfa58a5ef2ffe93e349099375ca51a9773d9f35fe36d43f36bf31",
           "reason": "初稿",
           "repairs": 0
+        },
+        {
+          "sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+          "reason": "统一柳复离行月份；将传言改为未来意图；补足母亲实际签发未送达的催偿通知",
+          "repairs": 1
         }
       ],
-      "candidate_sha256": "c0a563173c9bfa58a5ef2ffe93e349099375ca51a9773d9f35fe36d43f36bf31",
-      "candidate_path": "candidates/CH002_c0a563173c9bfa58a5ef2ffe93e349099375ca51a9773d9f35fe36d43f36bf31.txt"
+      "candidate_sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+      "candidate_path": "candidates/CH002_a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4.txt"
     }
   },
   "completion": null,

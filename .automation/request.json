@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_20261030_fd7abe3c_begin_02",
-  "base_sha": "b61c94221176979f6d5f66a08426a5d298d4e055",
+  "request_id": "xs1_20261030_fd7abe3c_prep_03",
+  "base_sha": "614affb1b87124fdb3b64fd7e810f80a911224cb",
   "book_id": "501722ea-99aa-49f7-8c25-a18f199cc960",
   "controller": {
     "kind": "automation",
@@ -9,5 +9,44 @@
     "session_id": "xs1_20261030_fd7abe3c_9f43c8a1",
     "platform_run_id": "fd7abe3c-85ac-832c-98aa-a9e30da16e7e"
   },
-  "phase": "begin"
+  "phase": "command",
+  "run_id": "fd560ec2323b43a2bb30fd12df3ac057",
+  "commands": [
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "brief-request",
+        "--out",
+        "drafts/CH002_brief.json"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "history-search",
+        "--query",
+        "获安仓 两排货位 押记 先存押 柳复",
+        "--limit",
+        "5"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "context",
+        "--profile",
+        "author",
+        "--query",
+        "七日债 许家粮栈 船栈 货位 押记 柳复",
+        "--out",
+        "drafts/CH002_author.md"
+      ]
+    }
+  ]
 }

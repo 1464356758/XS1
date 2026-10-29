@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 8,
+  "revision": 9,
   "book_id": "501722ea-99aa-49f7-8c25-a18f199cc960",
   "phase": "WAITING_NEXT",
   "platform": "qimao",
@@ -26,7 +26,7 @@
   },
   "research_path": "research/platform_6e76b4aeece6b3ab46444d4aad18c943f94c5fa1605b34a544100079672a2369.json",
   "topics_path": "research/topics_2a2cc0930c7e89018a4ed7d4697ee1e133bf0cba86dab55ffb8972bbbb4bb0c0.json",
-  "chapter": 2,
+  "chapter": 3,
   "history": [
     {
       "at": "2026-10-28T11:10:47+00:00",
@@ -81,9 +81,15 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "第一章《和离书与欠粮契》完成9194汉字，发布前核验通过、采用冻结；未登记七猫实际发布回执。"
+    },
+    {
+      "at": "2026-10-29T17:09:38+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "第2章已采用并冻结；平台发布另凭真实回执登记。"
     }
   ],
-  "detail": "第一章《和离书与欠粮契》完成9194汉字，发布前核验通过、采用冻结；未登记七猫实际发布回执。",
-  "next_action": "核对远程第1章正文、章后记录和状态哈希后，准备第2章《米行只剩七日》写前任务书；逐章按V4.3继续，不能改写已冻结第1章。",
-  "updated_at": "2026-10-28T15:00:18+00:00"
+  "detail": "第2章已采用并冻结；平台发布另凭真实回执登记。",
+  "next_action": "读取正式状态后，由下一次日更处理下一章。",
+  "updated_at": "2026-10-29T17:09:38+00:00"
 }

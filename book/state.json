@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "501722ea-99aa-49f7-8c25-a18f199cc960",
   "title": "和离以后，我买下了前夫的粮仓",
-  "revision": 6,
+  "revision": 7,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -31,6 +31,16 @@
       "record_sha256": "e4088fb2199a5c6f927ea2a32b237636141ce7c9c7cc692c692a45762cc9b14c",
       "han_count": 9194,
       "adopted_at": "2026-10-28T15:00:02+00:00"
+    },
+    "2": {
+      "title": "米行只剩七日",
+      "stage": "S01",
+      "text_path": "chapters/CH002_a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4.txt",
+      "text_sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+      "record_path": "records/CH002_5e864790fdae8ebb4df5a4a24ad1539bcb11c56c2735318956e37b58723daba6.json",
+      "record_sha256": "5e864790fdae8ebb4df5a4a24ad1539bcb11c56c2735318956e37b58723daba6",
+      "han_count": 9432,
+      "adopted_at": "2026-10-29T17:09:38+00:00"
     }
   },
   "checkpoints": [],
@@ -96,7 +106,7 @@
       "task_id": "4128e7e6-2acd-4865-85e8-79573cfa3a11",
       "chapter": 2,
       "mode": "write",
-      "phase": "candidate",
+      "phase": "adopted",
       "repairs": 1,
       "history": [
         {
@@ -122,6 +132,10 @@
       "1": {
         "text_sha256": "4174034be8c1d2ef710265988df24945132fb099e262f5bd3442b0c43d4576cb",
         "record_sha256": "e4088fb2199a5c6f927ea2a32b237636141ce7c9c7cc692c692a45762cc9b14c"
+      },
+      "2": {
+        "text_sha256": "a0b5f32db82b9a1736d65a35d9bed8a3cdae19ee4bdb299a2dd74293ea88cdb4",
+        "record_sha256": "5e864790fdae8ebb4df5a4a24ad1539bcb11c56c2735318956e37b58723daba6"
       }
     },
     "published": {},
@@ -134,7 +148,7 @@
       "2": {
         "path": "releases/CH002_bca84a6f9dc100120b026e9ed6b2ae80677194bd631638794f5d2cd2ccdd8b59.json",
         "sha256": "bca84a6f9dc100120b026e9ed6b2ae80677194bd631638794f5d2cd2ccdd8b59",
-        "used": false
+        "used": true
       }
     },
     "promises": {
@@ -155,7 +169,7 @@
         ],
         "deadline_chapter": 3,
         "status": "open",
-        "last_reviewed_chapter": 1
+        "last_reviewed_chapter": 2
       },
       "P10-和离不回头": {
         "history": [
@@ -193,7 +207,7 @@
         ],
         "deadline_chapter": 10,
         "status": "open",
-        "last_reviewed_chapter": 1
+        "last_reviewed_chapter": 2
       },
       "P12-七日债": {
         "history": [
@@ -212,7 +226,7 @@
         ],
         "deadline_chapter": 7,
         "status": "open",
-        "last_reviewed_chapter": 1
+        "last_reviewed_chapter": 2
       }
     },
     "incidents": {}

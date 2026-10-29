@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_20261030_fd7abe3c_candidate_05",
-  "base_sha": "22eb46ee13679d4bfc45f0bedfd22ce44e404455",
+  "request_id": "xs1_20261030_fd7abe3c_repair_06",
+  "base_sha": "0bdf44ee640d0c7df9379e56d91548e9a9be3124",
   "book_id": "501722ea-99aa-49f7-8c25-a18f199cc960",
   "controller": {
     "kind": "automation",
@@ -17,11 +17,13 @@
       "args": [
         "--root",
         "book",
-        "candidate",
+        "repair",
         "--chapter",
         "2",
         "--text",
-        "drafts/CH002_working.txt"
+        "drafts/CH002_working.txt",
+        "--reason",
+        "统一柳复离行月份；将传言改为未来意图；补足母亲实际签发未送达的催偿通知"
       ]
     },
     {
@@ -35,7 +37,7 @@
         "--text",
         "drafts/CH002_working.txt",
         "--out",
-        "drafts/CH002_reader.md"
+        "drafts/CH002_reader_v2.md"
       ]
     }
   ]

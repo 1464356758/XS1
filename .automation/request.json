@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_command_1793380682915_g1ew5pt",
-  "base_sha": "f39812dee40e1d14d40cc14b47c274b3971cf6ec",
+  "request_id": "xs1_command_1793380819560_pimm647",
+  "base_sha": "e9091ac5fb888a86bbf5c3bdba925692b944d30b",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -17,25 +17,29 @@
       "args": [
         "--root",
         "book",
-        "check-record",
-        "--text",
-        "drafts/CH002_V2.txt",
-        "--record",
-        "drafts/CH002_record.json"
-      ]
-    },
-    {
-      "script": "novel_state.py",
-      "args": [
-        "--root",
-        "book",
-        "release-request",
+        "release-check",
         "--text",
         "drafts/CH002_V2.txt",
         "--record",
         "drafts/CH002_record.json",
-        "--out",
-        "drafts/CH002_release_request.json"
+        "--report",
+        "drafts/CH002_release.json"
+      ]
+    },
+    {
+      "script": "online_state.py",
+      "args": [
+        "--project",
+        ".",
+        "task",
+        "--phase",
+        "SAVING",
+        "--chapter",
+        "2",
+        "--detail",
+        "第2章8083汉字完成1轮局部修订，正文反向提纲、same_context_approximation限信息审读及八项带引文检查已完成，release-check通过；等待finalize统一采用及回执。",
+        "--next",
+        "按本轮run_id执行finalize后回读正文、记录、release、state/workflow、回执与索引哈希。"
       ]
     }
   ]

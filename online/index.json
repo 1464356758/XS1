@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-10-30T17:08:42+00:00",
+    "generated_at": "2026-10-30T17:15:25+00:00",
     "state_revision": 4,
-    "workflow_revision": 13,
-    "state_sha256": "0481bbe39569a5a840fe97f6244c32a970772cd95a81f50b85a920a56dbc0b7f",
-    "workflow_sha256": "65594b69208ecaed703898b6814217fb856c532d84baba95153c5088553fee7c",
+    "workflow_revision": 14,
+    "state_sha256": "3ebc78a5bd99033af3b7ffb9684e49f092c1126ccef3eed384f67cc206e007cd",
+    "workflow_sha256": "0ec304ae0321f94925d3279587189bc16e252a16851640cd1a78a7efe3a5ac1e",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -38,12 +38,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WRITING",
-    "label": "撰写正文",
+    "phase": "REVIEWING",
+    "label": "检查本章",
     "chapter": 2,
-    "detail": "第2章任务书已实读登记；原批次阶段登记参数已修正，沿用本轮run_id继续完整正文，不重置计数。",
-    "next_action": "完成第2章全文后登记候选并集中审读。",
-    "updated_at": "2026-10-30T17:08:42+00:00"
+    "detail": "第2章完整初稿已登记，实测8089汉字；开始反向提纲、限信息实读及八项事实因果检查。",
+    "next_action": "集中审读，必要时按原任务局部修订；尚未采用。",
+    "updated_at": "2026-10-30T17:15:25+00:00"
   },
   "chapters": [
     {
@@ -812,6 +812,12 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "第2章任务书已实读登记；原批次阶段登记参数已修正，沿用本轮run_id继续完整正文，不重置计数。"
+    },
+    {
+      "at": "2026-10-30T17:15:25+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "第2章完整初稿已登记，实测8089汉字；开始反向提纲、限信息实读及八项事实因果检查。"
     }
   ]
 }

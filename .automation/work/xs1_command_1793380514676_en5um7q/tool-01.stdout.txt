@@ -1,0 +1,16 @@
+{
+  "task_id": "b958f932-b78a-48a8-b28a-d78a6bceaa78",
+  "chapter": 2,
+  "mode": "write",
+  "phase": "candidate",
+  "repairs": 0,
+  "history": [
+    {
+      "sha256": "8006b84491708b5551542358ddd49cb1baff5ca55cbaadfbf7305df385133099",
+      "reason": "初稿",
+      "repairs": 0
+    }
+  ],
+  "candidate_sha256": "8006b84491708b5551542358ddd49cb1baff5ca55cbaadfbf7305df385133099",
+  "candidate_path": "candidates/CH002_8006b84491708b5551542358ddd49cb1baff5ca55cbaadfbf7305df385133099.txt"
+}

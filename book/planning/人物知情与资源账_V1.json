@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
+  "title": "退婚后，我把赔来的染坊开成了皇商",
+  "ledger_kind": "author_design_baseline",
+  "as_of": "第0日开门前；不是第1章结尾",
+  "adopted_chapters": 0,
+  "text_verified_facts": [],
+  "source_policy": "所有design_state均来源于作者设定V1（GPT提议按选题建立），尚无正文引文。不得批量转换成fact。实际采用后逐章引用正文更新；既有章后记录按冻结规则只读。",
+  "story_time": {
+    "unit": "minute",
+    "zero": "景和九年三月初八零点",
+    "opening_baseline_time": 360,
+    "chapter_is_not_time": true
+  },
+  "actors": [
+    {
+      "id": "C01",
+      "name": "陆见棠",
+      "design_state": {
+        "location": "L01晴川镇",
+        "cash_wen": 36000,
+        "betrothed_to": "C05",
+        "owns_dyehouse": false,
+        "health": "无已设定伤势"
+      },
+      "knows": [
+        "母亲教过自己的染整经验",
+        "周家提出退婚与染坊赔偿方案",
+        "自有现银36两"
+      ],
+      "does_not_know": [
+        "旧欠总额150两",
+        "客料实点数量与40/24/8结果",
+        "未来是否能获皇商资格",
+        "周家其他产业实际变卖收入"
+      ],
+      "beliefs": [
+        "凭手艺有机会把坏局面做回来；这是信念，不是结果"
+      ]
+    },
+    {
+      "id": "C02",
+      "name": "陶春杏",
+      "knows": [
+        "自己带过的工人及可见缸况",
+        "自己与部分工友被拖欠工钱"
+      ],
+      "does_not_know": [
+        "全部外协实际债额",
+        "陆见棠现金余额",
+        "周家全部资产或女主未来决定"
+      ]
+    },
+    {
+      "id": "C03",
+      "name": "孟秋娘",
+      "knows": [
+        "本人召集外协的按件交活约定",
+        "外协者各有其他雇主选择"
+      ],
+      "does_not_know": [
+        "全部常驻工的详细欠额",
+        "女主未来给外协什么条件"
+      ]
+    },
+    {
+      "id": "C04",
+      "name": "裴衡舟",
+      "design_state": {
+        "boats_owned": 2,
+        "official_rank": null,
+        "committed_free_capital_to_C01": 0
+      },
+      "knows": [
+        "自己运力、船伙和已有客户"
+      ],
+      "does_not_know": [
+        "染坊内部账册",
+        "女主未来技术或订单"
+      ]
+    },
+    {
+      "id": "C05",
+      "name": "周元璟",
+      "knows": [
+        "自身退婚意图",
+        "父亲愿谈染坊赔偿"
+      ],
+      "does_not_know": [
+        "父亲每一笔债务细节",
+        "女主是否最终接受"
+      ]
+    },
+    {
+      "id": "C06",
+      "name": "周敬山",
+      "knows": [
+        "染坊真实权属",
+        "周家承担旧欠与原客料责任",
+        "周记另有可售存货但须实际成交才有钱"
+      ],
+      "does_not_know": [
+        "女主后续是否经营成功",
+        "贺宗裕全部策略"
+      ]
+    },
+    {
+      "id": "C07",
+      "name": "陆伯谦",
+      "knows": [
+        "陆家婚约和赔偿协商"
+      ],
+      "does_not_know": [
+        "女主所有现金与实际留工意愿"
+      ]
+    },
+    {
+      "id": "C08",
+      "name": "贺宗裕",
+      "knows": [
+        "自家产品、供应商、客户及公开竞争信息"
+      ],
+      "does_not_know": [
+        "晴川私账",
+        "未来质量事故及女主私下决定"
+      ]
+    },
+    {
+      "id": "C09",
+      "name": "范仲平",
+      "knows": [
+        "自己亲手验过的样品及接受委托范围"
+      ],
+      "does_not_know": [
+        "所有未验批次的质量",
+        "真凶与所有人动机"
+      ]
+    },
+    {
+      "id": "C10",
+      "name": "苏令和",
+      "design_state": {
+        "location": "L05府城",
+        "owns_customer_cloth_pi": 72
+      },
+      "knows": [
+        "自己客料与货栈需求",
+        "授权C12范围"
+      ],
+      "does_not_know": [
+        "未传到府城的现场检测结果",
+        "女主每笔启动金去向"
+      ]
+    },
+    {
+      "id": "C11",
+      "name": "许阿芹",
+      "design_state": {
+        "health": "无伤",
+        "future_accident_has_happened": false
+      },
+      "knows": [
+        "本人接触过的工序和当班见闻"
+      ],
+      "does_not_know": [
+        "完整债账与所有订单毛利",
+        "未来自己的去向"
+      ]
+    },
+    {
+      "id": "C12",
+      "name": "程望山",
+      "knows": [
+        "苏令和授权自己可决定补染且新增加工费不超过12两",
+        "客户账载客料72匹"
+      ],
+      "does_not_know": [
+        "尚未实测的旧疵可修比例",
+        "C10未传到的额外指示"
+      ],
+      "authority_limits": [
+        "不得擅自降档出售",
+        "不得免除旧损索赔",
+        "不得改变货权或原货价"
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "R01",
+      "item": "C01自有现银",
+      "quantity": 36000,
+      "unit": "文",
+      "owner": "C01",
+      "status": "design_available_cash",
+      "not_included": [
+        "母亲隐藏遗产",
+        "男主未许诺借款",
+        "未来客户定金"
+      ]
+    },
+    {
+      "id": "R02",
+      "item": "晴川厂屋缸具及已列自有存货",
+      "owner": "周家/C06",
+      "status": "转让尚未完成",
+      "mortgage_in_design": false,
+      "transfer_excludes": [
+        "苏家72匹客料所有权",
+        "原业主旧欠的自动转嫁",
+        "工人人身或强制服役"
+      ]
+    },
+    {
+      "id": "R03",
+      "item": "已退浆自有坯布",
+      "quantity": 64,
+      "unit": "匹",
+      "owner": "周家/C06；仅在正文转让后改为新业主",
+      "status": "须实点；与客料分开"
+    },
+    {
+      "id": "R04",
+      "item": "苏家客料",
+      "quantity": 72,
+      "unit": "匹",
+      "owner": "C10",
+      "custodian": "晴川染坊",
+      "status": "已走过旧工序但未合格验收；不能自行卖出",
+      "planned_assessment_only": {
+        "seek_repair": 40,
+        "downgrade_subject_to_owner": 24,
+        "old_irrecoverable": 8
+      }
+    },
+    {
+      "id": "R05",
+      "item": "旧蓝缸",
+      "quantity": 6,
+      "unit": "口",
+      "owner": "随厂产交接",
+      "trial_candidates": 3,
+      "all_proven_mass_production": false
+    },
+    {
+      "id": "R06",
+      "item": "旧欠工钱",
+      "quantity": 150000,
+      "unit": "文",
+      "debtor": "周家/C06",
+      "creditors": "三类劳动者按实际名册应领数",
+      "status": "未清偿；C01初始尚不知总额",
+      "not_C01_income": true,
+      "not_automatically_C01_debt": true
+    },
+    {
+      "id": "R07",
+      "item": "劳动者名册",
+      "quantity": 300,
+      "unit": "人",
+      "composition": {
+        "resident": 78,
+        "piecework_outside": 152,
+        "seasonal_misc": 70
+      },
+      "status": "册面设计数，不等于全体在场或已选择新约",
+      "forced_service": false
+    },
+    {
+      "id": "R08",
+      "item": "首单现金预算",
+      "unit": "文",
+      "status": "future_budget_not_spent",
+      "aid": 12000,
+      "production_cap": 18000,
+      "planned_receipt_after_acceptance": 12000,
+      "production_parts": {
+        "labor": 8000,
+        "dye_material": 3000,
+        "fuel": 1000,
+        "clean_water": 2000,
+        "transport": 2000,
+        "shelter": 1000,
+        "rework_reserve": 1000
+      },
+      "worst_case_cash_after_receipt": 18000,
+      "planned_initial_test_cloth_cap_pi": 2
+    }
+  ],
+  "update_protocol": [
+    "正文未采用前，仅更新设计状态并保留来源版本，不声称已经花钱、受伤、交货。",
+    "采用后事实、状态、知情、猜测分开；知情holder明确，引用当前正文并用实际故事分钟。",
+    "现金每笔只进出一次，预算不自动变为支出；应收、客料、个人与坊内财产不混算。",
+    "异地消息到达前不共享知情；人物没有读到本文件的能力。",
+    "首次写作前用当前canon与roadmap生成任务书；后续以最新冻结记录重建账，不直接覆盖旧记录。"
+  ]
+}

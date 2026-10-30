@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
+  "recorded_at": "2026-10-30T15:52:35+08:00",
+  "author_selection": {
+    "id": "T01",
+    "original_request": "那就t1吧"
+  },
+  "status": "planning_ready_waiting_author_start",
+  "workflow_phase": "PLANNING",
+  "start_writing_authorized": false,
+  "target_chapters": 100,
+  "chapter_han_min": 8000,
+  "chapter_han_max": 10000,
+  "planned_chapters": 100,
+  "stages": 10,
+  "near_chapters": 5,
+  "scene_han_budgets": [
+    9000,
+    9000,
+    9000,
+    9000,
+    9000
+  ],
+  "author_design_ledger": true,
+  "text_verified_facts": 0,
+  "adopted_chapters": 0,
+  "review_mode": "same_context_approximation",
+  "files": [
+    {
+      "path": "book/inputs/canon_6ba23e92c86a5337e41f0c86542a5230e86ce8b7cabd0896d99502bad0df9397.md",
+      "sha256": "6ba23e92c86a5337e41f0c86542a5230e86ce8b7cabd0896d99502bad0df9397"
+    },
+    {
+      "path": "book/inputs/roadmap_4a0a28c5373444a3daaef7b3cb460ee90bbf20f2925a517270547eef214c5b91.md",
+      "sha256": "4a0a28c5373444a3daaef7b3cb460ee90bbf20f2925a517270547eef214c5b91"
+    },
+    {
+      "path": "book/planning/人物知情与资源账_V1.json",
+      "sha256": "bc08fd155dc74d1e5c8e443f732fae36a9bc143ac1ecb9925a27e99b4aeab4da"
+    },
+    {
+      "path": "book/planning/前五章安排_V1.md",
+      "sha256": "955ce0a86d45eddea440421b7bce57aca35ae693bc6db1134892d0f73b98fc03"
+    },
+    {
+      "path": "book/planning/开书规划审查_V1.md",
+      "sha256": "4987794741602e538bafc481946c34d7df9f8608aeb8f75c55712962f94d8693"
+    },
+    {
+      "path": "research/染坊工艺核查_2026-10-30.md",
+      "sha256": "8855a2a1e1bfb7a25be484275461ea94dfeeb1a406064d16527b160b39a61e07"
+    },
+    {
+      "path": "book/开书方案.md",
+      "sha256": "46df3d2de7973778dc74320ff40357266877fd1fc1afa47552f1413c312fbdf6"
+    }
+  ],
+  "remaining_limits": [
+    "首单40匹的实际工时和雨天产能须在写作中逐步验证",
+    "尚无正文，不能判定文学质量、开篇位置或实际汉字数已通过",
+    "七猫AI准入、投稿口径与平台技术上限等原研究缺口仍保留"
+  ],
+  "next_action": "作者明确开始写后只执行第一章；不得仅凭选题或本文件自动开始。"
+}

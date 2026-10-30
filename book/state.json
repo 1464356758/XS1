@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "title": "退婚后，我把赔来的染坊开成了皇商",
-  "revision": 1,
+  "revision": 3,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -24,8 +24,34 @@
   "chapters": {},
   "checkpoints": [],
   "needs_revalidation": [],
-  "inputs": {},
-  "input_history": [],
+  "inputs": {
+    "canon": {
+      "kind": "canon",
+      "path": "inputs/canon_6ba23e92c86a5337e41f0c86542a5230e86ce8b7cabd0896d99502bad0df9397.md",
+      "sha256": "6ba23e92c86a5337e41f0c86542a5230e86ce8b7cabd0896d99502bad0df9397",
+      "reason": "作者确认T01后建立本书人物、世界、能力与开篇设计边界；非正文事实"
+    },
+    "roadmap": {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_4a0a28c5373444a3daaef7b3cb460ee90bbf20f2925a517270547eef214c5b91.md",
+      "sha256": "4a0a28c5373444a3daaef7b3cb460ee90bbf20f2925a517270547eef214c5b91",
+      "reason": "建立十阶段百章未来路线及承诺期限；不追认未来事件已发生"
+    }
+  },
+  "input_history": [
+    {
+      "kind": "canon",
+      "path": "inputs/canon_6ba23e92c86a5337e41f0c86542a5230e86ce8b7cabd0896d99502bad0df9397.md",
+      "sha256": "6ba23e92c86a5337e41f0c86542a5230e86ce8b7cabd0896d99502bad0df9397",
+      "reason": "作者确认T01后建立本书人物、世界、能力与开篇设计边界；非正文事实"
+    },
+    {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_4a0a28c5373444a3daaef7b3cb460ee90bbf20f2925a517270547eef214c5b91.md",
+      "sha256": "4a0a28c5373444a3daaef7b3cb460ee90bbf20f2925a517270547eef214c5b91",
+      "reason": "建立十阶段百章未来路线及承诺期限；不追认未来事件已发生"
+    }
+  ],
   "tasks": {},
   "completion": null,
   "serialization": {

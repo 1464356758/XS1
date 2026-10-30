@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_command_1793380586954_6he6y3t",
-  "base_sha": "3d25b74b59152ac2ef92ca9919413165ec700694",
+  "request_id": "xs1_command_1793380682915_g1ew5pt",
+  "base_sha": "f39812dee40e1d14d40cc14b47c274b3971cf6ec",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -17,13 +17,11 @@
       "args": [
         "--root",
         "book",
-        "repair",
-        "--chapter",
-        "2",
+        "check-record",
         "--text",
         "drafts/CH002_V2.txt",
-        "--reason",
-        "首轮局部修订：校正报名、登记、领钥匙与援助时序；木行口信移到原意向之后；名单位置改为包内，删去对街来路的多余协议式解释。场景及资金人数结果不变。"
+        "--record",
+        "drafts/CH002_record.json"
       ]
     },
     {
@@ -31,31 +29,13 @@
       "args": [
         "--root",
         "book",
-        "context",
-        "--profile",
-        "reader",
+        "release-request",
         "--text",
         "drafts/CH002_V2.txt",
-        "--budget",
-        "80000",
+        "--record",
+        "drafts/CH002_record.json",
         "--out",
-        "drafts/CH002_reader_V2.md"
-      ]
-    },
-    {
-      "script": "online_state.py",
-      "args": [
-        "--project",
-        ".",
-        "task",
-        "--phase",
-        "REVIEWING",
-        "--chapter",
-        "2",
-        "--detail",
-        "第2章V2完成1轮局部修订；复核午后时序、现金23两920文与册载150两旧欠；正在实读复审，尚未采用。",
-        "--next",
-        "完成章后记录与带引文八项审核后release-check。"
+        "drafts/CH002_release_request.json"
       ]
     }
   ]

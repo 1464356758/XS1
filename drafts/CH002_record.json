@@ -1,0 +1,272 @@
+{
+  "chapter": 2,
+  "title": "领了钱也能走",
+  "stage": "A01",
+  "base_revision": 4,
+  "canon_sha256": "6ba23e92c86a5337e41f0c86542a5230e86ce8b7cabd0896d99502bad0df9397",
+  "text_sha256": "e009c694af91c54ed6abeba96f48da71720db356300bc0a080a5dd90d562c4f9",
+  "complete": true,
+  "story_time_end": 1170,
+  "time_note": "景和九年三月初八，同日午后接首章末840分钟至入夜离坊。本章850/970/1000/1090/1120/1150/1170等整数是按实际场景顺序的登记映射，不冒充正文精确报时；没有跨到次日或提前开启待双方实点的库门。",
+  "summary": "杨老栓收下首章已分的援助后仍带私人工具随儿媳离开，留下旧欠联系地址。陆见棠、陶春杏、孟秋娘和旧管事丁茂生通过三本旧册及领签对上册载78常驻、152外协、70季节杂务，合300人，不声称当夜已逐个见全。孟秋娘只来核旧欠，拒绝代表外协接新活。原六名谈活者中的黄六根已另应木行，女主另付80文请他当日拆危架，熟手明日仍不来；五名谈活者加陶先来半日，尚未正式雇定。旧欠小计62两400文、71两600文、16两，周敬山认册载150两及周记核领入口，缺席者不销账，但没有实付或确定全付款日。女主拒绝垫旧欠，新现金24两减80文余23两920文。夜间程望山从对街来查门，旧疵样同记号下手感不同，前处理与混批只成疑点；库存封条未开，授权、整匹检验与点数留次晨。本章无新订单、回款或平台发布。",
+  "review": {
+    "read_full_text": true,
+    "decision": "adopt",
+    "blocking_issues": [],
+    "sources_checked": [
+      {
+        "chapter": 1,
+        "sha256": "6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0",
+        "quote": "直到十五份铜钱全给出去了，木匣里只剩两根断线和一点米灰。买粮和路费合起来的十二两，这才全数交了出去。"
+      },
+      {
+        "chapter": 1,
+        "sha256": "6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0",
+        "quote": "午后的影子落到桌角时，纸上只有六个肯明早来谈活的名字。"
+      },
+      {
+        "chapter": 1,
+        "sha256": "6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0",
+        "quote": "“厂屋、晒场和今日点交的缸具，从此归陆姑娘管。明早再点存货，没点清以前，两边都不许挪。”"
+      }
+    ],
+    "conclusion": "已实际阅读CH001全文与当前V1限信息全文，并复核V2局部时序及全文；same_context_approximation，不是独立读者。首轮修订消除把报名、钥匙和已发援助误写午前的时间词，将木行应约放在原意向之后，明确名单入包。300为对账后的册载人头，150两为周家承认的未付余数，非300人已逐一确认或债已清偿；新拆架80文单记、半两换币不支出，余额23920文。未把72/64匹或40/24/8设计写为实点，不把两片旧疵样的手感当成全批诊断。第2章不触发五章或阶段全文回看。"
+  },
+  "facts": [
+    {
+      "kind": "fact",
+      "key": "YangLaoshuan:departure",
+      "value": "杨老栓即首章领粮老汉，自报旧册名杨栓、住镇南杨家巷老三家；受助后仍带自有木夹随儿媳离坊，去处是其当面陈述，不扩大成已到家证明。",
+      "holder": "",
+      "valid_from": 850,
+      "valid_until": null,
+      "quote": "“杨老栓。”老汉临出门，忽然回过头，“册上写的杨栓，就是我。别到时找不着人。我在镇南杨家巷老三家，谁去都认得。”"
+    },
+    {
+      "kind": "fact",
+      "key": "YangLaoshuan:private_tool_retained",
+      "value": "女主未收私用夹具抵援助，木夹随劳动者离开，不记为女主工具库存。",
+      "holder": "",
+      "valid_from": 855,
+      "valid_until": null,
+      "quote": "木夹别在他腰后，随着步子一上一下。"
+    },
+    {
+      "kind": "fact",
+      "key": "worker_roll:composition_verified_on_books",
+      "value": "三册按人分列不重复，册载常驻78、外协152、季节搬运杂务70，共300；不是已到场300人或全部愿意复工。",
+      "holder": "",
+      "valid_from": 970,
+      "valid_until": null,
+      "quote": "翻到午后第三遍，丁茂生才把各册的名数清出来。缸院常驻七十八人，按件在外做活的一百五十二人，忙时搬运、晒布和杂务的七十人。三册按人分列，同一人偶尔换做别的活，工数另记，名字不再添一次。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "worker_roll:reported_count",
+      "value": "从旧主单方口头300推进为实读三册及旧凭得到册载78/152/70；尚未逐人见过或核领。",
+      "holder": "C01",
+      "valid_from": 970,
+      "valid_until": null,
+      "quote": "没有人说，这一下午便见过了三百个人。"
+    },
+    {
+      "kind": "state",
+      "key": "C03:new_work_commitment",
+      "value": "孟秋娘未承接外协召集或新生产；有自己的鞋活，愿以明确活量工期结算再谈，不能代表152人。",
+      "holder": "",
+      "valid_from": 920,
+      "valid_until": null,
+      "quote": "“我来要旧钱，可没来替谁答应新活。”"
+    },
+    {
+      "kind": "knowledge",
+      "key": "C03:information_limit",
+      "value": "孟秋娘能核本人经手外协旧凭和当面册载总数；不能替未问到的人做新用工决定，未获知女主现金。",
+      "holder": "C03",
+      "valid_from": 975,
+      "valid_until": null,
+      "quote": "我可以把话带到，人家应不应，我不能替她说。"
+    },
+    {
+      "kind": "fact",
+      "key": "HuangLiugen:new_paid_short_job",
+      "value": "按80文单独约定拆一副危险空架，已卸除、分出朽木，现场实付；不包新木料、重搭或次日劳动。",
+      "holder": "",
+      "valid_from": 1000,
+      "valid_until": null,
+      "quote": "陆见棠过去看了松下来的木脚，确认没有半截悬着，才把铜钱交给他。"
+    },
+    {
+      "kind": "fact",
+      "key": "HuangLiugen:wages_separate",
+      "value": "80文新支出另纸登记，不入周家旧工册、不能抵150两旧欠。",
+      "holder": "",
+      "valid_from": 1000,
+      "valid_until": null,
+      "quote": "“这笔记我的新支出，别进周家的旧册。”"
+    },
+    {
+      "kind": "state",
+      "key": "C01:cash_total",
+      "value": "自有现金23920文，即23两920文（23.5两银+420文铜钱）；24两仅扣当日短工80文，半两换500文不算支出，旧援助不重扣。",
+      "holder": "",
+      "valid_from": 1000,
+      "valid_until": null,
+      "quote": "二十三两半的银子，四百二十文铜钱，合起来二十三两九百二十文。先前那十二两已给出去，今日新添的只有拆架这八十文，旧欠一百五十两没有从这里走，明日所需也还没花。"
+    },
+    {
+      "kind": "state",
+      "key": "L02:unsafe_frame",
+      "value": "一副危险空晒架已卸，安全通道恢复而晒布位置减少；未采购新木、未搭成合格新架。",
+      "holder": "",
+      "valid_from": 1000,
+      "valid_until": null,
+      "quote": "原来高高立着架子的地方，只剩一片空地，通行倒安全了，能挂布的地方也实实在在少了一副。"
+    },
+    {
+      "kind": "state",
+      "key": "workers:next_morning_talk_list",
+      "value": "黄六根另有活不来；原六名意向者余五名，加陶春杏先半日；仅明早谈活意向，尚无正式小队。",
+      "holder": "",
+      "valid_from": 1005,
+      "valid_until": null,
+      "quote": "五个人，加上先来半日的陶春杏。"
+    },
+    {
+      "kind": "fact",
+      "key": "Zhou:book_debt_amount",
+      "value": "旧册未付常驻62400文、外协71600文、季节16000文，合150000文；已付先扣，援助未抵。周家认总数而逐人核领尚待完成。",
+      "holder": "",
+      "valid_from": 1090,
+      "valid_until": null,
+      "quote": "常驻一册六十二两四百文，外协七十一两六百文，季节搬运杂务十六两。"
+    },
+    {
+      "kind": "fact",
+      "key": "Zhou:old_debt_acknowledgment",
+      "value": "周敬山署名承认150两归周家，缺席者须按本人或真实委托核领；未实付，不能登记已清偿。",
+      "holder": "",
+      "valid_from": 1095,
+      "valid_until": null,
+      "quote": "“一百五十两，这是晴川旧册的未付数，归周家。缺席的再对各人，不能今日一张总纸便算领讫。”"
+    },
+    {
+      "kind": "knowledge",
+      "key": "old_wages:amount_unknown",
+      "value": "未知总额状态已结束：陆见棠经三册与原凭、周敬山现场认账知道册载150两未付；逐个收领及筹款结果仍未知。",
+      "holder": "C01",
+      "valid_from": 1090,
+      "valid_until": null,
+      "quote": "一百五十两。\n\n她没有立刻把笔落下。"
+    },
+    {
+      "kind": "state",
+      "key": "Zhou:old_obligations_status",
+      "value": "认总额和核领处，不等于资金已到或债已清；本章周家实际支付为0，女主未垫款。",
+      "holder": "",
+      "valid_from": 1100,
+      "valid_until": null,
+      "quote": "他没有交出银子，三册也仍旧厚厚地躺在那里。"
+    },
+    {
+      "kind": "fact",
+      "key": "C01:no_old_debt_advance",
+      "value": "陆见棠拒绝用新经营资金替周家暂垫，旧债核领去周记前柜；未接受新担保。",
+      "holder": "",
+      "valid_from": 1100,
+      "valid_until": null,
+      "quote": "“旧账到周记核，别叫人来晴川找我的钱匣。”"
+    },
+    {
+      "kind": "state",
+      "key": "old_wage_books:custody",
+      "value": "丁茂生将原册收回周记备核，声明次晨带副册供查，当前尚未交副册；女主等保留总数及核领处抄件。",
+      "holder": "",
+      "valid_from": 1110,
+      "valid_until": null,
+      "quote": "他走后，丁茂生将原册收拢，等三个人看清他带走的是哪几本、另留哪些待核凭，又把明早带副册的事重复了一回，才抱着茶罐出去。"
+    },
+    {
+      "kind": "state",
+      "key": "customer_cloth:storage_and_key",
+      "value": "封条仍完整，原风口留着，没有提前开库；程望山查过后钥匙仍随身。",
+      "holder": "",
+      "valid_from": 1140,
+      "valid_until": null,
+      "quote": "纸封没破，窗上原留的风口也在，里头没有新积的水。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "customer_cloth:defects_unknown",
+      "value": "见两片同捆记号旧样手感不同，前处理或混放只是疑点，未见整批或实点，不知道可修比例。",
+      "holder": "C01",
+      "valid_from": 1150,
+      "valid_until": null,
+      "quote": "陆见棠将两片在灯下翻了翻，不敢只凭手感就说是浆没退尽。布头大小不过掌心，剪下时湿不湿、放过多久，她还没问清。"
+    },
+    {
+      "kind": "state",
+      "key": "customer_repair:authorization_status",
+      "value": "本章未获补染订单或授权，程望山只承诺明日带东家授权说明权限；旧样已收回他保管。",
+      "holder": "",
+      "valid_from": 1155,
+      "valid_until": null,
+      "quote": "陆见棠把样片交还他：“我今晚只排看布的人，没排给你交货。”"
+    },
+    {
+      "kind": "state",
+      "key": "C02:next_morning_commitment",
+      "value": "仍只先来半日且先谈工价，后半日要去周记追旧欠，不承诺全天或全职。",
+      "holder": "",
+      "valid_from": 1160,
+      "valid_until": null,
+      "quote": "“等人来了，你当面说。”陶春杏道，“我只应了半日，后半日还要去周记问旧钱。”"
+    },
+    {
+      "kind": "state",
+      "key": "C01:location",
+      "value": "已锁厂门离坊，沿亮灯街道步行回去；不记为已到家，钥匙随身。",
+      "holder": "",
+      "valid_from": 1170,
+      "valid_until": null,
+      "quote": "她将钥匙放好，沿着有人家亮灯的街往回走。"
+    }
+  ],
+  "progression": {
+    "goal": "认清能协作的人与旧欠实况，让明晨谈工及实点有真实范围。",
+    "obstacle": "劳动者有自己的家庭与已应的活，孟秋娘不替外协承诺，危架须处理，旧欠资金不足，库存未开且疵样不一致。",
+    "method": "听各人去向、区分领签与做工人，实读三册与旧凭；按价雇当日拆架；召原东家现场核额，夜间只看旧样并守封条。",
+    "choice": "退回私人工具、不强占黄六根的明日、不把孟秋娘列入班组；实际付80文，拒绝用余款垫旧欠，未知布况不先许交货。",
+    "result": "册载300人构成与150两旧欠被当面核认但未付；一副危架拆除，现金23920文，谈活五名另加陶半日。",
+    "consequence": "失去明日修架熟手及一副可挂布位置，现金有新增支出；原东家无全付日期，获得纸面责任不等于恢复用工信任。",
+    "next_options": "次晨由两边到场点存货、程望山带授权核客料，丁茂生送副册；先谈当日工价再做，分样实测能救范围。",
+    "scene_function": "老人携工具走让善意无法换人具体化；领签与名页拆开外协利益；短工付现把边界变成成本；认债场保留未付款余波；夜间疵样为次章实际验布提出可检验问题。"
+  },
+  "thread_events": [
+    {
+      "id": "P01",
+      "action": "develop",
+      "description": "旧疵样同记号而手感不同，提出前处理和混放疑点，尚待整匹分组，不提前兑现可救范围。",
+      "quote": "陆见棠将两片在灯下翻了翻，不敢只凭手感就说是浆没退尽。"
+    },
+    {
+      "id": "P04",
+      "action": "develop",
+      "description": "旧欠从只知责任到三项合150两且周家署名认总；资金未到、逐人核领待做，期限不重置。",
+      "quote": "“一百五十两，这是晴川旧册的未付数，归周家。缺席的再对各人，不能今日一张总纸便算领讫。”"
+    },
+    {
+      "id": "P13",
+      "action": "develop",
+      "description": "仍约次晨双方到齐开库及客料点验，程望山说明授权待带，陶只先来半日；今日未开封。",
+      "quote": "“明早我过来，周家的人也到，再一起开。”"
+    },
+    {
+      "id": "P14",
+      "action": "plant",
+      "description": "丁茂生承诺次晨把逐人旧欠副册带到晴川供核；原册归周记，交副册不等于清欠。",
+      "quote": "明日把逐人欠项的副册带来，愿留在坊里的可以看，原册仍归周记备核。"
+    }
+  ],
+  "stage_closing": false
+}

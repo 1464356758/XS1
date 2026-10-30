@@ -6,8 +6,8 @@
     "id": "T01",
     "original_request": "那就t1吧"
   },
-  "status": "first_chapter_authorized",
-  "workflow_phase": "PLANNING",
+  "status": "first_chapter_adopted_waiting_next",
+  "workflow_phase": "WAITING_NEXT",
   "start_writing_authorized": true,
   "target_chapters": 100,
   "chapter_han_min": 8000,
@@ -23,8 +23,8 @@
     9000
   ],
   "author_design_ledger": true,
-  "text_verified_facts": 0,
-  "adopted_chapters": 0,
+  "text_verified_facts": 22,
+  "adopted_chapters": 1,
   "review_mode": "same_context_approximation",
   "files": [
     {
@@ -53,7 +53,7 @@
     },
     {
       "path": "book/开书方案.md",
-      "sha256": "46df3d2de7973778dc74320ff40357266877fd1fc1afa47552f1413c312fbdf6"
+      "sha256": "076a58eda825a68021ae73e4908e6eae5c342e0bdfee1fff96235ce3eccf85e4"
     }
   ],
   "remaining_limits": [
@@ -61,6 +61,6 @@
     "尚无正文，不能判定文学质量、开篇位置或实际汉字数已通过",
     "七猫AI准入、投稿口径与平台技术上限等原研究缺口仍保留"
   ],
-  "next_action": "本次只执行第1章写作、审核与保存，不自动发布或定时。",
+  "next_action": "等待下一章指令；第1章正文与记录冻结只读，不能重复采用或重写。",
   "authorization_request_path": "book/author_requests/start_2026-10-30.json"
 }

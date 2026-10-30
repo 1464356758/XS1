@@ -5,13 +5,25 @@
   "task_id": "83e10824-d744-433d-a676-30979be7e742",
   "initial_draft_segments": 3,
   "normal_continuations": 2,
-  "repairs": 0,
+  "repairs": 1,
   "complete_draft": true,
-  "candidate_path": "book/candidates/CH001_cf1eb2bf565c22836d649bb28d18ebd5d693329427c321bb4bc44d97d0c27a18.txt",
-  "candidate_sha256": "cf1eb2bf565c22836d649bb28d18ebd5d693329427c321bb4bc44d97d0c27a18",
-  "measured_han": 8886,
+  "candidate_path": "book/candidates/CH001_6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0.txt",
+  "candidate_sha256": "6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0",
+  "measured_han": 8934,
   "review_mode": "same_context_approximation",
-  "adopted": false,
-  "last_saved_work": "完整V1已登记候选，逐段全文审读；未采用。",
-  "recorded_at": "2026-10-30T09:06:50+00:00"
+  "adopted": true,
+  "last_saved_work": "审核、采用冻结与daily finish完成，等待远端整体回读。",
+  "recorded_at": "2026-10-30T09:06:50+00:00",
+  "phase": "completed",
+  "formal_text_path": "book/chapters/CH001_6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0.txt",
+  "formal_record_path": "book/records/CH001_3e5269635036b18389f5d0e8899e71ebf43720173e53dd349f26681e820d7405.json",
+  "formal_release_path": "book/releases/CH001_efe9e40b5d07fc1ab8c0048831b2c43316a904077d65e6bdfd380a2f1dc55a1c.json",
+  "adopted_at": "2026-10-30T09:19:23+00:00",
+  "execution_origin": {
+    "kind": "manual_chat",
+    "request": "开始吧",
+    "automation_id": null,
+    "runtime_model": "unverified",
+    "reasoning_effort": "unverified"
+  }
 }

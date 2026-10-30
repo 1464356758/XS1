@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 10,
+  "revision": 12,
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
-  "phase": "REVIEWING",
+  "phase": "WAITING_NEXT",
   "platform": "qimao",
   "selected_topic": {
     "id": "T01",
@@ -27,7 +27,7 @@
   },
   "research_path": "research/platform_36982be2867fc0e62ed0c6854bafcd2fb98bc6e764105fc5a3577fb0923a7802.json",
   "topics_path": "research/topics_33a9a3c15f080cc49f09a4b8a0e896c8e0aa696a90a627bf1b47bbc8e3e20b2d.json",
-  "chapter": 1,
+  "chapter": 2,
   "history": [
     {
       "at": "2026-10-30T06:18:06+00:00",
@@ -94,9 +94,21 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第1章完整初稿实测8886汉字，当前候选已登记，开始全文事实因果与限信息审读；尚未采用。"
+    },
+    {
+      "at": "2026-10-30T09:09:34+00:00",
+      "phase": "REVISING",
+      "label": "局部修订",
+      "detail": "完整V1已全文审读，首轮局部返修：修正换币与实际支出的时点，补钱匣流转、雇运及湿布保管，保留原结构。"
+    },
+    {
+      "at": "2026-10-30T09:21:21+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "第1章《赔来的染坊》8934汉字，完成1轮局部修订、八项审核、发布前检查与采用冻结，累计1/100章；平台发布未登记。"
     }
   ],
-  "detail": "第1章完整初稿实测8886汉字，当前候选已登记，开始全文事实因果与限信息审读；尚未采用。",
-  "next_action": "依据实际正文反向提纲、核查资源与信息边界，必要时在同一任务内局部返修，release-check通过后采用。",
-  "updated_at": "2026-10-30T09:05:54+00:00"
+  "detail": "第1章《赔来的染坊》8934汉字，完成1轮局部修订、八项审核、发布前检查与采用冻结，累计1/100章；平台发布未登记。",
+  "next_action": "等待下一章指令；第2章须实读第1章全文和冻结记录，先细化任务书，不改旧章。",
+  "updated_at": "2026-10-30T09:21:21+00:00"
 }

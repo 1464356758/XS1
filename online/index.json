@@ -11,26 +11,26 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-10-30T09:06:50+00:00",
-    "state_revision": 3,
-    "workflow_revision": 10,
-    "state_sha256": "6f733c6fc749319f409c897329573d8a6f488665b061984b72c4dc28e85acf9d",
-    "workflow_sha256": "3dcf96db5a2960d16406f8997513fb742220abe84de17504a5d64687ab916f23",
+    "generated_at": "2026-10-30T09:22:46+00:00",
+    "state_revision": 4,
+    "workflow_revision": 12,
+    "state_sha256": "a104800d9343a9562504bc81452456754de26b3fc2f19d3bd162b3eb71ddbcc2",
+    "workflow_sha256": "7f9fa14f245279b70cf8021e8119122192e31d0873d3616651d0165e2eecf027",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
   "progress": {
     "target_chapters": 100,
-    "adopted_chapters": 0,
+    "adopted_chapters": 1,
     "target_han": 900000,
-    "actual_han": 0,
+    "actual_han": 8934,
     "completed": false,
     "needs_revalidation": [],
     "reviewed_until": 0,
     "window_review_due": false,
     "unresolved_reviews": [],
     "serial_mode": true,
-    "frozen_chapters": 0,
+    "frozen_chapters": 1,
     "published_chapters": 0,
     "publication_status": "只统计真实回执；无回执不等于未发布",
     "open_incidents": 0,
@@ -38,14 +38,27 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "REVIEWING",
-    "label": "检查本章",
-    "chapter": 1,
-    "detail": "第1章完整初稿实测8886汉字，当前候选已登记，开始全文事实因果与限信息审读；尚未采用。",
-    "next_action": "依据实际正文反向提纲、核查资源与信息边界，必要时在同一任务内局部返修，release-check通过后采用。",
-    "updated_at": "2026-10-30T09:05:54+00:00"
+    "phase": "WAITING_NEXT",
+    "label": "等待下一章",
+    "chapter": 2,
+    "detail": "第1章《赔来的染坊》8934汉字，完成1轮局部修订、八项审核、发布前检查与采用冻结，累计1/100章；平台发布未登记。",
+    "next_action": "等待下一章指令；第2章须实读第1章全文和冻结记录，先细化任务书，不改旧章。",
+    "updated_at": "2026-10-30T09:21:21+00:00"
   },
-  "chapters": [],
+  "chapters": [
+    {
+      "number": 1,
+      "title": "赔来的染坊",
+      "stage": "A01",
+      "han_count": 8934,
+      "text_path": "book/chapters/CH001_6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0.txt",
+      "sha256": "6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0",
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
+    }
+  ],
   "topics": [
     {
       "id": "T01",
@@ -781,6 +794,18 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第1章完整初稿实测8886汉字，当前候选已登记，开始全文事实因果与限信息审读；尚未采用。"
+    },
+    {
+      "at": "2026-10-30T09:09:34+00:00",
+      "phase": "REVISING",
+      "label": "局部修订",
+      "detail": "完整V1已全文审读，首轮局部返修：修正换币与实际支出的时点，补钱匣流转、雇运及湿布保管，保留原结构。"
+    },
+    {
+      "at": "2026-10-30T09:21:21+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "第1章《赔来的染坊》8934汉字，完成1轮局部修订、八项审核、发布前检查与采用冻结，累计1/100章；平台发布未登记。"
     }
   ]
 }

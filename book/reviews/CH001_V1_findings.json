@@ -1,0 +1,69 @@
+{
+  "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
+  "task_id": "83e10824-d744-433d-a676-30979be7e742",
+  "source_text_sha256": "cf1eb2bf565c22836d649bb28d18ebd5d693329427c321bb4bc44d97d0c27a18",
+  "review_mode": "same_context_approximation",
+  "read_full_text": true,
+  "local_repair_round": 1,
+  "findings": [
+    {
+      "id": "I01",
+      "old_quote": "陆见棠便知道已有要定日子的人。",
+      "minimum_change": "陆见棠便觉得，已有要定日子的人了。",
+      "reason": "把女主从对方停顿产生的猜测留在人物判断内，不记成外部事实。",
+      "status": "resolved_and_rechecked_V2"
+    },
+    {
+      "id": "I02",
+      "old_quote": "她解开另一个小包，拣了几块碎银，请他过秤。",
+      "minimum_change": "她解开钱袋里包碎银的布，拣了几块，请他过秤。",
+      "reason": "明确十二两来自同一笔36两自有资金，不另造一包资金来源。",
+      "status": "resolved_and_rechecked_V2"
+    },
+    {
+      "id": "I03",
+      "old_quote": "十二两出去了，还剩二十四两。",
+      "minimum_change": "九两已经买了粮，三两路钱另放。她自己的钱袋里，还剩二十四两。",
+      "reason": "在粮铺时换币仍是代发现金，不能把未送出的三两提前算支出。",
+      "status": "resolved_and_rechecked_V2"
+    },
+    {
+      "id": "I04",
+      "old_quote": "妇人提起那两份铜钱，又收拢好，装进自己的空木匣。",
+      "minimum_change": "妇人把十五份铜钱一并收进自己的空木匣。",
+      "reason": "补足全部十五份钱在粮铺至染坊之间的保管去向。",
+      "status": "resolved_and_rechecked_V2"
+    },
+    {
+      "id": "I05",
+      "old_quote": "又用刚领的铜钱换了门外一个脚夫的小推车，把铺盖和木匣放上去。",
+      "minimum_change": "从刚领的铜钱里数出几枚，雇门外的脚夫把铺盖和木匣送到埠头。",
+      "reason": "将歧义的用少量路费买下一辆车改为真实雇运，不额外制造车产。",
+      "status": "resolved_and_rechecked_V2"
+    },
+    {
+      "id": "I06",
+      "old_quote": "直到十五份铜钱全给出去了，木匣里只剩两根断线和一点米灰。",
+      "minimum_change": "直到十五份铜钱全给出去了，木匣里只剩两根断线和一点米灰。买粮和路费合起来的十二两，这才全数交了出去。",
+      "reason": "实际发完铜钱后才确认全部十二两援助支出完成。",
+      "status": "resolved_and_rechecked_V2"
+    },
+    {
+      "id": "I07",
+      "old_quote": "他亲自去看了门，纸封压好，才回来在旁单上签了名。",
+      "minimum_change": "他亲自去看了门。湿的布已另搭在架上，窗仍留着透风；门上纸封压好，他才回来在旁单上签了名。",
+      "reason": "保管客料时区分封门与闷封湿布，避免换主当天又造成不必要损坏。",
+      "status": "resolved_and_rechecked_V2"
+    },
+    {
+      "id": "I08",
+      "old_quote": "两把厂门钥匙落在她掌心，比那只已经轻下去的钱袋还沉。",
+      "minimum_change": "两把厂门钥匙落在她掌心，齿口硌着指节。她握紧了些。",
+      "reason": "移除钥匙比24两银子更重的物理歧义，用触觉承担情绪。",
+      "status": "resolved_and_rechecked_V2"
+    }
+  ],
+  "note": "不是独立读者测试，不改变事实冻结规则或重置修订次数。",
+  "resolved_text_sha256": "6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0",
+  "recheck_scope": "完整V2全文与全部改处已复核，具体语义判断见正式release；不是仅用字符串检索判定文学通过。"
+}

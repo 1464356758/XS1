@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "title": "退婚后，我把赔来的染坊开成了皇商",
-  "revision": 3,
+  "revision": 4,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -21,7 +21,18 @@
     "opening_impact_max_han": 3000,
     "narrative_review_required": true
   },
-  "chapters": {},
+  "chapters": {
+    "1": {
+      "title": "赔来的染坊",
+      "stage": "A01",
+      "text_path": "chapters/CH001_6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0.txt",
+      "text_sha256": "6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0",
+      "record_path": "records/CH001_3e5269635036b18389f5d0e8899e71ebf43720173e53dd349f26681e820d7405.json",
+      "record_sha256": "3e5269635036b18389f5d0e8899e71ebf43720173e53dd349f26681e820d7405",
+      "han_count": 8934,
+      "adopted_at": "2026-10-30T09:19:23+00:00"
+    }
+  },
   "checkpoints": [],
   "needs_revalidation": [],
   "inputs": {
@@ -57,27 +68,101 @@
       "task_id": "83e10824-d744-433d-a676-30979be7e742",
       "chapter": 1,
       "mode": "write",
-      "phase": "candidate",
-      "repairs": 0,
+      "phase": "adopted",
+      "repairs": 1,
       "history": [
         {
           "sha256": "cf1eb2bf565c22836d649bb28d18ebd5d693329427c321bb4bc44d97d0c27a18",
           "reason": "初稿",
           "repairs": 0
+        },
+        {
+          "sha256": "6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0",
+          "reason": "首轮局部修订：粮铺三两换币仍属代发现金，待十五份发完才全数支出；明确资金来源、十五份钱保管、郭顺雇运、湿布通风和钥匙物重表述，并将推测保留为推测。",
+          "repairs": 1
         }
       ],
-      "candidate_sha256": "cf1eb2bf565c22836d649bb28d18ebd5d693329427c321bb4bc44d97d0c27a18",
-      "candidate_path": "candidates/CH001_cf1eb2bf565c22836d649bb28d18ebd5d693329427c321bb4bc44d97d0c27a18.txt"
+      "candidate_sha256": "6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0",
+      "candidate_path": "candidates/CH001_6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0.txt"
     }
   },
   "completion": null,
   "serialization": {
     "schema_version": 1,
     "enabled": true,
-    "frozen": {},
+    "frozen": {
+      "1": {
+        "text_sha256": "6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0",
+        "record_sha256": "3e5269635036b18389f5d0e8899e71ebf43720173e53dd349f26681e820d7405"
+      }
+    },
     "published": {},
-    "gates": {},
-    "promises": {},
+    "gates": {
+      "1": {
+        "path": "releases/CH001_efe9e40b5d07fc1ab8c0048831b2c43316a904077d65e6bdfd380a2f1dc55a1c.json",
+        "sha256": "efe9e40b5d07fc1ab8c0048831b2c43316a904077d65e6bdfd380a2f1dc55a1c",
+        "used": true
+      }
+    },
+    "promises": {
+      "P01": {
+        "history": [
+          {
+            "id": "P01",
+            "action": "set",
+            "deadline_chapter": 3,
+            "reason": "本章只看了疵样和一口缸，未解答全批成因；按第3章实际分组兑现，不因之后的普通推进延期。",
+            "evidence": {
+              "chapter": 1,
+              "sha256": "6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0",
+              "quote": "“我只能说，还得把各捆分开看。”她把布还回去，“不能拿这一角，就说全是同一种毛病。”"
+            },
+            "chapter": 1
+          }
+        ],
+        "deadline_chapter": 3,
+        "status": "open",
+        "last_reviewed_chapter": 1
+      },
+      "P04": {
+        "history": [
+          {
+            "id": "P04",
+            "action": "set",
+            "deadline_chapter": 16,
+            "reason": "旧欠仅由周家认账，尚无金额实核或付款；规划第13章首款、第16章结清，但须到时凭实际正文，不用保证替代。",
+            "evidence": {
+              "chapter": 1,
+              "sha256": "6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0",
+              "quote": "他已将旧债认在纸上，至于什么时候真付到各人手里，还得一笔一笔去问。"
+            },
+            "chapter": 1
+          }
+        ],
+        "deadline_chapter": 16,
+        "status": "open",
+        "last_reviewed_chapter": 1
+      },
+      "P13": {
+        "history": [
+          {
+            "id": "P13",
+            "action": "set",
+            "deadline_chapter": 3,
+            "reason": "明早点存货、保全客料与谈活的安排已明确。第2章仍从当日午后开始，第3章到次晨，届时实际完成，不能提前开封或拖过约定日期。",
+            "evidence": {
+              "chapter": 1,
+              "sha256": "6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0",
+              "quote": "“厂屋、晒场和今日点交的缸具，从此归陆姑娘管。明早再点存货，没点清以前，两边都不许挪。”"
+            },
+            "chapter": 1
+          }
+        ],
+        "deadline_chapter": 3,
+        "status": "open",
+        "last_reviewed_chapter": 1
+      }
+    },
     "incidents": {}
   },
   "writing_briefs": {

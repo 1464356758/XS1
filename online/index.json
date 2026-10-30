@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-10-30T07:52:35+00:00",
+    "generated_at": "2026-10-30T08:54:42+00:00",
     "state_revision": 3,
-    "workflow_revision": 8,
-    "state_sha256": "8e9f7d547963accd071b968eaac77037cd635557aa37bc4b6b05ddfaa5730091",
-    "workflow_sha256": "ecc1a34c248774f45079068089c3f61927e9e4742e607eaa06b7ffb75ad47a2a",
+    "workflow_revision": 9,
+    "state_sha256": "b6c9384f8526544e5d7097d8a3962b92f02499a7eccc1fd78ee3ce938b46f573",
+    "workflow_sha256": "fa7d8c9dc417ecee947164a24741fcf6391c6c9369fe2a06bce57555b27be06b",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -38,12 +38,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "PLANNING",
-    "label": "长篇规划",
+    "phase": "WRITING",
+    "label": "撰写正文",
     "chapter": 1,
-    "detail": "T01开书规划完成：人物与世界边界、知情资源账、十阶段100章路线和前五章预算已建立；正文0章，等待作者开始写。",
-    "next_action": "作者回复“开始写”后，核查资料并登记首章任务书，只完成第1章；当前不生成正文。",
-    "updated_at": "2026-10-30T07:52:35+00:00"
+    "detail": "作者“开始吧”已授权首章；执行1035438f10c04073a52e25963f6378ed，任务书已登记，正在完整起草第1章。",
+    "next_action": "完成第1章后反向提纲与限信息审读，审核并release-check后采用冻结；本次不推进第2章。",
+    "updated_at": "2026-10-30T08:54:42+00:00"
   },
   "chapters": [],
   "topics": [
@@ -769,6 +769,12 @@
       "phase": "PLANNING",
       "label": "长篇规划",
       "detail": "T01开书规划完成：人物与世界边界、知情资源账、十阶段100章路线和前五章预算已建立；正文0章，等待作者开始写。"
+    },
+    {
+      "at": "2026-10-30T08:54:42+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "作者“开始吧”已授权首章；执行1035438f10c04073a52e25963f6378ed，任务书已登记，正在完整起草第1章。"
     }
   ]
 }

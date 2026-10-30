@@ -6,9 +6,9 @@
     "id": "T01",
     "original_request": "那就t1吧"
   },
-  "status": "planning_ready_waiting_author_start",
+  "status": "first_chapter_authorized",
   "workflow_phase": "PLANNING",
-  "start_writing_authorized": false,
+  "start_writing_authorized": true,
   "target_chapters": 100,
   "chapter_han_min": 8000,
   "chapter_han_max": 10000,
@@ -61,5 +61,6 @@
     "尚无正文，不能判定文学质量、开篇位置或实际汉字数已通过",
     "七猫AI准入、投稿口径与平台技术上限等原研究缺口仍保留"
   ],
-  "next_action": "作者明确开始写后只执行第一章；不得仅凭选题或本文件自动开始。"
+  "next_action": "本次只执行第1章写作、审核与保存，不自动发布或定时。",
+  "authorization_request_path": "book/author_requests/start_2026-10-30.json"
 }

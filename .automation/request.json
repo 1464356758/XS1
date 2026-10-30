@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_command_1793380514676_en5um7q",
-  "base_sha": "4daa2bdbf6a98bce40b669874e72adf585bffe8b",
+  "request_id": "xs1_command_1793380586954_6he6y3t",
+  "base_sha": "3d25b74b59152ac2ef92ca9919413165ec700694",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -17,11 +17,13 @@
       "args": [
         "--root",
         "book",
-        "candidate",
+        "repair",
         "--chapter",
         "2",
         "--text",
-        "drafts/CH002_V1.txt"
+        "drafts/CH002_V2.txt",
+        "--reason",
+        "首轮局部修订：校正报名、登记、领钥匙与援助时序；木行口信移到原意向之后；名单位置改为包内，删去对街来路的多余协议式解释。场景及资金人数结果不变。"
       ]
     },
     {
@@ -33,11 +35,11 @@
         "--profile",
         "reader",
         "--text",
-        "drafts/CH002_V1.txt",
+        "drafts/CH002_V2.txt",
         "--budget",
         "80000",
         "--out",
-        "drafts/CH002_reader_V1.md"
+        "drafts/CH002_reader_V2.md"
       ]
     },
     {
@@ -51,9 +53,9 @@
         "--chapter",
         "2",
         "--detail",
-        "第2章完整初稿已登记，实测8089汉字；开始反向提纲、限信息实读及八项事实因果检查。",
+        "第2章V2完成1轮局部修订；复核午后时序、现金23两920文与册载150两旧欠；正在实读复审，尚未采用。",
         "--next",
-        "集中审读，必要时按原任务局部修订；尚未采用。"
+        "完成章后记录与带引文八项审核后release-check。"
       ]
     }
   ]

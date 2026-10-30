@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "revision": 1,
+  "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
+  "phase": "RESEARCH_PLATFORM",
+  "platform": "qimao",
+  "selected_topic": null,
+  "research_path": null,
+  "topics_path": null,
+  "chapter": 1,
+  "history": [
+    {
+      "at": "2026-10-30T06:18:06+00:00",
+      "phase": "WAITING_PLATFORM",
+      "label": "等待选择平台",
+      "detail": "系统已准备好，请先选择创作平台。"
+    },
+    {
+      "at": "2026-10-30T06:18:06+00:00",
+      "phase": "RESEARCH_PLATFORM",
+      "label": "核查平台规则",
+      "detail": "已选择七猫中文网，正在等待核查现行规则。"
+    }
+  ],
+  "detail": "已选择七猫中文网，正在等待核查现行规则。",
+  "next_action": "核查官方规则和公开榜单，保留来源与时间，再提出5—10个原创选题。",
+  "updated_at": "2026-10-30T06:18:06+00:00"
+}

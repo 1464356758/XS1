@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "system_version": "4.3-quality",
+  "initialized": true,
+  "book": {
+    "id": "12e68780-a97a-4387-9049-83f15a8abc6c",
+    "title": "七猫新书（待选题）",
+    "platform": "qimao",
+    "selected_topic_id": null
+  },
+  "source": {
+    "repository_url": "https://github.com/1464356758/XS1",
+    "branch": "main",
+    "generated_at": "2026-10-30T06:18:06+00:00",
+    "state_revision": 0,
+    "workflow_revision": 1,
+    "state_sha256": "38858cdfce706a1be4926d90c40cf238904287329215775db0b2b7d7a8a2f490",
+    "workflow_sha256": "0d4aa8bc2cc5c686cafb7cb94159bbc2259e0ae70bbd408bd04b043a78f4c413",
+    "manuscript_storage": "plain_files_v1",
+    "requires_reader_key": false
+  },
+  "progress": {
+    "target_chapters": 100,
+    "adopted_chapters": 0,
+    "target_han": 900000,
+    "actual_han": 0,
+    "completed": false,
+    "needs_revalidation": [],
+    "reviewed_until": 0,
+    "window_review_due": false,
+    "unresolved_reviews": [],
+    "serial_mode": true,
+    "frozen_chapters": 0,
+    "published_chapters": 0,
+    "publication_status": "只统计真实回执；无回执不等于未发布",
+    "open_incidents": 0,
+    "narrative_review_required": true,
+    "release_check_required": true
+  },
+  "task": {
+    "phase": "RESEARCH_PLATFORM",
+    "label": "核查平台规则",
+    "chapter": 1,
+    "detail": "已选择七猫中文网，正在等待核查现行规则。",
+    "next_action": "核查官方规则和公开榜单，保留来源与时间，再提出5—10个原创选题。",
+    "updated_at": "2026-10-30T06:18:06+00:00"
+  },
+  "chapters": [],
+  "topics": [],
+  "research": null,
+  "history": [
+    {
+      "at": "2026-10-30T06:18:06+00:00",
+      "phase": "WAITING_PLATFORM",
+      "label": "等待选择平台",
+      "detail": "系统已准备好，请先选择创作平台。"
+    },
+    {
+      "at": "2026-10-30T06:18:06+00:00",
+      "phase": "RESEARCH_PLATFORM",
+      "label": "核查平台规则",
+      "detail": "已选择七猫中文网，正在等待核查现行规则。"
+    }
+  ]
+}

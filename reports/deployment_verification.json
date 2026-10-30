@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-10-30T14:18:57+08:00",
+  "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
+  "repository_url": "https://github.com/1464356758/XS1",
+  "branch": "main",
+  "observed_head": "edfc40ff627602d79369ef548ff05fca2dbc24ec",
+  "base_tree": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
+  "current_contents": [],
+  "repository_AGENTS": "absent at current head; attachment AGENTS applied",
+  "history_recovery": false,
+  "zip_sha256": "e443e510f6da8367688bccb1c5d133210b60ac19c788e4877165a61084c70f86",
+  "manifest_entries": 96,
+  "manifest_missing": [],
+  "manifest_hash_mismatches": [],
+  "dependencies": {
+    "python": "3.12.14",
+    "cryptography": "50.0.2",
+    "node": "24.22.1"
+  },
+  "checks": {
+    "python_unittest": {
+      "passed": 174,
+      "failed": 0
+    },
+    "node_tests": {
+      "passed": 153,
+      "failed": 0
+    },
+    "validate_index": true,
+    "adopted_chapters": 0,
+    "serial_mode": true,
+    "narrative_review_required": true,
+    "plain_files": true
+  },
+  "automation_id": null,
+  "model_and_reasoning_metadata": "unverified",
+  "deployment_remote_readback": "performed after commit; not claimed by this precommit report"
+}

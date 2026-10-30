@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "request_id": "preflight_38fde3e3170a4e8fa837efb0bfe0d8fb",
+  "base_sha": "94c4935e9fe37eb3ce405a5eb21ffea019ca1412",
+  "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
+  "controller": {
+    "kind": "automation",
+    "automation_id": "6ae47df14d748191a2ef310c9384d005",
+    "session_id": "33cf748a178c4968a9cd326a5ad9890e",
+    "platform_run_id": null
+  },
+  "phase": "preflight"
+}

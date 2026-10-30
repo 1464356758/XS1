@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "request_id": "preflight_38fde3e3170a4e8fa837efb0bfe0d8fb",
-  "base_sha": "94c4935e9fe37eb3ce405a5eb21ffea019ca1412",
+  "request_id": "xs1_pf_20261031_9z6vags1gqi",
+  "base_sha": "b1d3d851a1560cb89893a73d2cfa3b18ba8b7c2d",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
     "automation_id": "6ae47df14d748191a2ef310c9384d005",
-    "session_id": "33cf748a178c4968a9cd326a5ad9890e",
-    "platform_run_id": null
+    "session_id": "xs1-20261031-v19if9jdc5-1793379907734",
+    "platform_run_id": "e52ee9b7-1154-8332-b569-968a9a51bd73"
   },
   "phase": "preflight"
 }

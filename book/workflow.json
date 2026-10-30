@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 15,
+  "revision": 16,
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
-  "phase": "REVIEWING",
+  "phase": "SAVING",
   "platform": "qimao",
   "selected_topic": {
     "id": "T01",
@@ -124,9 +124,15 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第2章V2完成1轮局部修订；复核午后时序、现金23两920文与册载150两旧欠；正在实读复审，尚未采用。"
+    },
+    {
+      "at": "2026-10-30T17:20:29+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第2章8083汉字完成1轮局部修订，正文反向提纲、same_context_approximation限信息审读及八项带引文检查已完成，release-check通过；等待finalize统一采用及回执。"
     }
   ],
-  "detail": "第2章V2完成1轮局部修订；复核午后时序、现金23两920文与册载150两旧欠；正在实读复审，尚未采用。",
-  "next_action": "完成章后记录与带引文八项审核后release-check。",
-  "updated_at": "2026-10-30T17:16:36+00:00"
+  "detail": "第2章8083汉字完成1轮局部修订，正文反向提纲、same_context_approximation限信息审读及八项带引文检查已完成，release-check通过；等待finalize统一采用及回执。",
+  "next_action": "按本轮run_id执行finalize后回读正文、记录、release、state/workflow、回执与索引哈希。",
+  "updated_at": "2026-10-30T17:20:29+00:00"
 }

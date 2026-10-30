@@ -18,10 +18,10 @@
     "platform_run_id": "e52ee9b7-1154-8332-b569-968a9a51bd73"
   },
   "executor_checkpoint": {
-    "request_id": "xs1_command_1793380682915_g1ew5pt",
+    "request_id": "xs1_command_1793380819560_pimm647",
     "phase": "command",
-    "at": "2026-10-30T17:18:13+00:00",
-    "github_run_id": "41097609482"
+    "at": "2026-10-30T17:20:29+00:00",
+    "github_run_id": "41097947955"
   },
   "reason": "工具第5步失败；完整输出保存在本轮work目录。",
   "blocked_at": "2026-10-30T17:07:07+00:00"

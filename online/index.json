@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-10-30T17:18:13+00:00",
+    "generated_at": "2026-10-30T17:20:29+00:00",
     "state_revision": 4,
-    "workflow_revision": 15,
-    "state_sha256": "c2f2c7520253d4b1c66af6476a9e4827d9a8edfbd9b4ae58ac626b260f329b55",
-    "workflow_sha256": "86bfb85d05a783d71fb998d2f636f0699e232025f7ffc5d19bc4d44799189048",
+    "workflow_revision": 16,
+    "state_sha256": "5d203bd6827876f2d3c3cd7d48ee12f8bd19a9eb3303a652a94d59a8fc3e3b17",
+    "workflow_sha256": "ce27c023389d9280aec1fdb111ea3afeac03f829d30884198d209796d48618d7",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -38,12 +38,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "REVIEWING",
-    "label": "检查本章",
+    "phase": "SAVING",
+    "label": "保存进度",
     "chapter": 2,
-    "detail": "第2章V2完成1轮局部修订；复核午后时序、现金23两920文与册载150两旧欠；正在实读复审，尚未采用。",
-    "next_action": "完成章后记录与带引文八项审核后release-check。",
-    "updated_at": "2026-10-30T17:16:36+00:00"
+    "detail": "第2章8083汉字完成1轮局部修订，正文反向提纲、same_context_approximation限信息审读及八项带引文检查已完成，release-check通过；等待finalize统一采用及回执。",
+    "next_action": "按本轮run_id执行finalize后回读正文、记录、release、state/workflow、回执与索引哈希。",
+    "updated_at": "2026-10-30T17:20:29+00:00"
   },
   "chapters": [
     {
@@ -730,12 +730,6 @@
   },
   "history": [
     {
-      "at": "2026-10-30T06:18:06+00:00",
-      "phase": "RESEARCH_PLATFORM",
-      "label": "核查平台规则",
-      "detail": "已选择七猫中文网，正在等待核查现行规则。"
-    },
-    {
       "at": "2026-10-30T07:15:29+00:00",
       "phase": "SCANNING_RANKINGS",
       "label": "研究榜单",
@@ -818,6 +812,12 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第2章V2完成1轮局部修订；复核午后时序、现金23两920文与册载150两旧欠；正在实读复审，尚未采用。"
+    },
+    {
+      "at": "2026-10-30T17:20:29+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第2章8083汉字完成1轮局部修订，正文反向提纲、same_context_approximation限信息审读及八项带引文检查已完成，release-check通过；等待finalize统一采用及回执。"
     }
   ]
 }

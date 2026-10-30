@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-10-30T07:16:29+00:00",
+  "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
+  "deployment_commit": "1cce110b7c0691dbff64d8f6a2a530cdb90bb07b",
+  "deployment_readback": {
+    "files": 101,
+    "all_git_blob_hashes_match": true,
+    "critical_files_bytes_match": 10
+  },
+  "github_validation": {
+    "run_id": 41013398265,
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/1464356758/XS1/actions/runs/41013398265"
+  },
+  "research_path": "research/platform_36982be2867fc0e62ed0c6854bafcd2fb98bc6e764105fc5a3577fb0923a7802.json",
+  "topics_path": "research/topics_33a9a3c15f080cc49f09a4b8a0e896c8e0aa696a90a627bf1b47bbc8e3e20b2d.json",
+  "research_coverage": "partial",
+  "sources": 22,
+  "samples": 11,
+  "candidates": 8,
+  "candidate_review": {
+    "eight_have_distinct_genres_and_conflicts": true,
+    "future_events_marked_as_proposals": true,
+    "sources_resolve": true,
+    "ending_and_midpoint_present": true,
+    "recommendations_not_selection": true,
+    "income_not_predicted": true,
+    "review_mode": "same_context_approximation",
+    "note": "仅核验选题资料的完整性与内部一致性，尚无小说正文，未做或宣称章节文学审核通过。"
+  },
+  "phase": "WAITING_TOPIC",
+  "adopted_chapters": 0,
+  "selected_topic": null,
+  "automation_id": null,
+  "manager_modified": false,
+  "start_writing_authorized": false
+}

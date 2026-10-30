@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-10-30T06:18:06+00:00",
+    "generated_at": "2026-10-30T07:16:30+00:00",
     "state_revision": 0,
-    "workflow_revision": 1,
+    "workflow_revision": 5,
     "state_sha256": "38858cdfce706a1be4926d90c40cf238904287329215775db0b2b7d7a8a2f490",
-    "workflow_sha256": "0d4aa8bc2cc5c686cafb7cb94159bbc2259e0ae70bbd408bd04b043a78f4c413",
+    "workflow_sha256": "ea6a5a05452e1399231061b9c33247bb2023dad70ab115366ae115e4f9c0464b",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -38,16 +38,683 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "RESEARCH_PLATFORM",
-    "label": "核查平台规则",
+    "phase": "WAITING_TOPIC",
+    "label": "等待选择题材",
     "chapter": 1,
-    "detail": "已选择七猫中文网，正在等待核查现行规则。",
-    "next_action": "核查官方规则和公开榜单，保留来源与时间，再提出5—10个原创选题。",
-    "updated_at": "2026-10-30T06:18:06+00:00"
+    "detail": "已准备8个原创选题，等待作者选择。",
+    "next_action": "作者选择候选编号后，进行长篇规划；当前不写正文。",
+    "updated_at": "2026-10-30T07:16:29+00:00"
   },
   "chapters": [],
-  "topics": [],
-  "research": null,
+  "topics": [
+    {
+      "id": "T01",
+      "title": "退婚后，我把赔来的染坊开成了皇商",
+      "genre": "古代女强/种田经商；偏好事业翻身和人物关系的女频读者",
+      "pitch": "退婚赔偿是一座快倒闭的染坊，女主收下的同时，也接下三百名工人的生计；她要把别人丢掉的烂摊子做成自己的底气。",
+      "protagonist_conflict": "她想脱离家族安排，又不能把自己的独立建立在拖欠工钱上；会辨色和管工序，却没有足够现金、商路与政治保护。",
+      "reader_promise": "不反复求前任回头，首章兑现一次救急与一次付出代价的决断；事业有看得见的交付，女性同伴各有选择，感情线建立在互相承担。",
+      "long_form_engine": "100章约90万字拟用十阶段：七日救坊、修复用工信任、恢复销路、独立布号、外埠竞争、供货事故、合伙分歧、同行联合、皇商资格争夺、主动选择经营边界。工人、客户、家族和合伙人目标彼此冲突，增长不只靠换订单。",
+      "stage_variation": "前20章是生存与信用；21—40章从手艺进入交易；41—60章必须为管理失误赔付并失去旧优势；61—80章由个人经营转为多人治理；末20章处理权力招揽与去留，不把争皇商当自动幸福。",
+      "midpoint_crisis": "她为保大单默许赶工，真实质量事故伤及最信任的工友，必须承认自己的责任，赔付和停产使前期积累不可逆缩水。",
+      "ending_direction": "赢得皇商资格后拒绝以垄断压低工钱，保住独立布号与平等合伙；婚姻从身份庇护变成可自主选择的关系，前任不回收。",
+      "risk": "直接经商榜单样本较少，不能声称已验证为当前最热；染料、用水、账期、运力需查资料，防止“契据一亮就全赢”及流水账。皇商制度选定后按架空边界建立。",
+      "source_ids": [
+        "S02",
+        "S14",
+        "S22"
+      ],
+      "market_difference": "只借鉴受损后主动改变处境的机制；没有照搬姐姐惨死、换命签、豪门替身等故事。",
+      "recommendation_priority": 1
+    },
+    {
+      "id": "T02",
+      "title": "九零：全厂等我走，我把停产线修活了",
+      "genre": "年代女强/工业与家庭；女频事业成长、年代生活读者",
+      "pitch": "被调去废料库的女维修工，在全厂停薪时提出最后一次开机试验；修活生产线之后，她第一次要求自己的名字出现在成果上。",
+      "protagonist_conflict": "她想保住母亲和工友的生活，却不愿继续替别人无偿承担风险；技术能解决故障，解决不了决策权、订单质量和亲人的依赖。",
+      "reader_promise": "技术靠来源和试验，有失败与损耗；工厂生活、父母关系及慢热感情都随她的实际选择变化，不靠突然有钱或大人物认亲。",
+      "long_form_engine": "100章从旧线复工、班组立足、新产品试做、外厂协作、客户事故、合作改组、独立团队、人才流失、市场转型到稳定治理，贯穿一群工友各自要留下或离开的矛盾。",
+      "stage_variation": "前段问题是能否开机，中段变为谁能决定生产及对错误负责，后段变为技术与市场不一致时的取舍；一项维修本领不升级成万能发明。",
+      "midpoint_crisis": "她坚持的改造达到技术指标，却卖不出去；为补交付欠下真实代价，最早支持她的工友决定离队。",
+      "ending_direction": "没有买下整个时代，而是建立能支付薪酬、容纳工友不同去向的小型制造企业，与家人重新划定责任边界。",
+      "risk": "九零工厂题材的直接榜样不足；设备、劳动关系、产权政策必须按选定年份和地区另行核查，不把当代制度写回过去；重复修机器会耗尽追力。",
+      "source_ids": [
+        "S02",
+        "S13"
+      ],
+      "market_difference": "借鉴年代环境和亲密关系的压力，不沿用随军、换婚、隐藏高干身份；以劳动技能和组织权责为中心。",
+      "recommendation_priority": 2
+    },
+    {
+      "id": "T03",
+      "title": "离婚后，我和前夫的债主合伙了",
+      "genre": "现代婚恋/双强与信任；成年女频读者",
+      "pitch": "离婚前所有人都认为她靠丈夫生活；婚姻结束后，她为取回独立事业，与最不信任前夫的债权人签下一个有退出期限的合作。",
+      "protagonist_conflict": "她要拿回自己的职业与生活，不愿再被救助者身份束缚；新伙伴能提供渠道，也可能重演前夫以利益替她做决定的关系。",
+      "reader_promise": "早期离婚真正落地；前夫的后悔不重置女主决定。爱情通过共同承担失败、诚实披露利益和尊重退出权形成，甜与冲突都有行为依据。",
+      "long_form_engine": "100章约90万字用关系重建为主：割裂旧婚姻、短期联盟、首次互相托付、公开利益冲突、分开经营、各自承担错误、再次选择、两方家庭交涉、长期规划、婚姻与事业权责落地。经营事件服务于不同信任考验。",
+      "stage_variation": "前20章是债权人与前妻相互利用；中段确认感情后暴露真正不能妥协的目标；后段处理可预见利益冲突，不靠持续误会或第三者造谣撑篇幅。",
+      "midpoint_crisis": "她发现新伙伴曾选择隐瞒一项会影响她决定的合作风险，即使他没有违法，她也退出联盟；双方必须各自承担失去彼此支持的后果。",
+      "ending_direction": "由她独立完成关键交付，男主放弃以救助换绑定；两人带着清晰边界重新建立关系，旧婚姻终结、旧债不由她凭感情继承。",
+      "risk": "商业与婚姻财产细节须另查，不能把债主写成无条件送钱的霸总；读者可能把标题理解为换一个强者依附，须通过行动打破。",
+      "source_ids": [
+        "S12",
+        "S15"
+      ],
+      "market_difference": "保留婚恋重选的类型可识别性，核心改成信任与权力对等；不复制落水、双替身和救生衣事件。",
+      "recommendation_priority": null
+    },
+    {
+      "id": "T04",
+      "title": "满京城都信我的卦，只有我知道算不准",
+      "genre": "架空古言/轻幻想与查案；女频脑洞、家庭关系读者",
+      "pitch": "女主只能看见一段即将断裂的亲缘，城里却把她当成无所不知的神算；当她的断言成了别人害人的理由，她必须公开承认自己看错了。",
+      "protagonist_conflict": "想救亲人的她需要别人相信自己，却不能用不完整的信息支配别人的命运；能力不提供原因、凶手或确定结局。",
+      "reader_promise": "幻想规则简单且固定，读者能与主角共同区分事实和判断；家庭不是奖励礼包，每次救助都由当事人作选择。",
+      "long_form_engine": "100章从救一户人家、被抬成名人、查证失败、建立普通人证据网络，到承担误判、对抗借神谕操控家族者、揭开能力来源、失去权威、最后在无能力条件下救人，贯穿同一亲缘操控主案。",
+      "stage_variation": "前期是看见与求证，中期是错误权威的代价，后期从她一个人的奇能转为多人行动；不写每案算卦后全家跪服。",
+      "midpoint_crisis": "她一次好意断言使受助者遭到亲人控制，所谓圆满其实是新牢笼；必须赔掉声誉并承担受助者拒绝原谅。",
+      "ending_direction": "拒绝成为被豢养的国师，公开能力边界，凭证据与伙伴完成最后救援；感情伙伴尊重她承认不知道。",
+      "risk": "幻想知识边界和伦理因果难度偏高；只写架空幻想，不提供现实占卜功效宣称；必须防止“算不准”变成随时改规则的借口。",
+      "source_ids": [
+        "S16",
+        "S22"
+      ],
+      "market_difference": "不使用双重生、换命和入赘结构；核心是有限信息的责任，而非全知团宠。",
+      "recommendation_priority": null
+    },
+    {
+      "id": "T05",
+      "title": "边关断粮，我把废驿站改成了军工坊",
+      "genre": "架空历史/边地生存与组织成长；男频历史读者",
+      "pitch": "边城被列入放弃名单，一个被撤职的军匠和三十名伤兵，用废驿站里有限的材料争取最后一次撤离平民的机会。",
+      "protagonist_conflict": "主角想把一队人活着带走，却逐渐意识到只救熟人会让更多人付账；会修辎车与弩机，不懂全部工业，也没有权力命令守军。",
+      "reader_promise": "首章用一项可检验的修复换来活路，胜利包含伤损、耗材和错过的机会；普通工匠、伤兵、商人各有独立利益。",
+      "long_form_engine": "100章以十个因果阶段展开：废驿站自保、撤离运输、与守军交换、建立作坊、第一次失败交付、补给通道争夺、联盟分裂、城与人的取舍、公开背负责任、重建可维持的边地生活。",
+      "stage_variation": "前段解决一队人生存，中段负责跨群体物资和信任，后段面对盟友也会牺牲平民的冲突；升级是责任范围变化，不是一路发明枪炮当皇帝。",
+      "midpoint_crisis": "他为了赶一次军需交付透支材料与人员，赢下一场战斗却失去撤离窗口；最亲近的伤兵不再愿意追随。",
+      "ending_direction": "完成有代价的撤离和守城目标，放弃吞并盟友的权位，留下能独立运行的工坊与协作组织，伤亡和失去者不复活。",
+      "risk": "军事、运输、冶炼资料负担高，选定后须研究工艺边界；容易写成报表和技术说明，需以人物现场行动承载，避免射箭边军样本的具体套路。",
+      "source_ids": [
+        "S02",
+        "S19",
+        "S20",
+        "S21"
+      ],
+      "market_difference": "保留小人物先兑现专长再承担更大责任；非特种兵、射箭冠军或皇子，不走样本的同一夺功开局。",
+      "recommendation_priority": 3
+    },
+    {
+      "id": "T06",
+      "title": "全宗门飞升那夜，只有我留在人间",
+      "genre": "玄幻/群像守护与成长；男频玄幻读者",
+      "pitch": "全宗门登天时，负责关门的小弟子发现山下村庄正失去水与灵气；他放弃唯一的飞升席位，回去救那些上不了天的人。",
+      "protagonist_conflict": "他渴望被师门承认，又不能把自己的前程建立在熟人的生存被消耗上；留下后无法调用宗门完整力量，修补地脉需要付出修为与寿命。",
+      "reader_promise": "开篇立即兑现留下的行动和代价；成长伴随具体可见的保护成果，对手不全是坏人，前师门也有人作不同选择。",
+      "long_form_engine": "100章从救村、建立山下同盟、地脉实证、与修士交易、保护失败、凡人与宗门矛盾、前师长归来、替代飞升方案、同盟内部分裂、共同承担最终选择展开。",
+      "stage_variation": "前期靠个人有限法术，中期必须借不同人的能力，后期需要放弃“我一人替所有人决定”的英雄姿态；不靠不断扩大地图重置问题。",
+      "midpoint_crisis": "他保护一个节点导致另一处灾情恶化，被救者不再认同他；必须公开两难，失去人气与师门关系后重新组织行动。",
+      "ending_direction": "取消以抽空故土换个人飞升的方式，主角永久失去原飞升机会，留下能让下一代自主选择的道路；不以隐藏更强外挂补偿损失。",
+      "risk": "目前同平台直接同型样本不足，是在玄幻成长机制上的探索；世界能量账和能力代价必须先锁定，不能末尾靠新法则一键修复。",
+      "source_ids": [
+        "S02",
+        "S18"
+      ],
+      "market_difference": "没有炼化万物、时间加速和多重靠山；主题是成长后的责任与共同选择。",
+      "recommendation_priority": null
+    },
+    {
+      "id": "T07",
+      "title": "重生回到她退学那天，这次我不再袖手旁观",
+      "genre": "都市重生/校园到成年恋爱；男频青春与遗憾补偿读者",
+      "pitch": "回到大学同学准备退学的那天，男主不再把喜欢当成替她安排人生；他先替她找到一项可核实的选择，再陪她争取自己要的路。",
+      "protagonist_conflict": "他想弥补前世的失去，却容易把后来知道的结果当成支配她的理由；对方有明确的学业与职业目标，能拒绝他的帮助和告白。",
+      "reader_promise": "所有核心恋爱人物从成年阶段开始；遗憾通过做事而非砸钱弥补，女主保持主体性，单一主感情线不靠收集不同女神。",
+      "long_form_engine": "100章跨大学至初入职场：保住选择、共同学习、各自家庭、第一次亲密、专业分流、失败实习、异地决定、旧人生预测失效、共同承担现实、成年的长期承诺。",
+      "stage_variation": "早期有限记忆提供机会，中段改变已令预测失效，后段不能再靠先知领先；每阶段的亲密关系都必须出现新的责任与真正选择。",
+      "midpoint_crisis": "他凭前世经验替她拒绝一个机会，实际抹掉她最想走的路；关系中断，补偿钱财无效，必须承认他无法预知她的人生。",
+      "ending_direction": "两人有各自职业与边界后决定共同生活，男主不再把前世结局当目标；没有一夜暴富作为幸福证明。",
+      "risk": "长篇青春恋爱若缺少群体与现实变化容易重复日常；目标约90万字需用明确学期、实习和职业节点，不能增加无因果三角恋凑数。",
+      "source_ids": [
+        "S17"
+      ],
+      "market_difference": "借鉴重生的情感窗口，不用校园多女神和先知投资的具体配置；中心为尊重另一个人的选择。",
+      "recommendation_priority": null
+    },
+    {
+      "id": "T08",
+      "title": "末班车到站时，七名乘客都说我死了",
+      "genre": "都市悬疑/有限幻想；喜欢主线谜团与人物群像的读者",
+      "pitch": "停运前最后一趟车，七名互不认识的乘客都带着司机的死亡记录；司机必须在三十天内查明他们为何记得七种不同的死亡。",
+      "protagonist_conflict": "他想证明自己活着并找回失踪家人，但每证明一份记录为假，就有人失去能保护自己的证据；他也可能是记忆不可靠的一方。",
+      "reader_promise": "每个阶段兑现一个明确答案和现实变化，人物声称始终与事实分开；悬念不只靠下一张纸条，救助、见面和选择必须发生。",
+      "long_form_engine": "100章约90万字以单一主案展开：车上核验、找到第一位现实证人、乘客结盟、死亡记录的来源、家人失踪关联、证人反证、司机承认旧错、联盟选择、三十日期限的真实后果、最后交付真相。",
+      "stage_variation": "前期调查记录，中期调查制造记录的人，后期面对真相公开会伤害的无辜者；三个问题逐层替换而非每站一名新鬼。",
+      "midpoint_crisis": "确认一份死亡记录源于自己当年的决定，反击别人已不足以解决问题；他必须公开自己隐瞒的事实，并失去一名重要盟友。",
+      "ending_direction": "七份记录的共同机制提前埋证后得到解释，家人去向与司机责任有确定结果；不以一切是梦、全员已死或最后重启抹掉前文。",
+      "risk": "当前榜单缺少同型直接样本，类型准入和悬疑尺度需另核；90万字主案容易拖谜，必须在规划时限定七份记录的差异、固定幻想规则与每阶段实际答案。",
+      "source_ids": [
+        "S02"
+      ],
+      "market_difference": "这是证据较弱的探索候选；公交怪谈属于常见母题，须以七种记录的固定因果和人物责任作差异，不拿无重名当原创证明。",
+      "recommendation_priority": null
+    }
+  ],
+  "research": {
+    "platform": "qimao",
+    "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
+    "checked_at": "2026-10-30T15:15:29+08:00",
+    "coverage_status": "partial",
+    "sources": [
+      {
+        "id": "S01",
+        "title": "七猫作家助手用户服务协议",
+        "url": "https://zhushou.qimao.com/writer-rules/68464fdfe4a81e7ec312f874/",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "public_page",
+        "page_version": "页面注明2025-07-28更新、生效、发布",
+        "retrieval_reference": "turn2view0 / turn4view3"
+      },
+      {
+        "id": "S02",
+        "title": "七猫官方作者福利与签约政策",
+        "url": "https://www.qimao.com/fuli/",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "public_page",
+        "page_version": "当前首页链接仍指向标题含2025年的政策；未核实独立2026新版",
+        "retrieval_reference": "turn3view0"
+      },
+      {
+        "id": "S03",
+        "title": "七猫帮助中心：投稿方式",
+        "url": "https://zuozhe.qimao.com/front/help-center",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "official_search_index; direct_page_incompatible",
+        "page_version": null,
+        "retrieval_reference": "turn11search0 / turn1view0"
+      },
+      {
+        "id": "S04",
+        "title": "七猫帮助中心：签约评估",
+        "url": "https://zuozhe.qimao.com/front/help-center/questions/1-8",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "official_search_index; direct_page_incompatible",
+        "page_version": null,
+        "retrieval_reference": "turn0search2 / turn2view1"
+      },
+      {
+        "id": "S05",
+        "title": "原创作品登载规则和服务约定",
+        "url": "https://zhushou.qimao.com/writer-rules/68466f6ae4a81e7ec312f8cd/",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "public_page",
+        "page_version": null,
+        "retrieval_reference": "turn13view0"
+      },
+      {
+        "id": "S06",
+        "title": "女生新书日榜",
+        "url": "https://www.qimao.com/paihang/girl/new/date",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "public_page",
+        "page_version": null,
+        "retrieval_reference": "turn4view0"
+      },
+      {
+        "id": "S07",
+        "title": "男生新书日榜",
+        "url": "https://www.qimao.com/paihang/boy/new/date",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "public_page",
+        "page_version": null,
+        "retrieval_reference": "turn4view1"
+      },
+      {
+        "id": "S08",
+        "title": "男生大热日榜",
+        "url": "https://www.qimao.com/paihang",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "public_page",
+        "page_version": null,
+        "retrieval_reference": "turn4view2"
+      },
+      {
+        "id": "S09",
+        "title": "女生完结日榜",
+        "url": "https://www.qimao.com/paihang/girl/over/date/",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "public_page",
+        "page_version": null,
+        "retrieval_reference": "turn7view0"
+      },
+      {
+        "id": "S10",
+        "title": "七猫首页及男女榜单摘要",
+        "url": "https://www.qimao.com/",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "public_page",
+        "page_version": null,
+        "retrieval_reference": "turn1view2"
+      },
+      {
+        "id": "S11",
+        "title": "微短剧含漫剧剧本征集大赛参赛须知",
+        "url": "https://zuozhe.qimao.com/front/custom-activity/15",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "official_search_index; activity_specific",
+        "page_version": null,
+        "retrieval_reference": "turn12search0"
+      },
+      {
+        "id": "S12",
+        "title": "夫人反差太大，司总沦陷了！：官方作品页",
+        "url": "https://www.qimao.com/shuku/13030701/",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "public_page",
+        "page_version": null,
+        "retrieval_reference": "turn5view0"
+      },
+      {
+        "id": "S13",
+        "title": "错嫁随军：新婚夜冷面军少沦陷了：官方作品页",
+        "url": "https://www.qimao.com/shuku/12792057/",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "public_page",
+        "page_version": null,
+        "retrieval_reference": "turn5view1"
+      },
+      {
+        "id": "S14",
+        "title": "嫡姐惨死？王妃她杀爆京城：官方作品页",
+        "url": "https://www.qimao.com/shuku/13021647/",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "public_page",
+        "page_version": null,
+        "retrieval_reference": "turn6view0"
+      },
+      {
+        "id": "S15",
+        "title": "谢总，夫人已改嫁，让你跪远点：官方作品页",
+        "url": "https://www.qimao.com/shuku/13156719/",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "public_page",
+        "page_version": null,
+        "retrieval_reference": "turn6view1"
+      },
+      {
+        "id": "S16",
+        "title": "劝爹入赘公主府，玄学嫡女被团宠：官方作品页",
+        "url": "https://www.qimao.com/shuku/13123386/",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "public_page",
+        "page_version": null,
+        "retrieval_reference": "turn6view2"
+      },
+      {
+        "id": "S17",
+        "title": "趁校花一贫如洗，忽悠她以身相许：官方作品页",
+        "url": "https://www.qimao.com/shuku/12896292/",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "public_page",
+        "page_version": null,
+        "retrieval_reference": "turn7view1"
+      },
+      {
+        "id": "S18",
+        "title": "魔天鼎：我能炼化万物：官方作品页",
+        "url": "https://www.qimao.com/shuku/13297746/",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "public_page",
+        "page_version": null,
+        "retrieval_reference": "turn7view2"
+      },
+      {
+        "id": "S19",
+        "title": "寇天子：官方作品页",
+        "url": "https://www.qimao.com/shuku/12817968/",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "public_page",
+        "page_version": null,
+        "retrieval_reference": "turn6view3"
+      },
+      {
+        "id": "S20",
+        "title": "边军悍卒：一把长弓定天下！：官方作品页",
+        "url": "https://www.qimao.com/shuku/12948825/",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "public_page",
+        "page_version": null,
+        "retrieval_reference": "turn11view0"
+      },
+      {
+        "id": "S21",
+        "title": "逍遥四公子：官方作品页",
+        "url": "https://www.qimao.com/shuku/1809361/",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "public_page",
+        "page_version": null,
+        "retrieval_reference": "turn9view1"
+      },
+      {
+        "id": "S22",
+        "title": "凤池生春：官方作品页",
+        "url": "https://www.qimao.com/shuku/1830569/",
+        "accessed_at": "2026-10-30T15:15:29+08:00",
+        "access_method": "public_page",
+        "page_version": null,
+        "retrieval_reference": "turn7view4"
+      }
+    ],
+    "rules": [
+      {
+        "topic": "创作账号与实名认证",
+        "status": "verified",
+        "source_id": "S05",
+        "conclusion": "官方登载约定要求作者实名注册并提供真实资料，账号由本人使用；本次未创建平台账号。"
+      },
+      {
+        "topic": "常规长篇直投签约门槛",
+        "status": "verified",
+        "source_id": "S03",
+        "conclusion": "官方帮助中心被索引的文本说明：七猫正文满2万字后，可点击申请签约；S02也显示直发满2万字可申请。申请不等于通过，上传不等于读者端上架。帮助页直接读取受限，发布前需复核。"
+      },
+      {
+        "topic": "邮箱内投稿件材料存在口径差异",
+        "status": "unknown",
+        "source_id": "S03",
+        "related_source_ids": [
+          "S02"
+        ],
+        "conclusion": "帮助中心索引写开篇1万字和完整大纲；首页链接的2025政策页写2万字、大纲和申请表。无法核定何时替换及本次适用口径，不自行裁决、不自动投稿。"
+      },
+      {
+        "topic": "签约与章节审核",
+        "status": "verified",
+        "source_id": "S03",
+        "conclusion": "帮助中心索引称七猫签约后进入新书安全审核；不能把在作者端上传与读者端正式发布混同。S04要求签约实名信息、银行卡和手机号为本人。"
+      },
+      {
+        "topic": "原创与版权",
+        "status": "verified",
+        "source_id": "S05",
+        "conclusion": "登载约定要求自主独立创作、具备必要权利并禁止抄袭等侵权。未签版权合作协议时不承诺稿酬；具体商业条件须按实际合同核对。"
+      },
+      {
+        "topic": "AI生成内容标识",
+        "status": "verified",
+        "source_id": "S01",
+        "conclusion": "协议第五部分1.3要求相应合成信息显著标识，禁止把合成内容冒称自然内容以及删除或隐匿平台AI标识。该条不是常规长篇AI稿可签约的承诺。"
+      },
+      {
+        "topic": "GPT生成并审核的常规长篇能否签约",
+        "status": "unknown",
+        "source_id": null,
+        "related_source_ids": [
+          "S01",
+          "S05",
+          "S11"
+        ],
+        "conclusion": "未取得明确允许本工作流参与常规长篇签约的现行官方条款或编辑答复；不能由标识条款或平台提供AI工具反推可签约。S11的剧本比赛单独禁止AI生成及辅助（含润色），不把活动规则扩大为全站政策，也不将本项目投该活动。"
+      },
+      {
+        "topic": "签约类型与可核实福利",
+        "status": "verified",
+        "source_id": "S02",
+        "conclusion": "当前首页福利入口仍列保底加超保底、纯分成、超级纯分成。页面的保底独家签约全勤档写日更4000至不足6000字为5元/千字、6000字起7元/千字，并列每月最多计20万字、无灌水抄袭等条件；分成全勤另有留存、UV、天数条件，不能当新人必得收入。页面标题为2025，不断言已核实2026新标准。"
+      },
+      {
+        "topic": "福利页面的2026适用性",
+        "status": "unknown",
+        "source_id": "S02",
+        "conclusion": "2026-10-30仍能从官方首页进入此政策，但页面没有足够证据证明全部条件在2026年没有变更。没有取得合同，不计算本书预计收益。"
+      },
+      {
+        "topic": "单章长度与100章计划",
+        "status": "unknown",
+        "source_id": null,
+        "conclusion": "未取得七猫当前单章最大字数的可核实官方说明。保持作者指定100章、每章8000—10000汉字；这是内部创作单位，未自动拆分、改变章数或认定可直接上传。平台技术限额须发布前实际复核。"
+      }
+    ],
+    "rank_samples": [
+      {
+        "id": "B01",
+        "title": "夫人反差太大，司总沦陷了！",
+        "author": "九九月",
+        "list_name": "女生新书日榜",
+        "observed_at": "2026-10-30T15:15:29+08:00",
+        "category": "现代言情/总裁豪门",
+        "rank": 1,
+        "visible_metric": "92.2万热度",
+        "metric_type": "榜单热度；不等同于阅读UV、留存、收入或书页累计人气",
+        "book_url": "https://www.qimao.com/shuku/13030701/",
+        "source_id": "S06",
+        "book_source_id": "S12",
+        "reading_scope": "官方简介、公开可见开篇；目录仅确认总章数及首页可见章题，未展开全目录、未读全书",
+        "mechanism_inference": "人物表面态度与内心意图的反差，迅速改变婚姻中的信息优势；这是开篇机制观察，不能证明长期留存。",
+        "limits": "可借鉴反差与立刻受影响的关系，不能复制读心、妹妹系统和既定死亡的组合。"
+      },
+      {
+        "id": "B02",
+        "title": "错嫁随军：新婚夜冷面军少沦陷了",
+        "author": "桃三月",
+        "list_name": "女生新书日榜",
+        "observed_at": "2026-10-30T15:15:29+08:00",
+        "category": "现代言情/年代重生",
+        "rank": 2,
+        "visible_metric": "56.6万热度",
+        "metric_type": "榜单热度；不等同于阅读UV、留存、收入或书页累计人气",
+        "book_url": "https://www.qimao.com/shuku/12792057/",
+        "source_id": "S06",
+        "book_source_id": "S13",
+        "reading_scope": "官方简介、公开可见开篇；目录仅确认总章数及首页可见章题，未展开全目录、未读全书",
+        "mechanism_inference": "婚配被调换直接构成眼前选择，年代环境和共同生活支撑后续关系体验。",
+        "limits": "可借鉴开场即作选择；不照搬换婚、书中对照组及隐藏家世。"
+      },
+      {
+        "id": "B03",
+        "title": "嫡姐惨死？王妃她杀爆京城",
+        "author": "青黛",
+        "list_name": "女生新书日榜",
+        "observed_at": "2026-10-30T15:15:29+08:00",
+        "category": "古代言情/古代情缘",
+        "rank": 3,
+        "visible_metric": "32.3万热度",
+        "metric_type": "榜单热度；不等同于阅读UV、留存、收入或书页累计人气",
+        "book_url": "https://www.qimao.com/shuku/13021647/",
+        "source_id": "S06",
+        "book_source_id": "S14",
+        "reading_scope": "官方简介、公开可见开篇；目录仅确认总章数及首页可见章题，未展开全目录、未读全书",
+        "mechanism_inference": "受害亲人的具体遭遇使主角复仇目标立即成立，首个行动指向明确责任对象。",
+        "limits": "借鉴情绪和行动相连；不复制惨死姐姐、万能马甲及具体报复。"
+      },
+      {
+        "id": "B04",
+        "title": "谢总，夫人已改嫁，让你跪远点",
+        "author": "乐希",
+        "list_name": "女生新书日榜",
+        "observed_at": "2026-10-30T15:15:29+08:00",
+        "category": "现代言情/总裁豪门",
+        "rank": 4,
+        "visible_metric": "20.2万热度",
+        "metric_type": "榜单热度；不等同于阅读UV、留存、收入或书页累计人气",
+        "book_url": "https://www.qimao.com/shuku/13156719/",
+        "source_id": "S06",
+        "book_source_id": "S15",
+        "reading_scope": "官方简介、公开可见开篇；目录仅确认总章数及首页可见章题，未展开全目录、未读全书",
+        "mechanism_inference": "救生选择造成不可逆的关系裂口，离婚决定比反复口头争执更有推进力。",
+        "limits": "借鉴关系代价；不复刻落水、救生衣、双替身和豪门求婚链。"
+      },
+      {
+        "id": "B05",
+        "title": "劝爹入赘公主府，玄学嫡女被团宠",
+        "author": "九汐公子",
+        "list_name": "女生新书日榜",
+        "observed_at": "2026-10-30T15:15:29+08:00",
+        "category": "古代言情/宫闱宅斗",
+        "rank": 8,
+        "visible_metric": "7.8万热度",
+        "metric_type": "榜单热度；不等同于阅读UV、留存、收入或书页累计人气",
+        "book_url": "https://www.qimao.com/shuku/13123386/",
+        "source_id": "S06",
+        "book_source_id": "S16",
+        "reading_scope": "官方简介、公开可见开篇；目录仅确认总章数及首页可见章题，未展开全目录、未读全书",
+        "mechanism_inference": "家庭选择与幻想能力绑定，重选阵营形成可见的命运差异。",
+        "limits": "借鉴家庭联盟变化；不复刻命签交换、双重生及入赘公主府。"
+      },
+      {
+        "id": "B06",
+        "title": "趁校花一贫如洗，忽悠她以身相许",
+        "author": "不吃鱼肉",
+        "list_name": "男生新书日榜",
+        "observed_at": "2026-10-30T15:15:29+08:00",
+        "category": "都市/热血校园",
+        "rank": 2,
+        "visible_metric": "9.0万热度",
+        "metric_type": "榜单热度；不等同于阅读UV、留存、收入或书页累计人气",
+        "book_url": "https://www.qimao.com/shuku/12896292/",
+        "source_id": "S07",
+        "book_source_id": "S17",
+        "reading_scope": "官方简介、公开可见开篇；目录仅确认总章数及首页可见章题，未展开全目录、未读全书",
+        "mechanism_inference": "重生使错过的人和机会重新可及，开场的具体见面承载遗憾补偿。",
+        "limits": "借鉴有限先知与人生选择；不复制大学城人物配置和机会路线。"
+      },
+      {
+        "id": "B07",
+        "title": "魔天鼎：我能炼化万物",
+        "author": "晨弈",
+        "list_name": "男生新书日榜",
+        "observed_at": "2026-10-30T15:15:29+08:00",
+        "category": "玄幻奇幻/东方玄幻",
+        "rank": 5,
+        "visible_metric": "5.4万热度",
+        "metric_type": "榜单热度；不等同于阅读UV、留存、收入或书页累计人气",
+        "book_url": "https://www.qimao.com/shuku/13297746/",
+        "source_id": "S07",
+        "book_source_id": "S18",
+        "reading_scope": "官方简介、公开可见开篇；目录仅确认总章数及首页可见章题，未展开全目录、未读全书",
+        "mechanism_inference": "核心道具把资源转换和成长承诺做得直观，简介交代由家族扩展到更大空间。",
+        "limits": "借鉴能力可理解、成长可见；不复制炼鼎、加速空间和姐姐辅助结构。"
+      },
+      {
+        "id": "B08",
+        "title": "寇天子",
+        "author": "烟水寒",
+        "list_name": "男生新书日榜",
+        "observed_at": "2026-10-30T15:15:29+08:00",
+        "category": "历史/架空历史",
+        "rank": 6,
+        "visible_metric": "4.6万热度",
+        "metric_type": "榜单热度；不等同于阅读UV、留存、收入或书页累计人气",
+        "book_url": "https://www.qimao.com/shuku/12817968/",
+        "source_id": "S07",
+        "book_source_id": "S19",
+        "reading_scope": "官方简介、公开可见开篇；目录仅确认总章数及首页可见章题，未展开全目录、未读全书",
+        "mechanism_inference": "看似奖赏实为送命的开场处境，在行动前就形成反差和危机。",
+        "limits": "借鉴奖励与代价不一致；不复制山寨、俘虏和先锋队开局。"
+      },
+      {
+        "id": "B09",
+        "title": "边军悍卒：一把长弓定天下！",
+        "author": "清风拂星辰",
+        "list_name": "男生新书日榜",
+        "observed_at": "2026-10-30T15:15:29+08:00",
+        "category": "历史/架空历史",
+        "rank": 8,
+        "visible_metric": "3.0万热度",
+        "metric_type": "榜单热度；不等同于阅读UV、留存、收入或书页累计人气",
+        "book_url": "https://www.qimao.com/shuku/12948825/",
+        "source_id": "S07",
+        "book_source_id": "S20",
+        "reading_scope": "官方简介、公开可见开篇；目录仅确认总章数及首页可见章题，未展开全目录、未读全书",
+        "mechanism_inference": "单一专长先在具体危机中兑现，再引出军功、组织与势力成长。",
+        "limits": "借鉴先兑现一项本领；不复刻射箭运动员、装傻夺功与哨所人物。"
+      },
+      {
+        "id": "B10",
+        "title": "逍遥四公子",
+        "author": "修果",
+        "list_name": "男生大热日榜",
+        "observed_at": "2026-10-30T15:15:29+08:00",
+        "category": "历史/架空历史",
+        "rank": 4,
+        "visible_metric": "46.5万热度",
+        "metric_type": "榜单热度；不等同于阅读UV、留存、收入或书页累计人气",
+        "book_url": "https://www.qimao.com/shuku/1809361/",
+        "source_id": "S08",
+        "book_source_id": "S21",
+        "reading_scope": "官方简介、公开可见开篇；目录仅确认总章数及首页可见章题，未展开全目录、未读全书",
+        "mechanism_inference": "家庭受压迫与公开反抗提供近端动力，简介的公共事务为更长线扩展留空间。",
+        "limits": "635.11万字的成熟完结作品，只作长线补充，不能当新人同阶段样本。"
+      },
+      {
+        "id": "B11",
+        "title": "凤池生春",
+        "author": "秦安安",
+        "list_name": "女生完结日榜",
+        "observed_at": "2026-10-30T15:15:29+08:00",
+        "category": "古代言情/宫闱宅斗",
+        "rank": 1,
+        "visible_metric": "47.0万热度",
+        "metric_type": "榜单热度；不等同于阅读UV、留存、收入或书页累计人气",
+        "book_url": "https://www.qimao.com/shuku/1830569/",
+        "source_id": "S09",
+        "book_source_id": "S22",
+        "reading_scope": "官方简介、公开可见开篇；目录仅确认总章数及首页可见章题，未展开全目录、未读全书",
+        "mechanism_inference": "开篇生存危机与回府前的主动选择衔接，身份、关系和权力可形成多层矛盾。",
+        "limits": "233.9万字成熟完结样本，只作收束和长销补充；未全文阅读。"
+      }
+    ],
+    "ranking_coverage": {
+      "status": "11_public_samples_observed",
+      "types": [
+        "新书日榜",
+        "大热日榜",
+        "完结日榜"
+      ],
+      "new_book_samples": 9,
+      "mature_supplements": 2,
+      "observation_date": "2026-10-30",
+      "time_zone": "Asia/Shanghai",
+      "rank_time_note": "榜页写基于昨日热度，具体统计截止时刻未披露；这是本次访问观察，不是收入榜，也不把搜索抓取日期冒充榜单日期。",
+      "new_book_definition": "页面写男女新书总字数低于50万且每天更新；不表示作者一定是新人或作品本月开书。",
+      "selection_bias": "观察榜首及相关题材的便利样本，没有冷门和失败样本，不能算过稿概率或收入。"
+    },
+    "market_inferences": [
+      "观察到的多个开篇先让关系、资源或生存利益受损，再给主角一个实际选择；本项目可借鉴这一机制，但不是普遍成功公式。",
+      "女性向样本存在婚恋重选、家庭阵营、复仇和幻想信息差；候选同时提供事业型方向，后者的直接榜单证据较弱。",
+      "男性向历史与玄幻样本多把可理解的专长或能力先兑现，再改变组织位置；阶段扩展须改变目标、关系和代价，不能只换更强对手。",
+      "公开可见开篇把冲突落在少数具体场景中。本书仍按作者8000—10000汉字单章要求，以多个有后果的场景支撑长章；样本没有提供本书平台单章上限的证据。"
+    ],
+    "secondary_leads": [
+      {
+        "url": "https://www.thepaper.cn/newsDetail_forward_33518939",
+        "title": "网文作者困在AI味里，平台也是",
+        "retrieval_reference": "turn11search2",
+        "access_method": "search_excerpt_only",
+        "note": "媒体报道存在编辑拒收AI文的情况；非平台正式统一条款，仅列为相反线索。官方限定域检索仍未取得常规长篇统一规则。没有把这条登记为已核实官方禁令。"
+      }
+    ],
+    "gaps": [
+      "常规长篇AI生成/辅助投稿的具体准入和标识操作未获官方确定答复，不能宣称适合自动生成后直接签约。",
+      "帮助中心和作家中心直接访问返回浏览器不兼容；相关帮助结论依官方域名搜索索引并与可读福利页对照，不伪称已登录后台核实。",
+      "邮箱内投1万与2万材料口径冲突未消除，政策更新时间和完整2026替代版未知。",
+      "新书/大热/完结榜公开可读，已登记11部、9部在新书榜；样本只读可见简介与开篇，完整目录和长期情节未经验证。",
+      "榜单热度口径、具体统计时刻及不可见收入/留存/订阅数据未知。",
+      "单章最大长度、后台上传限制与公开仓库是否影响该书首发认定未知；本次不投稿、不签约、不登记平台发布。",
+      "书名为暂定，搜索没有形成可靠完整重名核验，选定后还需平台建书时核对；检索不到不能证明独创。"
+    ],
+    "decision": {
+      "current_phase": "WAITING_TOPIC",
+      "allowed_now": "提交研究和候选，等待作者选择",
+      "author_platform": "七猫",
+      "author_preference": "你帮我选题",
+      "preference_interpretation": "提出和推荐候选；不构成已选题或开始写授权",
+      "selected_topic": null,
+      "start_writing_authorized": false,
+      "automation_created": false
+    }
+  },
   "history": [
     {
       "at": "2026-10-30T06:18:06+00:00",
@@ -60,6 +727,30 @@
       "phase": "RESEARCH_PLATFORM",
       "label": "核查平台规则",
       "detail": "已选择七猫中文网，正在等待核查现行规则。"
+    },
+    {
+      "at": "2026-10-30T07:15:29+00:00",
+      "phase": "SCANNING_RANKINGS",
+      "label": "研究榜单",
+      "detail": "规则和榜单资料已保存；存在待核实项。"
+    },
+    {
+      "at": "2026-10-30T07:15:29+00:00",
+      "phase": "WAITING_TOPIC",
+      "label": "等待选择题材",
+      "detail": "已准备8个原创选题，等待作者选择。"
+    },
+    {
+      "at": "2026-10-30T07:16:29+00:00",
+      "phase": "SCANNING_RANKINGS",
+      "label": "研究榜单",
+      "detail": "规则和榜单资料已保存；存在待核实项。"
+    },
+    {
+      "at": "2026-10-30T07:16:29+00:00",
+      "phase": "WAITING_TOPIC",
+      "label": "等待选择题材",
+      "detail": "已准备8个原创选题，等待作者选择。"
     }
   ]
 }

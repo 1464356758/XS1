@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "revision": 1,
+  "revision": 5,
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
-  "phase": "RESEARCH_PLATFORM",
+  "phase": "WAITING_TOPIC",
   "platform": "qimao",
   "selected_topic": null,
-  "research_path": null,
-  "topics_path": null,
+  "research_path": "research/platform_36982be2867fc0e62ed0c6854bafcd2fb98bc6e764105fc5a3577fb0923a7802.json",
+  "topics_path": "research/topics_33a9a3c15f080cc49f09a4b8a0e896c8e0aa696a90a627bf1b47bbc8e3e20b2d.json",
   "chapter": 1,
   "history": [
     {
@@ -20,9 +20,33 @@
       "phase": "RESEARCH_PLATFORM",
       "label": "核查平台规则",
       "detail": "已选择七猫中文网，正在等待核查现行规则。"
+    },
+    {
+      "at": "2026-10-30T07:15:29+00:00",
+      "phase": "SCANNING_RANKINGS",
+      "label": "研究榜单",
+      "detail": "规则和榜单资料已保存；存在待核实项。"
+    },
+    {
+      "at": "2026-10-30T07:15:29+00:00",
+      "phase": "WAITING_TOPIC",
+      "label": "等待选择题材",
+      "detail": "已准备8个原创选题，等待作者选择。"
+    },
+    {
+      "at": "2026-10-30T07:16:29+00:00",
+      "phase": "SCANNING_RANKINGS",
+      "label": "研究榜单",
+      "detail": "规则和榜单资料已保存；存在待核实项。"
+    },
+    {
+      "at": "2026-10-30T07:16:29+00:00",
+      "phase": "WAITING_TOPIC",
+      "label": "等待选择题材",
+      "detail": "已准备8个原创选题，等待作者选择。"
     }
   ],
-  "detail": "已选择七猫中文网，正在等待核查现行规则。",
-  "next_action": "核查官方规则和公开榜单，保留来源与时间，再提出5—10个原创选题。",
-  "updated_at": "2026-10-30T06:18:06+00:00"
+  "detail": "已准备8个原创选题，等待作者选择。",
+  "next_action": "作者选择候选编号后，进行长篇规划；当前不写正文。",
+  "updated_at": "2026-10-30T07:16:29+00:00"
 }

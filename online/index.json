@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-10-30T08:54:42+00:00",
+    "generated_at": "2026-10-30T09:06:50+00:00",
     "state_revision": 3,
-    "workflow_revision": 9,
-    "state_sha256": "b6c9384f8526544e5d7097d8a3962b92f02499a7eccc1fd78ee3ce938b46f573",
-    "workflow_sha256": "fa7d8c9dc417ecee947164a24741fcf6391c6c9369fe2a06bce57555b27be06b",
+    "workflow_revision": 10,
+    "state_sha256": "6f733c6fc749319f409c897329573d8a6f488665b061984b72c4dc28e85acf9d",
+    "workflow_sha256": "3dcf96db5a2960d16406f8997513fb742220abe84de17504a5d64687ab916f23",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -38,12 +38,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WRITING",
-    "label": "撰写正文",
+    "phase": "REVIEWING",
+    "label": "检查本章",
     "chapter": 1,
-    "detail": "作者“开始吧”已授权首章；执行1035438f10c04073a52e25963f6378ed，任务书已登记，正在完整起草第1章。",
-    "next_action": "完成第1章后反向提纲与限信息审读，审核并release-check后采用冻结；本次不推进第2章。",
-    "updated_at": "2026-10-30T08:54:42+00:00"
+    "detail": "第1章完整初稿实测8886汉字，当前候选已登记，开始全文事实因果与限信息审读；尚未采用。",
+    "next_action": "依据实际正文反向提纲、核查资源与信息边界，必要时在同一任务内局部返修，release-check通过后采用。",
+    "updated_at": "2026-10-30T09:05:54+00:00"
   },
   "chapters": [],
   "topics": [
@@ -775,6 +775,12 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "作者“开始吧”已授权首章；执行1035438f10c04073a52e25963f6378ed，任务书已登记，正在完整起草第1章。"
+    },
+    {
+      "at": "2026-10-30T09:05:54+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "第1章完整初稿实测8886汉字，当前候选已登记，开始全文事实因果与限信息审读；尚未采用。"
     }
   ]
 }

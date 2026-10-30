@@ -52,7 +52,24 @@
       "reason": "建立十阶段百章未来路线及承诺期限；不追认未来事件已发生"
     }
   ],
-  "tasks": {},
+  "tasks": {
+    "1": {
+      "task_id": "83e10824-d744-433d-a676-30979be7e742",
+      "chapter": 1,
+      "mode": "write",
+      "phase": "candidate",
+      "repairs": 0,
+      "history": [
+        {
+          "sha256": "cf1eb2bf565c22836d649bb28d18ebd5d693329427c321bb4bc44d97d0c27a18",
+          "reason": "初稿",
+          "repairs": 0
+        }
+      ],
+      "candidate_sha256": "cf1eb2bf565c22836d649bb28d18ebd5d693329427c321bb4bc44d97d0c27a18",
+      "candidate_path": "candidates/CH001_cf1eb2bf565c22836d649bb28d18ebd5d693329427c321bb4bc44d97d0c27a18.txt"
+    }
+  },
   "completion": null,
   "serialization": {
     "schema_version": 1,

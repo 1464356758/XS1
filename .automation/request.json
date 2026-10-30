@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_command_1793380110819_r3gzphv",
-  "base_sha": "cb105a2dbba0eb611bdf32613eda38847f64fec0",
+  "request_id": "xs1_command_1793380514676_en5um7q",
+  "base_sha": "4daa2bdbf6a98bce40b669874e72adf585bffe8b",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -17,9 +17,11 @@
       "args": [
         "--root",
         "book",
-        "brief-check",
-        "--file",
-        "drafts/CH002_brief.json"
+        "candidate",
+        "--chapter",
+        "2",
+        "--text",
+        "drafts/CH002_V1.txt"
       ]
     },
     {
@@ -29,11 +31,13 @@
         "book",
         "context",
         "--profile",
-        "writer",
+        "reader",
+        "--text",
+        "drafts/CH002_V1.txt",
         "--budget",
         "80000",
         "--out",
-        "drafts/CH002_writer.md"
+        "drafts/CH002_reader_V1.md"
       ]
     },
     {
@@ -43,13 +47,13 @@
         ".",
         "task",
         "--phase",
-        "WRITING",
+        "REVIEWING",
         "--chapter",
         "2",
         "--detail",
-        "第2章任务书已实读登记；原批次阶段登记参数已修正，沿用本轮run_id继续完整正文，不重置计数。",
+        "第2章完整初稿已登记，实测8089汉字；开始反向提纲、限信息实读及八项事实因果检查。",
         "--next",
-        "完成第2章全文后登记候选并集中审读。"
+        "集中审读，必要时按原任务局部修订；尚未采用。"
       ]
     }
   ]

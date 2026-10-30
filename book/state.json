@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "title": "退婚后，我把赔来的染坊开成了皇商",
-  "revision": 4,
+  "revision": 5,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -31,6 +31,16 @@
       "record_sha256": "3e5269635036b18389f5d0e8899e71ebf43720173e53dd349f26681e820d7405",
       "han_count": 8934,
       "adopted_at": "2026-10-30T09:19:23+00:00"
+    },
+    "2": {
+      "title": "领了钱也能走",
+      "stage": "A01",
+      "text_path": "chapters/CH002_e009c694af91c54ed6abeba96f48da71720db356300bc0a080a5dd90d562c4f9.txt",
+      "text_sha256": "e009c694af91c54ed6abeba96f48da71720db356300bc0a080a5dd90d562c4f9",
+      "record_path": "records/CH002_7d6abc5c40136cdd6ab877f5134afecb195f3cf6b3f812acb49e1c9d7cdecad8.json",
+      "record_sha256": "7d6abc5c40136cdd6ab877f5134afecb195f3cf6b3f812acb49e1c9d7cdecad8",
+      "han_count": 8083,
+      "adopted_at": "2026-10-30T17:21:08+00:00"
     }
   },
   "checkpoints": [],
@@ -89,7 +99,7 @@
       "task_id": "b958f932-b78a-48a8-b28a-d78a6bceaa78",
       "chapter": 2,
       "mode": "write",
-      "phase": "candidate",
+      "phase": "adopted",
       "repairs": 1,
       "history": [
         {
@@ -115,6 +125,10 @@
       "1": {
         "text_sha256": "6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0",
         "record_sha256": "3e5269635036b18389f5d0e8899e71ebf43720173e53dd349f26681e820d7405"
+      },
+      "2": {
+        "text_sha256": "e009c694af91c54ed6abeba96f48da71720db356300bc0a080a5dd90d562c4f9",
+        "record_sha256": "7d6abc5c40136cdd6ab877f5134afecb195f3cf6b3f812acb49e1c9d7cdecad8"
       }
     },
     "published": {},
@@ -127,7 +141,7 @@
       "2": {
         "path": "releases/CH002_0239e661b599a51ac73aa50aff550662f595bb69ec30538ddfc8749c54e547ce.json",
         "sha256": "0239e661b599a51ac73aa50aff550662f595bb69ec30538ddfc8749c54e547ce",
-        "used": false
+        "used": true
       }
     },
     "promises": {
@@ -148,7 +162,7 @@
         ],
         "deadline_chapter": 3,
         "status": "open",
-        "last_reviewed_chapter": 1
+        "last_reviewed_chapter": 2
       },
       "P04": {
         "history": [
@@ -167,7 +181,7 @@
         ],
         "deadline_chapter": 16,
         "status": "open",
-        "last_reviewed_chapter": 1
+        "last_reviewed_chapter": 2
       },
       "P13": {
         "history": [
@@ -186,7 +200,26 @@
         ],
         "deadline_chapter": 3,
         "status": "open",
-        "last_reviewed_chapter": 1
+        "last_reviewed_chapter": 2
+      },
+      "P14": {
+        "history": [
+          {
+            "id": "P14",
+            "action": "set",
+            "deadline_chapter": 3,
+            "reason": "本章首次明确丁茂生次晨带逐人副册供核；下一章应见副册到手及范围，副册不等于付款，不能并入第16章拖延。",
+            "evidence": {
+              "chapter": 2,
+              "sha256": "e009c694af91c54ed6abeba96f48da71720db356300bc0a080a5dd90d562c4f9",
+              "quote": "明日把逐人欠项的副册带来，愿留在坊里的可以看，原册仍归周记备核。"
+            },
+            "chapter": 2
+          }
+        ],
+        "deadline_chapter": 3,
+        "status": "open",
+        "last_reviewed_chapter": 2
       }
     },
     "incidents": {}

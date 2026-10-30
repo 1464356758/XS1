@@ -11,26 +11,26 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-10-30T17:20:29+00:00",
-    "state_revision": 4,
-    "workflow_revision": 16,
-    "state_sha256": "5d203bd6827876f2d3c3cd7d48ee12f8bd19a9eb3303a652a94d59a8fc3e3b17",
-    "workflow_sha256": "ce27c023389d9280aec1fdb111ea3afeac03f829d30884198d209796d48618d7",
+    "generated_at": "2026-10-30T17:21:08+00:00",
+    "state_revision": 5,
+    "workflow_revision": 17,
+    "state_sha256": "08be1bfcd7a053344180ad601d3263c7770e67492a8c4ea24617a801d6c922e2",
+    "workflow_sha256": "068c24e4d6c2355af433de547b024a2b6ea7cc8a8a47d2b7f8c237c1b5108658",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
   "progress": {
     "target_chapters": 100,
-    "adopted_chapters": 1,
+    "adopted_chapters": 2,
     "target_han": 900000,
-    "actual_han": 8934,
+    "actual_han": 17017,
     "completed": false,
     "needs_revalidation": [],
     "reviewed_until": 0,
     "window_review_due": false,
     "unresolved_reviews": [],
     "serial_mode": true,
-    "frozen_chapters": 1,
+    "frozen_chapters": 2,
     "published_chapters": 0,
     "publication_status": "只统计真实回执；无回执不等于未发布",
     "open_incidents": 0,
@@ -38,12 +38,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "SAVING",
-    "label": "保存进度",
-    "chapter": 2,
-    "detail": "第2章8083汉字完成1轮局部修订，正文反向提纲、same_context_approximation限信息审读及八项带引文检查已完成，release-check通过；等待finalize统一采用及回执。",
-    "next_action": "按本轮run_id执行finalize后回读正文、记录、release、state/workflow、回执与索引哈希。",
-    "updated_at": "2026-10-30T17:20:29+00:00"
+    "phase": "WAITING_NEXT",
+    "label": "等待下一章",
+    "chapter": 3,
+    "detail": "第2章已采用并冻结；平台发布另凭真实回执登记。",
+    "next_action": "读取正式状态后，由下一次日更处理下一章。",
+    "updated_at": "2026-10-30T17:21:08+00:00"
   },
   "chapters": [
     {
@@ -53,6 +53,18 @@
       "han_count": 8934,
       "text_path": "book/chapters/CH001_6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0.txt",
       "sha256": "6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0",
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
+    },
+    {
+      "number": 2,
+      "title": "领了钱也能走",
+      "stage": "A01",
+      "han_count": 8083,
+      "text_path": "book/chapters/CH002_e009c694af91c54ed6abeba96f48da71720db356300bc0a080a5dd90d562c4f9.txt",
+      "sha256": "e009c694af91c54ed6abeba96f48da71720db356300bc0a080a5dd90d562c4f9",
       "needs_revalidation": false,
       "frozen": true,
       "publication_status": "unreported",
@@ -731,12 +743,6 @@
   "history": [
     {
       "at": "2026-10-30T07:15:29+00:00",
-      "phase": "SCANNING_RANKINGS",
-      "label": "研究榜单",
-      "detail": "规则和榜单资料已保存；存在待核实项。"
-    },
-    {
-      "at": "2026-10-30T07:15:29+00:00",
       "phase": "WAITING_TOPIC",
       "label": "等待选择题材",
       "detail": "已准备8个原创选题，等待作者选择。"
@@ -818,6 +824,12 @@
       "phase": "SAVING",
       "label": "保存进度",
       "detail": "第2章8083汉字完成1轮局部修订，正文反向提纲、same_context_approximation限信息审读及八项带引文检查已完成，release-check通过；等待finalize统一采用及回执。"
+    },
+    {
+      "at": "2026-10-30T17:21:08+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "第2章已采用并冻结；平台发布另凭真实回执登记。"
     }
   ]
 }

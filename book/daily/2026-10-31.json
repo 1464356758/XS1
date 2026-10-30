@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "type": "novel-daily-completion-v1",
+  "status": "completed",
+  "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
+  "run_id": "621d106118554232a693a1eac357261e",
+  "work_id": "12e68780-a97a-4387-9049-83f15a8abc6c:2026-10-31:2",
+  "start_date": "2026-10-31",
+  "date": "2026-10-31",
+  "started_at": "2026-10-30T17:06:23+00:00",
+  "completed_at": "2026-10-30T17:21:08+00:00",
+  "verified_at": "2026-10-30T17:21:08+00:00",
+  "chapter": 2,
+  "baseline_count": 1,
+  "baseline_fingerprint": "7046e34da75a8ca8490ccb0bbad07ed833d10cad2caf1a582ca2911640c8a4ce",
+  "body_path": "chapters/CH002_e009c694af91c54ed6abeba96f48da71720db356300bc0a080a5dd90d562c4f9.txt",
+  "body_sha256": "e009c694af91c54ed6abeba96f48da71720db356300bc0a080a5dd90d562c4f9",
+  "record_path": "records/CH002_7d6abc5c40136cdd6ab877f5134afecb195f3cf6b3f812acb49e1c9d7cdecad8.json",
+  "record_sha256": "7d6abc5c40136cdd6ab877f5134afecb195f3cf6b3f812acb49e1c9d7cdecad8",
+  "release_path": "releases/CH002_0239e661b599a51ac73aa50aff550662f595bb69ec30538ddfc8749c54e547ce.json",
+  "release_sha256": "0239e661b599a51ac73aa50aff550662f595bb69ec30538ddfc8749c54e547ce",
+  "state_revision": 5
+}

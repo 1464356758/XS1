@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 16,
+  "revision": 17,
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
-  "phase": "SAVING",
+  "phase": "WAITING_NEXT",
   "platform": "qimao",
   "selected_topic": {
     "id": "T01",
@@ -27,7 +27,7 @@
   },
   "research_path": "research/platform_36982be2867fc0e62ed0c6854bafcd2fb98bc6e764105fc5a3577fb0923a7802.json",
   "topics_path": "research/topics_33a9a3c15f080cc49f09a4b8a0e896c8e0aa696a90a627bf1b47bbc8e3e20b2d.json",
-  "chapter": 2,
+  "chapter": 3,
   "history": [
     {
       "at": "2026-10-30T06:18:06+00:00",
@@ -130,9 +130,15 @@
       "phase": "SAVING",
       "label": "保存进度",
       "detail": "第2章8083汉字完成1轮局部修订，正文反向提纲、same_context_approximation限信息审读及八项带引文检查已完成，release-check通过；等待finalize统一采用及回执。"
+    },
+    {
+      "at": "2026-10-30T17:21:08+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "第2章已采用并冻结；平台发布另凭真实回执登记。"
     }
   ],
-  "detail": "第2章8083汉字完成1轮局部修订，正文反向提纲、same_context_approximation限信息审读及八项带引文检查已完成，release-check通过；等待finalize统一采用及回执。",
-  "next_action": "按本轮run_id执行finalize后回读正文、记录、release、state/workflow、回执与索引哈希。",
-  "updated_at": "2026-10-30T17:20:29+00:00"
+  "detail": "第2章已采用并冻结；平台发布另凭真实回执登记。",
+  "next_action": "读取正式状态后，由下一次日更处理下一章。",
+  "updated_at": "2026-10-30T17:21:08+00:00"
 }

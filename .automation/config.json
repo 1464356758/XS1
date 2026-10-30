@@ -1,5 +1,20 @@
 {
   "schema_version": 1,
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
-  "automation_id": null
+  "automation_id": "6ae47df14d748191a2ef310c9384d005",
+  "repository_url": "https://github.com/1464356758/XS1",
+  "default_branch": "main",
+  "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Shanghai:20261031T010000\nRRULE:FREQ=DAILY\nEND:VEVENT",
+  "timing_mode": "exact_schedule",
+  "timezone": "Asia/Shanghai",
+  "is_enabled_observed": true,
+  "feedback_conversation_id": "6ae43636-8940-83ee-a012-729bd7476435",
+  "feedback_url": "https://chatgpt.com/c/6ae43636-8940-83ee-a012-729bd7476435",
+  "platform_next_run_time_observed": null,
+  "runtime_metadata": {
+    "model": null,
+    "reasoning_effort": null,
+    "verification_status": "unverified"
+  },
+  "binding_verified_at": "2026-10-30T11:22:52.201Z"
 }

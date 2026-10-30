@@ -4,18 +4,18 @@
   "initialized": true,
   "book": {
     "id": "12e68780-a97a-4387-9049-83f15a8abc6c",
-    "title": "七猫新书（待选题）",
+    "title": "退婚后，我把赔来的染坊开成了皇商",
     "platform": "qimao",
-    "selected_topic_id": null
+    "selected_topic_id": "T01"
   },
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-10-30T07:16:30+00:00",
-    "state_revision": 0,
-    "workflow_revision": 5,
-    "state_sha256": "38858cdfce706a1be4926d90c40cf238904287329215775db0b2b7d7a8a2f490",
-    "workflow_sha256": "ea6a5a05452e1399231061b9c33247bb2023dad70ab115366ae115e4f9c0464b",
+    "generated_at": "2026-10-30T07:31:13+00:00",
+    "state_revision": 1,
+    "workflow_revision": 7,
+    "state_sha256": "05d61314f51cebfe0b5d59726063052fe680d8a69e251e18a93d7b5fe2c32656",
+    "workflow_sha256": "b76cbd3522c827fe82719e3d4e420e8e4b079adc74390fa42e4d8b712251bd2b",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -38,12 +38,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WAITING_TOPIC",
-    "label": "等待选择题材",
+    "phase": "PLANNING",
+    "label": "长篇规划",
     "chapter": 1,
-    "detail": "已准备8个原创选题，等待作者选择。",
-    "next_action": "作者选择候选编号后，进行长篇规划；当前不写正文。",
-    "updated_at": "2026-10-30T07:16:29+00:00"
+    "detail": "作者已选择T01，正在建立人物、知情与资源边界、百章路线及前五章安排。",
+    "next_action": "完成长篇规划与核查，保存后等待作者明确开始写；本轮不生成正文。",
+    "updated_at": "2026-10-30T07:31:13+00:00"
   },
   "chapters": [],
   "topics": [
@@ -751,6 +751,18 @@
       "phase": "WAITING_TOPIC",
       "label": "等待选择题材",
       "detail": "已准备8个原创选题，等待作者选择。"
+    },
+    {
+      "at": "2026-10-30T07:31:13+00:00",
+      "phase": "PLANNING",
+      "label": "长篇规划",
+      "detail": "已选定《退婚后，我把赔来的染坊开成了皇商》，准备长篇规划。"
+    },
+    {
+      "at": "2026-10-30T07:31:13+00:00",
+      "phase": "PLANNING",
+      "label": "长篇规划",
+      "detail": "作者已选择T01，正在建立人物、知情与资源边界、百章路线及前五章安排。"
     }
   ]
 }

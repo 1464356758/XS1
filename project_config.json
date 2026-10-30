@@ -1,6 +1,6 @@
 {
   "system_version": "4.3-quality",
-  "project_name": "七猫新书（待选题）",
+  "project_name": "退婚后，我把赔来的染坊开成了皇商",
   "book_root": "book",
   "authority": {
     "mode": "github",
@@ -13,8 +13,8 @@
     "chapter_order": "serial",
     "route_window_min": 3,
     "route_window_max": 5,
-    "platform": null,
-    "genre": null
+    "platform": "qimao",
+    "genre": "古代女强/种田经商"
   },
   "execution": {
     "context_character_budget": 80000,

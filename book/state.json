@@ -169,6 +169,10 @@
     "1": {
       "path": "briefs/CH001_0836fd45d83ddb35f85f855c7d963b5acbc6ce197fe610e804a9283983660652.json",
       "sha256": "0836fd45d83ddb35f85f855c7d963b5acbc6ce197fe610e804a9283983660652"
+    },
+    "2": {
+      "path": "briefs/CH002_5fa7017f7f080090317577b58d7c1b5279d0b796ec7eefae3c43afe6105a3d45.json",
+      "sha256": "5fa7017f7f080090317577b58d7c1b5279d0b796ec7eefae3c43afe6105a3d45"
     }
   }
 }

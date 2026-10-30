@@ -1,0 +1,4 @@
+usage: online_state.py task [-h] --phase
+                            {WAITING_PLATFORM,RESEARCH_PLATFORM,SCANNING_RANKINGS,WAITING_TOPIC,PLANNING,WRITING,REVIEWING,REVISING,CHECKPOINT,SAVING,BLOCKED,WAITING_NEXT,COMPLETE,SYSTEM_UPGRADE}
+                            --detail DETAIL --next NEXT [--chapter CHAPTER]
+online_state.py task: error: the following arguments are required: --next

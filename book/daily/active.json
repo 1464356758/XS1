@@ -7,7 +7,7 @@
   "start_date": "2026-10-31",
   "started_at": "2026-10-30T17:06:23+00:00",
   "chapter": 2,
-  "status": "running",
+  "status": "blocked",
   "baseline_count": 1,
   "baseline_fingerprint": "7046e34da75a8ca8490ccb0bbad07ed833d10cad2caf1a582ca2911640c8a4ce",
   "attempts": [],
@@ -22,5 +22,7 @@
     "phase": "begin",
     "at": "2026-10-30T17:06:23+00:00",
     "github_run_id": "41095860473"
-  }
+  },
+  "reason": "工具第5步失败；完整输出保存在本轮work目录。",
+  "blocked_at": "2026-10-30T17:07:07+00:00"
 }

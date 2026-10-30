@@ -1,0 +1,21 @@
+{
+  "task_id": "b958f932-b78a-48a8-b28a-d78a6bceaa78",
+  "chapter": 2,
+  "mode": "write",
+  "phase": "candidate",
+  "repairs": 1,
+  "history": [
+    {
+      "sha256": "8006b84491708b5551542358ddd49cb1baff5ca55cbaadfbf7305df385133099",
+      "reason": "初稿",
+      "repairs": 0
+    },
+    {
+      "sha256": "e009c694af91c54ed6abeba96f48da71720db356300bc0a080a5dd90d562c4f9",
+      "reason": "首轮局部修订：校正报名、登记、领钥匙与援助时序；木行口信移到原意向之后；名单位置改为包内，删去对街来路的多余协议式解释。场景及资金人数结果不变。",
+      "repairs": 1
+    }
+  ],
+  "candidate_sha256": "e009c694af91c54ed6abeba96f48da71720db356300bc0a080a5dd90d562c4f9",
+  "candidate_path": "candidates/CH002_e009c694af91c54ed6abeba96f48da71720db356300bc0a080a5dd90d562c4f9.txt"
+}

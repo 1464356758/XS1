@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_command_1793380018167_i21a5r3",
-  "base_sha": "5858a5ce25320cb07132648ad78ce5b5941b45d5",
+  "request_id": "xs1_command_1793380110819_r3gzphv",
+  "base_sha": "cb105a2dbba0eb611bdf32613eda38847f64fec0",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -17,33 +17,9 @@
       "args": [
         "--root",
         "book",
-        "brief-request",
-        "--out",
-        "drafts/CH002_brief_request.json"
-      ]
-    },
-    {
-      "script": "novel_state.py",
-      "args": [
-        "--root",
-        "book",
-        "history-search",
-        "--query",
-        "陆见棠 陶春杏 援助 路费 旧欠 工册 去留",
-        "--limit",
-        "10"
-      ]
-    },
-    {
-      "script": "novel_state.py",
-      "args": [
-        "--root",
-        "book",
-        "history-search",
-        "--query",
-        "契纸 工钱 退出 客料 封存",
-        "--limit",
-        "10"
+        "brief-check",
+        "--file",
+        "drafts/CH002_brief.json"
       ]
     },
     {
@@ -53,13 +29,11 @@
         "book",
         "context",
         "--profile",
-        "author",
-        "--query",
-        "工册 三百人 旧欠 现金 客料 人物知情",
+        "writer",
         "--budget",
         "80000",
         "--out",
-        "drafts/CH002_author.md"
+        "drafts/CH002_writer.md"
       ]
     },
     {
@@ -73,9 +47,9 @@
         "--chapter",
         "2",
         "--detail",
-        "本轮已领取第2章，正在实读首章并核对工册、旧欠与新用工边界，准备任务书。",
-        "--next-action",
-        "登记本章任务书并生成writer资料，继续完整正文。"
+        "第2章任务书已实读登记；原批次阶段登记参数已修正，沿用本轮run_id继续完整正文，不重置计数。",
+        "--next",
+        "完成第2章全文后登记候选并集中审读。"
       ]
     }
   ]

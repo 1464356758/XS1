@@ -1,5 +1,0 @@
-{
-  "valid_mechanically": true,
-  "han_count": 9432,
-  "note": "未验证语义判断及实际阅读行为"
-}

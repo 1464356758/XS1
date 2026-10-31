@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_1101_command_1793466000988_6ls2nlc",
-  "base_sha": "26efdaf3dfb07c496cfacb6340ed1f365e13222c",
+  "request_id": "xs1_1101_command_1793466622949_kdali9g",
+  "base_sha": "1b6642e53f8a7557c30ad54da5436d0e00e90e8a",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -17,9 +17,11 @@
       "args": [
         "--root",
         "book",
-        "brief-check",
-        "--file",
-        "drafts/CH003_brief.json"
+        "candidate",
+        "--chapter",
+        "3",
+        "--text",
+        "drafts/CH003_V1.txt"
       ]
     },
     {
@@ -29,11 +31,29 @@
         "book",
         "context",
         "--profile",
-        "writer",
+        "reader",
+        "--text",
+        "drafts/CH003_V1.txt",
         "--budget",
         "80000",
         "--out",
-        "drafts/CH003_writer.md"
+        "drafts/CH003_reader_V1.md"
+      ]
+    },
+    {
+      "script": "online_state.py",
+      "args": [
+        "--project",
+        ".",
+        "task",
+        "--phase",
+        "REVIEWING",
+        "--chapter",
+        "3",
+        "--detail",
+        "第3章完整初稿已登记，开始正文反向提纲、限信息审读与八项引文检查；尚未采用。",
+        "--next",
+        "集中核对40/24/8处置、340文工资与工期授权边界，必要时原任务内局部修订。"
       ]
     }
   ]

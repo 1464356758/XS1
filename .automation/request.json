@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_1101_command_1793466622949_kdali9g",
-  "base_sha": "1b6642e53f8a7557c30ad54da5436d0e00e90e8a",
+  "request_id": "xs1_1101_command_1793466775998_pfnc2iw",
+  "base_sha": "2827596ec8f69d39637b8135baffd90d418e4b48",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -17,11 +17,13 @@
       "args": [
         "--root",
         "book",
-        "candidate",
+        "repair",
         "--chapter",
         "3",
         "--text",
-        "drafts/CH003_V1.txt"
+        "drafts/CH003_V2.txt",
+        "--reason",
+        "首轮局部修订：24匹由确定漏做改为未能确认前处理做足；丁茂生动机改为女主猜测；退礼红纸与未收20两银赔明确分开。工序处置、现金、库存与场景结构不变。"
       ]
     },
     {
@@ -33,27 +35,11 @@
         "--profile",
         "reader",
         "--text",
-        "drafts/CH003_V1.txt",
+        "drafts/CH003_V2.txt",
         "--budget",
         "80000",
         "--out",
-        "drafts/CH003_reader_V1.md"
-      ]
-    },
-    {
-      "script": "online_state.py",
-      "args": [
-        "--project",
-        ".",
-        "task",
-        "--phase",
-        "REVIEWING",
-        "--chapter",
-        "3",
-        "--detail",
-        "第3章完整初稿已登记，开始正文反向提纲、限信息审读与八项引文检查；尚未采用。",
-        "--next",
-        "集中核对40/24/8处置、340文工资与工期授权边界，必要时原任务内局部修订。"
+        "drafts/CH003_reader_V2.md"
       ]
     }
   ]

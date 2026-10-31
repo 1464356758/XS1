@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_1101_command_1793466775998_pfnc2iw",
-  "base_sha": "2827596ec8f69d39637b8135baffd90d418e4b48",
+  "request_id": "xs1_1101_command_1793466916430_lpxkrxg",
+  "base_sha": "b2e63cfb419f59b242c9e494e68fbdd94c14e587",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -17,13 +17,11 @@
       "args": [
         "--root",
         "book",
-        "repair",
-        "--chapter",
-        "3",
+        "check-record",
         "--text",
         "drafts/CH003_V2.txt",
-        "--reason",
-        "首轮局部修订：24匹由确定漏做改为未能确认前处理做足；丁茂生动机改为女主猜测；退礼红纸与未收20两银赔明确分开。工序处置、现金、库存与场景结构不变。"
+        "--record",
+        "drafts/CH003_record.json"
       ]
     },
     {
@@ -31,15 +29,13 @@
       "args": [
         "--root",
         "book",
-        "context",
-        "--profile",
-        "reader",
+        "release-request",
         "--text",
         "drafts/CH003_V2.txt",
-        "--budget",
-        "80000",
+        "--record",
+        "drafts/CH003_record.json",
         "--out",
-        "drafts/CH003_reader_V2.md"
+        "drafts/CH003_release_request.json"
       ]
     }
   ]

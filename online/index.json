@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-10-31T16:57:11+00:00",
+    "generated_at": "2026-10-31T16:58:02+00:00",
     "state_revision": 5,
-    "workflow_revision": 17,
+    "workflow_revision": 18,
     "state_sha256": "08be1bfcd7a053344180ad601d3263c7770e67492a8c4ea24617a801d6c922e2",
-    "workflow_sha256": "068c24e4d6c2355af433de547b024a2b6ea7cc8a8a47d2b7f8c237c1b5108658",
+    "workflow_sha256": "062ad46eb710c4e61b1ef0f2d779405eb4a49bba3bd526a5e03472810d9c3eb4",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -38,12 +38,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WAITING_NEXT",
-    "label": "等待下一章",
+    "phase": "WRITING",
+    "label": "撰写正文",
     "chapter": 3,
-    "detail": "第2章已采用并冻结；平台发布另凭真实回执登记。",
-    "next_action": "读取正式状态后，由下一次日更处理下一章。",
-    "updated_at": "2026-10-30T17:21:08+00:00"
+    "detail": "本轮已领取第3章，实读前两章并核对余额23920文、旧欠150两未付、三项次晨承诺；准备任务书与有限染整检查。",
+    "next_action": "登记任务书并读取writer资料后写完整第3章。",
+    "updated_at": "2026-10-31T16:58:02+00:00"
   },
   "chapters": [
     {
@@ -742,12 +742,6 @@
   },
   "history": [
     {
-      "at": "2026-10-30T07:15:29+00:00",
-      "phase": "WAITING_TOPIC",
-      "label": "等待选择题材",
-      "detail": "已准备8个原创选题，等待作者选择。"
-    },
-    {
       "at": "2026-10-30T07:16:29+00:00",
       "phase": "SCANNING_RANKINGS",
       "label": "研究榜单",
@@ -830,6 +824,12 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "第2章已采用并冻结；平台发布另凭真实回执登记。"
+    },
+    {
+      "at": "2026-10-31T16:58:02+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "本轮已领取第3章，实读前两章并核对余额23920文、旧欠150两未付、三项次晨承诺；准备任务书与有限染整检查。"
     }
   ]
 }

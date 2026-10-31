@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 17,
+  "revision": 18,
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
-  "phase": "WAITING_NEXT",
+  "phase": "WRITING",
   "platform": "qimao",
   "selected_topic": {
     "id": "T01",
@@ -136,9 +136,15 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "第2章已采用并冻结；平台发布另凭真实回执登记。"
+    },
+    {
+      "at": "2026-10-31T16:58:02+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "本轮已领取第3章，实读前两章并核对余额23920文、旧欠150两未付、三项次晨承诺；准备任务书与有限染整检查。"
     }
   ],
-  "detail": "第2章已采用并冻结；平台发布另凭真实回执登记。",
-  "next_action": "读取正式状态后，由下一次日更处理下一章。",
-  "updated_at": "2026-10-30T17:21:08+00:00"
+  "detail": "本轮已领取第3章，实读前两章并核对余额23920文、旧欠150两未付、三项次晨承诺；准备任务书与有限染整检查。",
+  "next_action": "登记任务书并读取writer资料后写完整第3章。",
+  "updated_at": "2026-10-31T16:58:02+00:00"
 }

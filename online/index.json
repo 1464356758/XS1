@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-10-31T17:15:25+00:00",
+    "generated_at": "2026-10-31T17:18:30+00:00",
     "state_revision": 5,
-    "workflow_revision": 19,
-    "state_sha256": "b5f6f1da2ca0c894b13ac1848b9da553b43c2382101e05ff44367592caf35e91",
-    "workflow_sha256": "60e96526b9b1be5d9d2c738b6caced7b5990e0b4c85815710994a150391f3b96",
+    "workflow_revision": 20,
+    "state_sha256": "2dc7c16ec38c0e5ea5cacadc30739508a51ead00dac1fb9e7ecddfed4b3d376d",
+    "workflow_sha256": "bc0559543bc3c7514f87d911c58f97bb11972669e3dae0563250c663b3084c86",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -38,12 +38,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "REVIEWING",
-    "label": "检查本章",
+    "phase": "SAVING",
+    "label": "保存进度",
     "chapter": 3,
-    "detail": "第3章完整初稿已登记，开始正文反向提纲、限信息审读与八项引文检查；尚未采用。",
-    "next_action": "集中核对40/24/8处置、340文工资与工期授权边界，必要时原任务内局部修订。",
-    "updated_at": "2026-10-31T17:10:33+00:00"
+    "detail": "第3章8094汉字完成1轮局部修订、反向提纲、same_context_approximation限信息与八项引文审核，release-check通过，等待统一采用。",
+    "next_action": "以本轮run_id执行finalize并回读正式正文、记录、release、回执、state/workflow与索引。",
+    "updated_at": "2026-10-31T17:18:30+00:00"
   },
   "chapters": [
     {
@@ -742,12 +742,6 @@
   },
   "history": [
     {
-      "at": "2026-10-30T07:16:29+00:00",
-      "phase": "WAITING_TOPIC",
-      "label": "等待选择题材",
-      "detail": "已准备8个原创选题，等待作者选择。"
-    },
-    {
       "at": "2026-10-30T07:31:13+00:00",
       "phase": "PLANNING",
       "label": "长篇规划",
@@ -830,6 +824,12 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第3章完整初稿已登记，开始正文反向提纲、限信息审读与八项引文检查；尚未采用。"
+    },
+    {
+      "at": "2026-10-31T17:18:30+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第3章8094汉字完成1轮局部修订、反向提纲、same_context_approximation限信息与八项引文审核，release-check通过，等待统一采用。"
     }
   ]
 }

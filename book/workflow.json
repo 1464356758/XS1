@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 19,
+  "revision": 20,
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
-  "phase": "REVIEWING",
+  "phase": "SAVING",
   "platform": "qimao",
   "selected_topic": {
     "id": "T01",
@@ -148,9 +148,15 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第3章完整初稿已登记，开始正文反向提纲、限信息审读与八项引文检查；尚未采用。"
+    },
+    {
+      "at": "2026-10-31T17:18:30+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第3章8094汉字完成1轮局部修订、反向提纲、same_context_approximation限信息与八项引文审核，release-check通过，等待统一采用。"
     }
   ],
-  "detail": "第3章完整初稿已登记，开始正文反向提纲、限信息审读与八项引文检查；尚未采用。",
-  "next_action": "集中核对40/24/8处置、340文工资与工期授权边界，必要时原任务内局部修订。",
-  "updated_at": "2026-10-31T17:10:33+00:00"
+  "detail": "第3章8094汉字完成1轮局部修订、反向提纲、same_context_approximation限信息与八项引文审核，release-check通过，等待统一采用。",
+  "next_action": "以本轮run_id执行finalize并回读正式正文、记录、release、回执、state/workflow与索引。",
+  "updated_at": "2026-10-31T17:18:30+00:00"
 }

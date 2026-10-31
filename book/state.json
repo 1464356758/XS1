@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "title": "退婚后，我把赔来的染坊开成了皇商",
-  "revision": 5,
+  "revision": 6,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -41,6 +41,16 @@
       "record_sha256": "7d6abc5c40136cdd6ab877f5134afecb195f3cf6b3f812acb49e1c9d7cdecad8",
       "han_count": 8083,
       "adopted_at": "2026-10-30T17:21:08+00:00"
+    },
+    "3": {
+      "title": "救不回的八匹",
+      "stage": "A01",
+      "text_path": "chapters/CH003_c81a946479ad852b4ed4b0caf5135636de5b1caca772c05f1cc5fcfac5c128d9.txt",
+      "text_sha256": "c81a946479ad852b4ed4b0caf5135636de5b1caca772c05f1cc5fcfac5c128d9",
+      "record_path": "records/CH003_ce983d1bce4d0ae5aff5b837d010e9f3e3d59d5ca2cf7715e12eb7222bc41038.json",
+      "record_sha256": "ce983d1bce4d0ae5aff5b837d010e9f3e3d59d5ca2cf7715e12eb7222bc41038",
+      "han_count": 8094,
+      "adopted_at": "2026-10-31T17:18:56+00:00"
     }
   },
   "checkpoints": [],
@@ -120,7 +130,7 @@
       "task_id": "1fb6acaf-6fb3-44b7-a016-9fe57ddf9e4c",
       "chapter": 3,
       "mode": "write",
-      "phase": "candidate",
+      "phase": "adopted",
       "repairs": 1,
       "history": [
         {
@@ -150,6 +160,10 @@
       "2": {
         "text_sha256": "e009c694af91c54ed6abeba96f48da71720db356300bc0a080a5dd90d562c4f9",
         "record_sha256": "7d6abc5c40136cdd6ab877f5134afecb195f3cf6b3f812acb49e1c9d7cdecad8"
+      },
+      "3": {
+        "text_sha256": "c81a946479ad852b4ed4b0caf5135636de5b1caca772c05f1cc5fcfac5c128d9",
+        "record_sha256": "ce983d1bce4d0ae5aff5b837d010e9f3e3d59d5ca2cf7715e12eb7222bc41038"
       }
     },
     "published": {},
@@ -167,7 +181,7 @@
       "3": {
         "path": "releases/CH003_b0b94a6cb2b8ec26d6fb8d9fbf92bf7e1e2ca647d092d08b3d92b4efe7072d39.json",
         "sha256": "b0b94a6cb2b8ec26d6fb8d9fbf92bf7e1e2ca647d092d08b3d92b4efe7072d39",
-        "used": false
+        "used": true
       }
     },
     "promises": {
@@ -184,11 +198,23 @@
               "quote": "“我只能说，还得把各捆分开看。”她把布还回去，“不能拿这一角，就说全是同一种毛病。”"
             },
             "chapter": 1
+          },
+          {
+            "id": "P01",
+            "action": "complete",
+            "deadline_chapter": 3,
+            "reason": "逐匹和分样给40可继续试、24须重理不进交期、8布身不可复原级答案；P02另约未来40合格交付，不把范围完成当产成品完成。",
+            "evidence": {
+              "chapter": 3,
+              "sha256": "c81a946479ad852b4ed4b0caf5135636de5b1caca772c05f1cc5fcfac5c128d9",
+              "quote": "这八匹，我救不回原来那个品级。"
+            },
+            "chapter": 3
           }
         ],
         "deadline_chapter": 3,
-        "status": "open",
-        "last_reviewed_chapter": 2
+        "status": "closed",
+        "last_reviewed_chapter": 3
       },
       "P04": {
         "history": [
@@ -207,7 +233,7 @@
         ],
         "deadline_chapter": 16,
         "status": "open",
-        "last_reviewed_chapter": 2
+        "last_reviewed_chapter": 3
       },
       "P13": {
         "history": [
@@ -222,11 +248,23 @@
               "quote": "“厂屋、晒场和今日点交的缸具，从此归陆姑娘管。明早再点存货，没点清以前，两边都不许挪。”"
             },
             "chapter": 1
+          },
+          {
+            "id": "P13",
+            "action": "complete",
+            "deadline_chapter": 3,
+            "reason": "初九双方看封开门点64/72、先谈工再做、陶半日真实领款，程授权亦先展示；原次晨承诺实落地。",
+            "evidence": {
+              "chapter": 3,
+              "sha256": "c81a946479ad852b4ed4b0caf5135636de5b1caca772c05f1cc5fcfac5c128d9",
+              "quote": "两人先看纸封与门锁，核过昨夜留下的记号，才分别开了自有布库与验布间。"
+            },
+            "chapter": 3
           }
         ],
         "deadline_chapter": 3,
-        "status": "open",
-        "last_reviewed_chapter": 2
+        "status": "closed",
+        "last_reviewed_chapter": 3
       },
       "P14": {
         "history": [
@@ -241,11 +279,80 @@
               "quote": "明日把逐人欠项的副册带来，愿留在坊里的可以看，原册仍归周记备核。"
             },
             "chapter": 2
+          },
+          {
+            "id": "P14",
+            "action": "complete",
+            "deadline_chapter": 3,
+            "reason": "丁交经署名逐人副册，陶核自己和离坊杨栓页，陆收堂屋供查，非借下一张纸拖延或代付款。",
+            "evidence": {
+              "chapter": 3,
+              "sha256": "c81a946479ad852b4ed4b0caf5135636de5b1caca772c05f1cc5fcfac5c128d9",
+              "quote": "副册用新纸抄的，边上还夹着昨夜未核的几张旧凭。"
+            },
+            "chapter": 3
           }
         ],
         "deadline_chapter": 3,
+        "status": "closed",
+        "last_reviewed_chapter": 3
+      },
+      "P02": {
+        "history": [
+          {
+            "id": "P02",
+            "action": "set",
+            "deadline_chapter": 10,
+            "reason": "首次有限40匹、300文每合格匹和初十五验收后费；阶段末须实交实收且承认成本，不用装船或签约代替。",
+            "evidence": {
+              "chapter": 3,
+              "sha256": "c81a946479ad852b4ed4b0caf5135636de5b1caca772c05f1cc5fcfac5c128d9",
+              "quote": "每匹合格后收三百文，四十匹共十二两。"
+            },
+            "chapter": 3
+          }
+        ],
+        "deadline_chapter": 10,
         "status": "open",
-        "last_reviewed_chapter": 2
+        "last_reviewed_chapter": 3
+      },
+      "P03": {
+        "history": [
+          {
+            "id": "P03",
+            "action": "set",
+            "deadline_chapter": 12,
+            "reason": "余32匹连样明确仍属客方，十八日为第10故事日，依第11—12章返程与客方取法落实；不得改自有货或只取得回信。",
+            "evidence": {
+              "chapter": 3,
+              "sha256": "c81a946479ad852b4ed4b0caf5135636de5b1caca772c05f1cc5fcfac5c128d9",
+              "quote": "三月十八以前将余布连样归还的事也要有着落"
+            },
+            "chapter": 3
+          }
+        ],
+        "deadline_chapter": 12,
+        "status": "open",
+        "last_reviewed_chapter": 3
+      },
+      "P15": {
+        "history": [
+          {
+            "id": "P15",
+            "action": "set",
+            "deadline_chapter": 4,
+            "reason": "明晨干后复验色影、当面告知不过结果并问运水价；第4章要实际答复和工价安排，不能继续留明日再看。",
+            "evidence": {
+              "chapter": 3,
+              "sha256": "c81a946479ad852b4ed4b0caf5135636de5b1caca772c05f1cc5fcfac5c128d9",
+              "quote": "那明早就照这样看。别把这条藏在别的后头。"
+            },
+            "chapter": 3
+          }
+        ],
+        "deadline_chapter": 4,
+        "status": "open",
+        "last_reviewed_chapter": 3
       }
     },
     "incidents": {}

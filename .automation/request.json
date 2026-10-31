@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_1101_begin_1793465822532_w6g4ljg",
-  "base_sha": "861e84b1aacedfad953a9cc1c9f8ad0d6a05930a",
+  "request_id": "xs1_1101_command_1793465863741_rgsg1xx",
+  "base_sha": "d372471c66260e4ba707e52ce6343be8ec1f8387",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -9,5 +9,74 @@
     "session_id": "xs1-20261101-1793465776822-b8d2c3c1asf",
     "platform_run_id": "cbb605ad-2c00-8324-a86b-31d94bac63f2"
   },
-  "phase": "begin"
+  "phase": "command",
+  "run_id": "9c68d8988922496f855bc42d9d077f09",
+  "commands": [
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "brief-request",
+        "--out",
+        "drafts/CH003_brief_request.json"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "history-search",
+        "--query",
+        "小样 试缸 分捆 客料 契据",
+        "--limit",
+        "10"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "history-search",
+        "--query",
+        "陆见棠 陶春杏 旧欠 工钱 代价",
+        "--limit",
+        "10"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "context",
+        "--profile",
+        "author",
+        "--query",
+        "客料 旧样 分组 权限 资源 知情",
+        "--budget",
+        "80000",
+        "--out",
+        "drafts/CH003_author.md"
+      ]
+    },
+    {
+      "script": "online_state.py",
+      "args": [
+        "--project",
+        ".",
+        "task",
+        "--phase",
+        "WRITING",
+        "--chapter",
+        "3",
+        "--detail",
+        "本轮已领取第3章，实读前两章并核对余额23920文、旧欠150两未付、三项次晨承诺；准备任务书与有限染整检查。",
+        "--next",
+        "登记任务书并读取writer资料后写完整第3章。"
+      ]
+    }
+  ]
 }

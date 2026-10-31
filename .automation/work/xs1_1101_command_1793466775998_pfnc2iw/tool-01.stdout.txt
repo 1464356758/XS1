@@ -1,0 +1,21 @@
+{
+  "task_id": "1fb6acaf-6fb3-44b7-a016-9fe57ddf9e4c",
+  "chapter": 3,
+  "mode": "write",
+  "phase": "candidate",
+  "repairs": 1,
+  "history": [
+    {
+      "sha256": "77630ab598bb85f6a715aa7c95e32c355bf3acd805d2f92e9c7017c4c04be4d2",
+      "reason": "初稿",
+      "repairs": 0
+    },
+    {
+      "sha256": "c81a946479ad852b4ed4b0caf5135636de5b1caca772c05f1cc5fcfac5c128d9",
+      "reason": "首轮局部修订：24匹由确定漏做改为未能确认前处理做足；丁茂生动机改为女主猜测；退礼红纸与未收20两银赔明确分开。工序处置、现金、库存与场景结构不变。",
+      "repairs": 1
+    }
+  ],
+  "candidate_sha256": "c81a946479ad852b4ed4b0caf5135636de5b1caca772c05f1cc5fcfac5c128d9",
+  "candidate_path": "candidates/CH003_c81a946479ad852b4ed4b0caf5135636de5b1caca772c05f1cc5fcfac5c128d9.txt"
+}

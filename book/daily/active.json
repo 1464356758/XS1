@@ -2,29 +2,25 @@
   "schema_version": 1,
   "type": "novel-daily-task-v1",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
-  "run_id": "621d106118554232a693a1eac357261e",
-  "work_id": "12e68780-a97a-4387-9049-83f15a8abc6c:2026-10-31:2",
-  "start_date": "2026-10-31",
-  "started_at": "2026-10-30T17:06:23+00:00",
-  "chapter": 2,
-  "status": "completed",
-  "baseline_count": 1,
-  "baseline_fingerprint": "7046e34da75a8ca8490ccb0bbad07ed833d10cad2caf1a582ca2911640c8a4ce",
+  "run_id": "9c68d8988922496f855bc42d9d077f09",
+  "work_id": "12e68780-a97a-4387-9049-83f15a8abc6c:2026-11-01:3",
+  "start_date": "2026-11-01",
+  "started_at": "2026-10-31T16:57:11+00:00",
+  "chapter": 3,
+  "status": "running",
+  "baseline_count": 2,
+  "baseline_fingerprint": "171ac804640c12098689b6da3bfb0105bb7e56ce34799f074651b0bd4ce10ed0",
   "attempts": [],
   "controller": {
     "kind": "automation",
     "automation_id": "6ae47df14d748191a2ef310c9384d005",
-    "session_id": "xs1-20261031-v19if9jdc5-1793379907734",
-    "platform_run_id": "e52ee9b7-1154-8332-b569-968a9a51bd73"
+    "session_id": "xs1-20261101-1793465776822-b8d2c3c1asf",
+    "platform_run_id": "cbb605ad-2c00-8324-a86b-31d94bac63f2"
   },
   "executor_checkpoint": {
-    "request_id": "xs1_finalize_1793380857461_wvdr3ao",
-    "phase": "finalize",
-    "at": "2026-10-30T17:21:08+00:00",
-    "github_run_id": "41098047027"
-  },
-  "reason": "工具第5步失败；完整输出保存在本轮work目录。",
-  "blocked_at": "2026-10-30T17:07:07+00:00",
-  "completed_at": "2026-10-30T17:21:08+00:00",
-  "receipt_path": "daily/2026-10-31.json"
+    "request_id": "xs1_1101_begin_1793465822532_w6g4ljg",
+    "phase": "begin",
+    "at": "2026-10-31T16:57:11+00:00",
+    "github_run_id": "41222121195"
+  }
 }

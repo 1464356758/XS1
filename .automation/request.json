@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_1101_command_1793465863741_rgsg1xx",
-  "base_sha": "d372471c66260e4ba707e52ce6343be8ec1f8387",
+  "request_id": "xs1_1101_command_1793466000988_6ls2nlc",
+  "base_sha": "26efdaf3dfb07c496cfacb6340ed1f365e13222c",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -17,33 +17,9 @@
       "args": [
         "--root",
         "book",
-        "brief-request",
-        "--out",
-        "drafts/CH003_brief_request.json"
-      ]
-    },
-    {
-      "script": "novel_state.py",
-      "args": [
-        "--root",
-        "book",
-        "history-search",
-        "--query",
-        "小样 试缸 分捆 客料 契据",
-        "--limit",
-        "10"
-      ]
-    },
-    {
-      "script": "novel_state.py",
-      "args": [
-        "--root",
-        "book",
-        "history-search",
-        "--query",
-        "陆见棠 陶春杏 旧欠 工钱 代价",
-        "--limit",
-        "10"
+        "brief-check",
+        "--file",
+        "drafts/CH003_brief.json"
       ]
     },
     {
@@ -53,29 +29,11 @@
         "book",
         "context",
         "--profile",
-        "author",
-        "--query",
-        "客料 旧样 分组 权限 资源 知情",
+        "writer",
         "--budget",
         "80000",
         "--out",
-        "drafts/CH003_author.md"
-      ]
-    },
-    {
-      "script": "online_state.py",
-      "args": [
-        "--project",
-        ".",
-        "task",
-        "--phase",
-        "WRITING",
-        "--chapter",
-        "3",
-        "--detail",
-        "本轮已领取第3章，实读前两章并核对余额23920文、旧欠150两未付、三项次晨承诺；准备任务书与有限染整检查。",
-        "--next",
-        "登记任务书并读取writer资料后写完整第3章。"
+        "drafts/CH003_writer.md"
       ]
     }
   ]

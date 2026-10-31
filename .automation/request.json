@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_1101_command_1793466916430_lpxkrxg",
-  "base_sha": "b2e63cfb419f59b242c9e494e68fbdd94c14e587",
+  "request_id": "xs1_1101_command_1793467100458_rflxbw7",
+  "base_sha": "095d0a1d686f961c24ebbe77f4b758cd473712e9",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -17,25 +17,29 @@
       "args": [
         "--root",
         "book",
-        "check-record",
-        "--text",
-        "drafts/CH003_V2.txt",
-        "--record",
-        "drafts/CH003_record.json"
-      ]
-    },
-    {
-      "script": "novel_state.py",
-      "args": [
-        "--root",
-        "book",
-        "release-request",
+        "release-check",
         "--text",
         "drafts/CH003_V2.txt",
         "--record",
         "drafts/CH003_record.json",
-        "--out",
-        "drafts/CH003_release_request.json"
+        "--report",
+        "drafts/CH003_release.json"
+      ]
+    },
+    {
+      "script": "online_state.py",
+      "args": [
+        "--project",
+        ".",
+        "task",
+        "--phase",
+        "SAVING",
+        "--chapter",
+        "3",
+        "--detail",
+        "第3章8094汉字完成1轮局部修订、反向提纲、same_context_approximation限信息与八项引文审核，release-check通过，等待统一采用。",
+        "--next",
+        "以本轮run_id执行finalize并回读正式正文、记录、release、回执、state/workflow与索引。"
       ]
     }
   ]

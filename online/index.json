@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-10-31T17:00:10+00:00",
+    "generated_at": "2026-10-31T17:10:33+00:00",
     "state_revision": 5,
-    "workflow_revision": 18,
-    "state_sha256": "f93f0502b9e547c90d9ec01e412440266233de5fef758f19ec470f5497ea9745",
-    "workflow_sha256": "062ad46eb710c4e61b1ef0f2d779405eb4a49bba3bd526a5e03472810d9c3eb4",
+    "workflow_revision": 19,
+    "state_sha256": "20b7ba534eddb0f38630db390745e1d3295c3ba313ce42b27c12864dc518c996",
+    "workflow_sha256": "60e96526b9b1be5d9d2c738b6caced7b5990e0b4c85815710994a150391f3b96",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -38,12 +38,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WRITING",
-    "label": "撰写正文",
+    "phase": "REVIEWING",
+    "label": "检查本章",
     "chapter": 3,
-    "detail": "本轮已领取第3章，实读前两章并核对余额23920文、旧欠150两未付、三项次晨承诺；准备任务书与有限染整检查。",
-    "next_action": "登记任务书并读取writer资料后写完整第3章。",
-    "updated_at": "2026-10-31T16:58:02+00:00"
+    "detail": "第3章完整初稿已登记，开始正文反向提纲、限信息审读与八项引文检查；尚未采用。",
+    "next_action": "集中核对40/24/8处置、340文工资与工期授权边界，必要时原任务内局部修订。",
+    "updated_at": "2026-10-31T17:10:33+00:00"
   },
   "chapters": [
     {
@@ -743,12 +743,6 @@
   "history": [
     {
       "at": "2026-10-30T07:16:29+00:00",
-      "phase": "SCANNING_RANKINGS",
-      "label": "研究榜单",
-      "detail": "规则和榜单资料已保存；存在待核实项。"
-    },
-    {
-      "at": "2026-10-30T07:16:29+00:00",
       "phase": "WAITING_TOPIC",
       "label": "等待选择题材",
       "detail": "已准备8个原创选题，等待作者选择。"
@@ -830,6 +824,12 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "本轮已领取第3章，实读前两章并核对余额23920文、旧欠150两未付、三项次晨承诺；准备任务书与有限染整检查。"
+    },
+    {
+      "at": "2026-10-31T17:10:33+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "第3章完整初稿已登记，开始正文反向提纲、限信息审读与八项引文检查；尚未采用。"
     }
   ]
 }

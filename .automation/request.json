@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_1102_command_1793552558673_pqp81uk2",
-  "base_sha": "c88087c075550a71199ce7428295cc846c4b8188",
+  "request_id": "xs1_1102_command_1793552999956_drsw95g1",
+  "base_sha": "89807fbe01baec69a0694c25a20bf1878b1021ce",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -13,19 +13,47 @@
   "run_id": "69dfdd8e514849a88ebb0c059426717f",
   "commands": [
     {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "candidate",
+        "--chapter",
+        "4",
+        "--text",
+        "drafts/CH004_V1.txt"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "context",
+        "--profile",
+        "reader",
+        "--text",
+        "drafts/CH004_V1.txt",
+        "--budget",
+        "80000",
+        "--out",
+        "drafts/CH004_reader_V1.md"
+      ]
+    },
+    {
       "script": "online_state.py",
       "args": [
         "--project",
         ".",
         "task",
         "--phase",
-        "WRITING",
+        "REVIEWING",
         "--chapter",
         "4",
         "--detail",
-        "第4章任务书与writer资料已生成实读；阶段登记漏传next参数已定位，本轮沿用原run_id继续，未重新begin或重置候选。",
+        "第4章完整初稿8153汉字已登记，开始正文反向提纲、限信息实读与八项带引文检查，尚未采用。",
         "--next",
-        "完成第4章全文、登记候选并实读审核。"
+        "完成当前候选的实读审核，发现事实或阅读问题则局部修订。"
       ]
     }
   ]

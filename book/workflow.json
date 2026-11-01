@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 21,
+  "revision": 22,
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
-  "phase": "WAITING_NEXT",
+  "phase": "WRITING",
   "platform": "qimao",
   "selected_topic": {
     "id": "T01",
@@ -160,9 +160,15 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "第3章已采用并冻结；平台发布另凭真实回执登记。"
+    },
+    {
+      "at": "2026-11-01T17:02:48+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "第4章任务书与writer资料已生成实读；阶段登记漏传next参数已定位，本轮沿用原run_id继续，未重新begin或重置候选。"
     }
   ],
-  "detail": "第3章已采用并冻结；平台发布另凭真实回执登记。",
-  "next_action": "读取正式状态后，由下一次日更处理下一章。",
-  "updated_at": "2026-10-31T17:18:56+00:00"
+  "detail": "第4章任务书与writer资料已生成实读；阶段登记漏传next参数已定位，本轮沿用原run_id继续，未重新begin或重置候选。",
+  "next_action": "完成第4章全文、登记候选并实读审核。",
+  "updated_at": "2026-11-01T17:02:48+00:00"
 }

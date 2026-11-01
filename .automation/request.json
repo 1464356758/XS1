@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_1102_command_1793552387111_456kfv6g",
-  "base_sha": "7bf54d298669258ec38c3548ed770355f06c5217",
+  "request_id": "xs1_1102_command_1793552530316_8o13bddi",
+  "base_sha": "b2e384681c02632fd4e42c6fc760db6a0e6d628d",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -17,33 +17,9 @@
       "args": [
         "--root",
         "book",
-        "brief-request",
-        "--out",
-        "drafts/CH004_brief_request.json"
-      ]
-    },
-    {
-      "script": "novel_state.py",
-      "args": [
-        "--root",
-        "book",
-        "history-search",
-        "--query",
-        "验样 否决 染缸 色影 手艺 陶春杏",
-        "--limit",
-        "8"
-      ]
-    },
-    {
-      "script": "novel_state.py",
-      "args": [
-        "--root",
-        "book",
-        "history-search",
-        "--query",
-        "付钱 工价 工人 离开 运水 试料",
-        "--limit",
-        "8"
+        "brief-check",
+        "--file",
+        "drafts/CH004_brief.json"
       ]
     },
     {
@@ -53,11 +29,25 @@
         "book",
         "context",
         "--profile",
-        "author",
+        "writer",
         "--budget",
-        "80000",
+        "40000",
         "--out",
-        "drafts/CH004_author.md"
+        "drafts/CH004_writer.md"
+      ]
+    },
+    {
+      "script": "online_state.py",
+      "args": [
+        "--project",
+        ".",
+        "task",
+        "--phase",
+        "WRITING",
+        "--chapter",
+        "4",
+        "--detail",
+        "第4章已领取并回读；前三章全文、现金23580文与63整匹加试料包核对完成，任务书和历史检索已实做，继续完整起草。"
       ]
     }
   ]

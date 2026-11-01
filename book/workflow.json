@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 25,
+  "revision": 26,
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
-  "phase": "SAVING",
+  "phase": "WAITING_NEXT",
   "platform": "qimao",
   "selected_topic": {
     "id": "T01",
@@ -27,7 +27,7 @@
   },
   "research_path": "research/platform_36982be2867fc0e62ed0c6854bafcd2fb98bc6e764105fc5a3577fb0923a7802.json",
   "topics_path": "research/topics_33a9a3c15f080cc49f09a4b8a0e896c8e0aa696a90a627bf1b47bbc8e3e20b2d.json",
-  "chapter": 4,
+  "chapter": 5,
   "history": [
     {
       "at": "2026-10-30T06:18:06+00:00",
@@ -184,9 +184,15 @@
       "phase": "SAVING",
       "label": "保存进度",
       "detail": "第4章8184汉字完成1轮局部修订、V2全文限信息实读与八项引文审核，首4在制和现金22580文已核对；等待finalize统一采用并出回执。"
+    },
+    {
+      "at": "2026-11-01T17:18:22+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "第4章已采用并冻结；平台发布另凭真实回执登记。"
     }
   ],
-  "detail": "第4章8184汉字完成1轮局部修订、V2全文限信息实读与八项引文审核，首4在制和现金22580文已核对；等待finalize统一采用并出回执。",
-  "next_action": "finalize统一release-check、adopt、daily finish并回读正式产物。",
-  "updated_at": "2026-11-01T17:17:50+00:00"
+  "detail": "第4章已采用并冻结；平台发布另凭真实回执登记。",
+  "next_action": "读取正式状态后，由下一次日更处理下一章。",
+  "updated_at": "2026-11-01T17:18:22+00:00"
 }

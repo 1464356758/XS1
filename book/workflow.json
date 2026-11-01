@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 24,
+  "revision": 25,
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
-  "phase": "REVIEWING",
+  "phase": "SAVING",
   "platform": "qimao",
   "selected_topic": {
     "id": "T01",
@@ -178,9 +178,15 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第4章V2完成1轮局部修订，已纠正样包来路、还桶时序与邀工范围；继续限信息全文复审及章后记录。"
+    },
+    {
+      "at": "2026-11-01T17:17:50+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第4章8184汉字完成1轮局部修订、V2全文限信息实读与八项引文审核，首4在制和现金22580文已核对；等待finalize统一采用并出回执。"
     }
   ],
-  "detail": "第4章V2完成1轮局部修订，已纠正样包来路、还桶时序与邀工范围；继续限信息全文复审及章后记录。",
-  "next_action": "复审V2全文与八项证据，生成并核对release报告。",
-  "updated_at": "2026-11-01T17:12:09+00:00"
+  "detail": "第4章8184汉字完成1轮局部修订、V2全文限信息实读与八项引文审核，首4在制和现金22580文已核对；等待finalize统一采用并出回执。",
+  "next_action": "finalize统一release-check、adopt、daily finish并回读正式产物。",
+  "updated_at": "2026-11-01T17:17:50+00:00"
 }

@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-11-01T17:14:24+00:00",
+    "generated_at": "2026-11-01T17:17:50+00:00",
     "state_revision": 6,
-    "workflow_revision": 24,
-    "state_sha256": "7d95e284dceb563c6034d1ab6da9d906b2fbfd3af9c6638af6c7b866ae50f8aa",
-    "workflow_sha256": "a9d827f0f67e3823a3b21619be2c0d605dda58d58d2e57e151b30c78849e79ae",
+    "workflow_revision": 25,
+    "state_sha256": "5d1ebc7f13d06360f98ea415062e8b3422858ca29e78f3422cddcc06346f2b94",
+    "workflow_sha256": "59cc33c96b6b689851bd55439b64bb1ecb6bd633d602092f3bf6a1b1cf69d8a5",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -38,12 +38,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "REVIEWING",
-    "label": "检查本章",
+    "phase": "SAVING",
+    "label": "保存进度",
     "chapter": 4,
-    "detail": "第4章V2完成1轮局部修订，已纠正样包来路、还桶时序与邀工范围；继续限信息全文复审及章后记录。",
-    "next_action": "复审V2全文与八项证据，生成并核对release报告。",
-    "updated_at": "2026-11-01T17:12:09+00:00"
+    "detail": "第4章8184汉字完成1轮局部修订、V2全文限信息实读与八项引文审核，首4在制和现金22580文已核对；等待finalize统一采用并出回执。",
+    "next_action": "finalize统一release-check、adopt、daily finish并回读正式产物。",
+    "updated_at": "2026-11-01T17:17:50+00:00"
   },
   "chapters": [
     {
@@ -754,12 +754,6 @@
   },
   "history": [
     {
-      "at": "2026-10-30T09:05:54+00:00",
-      "phase": "REVIEWING",
-      "label": "检查本章",
-      "detail": "第1章完整初稿实测8886汉字，当前候选已登记，开始全文事实因果与限信息审读；尚未采用。"
-    },
-    {
       "at": "2026-10-30T09:09:34+00:00",
       "phase": "REVISING",
       "label": "局部修订",
@@ -842,6 +836,12 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第4章V2完成1轮局部修订，已纠正样包来路、还桶时序与邀工范围；继续限信息全文复审及章后记录。"
+    },
+    {
+      "at": "2026-11-01T17:17:50+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第4章8184汉字完成1轮局部修订、V2全文限信息实读与八项引文审核，首4在制和现金22580文已核对；等待finalize统一采用并出回执。"
     }
   ]
 }

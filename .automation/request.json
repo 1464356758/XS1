@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_1102_command_1793553118597_wp07i3zi",
-  "base_sha": "8cf8b6c20633a6a3a663d361e3387e0acf8116e3",
+  "request_id": "xs1_1102_command_1793553254187_ege71rs0",
+  "base_sha": "02a148324afd4fbb6d847a7fc218cbf66d9eabd0",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -17,13 +17,11 @@
       "args": [
         "--root",
         "book",
-        "repair",
-        "--chapter",
-        "4",
+        "check-record",
         "--text",
         "drafts/CH004_V2.txt",
-        "--reason",
-        "首轮局部修订：原定色样与已收走疵样均由程当面取出，校正两车八桶返还时序与取第四匹后问期的动作，限定次晨邀工仅在场两人；不改场景结构、现金与四匹加工结果。"
+        "--record",
+        "drafts/CH004_record.json"
       ]
     },
     {
@@ -31,31 +29,13 @@
       "args": [
         "--root",
         "book",
-        "context",
-        "--profile",
-        "reader",
+        "release-request",
         "--text",
         "drafts/CH004_V2.txt",
-        "--budget",
-        "80000",
+        "--record",
+        "drafts/CH004_record.json",
         "--out",
-        "drafts/CH004_reader_V2.md"
-      ]
-    },
-    {
-      "script": "online_state.py",
-      "args": [
-        "--project",
-        ".",
-        "task",
-        "--phase",
-        "REVIEWING",
-        "--chapter",
-        "4",
-        "--detail",
-        "第4章V2完成1轮局部修订，已纠正样包来路、还桶时序与邀工范围；继续限信息全文复审及章后记录。",
-        "--next",
-        "复审V2全文与八项证据，生成并核对release报告。"
+        "drafts/CH004_release_request.json"
       ]
     }
   ]

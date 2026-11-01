@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_1102_begin_1793552361065_1s76b7ev",
-  "base_sha": "afe757479a32bfe40413bb7435858c195b703748",
+  "request_id": "xs1_1102_command_1793552387111_456kfv6g",
+  "base_sha": "7bf54d298669258ec38c3548ed770355f06c5217",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -9,5 +9,56 @@
     "session_id": "3044869a416b4ee5942b91ecfa3fc94d",
     "platform_run_id": "6ccd1781-68c4-8322-8a39-415ec3bc9489"
   },
-  "phase": "begin"
+  "phase": "command",
+  "run_id": "69dfdd8e514849a88ebb0c059426717f",
+  "commands": [
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "brief-request",
+        "--out",
+        "drafts/CH004_brief_request.json"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "history-search",
+        "--query",
+        "验样 否决 染缸 色影 手艺 陶春杏",
+        "--limit",
+        "8"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "history-search",
+        "--query",
+        "付钱 工价 工人 离开 运水 试料",
+        "--limit",
+        "8"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "context",
+        "--profile",
+        "author",
+        "--budget",
+        "80000",
+        "--out",
+        "drafts/CH004_author.md"
+      ]
+    }
+  ]
 }

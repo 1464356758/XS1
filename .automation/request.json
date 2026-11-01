@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_1102_command_1793553460097_d1ykiynf",
-  "base_sha": "407f7cac7b2f2e6b90a8d2c2df28ab53792ac4e4",
+  "request_id": "xs1_1102_finalize_1793553492680_52bnu4o3",
+  "base_sha": "ff91d831ed6eb35d7db54723ee09523bfdfdf671",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -9,38 +9,9 @@
     "session_id": "3044869a416b4ee5942b91ecfa3fc94d",
     "platform_run_id": "6ccd1781-68c4-8322-8a39-415ec3bc9489"
   },
-  "phase": "command",
+  "phase": "finalize",
   "run_id": "69dfdd8e514849a88ebb0c059426717f",
-  "commands": [
-    {
-      "script": "novel_state.py",
-      "args": [
-        "--root",
-        "book",
-        "release-check",
-        "--text",
-        "drafts/CH004_V2.txt",
-        "--record",
-        "drafts/CH004_record.json",
-        "--report",
-        "drafts/CH004_release.json"
-      ]
-    },
-    {
-      "script": "online_state.py",
-      "args": [
-        "--project",
-        ".",
-        "task",
-        "--phase",
-        "SAVING",
-        "--chapter",
-        "4",
-        "--detail",
-        "第4章8184汉字完成1轮局部修订、V2全文限信息实读与八项引文审核，首4在制和现金22580文已核对；等待finalize统一采用并出回执。",
-        "--next",
-        "finalize统一release-check、adopt、daily finish并回读正式产物。"
-      ]
-    }
-  ]
+  "text": "drafts/CH004_V2.txt",
+  "record": "drafts/CH004_record.json",
+  "report": "drafts/CH004_release.json"
 }

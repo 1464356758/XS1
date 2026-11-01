@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 22,
+  "revision": 23,
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
-  "phase": "WRITING",
+  "phase": "REVIEWING",
   "platform": "qimao",
   "selected_topic": {
     "id": "T01",
@@ -166,9 +166,15 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "第4章任务书与writer资料已生成实读；阶段登记漏传next参数已定位，本轮沿用原run_id继续，未重新begin或重置候选。"
+    },
+    {
+      "at": "2026-11-01T17:10:09+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "第4章完整初稿8153汉字已登记，开始正文反向提纲、限信息实读与八项带引文检查，尚未采用。"
     }
   ],
-  "detail": "第4章任务书与writer资料已生成实读；阶段登记漏传next参数已定位，本轮沿用原run_id继续，未重新begin或重置候选。",
-  "next_action": "完成第4章全文、登记候选并实读审核。",
-  "updated_at": "2026-11-01T17:02:48+00:00"
+  "detail": "第4章完整初稿8153汉字已登记，开始正文反向提纲、限信息实读与八项带引文检查，尚未采用。",
+  "next_action": "完成当前候选的实读审核，发现事实或阅读问题则局部修订。",
+  "updated_at": "2026-11-01T17:10:09+00:00"
 }

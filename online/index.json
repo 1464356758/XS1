@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-11-01T17:02:48+00:00",
+    "generated_at": "2026-11-01T17:10:09+00:00",
     "state_revision": 6,
-    "workflow_revision": 22,
-    "state_sha256": "321fc074810cdb9eee7cabaa89243f02d7733c3f33f4f552eb832bca2563fa98",
-    "workflow_sha256": "5b9e9f5bd05adf5013ae99011e6ff3ecaf92cdead612d842c6c98661e826336d",
+    "workflow_revision": 23,
+    "state_sha256": "dc266309537effc30dcc363eb6d47dea570fe1a88b8b284a3cf4996ed7ab857d",
+    "workflow_sha256": "c916f2401ac3dc75902251cb3befcc98295f035f37e6211d7da1660323c4ce63",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -38,12 +38,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WRITING",
-    "label": "撰写正文",
+    "phase": "REVIEWING",
+    "label": "检查本章",
     "chapter": 4,
-    "detail": "第4章任务书与writer资料已生成实读；阶段登记漏传next参数已定位，本轮沿用原run_id继续，未重新begin或重置候选。",
-    "next_action": "完成第4章全文、登记候选并实读审核。",
-    "updated_at": "2026-11-01T17:02:48+00:00"
+    "detail": "第4章完整初稿8153汉字已登记，开始正文反向提纲、限信息实读与八项带引文检查，尚未采用。",
+    "next_action": "完成当前候选的实读审核，发现事实或阅读问题则局部修订。",
+    "updated_at": "2026-11-01T17:10:09+00:00"
   },
   "chapters": [
     {
@@ -754,12 +754,6 @@
   },
   "history": [
     {
-      "at": "2026-10-30T07:52:35+00:00",
-      "phase": "PLANNING",
-      "label": "长篇规划",
-      "detail": "T01开书规划完成：人物与世界边界、知情资源账、十阶段100章路线和前五章预算已建立；正文0章，等待作者开始写。"
-    },
-    {
       "at": "2026-10-30T08:54:42+00:00",
       "phase": "WRITING",
       "label": "撰写正文",
@@ -842,6 +836,12 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "第4章任务书与writer资料已生成实读；阶段登记漏传next参数已定位，本轮沿用原run_id继续，未重新begin或重置候选。"
+    },
+    {
+      "at": "2026-11-01T17:10:09+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "第4章完整初稿8153汉字已登记，开始正文反向提纲、限信息实读与八项带引文检查，尚未采用。"
     }
   ]
 }

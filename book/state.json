@@ -152,16 +152,21 @@
       "chapter": 4,
       "mode": "write",
       "phase": "candidate",
-      "repairs": 0,
+      "repairs": 1,
       "history": [
         {
           "sha256": "dbeb72da1ff5d5fde6f54462afff35cf035be3e1181af0635198737b424be82f",
           "reason": "初稿",
           "repairs": 0
+        },
+        {
+          "sha256": "77dbed9aa4b2bd159af488149f92e74f9c840c8644a5eddb14a35e91cb27eb0b",
+          "reason": "首轮局部修订：原定色样与已收走疵样均由程当面取出，校正两车八桶返还时序与取第四匹后问期的动作，限定次晨邀工仅在场两人；不改场景结构、现金与四匹加工结果。",
+          "repairs": 1
         }
       ],
-      "candidate_sha256": "dbeb72da1ff5d5fde6f54462afff35cf035be3e1181af0635198737b424be82f",
-      "candidate_path": "candidates/CH004_dbeb72da1ff5d5fde6f54462afff35cf035be3e1181af0635198737b424be82f.txt"
+      "candidate_sha256": "77dbed9aa4b2bd159af488149f92e74f9c840c8644a5eddb14a35e91cb27eb0b",
+      "candidate_path": "candidates/CH004_77dbed9aa4b2bd159af488149f92e74f9c840c8644a5eddb14a35e91cb27eb0b.txt"
     }
   },
   "completion": null,

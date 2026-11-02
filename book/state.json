@@ -444,6 +444,10 @@
     "4": {
       "path": "briefs/CH004_70b67f78f9a7a18f8148d7b2271317598f2cc09d65e90c452ec34a65ab19fb5e.json",
       "sha256": "70b67f78f9a7a18f8148d7b2271317598f2cc09d65e90c452ec34a65ab19fb5e"
+    },
+    "5": {
+      "path": "briefs/CH005_c85ad44a6586998f2c2ea51b484aebba8222524e2295877e7e5c88f502468c52.json",
+      "sha256": "c85ad44a6586998f2c2ea51b484aebba8222524e2295877e7e5c88f502468c52"
     }
   }
 }

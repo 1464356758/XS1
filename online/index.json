@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-11-02T17:07:24+00:00",
+    "generated_at": "2026-11-02T17:09:21+00:00",
     "state_revision": 7,
-    "workflow_revision": 26,
-    "state_sha256": "35e16777d9e82dbcf0751d1f96eb0f78209467d925aee00523bc533f7fed60ff",
-    "workflow_sha256": "b84202be1e4792d6e26a962d98c1723dc0b3a62de7ca5b238dddf1a4b7086fd3",
+    "workflow_revision": 27,
+    "state_sha256": "0b106a2881d5492a5380ea692c26cd4bddaa8ed1124f6bc1e544e2be595ce741",
+    "workflow_sha256": "0a27046a520cc38e9accb35a7d88617fca72b29ac494ff31b5db08108789f0e6",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -38,12 +38,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WAITING_NEXT",
-    "label": "等待下一章",
+    "phase": "WRITING",
+    "label": "撰写正文",
     "chapter": 5,
-    "detail": "第4章已采用并冻结；平台发布另凭真实回执登记。",
-    "next_action": "读取正式状态后，由下一次日更处理下一章。",
-    "updated_at": "2026-11-01T17:18:22+00:00"
+    "detail": "第5章已实读前四章全文与记录，完成历史办法检索，正在写完整正文及首五章回看。",
+    "next_action": "完成第5章全文后登记候选并实读审核。",
+    "updated_at": "2026-11-02T17:09:21+00:00"
   },
   "chapters": [
     {
@@ -766,12 +766,6 @@
   },
   "history": [
     {
-      "at": "2026-10-30T09:21:21+00:00",
-      "phase": "WAITING_NEXT",
-      "label": "等待下一章",
-      "detail": "第1章《赔来的染坊》8934汉字，完成1轮局部修订、八项审核、发布前检查与采用冻结，累计1/100章；平台发布未登记。"
-    },
-    {
       "at": "2026-10-30T17:08:42+00:00",
       "phase": "WRITING",
       "label": "撰写正文",
@@ -854,6 +848,12 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "第4章已采用并冻结；平台发布另凭真实回执登记。"
+    },
+    {
+      "at": "2026-11-02T17:09:21+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "第5章已实读前四章全文与记录，完成历史办法检索，正在写完整正文及首五章回看。"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_begin_mvzigdk6_vc0f7mibduj",
-  "base_sha": "6bcefb4bc95db21b4879a0fef37556929227c450",
+  "request_id": "xs1_command_mvzihkgy_03m9ud3zam47",
+  "base_sha": "3d46886132e9549d9ab2cf2fb58659cee2146a74",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -9,5 +9,42 @@
     "session_id": "xs1_mvzifgm0_950wusoy8kk",
     "platform_run_id": "b2087c95-ffb4-8328-85b7-fbfdd8cbd286"
   },
-  "phase": "begin"
+  "phase": "command",
+  "run_id": "a351e0881a644bc49a24eddf5d3f252e",
+  "commands": [
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "brief-request",
+        "--out",
+        "drafts/CH005_brief_pending.json"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "history-search",
+        "--query",
+        "雨 棚 晒场 验样 叫停 减量",
+        "--limit",
+        "12"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "history-search",
+        "--query",
+        "陆见棠 陶春杏 工钱 四十匹 程望山",
+        "--limit",
+        "12"
+      ]
+    }
+  ]
 }

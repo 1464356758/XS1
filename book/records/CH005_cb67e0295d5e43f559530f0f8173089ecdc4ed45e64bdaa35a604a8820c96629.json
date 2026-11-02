@@ -1,0 +1,288 @@
+{
+  "chapter": 5,
+  "title": "第一场雨",
+  "stage": "A01",
+  "base_revision": 7,
+  "canon_sha256": "6ba23e92c86a5337e41f0c86542a5230e86ce8b7cabd0896d99502bad0df9397",
+  "text_sha256": "4ced0a044413c08119345331925bcafc28b312529642058ef35b0e8e92474f82",
+  "complete": true,
+  "story_time_end": 5520,
+  "time_note": "主要时间为景和九年三月十一清晨至入夜；初八零点为0，三月十一为第3日。4780/4820/4860/5000/5100/5400/5450/5520仅登记场景先后映射，不冒充正文精确报时。十三卯前退棚与拟十三起行、十五府城验收皆为未来约定。",
+  "summary": "首4客料在三月十一雨前经陆、陶、阿芹、程逐匹干验，可收入当地待交而非府城收货。色影暂停8组在程见证下另取相应小样，润洗松折后有限补染、透风清洗，湿时不判过，约次晨干验；整货未动。雨使露天晾位不可用，陆未先取新大货。蒋嫂提供西头绳行线索，陆两次实看并带程核地点。罗娘子为自己的次日细绳交货保留西湾，只租东湾8匹位至十三卯时，陆实付600文且自己守夜。另买油布120，定两车清水320实到实付，梁嫂只做下午但因跑两边议80，孙成半日含平车两趟议80。试车后只从28可试未加工组取新8，原号保留；同一既有缸、先4后4，透风清洗后罩雨运到棚里分开展晾。新8仍湿，首4留晴川堂屋干放，未加工60仍照组锁验布间，程持钥匙，72全归苏家。陶120、阿芹80、梁80均现付，孙连车80清，总日出1400，现金余21180文，累计生产2820，不重扣援助或换币，不垫旧欠，无加工费入账。陆在廊下守新8，明早须实排余28与初十三起行，没把租棚当无限产能。",
+  "review": {
+    "read_full_text": true,
+    "decision": "adopt",
+    "blocking_issues": [],
+    "sources_checked": [
+      {
+        "chapter": 1,
+        "sha256": "6d60b8c3f0db7365712f32f3206996cfecb14f2b512c411d900c67f965bd29d0",
+        "quote": "“晴川染坊，我接。”她道。"
+      },
+      {
+        "chapter": 2,
+        "sha256": "e009c694af91c54ed6abeba96f48da71720db356300bc0a080a5dd90d562c4f9",
+        "quote": "原来高高立着架子的地方，只剩一片空地，通行倒安全了，能挂布的地方也实实在在少了一副。"
+      },
+      {
+        "chapter": 3,
+        "sha256": "c81a946479ad852b4ed4b0caf5135636de5b1caca772c05f1cc5fcfac5c128d9",
+        "quote": "在府城按原样验，收了哪匹，才结哪匹的新加工钱。"
+      },
+      {
+        "chapter": 4,
+        "sha256": "77dbed9aa4b2bd159af488149f92e74f9c840c8644a5eddb14a35e91cb27eb0b",
+        "quote": "未加工的六十八匹仍照原来的分组锁在验布间"
+      },
+      {
+        "chapter": 4,
+        "sha256": "77dbed9aa4b2bd159af488149f92e74f9c840c8644a5eddb14a35e91cb27eb0b",
+        "quote": "原有二十三两五百八十文，如今余二十二两五百八十文"
+      },
+      {
+        "chapter": 4,
+        "sha256": "77dbed9aa4b2bd159af488149f92e74f9c840c8644a5eddb14a35e91cb27eb0b",
+        "quote": "明早你来，四匹干验和那组怎么试，一起看。"
+      }
+    ],
+    "conclusion": "前四章全文及记录已分批实读，本章V1与reader包实读，1轮局部修订处理首4斜影误继承、院产取得方式、新8来源易混、有限视角与局部歧义。V2重核改动及整章因果和首五章覆盖，same_context_approximation，不是独立读者。首4有当地结果，P16的两项要求实际兑现；P17新样干验未完成不提前关。租金、用工、水、车、油布为实际支出；22580-1400=21180，72=4+8+20+8+24+8，既有63自有整匹与旧欠不动。新场地并未保证交期或无限产能，旧婚约不回收。八项具体证据及五章回看见同稿release报告。"
+  },
+  "facts": [
+    {
+      "kind": "state",
+      "key": "customer_repair:first_four_local",
+      "value": "首4已逐匹干验、与标准及擦验对照，当地可列待交；不是府城正式收货或1200文到账。",
+      "holder": "",
+      "valid_from": 4780,
+      "valid_until": null,
+      "quote": "这四匹，先收在待交的里头。"
+    },
+    {
+      "kind": "state",
+      "key": "customer_cloth:storage_first_four",
+      "value": "首4以净旧布隔、离地长凳、留通风在晴川堂屋干放，遮迎雨窗不密闷包。",
+      "holder": "",
+      "valid_from": 4800,
+      "valid_until": null,
+      "quote": "陆见棠与阿芹将四匹松松归拢，用干净的旧布隔好，搁到堂屋里离地的长凳上。"
+    },
+    {
+      "kind": "fact",
+      "key": "rain:production_interruption_day3",
+      "value": "三月十一雨使原露天晾位不可用，未先下新大货；不是洪灾或原缸坏。",
+      "holder": "",
+      "valid_from": 4860,
+      "valid_until": null,
+      "quote": "原先量过的四匹晾位，从墙这边一直湿到那边。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "C01:shelter_lead",
+      "value": "蒋嫂因常走该处告知罗家绳行有棚、自家也用，不证明已获租赁或无限空位。",
+      "holder": "C01",
+      "valid_from": 4880,
+      "valid_until": null,
+      "quote": "西头罗家绳行有棚。我常从那边过，棚顶前些日子才补。"
+    },
+    {
+      "kind": "fact",
+      "key": "L06:luo_shed_rental_paid",
+      "value": "新增地点L06为镇西下渠石桥前罗家绳行后棚东湾，付600至三月十三卯时，8匹位；西湾归棚主保留，她不保证干布、不免费守夜。",
+      "holder": "",
+      "valid_from": 5000,
+      "valid_until": null,
+      "quote": "从今日午时起，到十三卯时腾清东湾，六百文。"
+    },
+    {
+      "kind": "fact",
+      "key": "L06:rent_paid_cash",
+      "value": "600文已由陆给罗并由罗收柜，非预期支出，挪自家绳后东湾实际空出。",
+      "holder": "",
+      "valid_from": 5000,
+      "valid_until": null,
+      "quote": "陆见棠数出六百文。"
+    },
+    {
+      "kind": "fact",
+      "key": "C12:offsite_drying_permission",
+      "value": "程在见棚后同意另28可试组中的新8到棚晾，原号出入核；不是放行暂停8，也不是收货。",
+      "holder": "",
+      "valid_from": 5000,
+      "valid_until": null,
+      "quote": "程望山同意从已可继续试的二十八匹里另选八匹，到这里晾放；原号照留，出坊、到棚都当面核。"
+    },
+    {
+      "kind": "state",
+      "key": "L06:west_bay_limit",
+      "value": "罗娘子为明日午前细绳交货保留西湾，不能擅多挂。",
+      "holder": "",
+      "valid_from": 4970,
+      "valid_until": null,
+      "quote": "这边给你看。过这条，都是我的。"
+    },
+    {
+      "kind": "fact",
+      "key": "rain_cover:purchase",
+      "value": "旧边厚油布一块120文实买，可罩平车，上方遮不压湿布，资产不是损耗全数抹去。",
+      "holder": "",
+      "valid_from": 5030,
+      "valid_until": null,
+      "quote": "她买一块能罩平车的厚油布，一百二十文"
+    },
+    {
+      "kind": "fact",
+      "key": "labor:day3_liang_terms",
+      "value": "梁嫂午前另有活，只做下午半日，但因洗挂往返议80，陆答应不拖夜，不用全日80机械折半。",
+      "holder": "",
+      "valid_from": 5050,
+      "valid_until": null,
+      "quote": "你下午要我接着抬、洗、挂，赶到晚，八十文。"
+    },
+    {
+      "kind": "fact",
+      "key": "labor:day3_sun_carriage_terms",
+      "value": "孙成半日+自带小平车两趟共80，额外趟另议；非仅40文旧搬水活或购车。",
+      "holder": "",
+      "valid_from": 5040,
+      "valid_until": null,
+      "quote": "八十文，连半日的工和车，天黑前还我空车。"
+    },
+    {
+      "kind": "fact",
+      "key": "transport:day3_trial_and_actual",
+      "value": "以昨日自有坏长幅及小水桶试车、换夹位置，正式新8分两趟各4罩雨到棚再挂，未把试布丢污当客料。",
+      "holder": "",
+      "valid_from": 5300,
+      "valid_until": null,
+      "quote": "两人收住笑，重新往前走。"
+    },
+    {
+      "kind": "state",
+      "key": "customer_repair:paused_eight_samples",
+      "value": "色影暂停8各号小样留原，润洗松折、既有缸有限试、透风清洗后挂檐下；湿时未判过，整8未动。",
+      "holder": "",
+      "valid_from": 5150,
+      "valid_until": null,
+      "quote": "小样先在既有缸里逐组作有限试，出缸透风，清洗后分开挂到檐下的小架上，原号仍露着。"
+    },
+    {
+      "kind": "state",
+      "key": "customer_cloth:repair_partition",
+      "value": "72守恒：4当地干验待交；8新补染清洗后湿晾棚；20同组未加工+8色影暂停未做+24需重理+8旧损=60未加工；没有1匹府城验收。",
+      "holder": "",
+      "valid_from": 5450,
+      "valid_until": null,
+      "quote": "四匹当地干验可收，八匹加工后在罗家棚，四十匹的范围里，还有二十八匹未做，其中八匹暂停等新样。"
+    },
+    {
+      "kind": "state",
+      "key": "customer_cloth:storage_and_key",
+      "value": "未加工60仍按组锁晴川验布间，程持钥匙；新8在罗棚东湾原号朝通道，仍苏家货。",
+      "holder": "",
+      "valid_from": 5160,
+      "valid_until": null,
+      "quote": "验布间余下的六十匹重新按组归回原位，门锁好，钥匙还在程望山身上。"
+    },
+    {
+      "kind": "fact",
+      "key": "water:day3_delivery",
+      "value": "蒋两车各4桶仍各160共320，分别到坊并实付；午后收上午桶、入夜前收下午桶，余清水转自有净桶不混浑。",
+      "holder": "",
+      "valid_from": 5430,
+      "valid_until": null,
+      "quote": "两车水的价已清，没有多出一车没问过的钱。"
+    },
+    {
+      "kind": "state",
+      "key": "dye_material:new_reserve",
+      "value": "既有一口缸对样后分批，前章备用罐仍旁边，未整罐添、未开其他缸；自有整坯无新增消耗。",
+      "holder": "",
+      "valid_from": 5190,
+      "valid_until": null,
+      "quote": "备用的小罐仍在旁边，不因为窗外天暗，就拿整罐料把颜色压得更深。"
+    },
+    {
+      "kind": "fact",
+      "key": "labor:day3_payment",
+      "value": "孙连车80先实付；陶120、阿芹80、梁80后实付280，合360含车。等待和跑两边没有扣薪。",
+      "holder": "",
+      "valid_from": 5450,
+      "valid_until": null,
+      "quote": "陶春杏一百二十文，阿芹与梁嫂各八十文，三份二百八十文。"
+    },
+    {
+      "kind": "state",
+      "key": "C01:cash_total",
+      "value": "22580-1400=21180文；20.5两银+680文铜，二两换2000不另算支出，无加工款无旧欠垫付。",
+      "holder": "",
+      "valid_from": 5450,
+      "valid_until": null,
+      "quote": "原有二十二两五百八十文，剩二十一两一百八十文，其中二十两半是银，铜钱六百八十。"
+    },
+    {
+      "kind": "state",
+      "key": "production:cash_budget",
+      "value": "累计实出2820，18两上限尚未花完；援助12两不重扣，最高12两加工费不入现金。",
+      "holder": "",
+      "valid_from": 5450,
+      "valid_until": null,
+      "quote": "连从前生产所支的一千四百二十文，已实出二千八百二十文。"
+    },
+    {
+      "kind": "state",
+      "key": "C02:next_morning_commitment",
+      "value": "陶答次晨看样和讨论排量，未承诺全日或夜工；梁孙需另议，阿芹也未预记次日受雇。",
+      "holder": "",
+      "valid_from": 5470,
+      "valid_until": null,
+      "quote": "明早我来。"
+    },
+    {
+      "kind": "state",
+      "key": "C01:location",
+      "value": "陆本夜在罗家绳行后廊留守新8，借凳热水；非入住自有铺或已经完成明晨检查。",
+      "holder": "",
+      "valid_from": 5520,
+      "valid_until": null,
+      "quote": "陆见棠在后廊坐下，将带来的干外衣披上。"
+    }
+  ],
+  "progression": {
+    "goal": "给首四当地干验答案，雨中取得能实际晾新批的场地，让有限生产继续。",
+    "obstacle": "原晒场失效；堂屋、库房不能混湿布；绳行棚主有自己的交期，只有东湾；人、车、清水和缸口要同时安排，余28与十三起行冲突。",
+    "method": "先验干布并当面对暂停组取样；实地量棚、先谈价付款，程核同意晾处；试车罩雨，按先四后四接送加工，走两趟实际挂开。",
+    "choice": "不抢用棚主西湾，不先开十六，不以低价占梁嫂半日，自己随货走雨路与留夜；只从28可试组取新8。",
+    "result": "首4干验待交、新8湿晾在棚；其余60未加工，样8留到明晨。付1400余21180，有可用付费晾位与真实8匹新加工，不是只拿下一张纸。",
+    "consequence": "租600不保证干，油布车水工都付现；女主必须守夜，现位置被新8占住，下一日余量不能靠喊满人或延长运程解决。",
+    "next_options": "第6章先给暂停8的新样干后答案与棚内8复看结果，再按真实工时、轮转及天气排余量；若交期有缺口当面对程披露，不偷改验收日。",
+    "scene_function": "晨验让努力有阶段成果；雨改变生产条件；棚主保自己的单推动讨价与减量；真实加工转运使棚有实用；付薪、笑与半壶热水提供劳动余波而非再说教。"
+  },
+  "thread_events": [
+    {
+      "id": "P16",
+      "action": "payoff",
+      "description": "首4雨前逐匹干验当地可收，暂停8的取样、分洗、有限补染与留原样办法当面对程执行，按上章两项约定给行动与结果；并未承诺暂停8本章就全救好。",
+      "quote": "这四匹，先收在待交的里头。"
+    },
+    {
+      "id": "P17",
+      "action": "plant",
+      "description": "本章新取的暂停8组试样须次晨干验并当面给过或不过的结果，不凭湿色放大货。",
+      "quote": "明晨当面干验，过与不过都告诉他。这八匹今日的整货不动。"
+    },
+    {
+      "id": "P02",
+      "action": "develop",
+      "description": "首4仅当地待交；新8已经加工到湿晾，余28未做。原40与三百文验后费仍待府城兑现，雨棚不是变更十五验期。",
+      "quote": "首四仍在晴川堂屋干放，这边八匹只是加工完挂起，布还潮着，不能并成十二匹已经收货。"
+    },
+    {
+      "id": "P03",
+      "action": "develop",
+      "description": "外32仍为苏家保管，未收到货主处置回信，不当成陆库存，归还期限保留。",
+      "quote": "之外那三十二匹仍是苏家的，也仍等东家安排归还。"
+    }
+  ],
+  "stage_closing": false,
+  "measured_han": 8777
+}

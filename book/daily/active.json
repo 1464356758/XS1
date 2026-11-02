@@ -18,9 +18,9 @@
     "platform_run_id": "b2087c95-ffb4-8328-85b7-fbfdd8cbd286"
   },
   "executor_checkpoint": {
-    "request_id": "xs1_begin_mvzigdk6_vc0f7mibduj",
-    "phase": "begin",
-    "at": "2026-11-02T17:06:45+00:00",
-    "github_run_id": "41487919919"
+    "request_id": "xs1_command_mvzihkgy_03m9ud3zam47",
+    "phase": "command",
+    "at": "2026-11-02T17:07:24+00:00",
+    "github_run_id": "41488079716"
   }
 }

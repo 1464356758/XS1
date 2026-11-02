@@ -1,0 +1,21 @@
+{
+  "task_id": "53b7ad35-c78b-4508-ad1e-766214082e83",
+  "chapter": 5,
+  "mode": "write",
+  "phase": "candidate",
+  "repairs": 1,
+  "history": [
+    {
+      "sha256": "9dfe41f1242e18a5d9240d3e21e7895ae5a321239a175a48d2ac2cd7decb0d1b",
+      "reason": "初稿",
+      "repairs": 0
+    },
+    {
+      "sha256": "4ced0a044413c08119345331925bcafc28b312529642058ef35b0e8e92474f82",
+      "reason": "首轮局部修订：首4首次干验不继承自有坏长幅斜影，产权改赔偿交接，新8明示来自28可试组；校正有限视角、日期和两处歧义，删重复总结。场景、现金及4干/8湿/60未做结果不变。",
+      "repairs": 1
+    }
+  ],
+  "candidate_sha256": "4ced0a044413c08119345331925bcafc28b312529642058ef35b0e8e92474f82",
+  "candidate_path": "candidates/CH005_4ced0a044413c08119345331925bcafc28b312529642058ef35b0e8e92474f82.txt"
+}

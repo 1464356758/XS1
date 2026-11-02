@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_command_mvzihkgy_03m9ud3zam47",
-  "base_sha": "3d46886132e9549d9ab2cf2fb58659cee2146a74",
+  "request_id": "xs1_command_mvzik3f0_0dzolasws9k",
+  "base_sha": "8e781c0405951152ccecc00ef08b0485540af2aa",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -17,33 +17,37 @@
       "args": [
         "--root",
         "book",
-        "brief-request",
+        "brief-check",
+        "--file",
+        "drafts/CH005_brief.json"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "context",
+        "--profile",
+        "writer",
         "--out",
-        "drafts/CH005_brief_pending.json"
+        "drafts/CH005_writer.md"
       ]
     },
     {
-      "script": "novel_state.py",
+      "script": "online_state.py",
       "args": [
-        "--root",
-        "book",
-        "history-search",
-        "--query",
-        "雨 棚 晒场 验样 叫停 减量",
-        "--limit",
-        "12"
-      ]
-    },
-    {
-      "script": "novel_state.py",
-      "args": [
-        "--root",
-        "book",
-        "history-search",
-        "--query",
-        "陆见棠 陶春杏 工钱 四十匹 程望山",
-        "--limit",
-        "12"
+        "--project",
+        ".",
+        "task",
+        "--phase",
+        "WRITING",
+        "--chapter",
+        "5",
+        "--detail",
+        "第5章已实读前四章全文与记录，完成历史办法检索，正在写完整正文及首五章回看。",
+        "--next",
+        "完成第5章全文后登记候选并实读审核。"
       ]
     }
   ]

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_command_mvzivtwl_j77l6gmxvbk",
-  "base_sha": "44a77e7407d2714d0af9fe2d79c58cfb465e28ef",
+  "request_id": "xs1_command_mvziy7cp_l9tbmu0gt8",
+  "base_sha": "fb351c6020bd0f51bc8bd2051a50a3b593f66336",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -17,11 +17,13 @@
       "args": [
         "--root",
         "book",
-        "candidate",
+        "repair",
         "--chapter",
         "5",
         "--text",
-        "drafts/CH005_v1.txt"
+        "drafts/CH005_v2.txt",
+        "--reason",
+        "首轮局部修订：首4首次干验不继承自有坏长幅斜影，产权改赔偿交接，新8明示来自28可试组；校正有限视角、日期和两处歧义，删重复总结。场景、现金及4干/8湿/60未做结果不变。"
       ]
     },
     {
@@ -33,25 +35,9 @@
         "--profile",
         "reader",
         "--text",
-        "drafts/CH005_v1.txt",
+        "drafts/CH005_v2.txt",
         "--out",
-        "drafts/CH005_reader_v1.md"
-      ]
-    },
-    {
-      "script": "online_state.py",
-      "args": [
-        "--project",
-        ".",
-        "task",
-        "--phase",
-        "REVIEWING",
-        "--chapter",
-        "5",
-        "--detail",
-        "第5章完整初稿已起草，8848汉字，开始反向提纲、限信息实读与首五章全文回看。",
-        "--next",
-        "实读第5章候选与读者包，完成八项引文审核及必要局部修订。"
+        "drafts/CH005_reader_v2.md"
       ]
     }
   ]

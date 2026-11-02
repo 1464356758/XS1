@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_command_mvzik3f0_0dzolasws9k",
-  "base_sha": "8e781c0405951152ccecc00ef08b0485540af2aa",
+  "request_id": "xs1_command_mvzivtwl_j77l6gmxvbk",
+  "base_sha": "44a77e7407d2714d0af9fe2d79c58cfb465e28ef",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -17,9 +17,11 @@
       "args": [
         "--root",
         "book",
-        "brief-check",
-        "--file",
-        "drafts/CH005_brief.json"
+        "candidate",
+        "--chapter",
+        "5",
+        "--text",
+        "drafts/CH005_v1.txt"
       ]
     },
     {
@@ -29,9 +31,11 @@
         "book",
         "context",
         "--profile",
-        "writer",
+        "reader",
+        "--text",
+        "drafts/CH005_v1.txt",
         "--out",
-        "drafts/CH005_writer.md"
+        "drafts/CH005_reader_v1.md"
       ]
     },
     {
@@ -41,13 +45,13 @@
         ".",
         "task",
         "--phase",
-        "WRITING",
+        "REVIEWING",
         "--chapter",
         "5",
         "--detail",
-        "第5章已实读前四章全文与记录，完成历史办法检索，正在写完整正文及首五章回看。",
+        "第5章完整初稿已起草，8848汉字，开始反向提纲、限信息实读与首五章全文回看。",
         "--next",
-        "完成第5章全文后登记候选并实读审核。"
+        "实读第5章候选与读者包，完成八项引文审核及必要局部修订。"
       ]
     }
   ]

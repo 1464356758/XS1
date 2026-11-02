@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-11-02T17:22:33+00:00",
+    "generated_at": "2026-11-02T17:26:55+00:00",
     "state_revision": 7,
-    "workflow_revision": 28,
-    "state_sha256": "5126f96595c10452dd2d40cd8c5584b97986557668ae1d389e6c230f522c34e4",
-    "workflow_sha256": "e366f1725f53a327f0c5c4cd265486e692449f318a03c9a55a85aa4b50b3ef60",
+    "workflow_revision": 29,
+    "state_sha256": "43b934b9b2fe987aacf81c49f8a580ca2f2aec6758dbf53bff8cf2d2b39e4918",
+    "workflow_sha256": "75d2b956905734e9efac90535714df36a11cb3833aa94614b91351acdeb98b3c",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -38,12 +38,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "REVIEWING",
-    "label": "检查本章",
+    "phase": "SAVING",
+    "label": "保存进度",
     "chapter": 5,
-    "detail": "第5章完整初稿已起草，8848汉字，开始反向提纲、限信息实读与首五章全文回看。",
-    "next_action": "实读第5章候选与读者包，完成八项引文审核及必要局部修订。",
-    "updated_at": "2026-11-02T17:18:40+00:00"
+    "detail": "第5章8777汉字完成1轮局部修订、V2限信息实读、八项引文审查与首五章全文回看；等待finalize统一采用。",
+    "next_action": "finalize执行采用冻结、daily finish与索引并回读所有关键产物。",
+    "updated_at": "2026-11-02T17:26:55+00:00"
   },
   "chapters": [
     {
@@ -766,12 +766,6 @@
   },
   "history": [
     {
-      "at": "2026-10-30T17:15:25+00:00",
-      "phase": "REVIEWING",
-      "label": "检查本章",
-      "detail": "第2章完整初稿已登记，实测8089汉字；开始反向提纲、限信息实读及八项事实因果检查。"
-    },
-    {
       "at": "2026-10-30T17:16:36+00:00",
       "phase": "REVIEWING",
       "label": "检查本章",
@@ -854,6 +848,12 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第5章完整初稿已起草，8848汉字，开始反向提纲、限信息实读与首五章全文回看。"
+    },
+    {
+      "at": "2026-11-02T17:26:55+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第5章8777汉字完成1轮局部修订、V2限信息实读、八项引文审查与首五章全文回看；等待finalize统一采用。"
     }
   ]
 }

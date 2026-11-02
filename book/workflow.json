@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 28,
+  "revision": 29,
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
-  "phase": "REVIEWING",
+  "phase": "SAVING",
   "platform": "qimao",
   "selected_topic": {
     "id": "T01",
@@ -202,9 +202,15 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第5章完整初稿已起草，8848汉字，开始反向提纲、限信息实读与首五章全文回看。"
+    },
+    {
+      "at": "2026-11-02T17:26:55+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第5章8777汉字完成1轮局部修订、V2限信息实读、八项引文审查与首五章全文回看；等待finalize统一采用。"
     }
   ],
-  "detail": "第5章完整初稿已起草，8848汉字，开始反向提纲、限信息实读与首五章全文回看。",
-  "next_action": "实读第5章候选与读者包，完成八项引文审核及必要局部修订。",
-  "updated_at": "2026-11-02T17:18:40+00:00"
+  "detail": "第5章8777汉字完成1轮局部修订、V2限信息实读、八项引文审查与首五章全文回看；等待finalize统一采用。",
+  "next_action": "finalize执行采用冻结、daily finish与索引并回读所有关键产物。",
+  "updated_at": "2026-11-02T17:26:55+00:00"
 }

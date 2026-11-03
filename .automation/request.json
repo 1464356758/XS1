@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_begin_mw0xo97c_jecsp2p312o",
-  "base_sha": "4793612aa19e97e30cf077690d2bde2ec0a14e4f",
+  "request_id": "xs1_command_mw0xozys_thgioe5zh9m",
+  "base_sha": "1829b1c0a6d7e25b153465da60930b8322ccc818",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -9,5 +9,58 @@
     "session_id": "xs1_mw0xla8c_j2mfbnkeiwf",
     "platform_run_id": "0e6e74c2-e0e4-832e-b225-97d2a439e582"
   },
-  "phase": "begin"
+  "phase": "command",
+  "run_id": "bad8e4c9b46546979dfc7911d9ac0c36",
+  "commands": [
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "brief-request",
+        "--out",
+        "drafts/CH006_brief_request.json"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "history-search",
+        "--query",
+        "夜工 工时 晾位 赶工 四十匹",
+        "--limit",
+        "8"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "history-search",
+        "--query",
+        "陆见棠 陶春杏 停 减量 试样",
+        "--limit",
+        "8"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "context",
+        "--profile",
+        "author",
+        "--query",
+        "现金 旧欠 色影 四十匹 工时",
+        "--budget",
+        "80000",
+        "--out",
+        "drafts/CH006_author.md"
+      ]
+    }
+  ]
 }

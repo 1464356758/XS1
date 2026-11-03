@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_command_mw0xrsbm_af7h91l2img",
-  "base_sha": "7a21e0dc47d13df614d13b9458d2bf5268c24e2e",
+  "request_id": "xs1_command_mw0y3tx7_gyhuuy50fhb",
+  "base_sha": "9685627ac453d152102d794835d047816c7b651f",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -17,9 +17,11 @@
       "args": [
         "--root",
         "book",
-        "brief-check",
-        "--file",
-        "drafts/CH006_brief.json"
+        "candidate",
+        "--chapter",
+        "6",
+        "--text",
+        "drafts/CH006_v1.txt"
       ]
     },
     {
@@ -29,9 +31,13 @@
         "book",
         "context",
         "--profile",
-        "writer",
+        "reader",
+        "--text",
+        "drafts/CH006_v1.txt",
+        "--budget",
+        "80000",
         "--out",
-        "drafts/CH006_writer.md"
+        "drafts/CH006_reader_v1.md"
       ]
     },
     {
@@ -41,13 +47,13 @@
         ".",
         "task",
         "--phase",
-        "WRITING",
+        "REVIEWING",
         "--chapter",
         "6",
         "--detail",
-        "第6章已实读最近三章全文及近五章事实推进，完成全书办法检索；本轮目标锁与controller一致，正在完整起草。",
+        "第6章完整初稿8599汉字已起草，登记候选并进行正文反向提纲、限信息与八项事实因果审核。",
         "--next",
-        "完成第6章正文、反向提纲与带引文集中审核。"
+        "集中核实工序、货权、现金与产能缺口，必要时在原任务内局部修订。"
       ]
     }
   ]

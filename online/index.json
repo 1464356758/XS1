@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-11-03T17:03:00+00:00",
+    "generated_at": "2026-11-03T17:12:22+00:00",
     "state_revision": 8,
-    "workflow_revision": 31,
-    "state_sha256": "1138d5a01a195eefcc1c5702118ab8a29b1434e20588a2d37f88441e16c7a764",
-    "workflow_sha256": "baeb801b95c5511012af8aedcef852d8beb062837ef3ff76551e9bbf96d29380",
+    "workflow_revision": 32,
+    "state_sha256": "e0de8aa508858f01462d848d11636b122f792e589bcee65ae4df4a8bf5c9bb2d",
+    "workflow_sha256": "c2313fc075337e9b525dc17afac0a39cc8144a03a1a8e5e1d1f5dfbf70b287da",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -38,12 +38,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WRITING",
-    "label": "撰写正文",
+    "phase": "REVIEWING",
+    "label": "检查本章",
     "chapter": 6,
-    "detail": "第6章已实读最近三章全文及近五章事实推进，完成全书办法检索；本轮目标锁与controller一致，正在完整起草。",
-    "next_action": "完成第6章正文、反向提纲与带引文集中审核。",
-    "updated_at": "2026-11-03T17:03:00+00:00"
+    "detail": "第6章完整初稿8599汉字已起草，登记候选并进行正文反向提纲、限信息与八项事实因果审核。",
+    "next_action": "集中核实工序、货权、现金与产能缺口，必要时在原任务内局部修订。",
+    "updated_at": "2026-11-03T17:12:22+00:00"
   },
   "chapters": [
     {
@@ -778,12 +778,6 @@
   },
   "history": [
     {
-      "at": "2026-10-30T17:21:08+00:00",
-      "phase": "WAITING_NEXT",
-      "label": "等待下一章",
-      "detail": "第2章已采用并冻结；平台发布另凭真实回执登记。"
-    },
-    {
       "at": "2026-10-31T16:58:02+00:00",
       "phase": "WRITING",
       "label": "撰写正文",
@@ -866,6 +860,12 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "第6章已实读最近三章全文及近五章事实推进，完成全书办法检索；本轮目标锁与controller一致，正在完整起草。"
+    },
+    {
+      "at": "2026-11-03T17:12:22+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "第6章完整初稿8599汉字已起草，登记候选并进行正文反向提纲、限信息与八项事实因果审核。"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_command_mw0xozys_thgioe5zh9m",
-  "base_sha": "1829b1c0a6d7e25b153465da60930b8322ccc818",
+  "request_id": "xs1_command_mw0xrsbm_af7h91l2img",
+  "base_sha": "7a21e0dc47d13df614d13b9458d2bf5268c24e2e",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -17,33 +17,9 @@
       "args": [
         "--root",
         "book",
-        "brief-request",
-        "--out",
-        "drafts/CH006_brief_request.json"
-      ]
-    },
-    {
-      "script": "novel_state.py",
-      "args": [
-        "--root",
-        "book",
-        "history-search",
-        "--query",
-        "夜工 工时 晾位 赶工 四十匹",
-        "--limit",
-        "8"
-      ]
-    },
-    {
-      "script": "novel_state.py",
-      "args": [
-        "--root",
-        "book",
-        "history-search",
-        "--query",
-        "陆见棠 陶春杏 停 减量 试样",
-        "--limit",
-        "8"
+        "brief-check",
+        "--file",
+        "drafts/CH006_brief.json"
       ]
     },
     {
@@ -53,13 +29,25 @@
         "book",
         "context",
         "--profile",
-        "author",
-        "--query",
-        "现金 旧欠 色影 四十匹 工时",
-        "--budget",
-        "80000",
+        "writer",
         "--out",
-        "drafts/CH006_author.md"
+        "drafts/CH006_writer.md"
+      ]
+    },
+    {
+      "script": "online_state.py",
+      "args": [
+        "--project",
+        ".",
+        "task",
+        "--phase",
+        "WRITING",
+        "--chapter",
+        "6",
+        "--detail",
+        "第6章已实读最近三章全文及近五章事实推进，完成全书办法检索；本轮目标锁与controller一致，正在完整起草。",
+        "--next",
+        "完成第6章正文、反向提纲与带引文集中审核。"
       ]
     }
   ]

@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "title": "退婚后，我把赔来的染坊开成了皇商",
-  "revision": 8,
+  "revision": 9,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -71,6 +71,16 @@
       "record_sha256": "cb67e0295d5e43f559530f0f8173089ecdc4ed45e64bdaa35a604a8820c96629",
       "han_count": 8777,
       "adopted_at": "2026-11-02T17:27:41+00:00"
+    },
+    "6": {
+      "title": "一日只做这么多",
+      "stage": "A01",
+      "text_path": "chapters/CH006_87e82e4283eb9b378d421a034884d99b1a69b39c8912fe051bd08b203e2cfc4b.txt",
+      "text_sha256": "87e82e4283eb9b378d421a034884d99b1a69b39c8912fe051bd08b203e2cfc4b",
+      "record_path": "records/CH006_5541b2ec9aa4c8aaf0bc4412e975d32e78d42c1c925314ef226b4ed0de5ac078.json",
+      "record_sha256": "5541b2ec9aa4c8aaf0bc4412e975d32e78d42c1c925314ef226b4ed0de5ac078",
+      "han_count": 8673,
+      "adopted_at": "2026-11-03T17:23:04+00:00"
     }
   },
   "checkpoints": [
@@ -258,7 +268,7 @@
       "task_id": "a37101a3-e73e-44e6-8b80-0236aaae20ec",
       "chapter": 6,
       "mode": "write",
-      "phase": "candidate",
+      "phase": "adopted",
       "repairs": 2,
       "history": [
         {
@@ -305,6 +315,10 @@
       "5": {
         "text_sha256": "4ced0a044413c08119345331925bcafc28b312529642058ef35b0e8e92474f82",
         "record_sha256": "cb67e0295d5e43f559530f0f8173089ecdc4ed45e64bdaa35a604a8820c96629"
+      },
+      "6": {
+        "text_sha256": "87e82e4283eb9b378d421a034884d99b1a69b39c8912fe051bd08b203e2cfc4b",
+        "record_sha256": "5541b2ec9aa4c8aaf0bc4412e975d32e78d42c1c925314ef226b4ed0de5ac078"
       }
     },
     "published": {},
@@ -337,7 +351,7 @@
       "6": {
         "path": "releases/CH006_50ca833a69a6b7bab4547974919d743e9affab292106d4f46c71409ceec98804.json",
         "sha256": "50ca833a69a6b7bab4547974919d743e9affab292106d4f46c71409ceec98804",
-        "used": false
+        "used": true
       }
     },
     "promises": {
@@ -389,7 +403,7 @@
         ],
         "deadline_chapter": 16,
         "status": "open",
-        "last_reviewed_chapter": 5
+        "last_reviewed_chapter": 6
       },
       "P13": {
         "history": [
@@ -470,7 +484,7 @@
         ],
         "deadline_chapter": 10,
         "status": "open",
-        "last_reviewed_chapter": 5
+        "last_reviewed_chapter": 6
       },
       "P03": {
         "history": [
@@ -489,7 +503,7 @@
         ],
         "deadline_chapter": 12,
         "status": "open",
-        "last_reviewed_chapter": 5
+        "last_reviewed_chapter": 6
       },
       "P15": {
         "history": [
@@ -566,11 +580,42 @@
               "quote": "明晨当面干验，过与不过都告诉他。这八匹今日的整货不动。"
             },
             "chapter": 5
+          },
+          {
+            "id": "P17",
+            "action": "complete",
+            "deadline_chapter": 6,
+            "reason": "初十二程到场，新旧各样并看后明确新8样过，可继续试整匹；本项承诺是次晨给样品答案，不是8整货必须成品，不拖第三次再试。",
+            "evidence": {
+              "chapter": 6,
+              "sha256": "87e82e4283eb9b378d421a034884d99b1a69b39c8912fe051bd08b203e2cfc4b",
+              "quote": "这次的小样过了。"
+            },
+            "chapter": 6
           }
         ],
         "deadline_chapter": 6,
+        "status": "closed",
+        "last_reviewed_chapter": 6
+      },
+      "P18": {
+        "history": [
+          {
+            "id": "P18",
+            "action": "set",
+            "deadline_chapter": 7,
+            "reason": "新12真实湿晾后次晨决定合格与不合格、收棚与装运数量，下一章必须兑现，不因要装船跳过等待。",
+            "evidence": {
+              "chapter": 6,
+              "sha256": "87e82e4283eb9b378d421a034884d99b1a69b39c8912fe051bd08b203e2cfc4b",
+              "quote": "明早先看这批。多少合格，多少不合格，分开。"
+            },
+            "chapter": 6
+          }
+        ],
+        "deadline_chapter": 7,
         "status": "open",
-        "last_reviewed_chapter": 5
+        "last_reviewed_chapter": 6
       }
     },
     "incidents": {}

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 34,
+  "revision": 35,
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
-  "phase": "SAVING",
+  "phase": "WAITING_NEXT",
   "platform": "qimao",
   "selected_topic": {
     "id": "T01",
@@ -27,7 +27,7 @@
   },
   "research_path": "research/platform_36982be2867fc0e62ed0c6854bafcd2fb98bc6e764105fc5a3577fb0923a7802.json",
   "topics_path": "research/topics_33a9a3c15f080cc49f09a4b8a0e896c8e0aa696a90a627bf1b47bbc8e3e20b2d.json",
-  "chapter": 6,
+  "chapter": 7,
   "history": [
     {
       "at": "2026-10-30T06:18:06+00:00",
@@ -238,9 +238,15 @@
       "phase": "SAVING",
       "label": "保存进度",
       "detail": "第6章8673汉字、2轮局部修订、八项引文审核与限信息复读已完成；确认原40未达不冒称兑现，等待统一采用冻结与完成回执。"
+    },
+    {
+      "at": "2026-11-03T17:23:04+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "第6章已采用并冻结；平台发布另凭真实回执登记。"
     }
   ],
-  "detail": "第6章8673汉字、2轮局部修订、八项引文审核与限信息复读已完成；确认原40未达不冒称兑现，等待统一采用冻结与完成回执。",
-  "next_action": "由本轮finalize统一执行采用、daily finish及索引同步，再远端回读全部关键产物。",
-  "updated_at": "2026-11-03T17:22:28+00:00"
+  "detail": "第6章已采用并冻结；平台发布另凭真实回执登记。",
+  "next_action": "读取正式状态后，由下一次日更处理下一章。",
+  "updated_at": "2026-11-03T17:23:04+00:00"
 }

@@ -11,26 +11,26 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-11-03T17:22:28+00:00",
-    "state_revision": 8,
-    "workflow_revision": 34,
-    "state_sha256": "fec98208bf4d500a8b0a56612996923e83383d60fdc87bbbe516c87a10582035",
-    "workflow_sha256": "34016e7b67ae71eaa543caf38bff25e5f93ed10af21300b1fbb0c3b9b66e6fe0",
+    "generated_at": "2026-11-03T17:23:04+00:00",
+    "state_revision": 9,
+    "workflow_revision": 35,
+    "state_sha256": "2af9293add8a24699755df7e69d5f898fcc1a7a91c92bbf318044ce2a8532665",
+    "workflow_sha256": "33d8b19f435b4ea4d3b0b71c80934e0d8869188ec76d6680f85b93c2801d6e7e",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
   "progress": {
     "target_chapters": 100,
-    "adopted_chapters": 5,
+    "adopted_chapters": 6,
     "target_han": 900000,
-    "actual_han": 42072,
+    "actual_han": 50745,
     "completed": false,
     "needs_revalidation": [],
     "reviewed_until": 5,
     "window_review_due": false,
     "unresolved_reviews": [],
     "serial_mode": true,
-    "frozen_chapters": 5,
+    "frozen_chapters": 6,
     "published_chapters": 0,
     "publication_status": "只统计真实回执；无回执不等于未发布",
     "open_incidents": 0,
@@ -38,12 +38,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "SAVING",
-    "label": "保存进度",
-    "chapter": 6,
-    "detail": "第6章8673汉字、2轮局部修订、八项引文审核与限信息复读已完成；确认原40未达不冒称兑现，等待统一采用冻结与完成回执。",
-    "next_action": "由本轮finalize统一执行采用、daily finish及索引同步，再远端回读全部关键产物。",
-    "updated_at": "2026-11-03T17:22:28+00:00"
+    "phase": "WAITING_NEXT",
+    "label": "等待下一章",
+    "chapter": 7,
+    "detail": "第6章已采用并冻结；平台发布另凭真实回执登记。",
+    "next_action": "读取正式状态后，由下一次日更处理下一章。",
+    "updated_at": "2026-11-03T17:23:04+00:00"
   },
   "chapters": [
     {
@@ -101,6 +101,18 @@
       "han_count": 8777,
       "text_path": "book/chapters/CH005_4ced0a044413c08119345331925bcafc28b312529642058ef35b0e8e92474f82.txt",
       "sha256": "4ced0a044413c08119345331925bcafc28b312529642058ef35b0e8e92474f82",
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
+    },
+    {
+      "number": 6,
+      "title": "一日只做这么多",
+      "stage": "A01",
+      "han_count": 8673,
+      "text_path": "book/chapters/CH006_87e82e4283eb9b378d421a034884d99b1a69b39c8912fe051bd08b203e2cfc4b.txt",
+      "sha256": "87e82e4283eb9b378d421a034884d99b1a69b39c8912fe051bd08b203e2cfc4b",
       "needs_revalidation": false,
       "frozen": true,
       "publication_status": "unreported",
@@ -778,12 +790,6 @@
   },
   "history": [
     {
-      "at": "2026-10-31T17:18:30+00:00",
-      "phase": "SAVING",
-      "label": "保存进度",
-      "detail": "第3章8094汉字完成1轮局部修订、反向提纲、same_context_approximation限信息与八项引文审核，release-check通过，等待统一采用。"
-    },
-    {
       "at": "2026-10-31T17:18:56+00:00",
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
@@ -866,6 +872,12 @@
       "phase": "SAVING",
       "label": "保存进度",
       "detail": "第6章8673汉字、2轮局部修订、八项引文审核与限信息复读已完成；确认原40未达不冒称兑现，等待统一采用冻结与完成回执。"
+    },
+    {
+      "at": "2026-11-03T17:23:04+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "第6章已采用并冻结；平台发布另凭真实回执登记。"
     }
   ]
 }

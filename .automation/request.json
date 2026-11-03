@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_command_mw0ybffn_6qervksux0o",
-  "base_sha": "6952227fb3c340967cc523f9e5d25f53d6980ee1",
+  "request_id": "xs1_command_mw0ygttc_fa3i5wefdz7",
+  "base_sha": "5d120a1d13e7d95e4a61620f7bd9daf046a8f8ee",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -17,55 +17,29 @@
       "args": [
         "--root",
         "book",
-        "repair",
-        "--chapter",
-        "6",
-        "--text",
-        "drafts/CH006_v3.txt",
-        "--reason",
-        "第2轮局部修订：去掉正文制作称呼女主，第三车还桶在到水场景明示仍是约定，父亲从案边纸看到40，女主夜间去罗棚明示为先应下的安排；其他事实结构不变。"
-      ]
-    },
-    {
-      "script": "novel_state.py",
-      "args": [
-        "--root",
-        "book",
-        "check-record",
-        "--text",
-        "drafts/CH006_v3.txt",
-        "--record",
-        "drafts/CH006_record.json"
-      ]
-    },
-    {
-      "script": "novel_state.py",
-      "args": [
-        "--root",
-        "book",
-        "context",
-        "--profile",
-        "reader",
-        "--text",
-        "drafts/CH006_v3.txt",
-        "--budget",
-        "80000",
-        "--out",
-        "drafts/CH006_reader_v3.md"
-      ]
-    },
-    {
-      "script": "novel_state.py",
-      "args": [
-        "--root",
-        "book",
-        "release-request",
+        "release-check",
         "--text",
         "drafts/CH006_v3.txt",
         "--record",
         "drafts/CH006_record.json",
-        "--out",
-        "drafts/CH006_release_request_v3.json"
+        "--report",
+        "drafts/CH006_release.json"
+      ]
+    },
+    {
+      "script": "online_state.py",
+      "args": [
+        "--project",
+        ".",
+        "task",
+        "--phase",
+        "SAVING",
+        "--chapter",
+        "6",
+        "--detail",
+        "第6章8673汉字、2轮局部修订、八项引文审核与限信息复读已完成；确认原40未达不冒称兑现，等待统一采用冻结与完成回执。",
+        "--next",
+        "由本轮finalize统一执行采用、daily finish及索引同步，再远端回读全部关键产物。"
       ]
     }
   ]

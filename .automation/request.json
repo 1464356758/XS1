@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_command_mw0y3tx7_gyhuuy50fhb",
-  "base_sha": "9685627ac453d152102d794835d047816c7b651f",
+  "request_id": "xs1_command_mw0y9btx_41399gb9a8b",
+  "base_sha": "c8b976c14788686a90c1a326b2b4ca71f0529efe",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -17,11 +17,25 @@
       "args": [
         "--root",
         "book",
-        "candidate",
+        "repair",
         "--chapter",
         "6",
         "--text",
-        "drafts/CH006_v1.txt"
+        "drafts/CH006_v2.txt",
+        "--reason",
+        "第1轮局部修订：删明天府城验的时序错误，明确第二车水由陆孙卸及三车还桶时序，程离场所见改明示本人告知，不额外补造昨日找盆；结构、现金和12干/12湿/48未加工不变。"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "check-record",
+        "--text",
+        "drafts/CH006_v2.txt",
+        "--record",
+        "drafts/CH006_record.json"
       ]
     },
     {
@@ -33,11 +47,25 @@
         "--profile",
         "reader",
         "--text",
-        "drafts/CH006_v1.txt",
+        "drafts/CH006_v2.txt",
         "--budget",
         "80000",
         "--out",
-        "drafts/CH006_reader_v1.md"
+        "drafts/CH006_reader_v2.md"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "release-request",
+        "--text",
+        "drafts/CH006_v2.txt",
+        "--record",
+        "drafts/CH006_record.json",
+        "--out",
+        "drafts/CH006_release_request.json"
       ]
     },
     {
@@ -51,9 +79,9 @@
         "--chapter",
         "6",
         "--detail",
-        "第6章完整初稿8599汉字已起草，登记候选并进行正文反向提纲、限信息与八项事实因果审核。",
+        "第6章V2完成第1轮局部修订，8652汉字；已核960文当日支出与72匹分列，重建限信息资料并继续集中复审。",
         "--next",
-        "集中核实工序、货权、现金与产能缺口，必要时在原任务内局部修订。"
+        "填写带正文引文的八项审核与反重复报告后统一冻结。"
       ]
     }
   ]

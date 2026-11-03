@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-11-03T17:12:22+00:00",
+    "generated_at": "2026-11-03T17:16:41+00:00",
     "state_revision": 8,
-    "workflow_revision": 32,
-    "state_sha256": "e0de8aa508858f01462d848d11636b122f792e589bcee65ae4df4a8bf5c9bb2d",
-    "workflow_sha256": "c2313fc075337e9b525dc17afac0a39cc8144a03a1a8e5e1d1f5dfbf70b287da",
+    "workflow_revision": 33,
+    "state_sha256": "c424fc69cf9f80891edf30a5619bc723475fa98d83916da0c3e73e76eead4d80",
+    "workflow_sha256": "32277f06d4a7d6b64ce8dcb6ba4e91a2e123d7369d9cd3049762bdc03e78aa9d",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -41,9 +41,9 @@
     "phase": "REVIEWING",
     "label": "检查本章",
     "chapter": 6,
-    "detail": "第6章完整初稿8599汉字已起草，登记候选并进行正文反向提纲、限信息与八项事实因果审核。",
-    "next_action": "集中核实工序、货权、现金与产能缺口，必要时在原任务内局部修订。",
-    "updated_at": "2026-11-03T17:12:22+00:00"
+    "detail": "第6章V2完成第1轮局部修订，8652汉字；已核960文当日支出与72匹分列，重建限信息资料并继续集中复审。",
+    "next_action": "填写带正文引文的八项审核与反重复报告后统一冻结。",
+    "updated_at": "2026-11-03T17:16:41+00:00"
   },
   "chapters": [
     {
@@ -778,12 +778,6 @@
   },
   "history": [
     {
-      "at": "2026-10-31T16:58:02+00:00",
-      "phase": "WRITING",
-      "label": "撰写正文",
-      "detail": "本轮已领取第3章，实读前两章并核对余额23920文、旧欠150两未付、三项次晨承诺；准备任务书与有限染整检查。"
-    },
-    {
       "at": "2026-10-31T17:10:33+00:00",
       "phase": "REVIEWING",
       "label": "检查本章",
@@ -866,6 +860,12 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第6章完整初稿8599汉字已起草，登记候选并进行正文反向提纲、限信息与八项事实因果审核。"
+    },
+    {
+      "at": "2026-11-03T17:16:41+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "第6章V2完成第1轮局部修订，8652汉字；已核960文当日支出与72匹分列，重建限信息资料并继续集中复审。"
     }
   ]
 }

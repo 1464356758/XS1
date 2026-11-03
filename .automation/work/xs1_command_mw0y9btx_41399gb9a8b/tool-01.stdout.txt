@@ -1,0 +1,21 @@
+{
+  "task_id": "a37101a3-e73e-44e6-8b80-0236aaae20ec",
+  "chapter": 6,
+  "mode": "write",
+  "phase": "candidate",
+  "repairs": 1,
+  "history": [
+    {
+      "sha256": "61f0e49e1479e7caebb780ccb4aa6fa1ee0c8278fa7a5ed4b215687772eadcc3",
+      "reason": "初稿",
+      "repairs": 0
+    },
+    {
+      "sha256": "64ef2e272becf89609b670092f5cb9b8c5df935cc6f1b9a91284c20e56eb3e2b",
+      "reason": "第1轮局部修订：删明天府城验的时序错误，明确第二车水由陆孙卸及三车还桶时序，程离场所见改明示本人告知，不额外补造昨日找盆；结构、现金和12干/12湿/48未加工不变。",
+      "repairs": 1
+    }
+  ],
+  "candidate_sha256": "64ef2e272becf89609b670092f5cb9b8c5df935cc6f1b9a91284c20e56eb3e2b",
+  "candidate_path": "candidates/CH006_64ef2e272becf89609b670092f5cb9b8c5df935cc6f1b9a91284c20e56eb3e2b.txt"
+}

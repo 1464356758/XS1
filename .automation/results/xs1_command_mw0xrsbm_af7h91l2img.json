@@ -1,0 +1,113 @@
+{
+  "protocol": "novel-task-executor-v1",
+  "request_id": "xs1_command_mw0xrsbm_af7h91l2img",
+  "request_sha256": "50caed45000de6ef51670cdfc4b7afc65e70661a7a5011eb4336e89d6e432f92",
+  "source_sha": "085b57c5aa853b03b8871ae54982b5a96dd4745b",
+  "base_sha": "7a21e0dc47d13df614d13b9458d2bf5268c24e2e",
+  "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
+  "controller": {
+    "kind": "automation",
+    "automation_id": "6ae47df14d748191a2ef310c9384d005",
+    "session_id": "xs1_mw0xla8c_j2mfbnkeiwf",
+    "platform_run_id": "0e6e74c2-e0e4-832e-b225-97d2a439e582"
+  },
+  "phase": "command",
+  "executed_at": "2026-11-03T17:03:00+00:00",
+  "executor_status": "ok",
+  "github_run_id": "41680329260",
+  "tools": [
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "brief-check",
+        "--file",
+        "drafts/CH006_brief.json"
+      ],
+      "exit_code": 0,
+      "outputs": {
+        "stdout": {
+          "path": ".automation/work/xs1_command_mw0xrsbm_af7h91l2img/tool-01.stdout.txt",
+          "sha256": "97201e20fe0fd66ba7a912e3074c87121406c197b432ca1bdb575f624f3bc326",
+          "bytes": 319
+        },
+        "stderr": {
+          "path": ".automation/work/xs1_command_mw0xrsbm_af7h91l2img/tool-01.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      }
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "context",
+        "--profile",
+        "writer",
+        "--out",
+        "drafts/CH006_writer.md"
+      ],
+      "exit_code": 0,
+      "outputs": {
+        "stdout": {
+          "path": ".automation/work/xs1_command_mw0xrsbm_af7h91l2img/tool-02.stdout.txt",
+          "sha256": "52f272c213d90892ee626743f718566ed968bba78dd6169b3edcf2e7cfa70155",
+          "bytes": 101
+        },
+        "stderr": {
+          "path": ".automation/work/xs1_command_mw0xrsbm_af7h91l2img/tool-02.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      }
+    },
+    {
+      "script": "online_state.py",
+      "args": [
+        "--project",
+        ".",
+        "task",
+        "--phase",
+        "WRITING",
+        "--chapter",
+        "6",
+        "--detail",
+        "第6章已实读最近三章全文及近五章事实推进，完成全书办法检索；本轮目标锁与controller一致，正在完整起草。",
+        "--next",
+        "完成第6章正文、反向提纲与带引文集中审核。"
+      ],
+      "exit_code": 0,
+      "outputs": {
+        "stdout": {
+          "path": ".automation/work/xs1_command_mw0xrsbm_af7h91l2img/tool-03.stdout.txt",
+          "sha256": "61bad2e8e41ab465a39398730952ff27097725bcf840d60b8adde161aec8251d",
+          "bytes": 87
+        },
+        "stderr": {
+          "path": ".automation/work/xs1_command_mw0xrsbm_af7h91l2img/tool-03.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      }
+    }
+  ],
+  "business_status": "tools_completed",
+  "run_id": "bad8e4c9b46546979dfc7911d9ac0c36",
+  "changed_paths": [
+    ".automation/work/xs1_command_mw0xrsbm_af7h91l2img/tool-01.stderr.txt",
+    ".automation/work/xs1_command_mw0xrsbm_af7h91l2img/tool-01.stdout.txt",
+    ".automation/work/xs1_command_mw0xrsbm_af7h91l2img/tool-02.stderr.txt",
+    ".automation/work/xs1_command_mw0xrsbm_af7h91l2img/tool-02.stdout.txt",
+    ".automation/work/xs1_command_mw0xrsbm_af7h91l2img/tool-03.stderr.txt",
+    ".automation/work/xs1_command_mw0xrsbm_af7h91l2img/tool-03.stdout.txt",
+    "book/briefs/CH006_20e015f544906cbf77a2429032ec975a8d6f7935f006d91e8e6a61dc7499da60.json",
+    "book/daily/active.json",
+    "book/state.json",
+    "book/workflow.json",
+    "drafts/CH006_writer.md",
+    "online/index.json"
+  ]
+}

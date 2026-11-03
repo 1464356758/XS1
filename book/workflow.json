@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 30,
+  "revision": 31,
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
-  "phase": "WAITING_NEXT",
+  "phase": "WRITING",
   "platform": "qimao",
   "selected_topic": {
     "id": "T01",
@@ -214,9 +214,15 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "第5章已采用并冻结；平台发布另凭真实回执登记。"
+    },
+    {
+      "at": "2026-11-03T17:03:00+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "第6章已实读最近三章全文及近五章事实推进，完成全书办法检索；本轮目标锁与controller一致，正在完整起草。"
     }
   ],
-  "detail": "第5章已采用并冻结；平台发布另凭真实回执登记。",
-  "next_action": "读取正式状态后，由下一次日更处理下一章。",
-  "updated_at": "2026-11-02T17:27:41+00:00"
+  "detail": "第6章已实读最近三章全文及近五章事实推进，完成全书办法检索；本轮目标锁与controller一致，正在完整起草。",
+  "next_action": "完成第6章正文、反向提纲与带引文集中审核。",
+  "updated_at": "2026-11-03T17:03:00+00:00"
 }

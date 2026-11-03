@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs1_command_mw0y9btx_41399gb9a8b",
-  "base_sha": "c8b976c14788686a90c1a326b2b4ca71f0529efe",
+  "request_id": "xs1_command_mw0ybffn_6qervksux0o",
+  "base_sha": "6952227fb3c340967cc523f9e5d25f53d6980ee1",
   "book_id": "12e68780-a97a-4387-9049-83f15a8abc6c",
   "controller": {
     "kind": "automation",
@@ -21,9 +21,9 @@
         "--chapter",
         "6",
         "--text",
-        "drafts/CH006_v2.txt",
+        "drafts/CH006_v3.txt",
         "--reason",
-        "第1轮局部修订：删明天府城验的时序错误，明确第二车水由陆孙卸及三车还桶时序，程离场所见改明示本人告知，不额外补造昨日找盆；结构、现金和12干/12湿/48未加工不变。"
+        "第2轮局部修订：去掉正文制作称呼女主，第三车还桶在到水场景明示仍是约定，父亲从案边纸看到40，女主夜间去罗棚明示为先应下的安排；其他事实结构不变。"
       ]
     },
     {
@@ -33,7 +33,7 @@
         "book",
         "check-record",
         "--text",
-        "drafts/CH006_v2.txt",
+        "drafts/CH006_v3.txt",
         "--record",
         "drafts/CH006_record.json"
       ]
@@ -47,11 +47,11 @@
         "--profile",
         "reader",
         "--text",
-        "drafts/CH006_v2.txt",
+        "drafts/CH006_v3.txt",
         "--budget",
         "80000",
         "--out",
-        "drafts/CH006_reader_v2.md"
+        "drafts/CH006_reader_v3.md"
       ]
     },
     {
@@ -61,27 +61,11 @@
         "book",
         "release-request",
         "--text",
-        "drafts/CH006_v2.txt",
+        "drafts/CH006_v3.txt",
         "--record",
         "drafts/CH006_record.json",
         "--out",
-        "drafts/CH006_release_request.json"
-      ]
-    },
-    {
-      "script": "online_state.py",
-      "args": [
-        "--project",
-        ".",
-        "task",
-        "--phase",
-        "REVIEWING",
-        "--chapter",
-        "6",
-        "--detail",
-        "第6章V2完成第1轮局部修订，8652汉字；已核960文当日支出与72匹分列，重建限信息资料并继续集中复审。",
-        "--next",
-        "填写带正文引文的八项审核与反重复报告后统一冻结。"
+        "drafts/CH006_release_request_v3.json"
       ]
     }
   ]

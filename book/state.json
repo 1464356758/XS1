@@ -333,6 +333,11 @@
         "path": "releases/CH005_535d7f05601b248a180521a84e93ace02e90b0b62e79466dc3a9eb12f43e0bae.json",
         "sha256": "535d7f05601b248a180521a84e93ace02e90b0b62e79466dc3a9eb12f43e0bae",
         "used": true
+      },
+      "6": {
+        "path": "releases/CH006_50ca833a69a6b7bab4547974919d743e9affab292106d4f46c71409ceec98804.json",
+        "sha256": "50ca833a69a6b7bab4547974919d743e9affab292106d4f46c71409ceec98804",
+        "used": false
       }
     },
     "promises": {

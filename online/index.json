@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-11-03T17:18:27+00:00",
+    "generated_at": "2026-11-03T17:22:28+00:00",
     "state_revision": 8,
-    "workflow_revision": 33,
-    "state_sha256": "75745086431e3fe50cf549b11455febc67d84376f60a6eb6b39e31877de7642c",
-    "workflow_sha256": "32277f06d4a7d6b64ce8dcb6ba4e91a2e123d7369d9cd3049762bdc03e78aa9d",
+    "workflow_revision": 34,
+    "state_sha256": "fec98208bf4d500a8b0a56612996923e83383d60fdc87bbbe516c87a10582035",
+    "workflow_sha256": "34016e7b67ae71eaa543caf38bff25e5f93ed10af21300b1fbb0c3b9b66e6fe0",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -38,12 +38,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "REVIEWING",
-    "label": "检查本章",
+    "phase": "SAVING",
+    "label": "保存进度",
     "chapter": 6,
-    "detail": "第6章V2完成第1轮局部修订，8652汉字；已核960文当日支出与72匹分列，重建限信息资料并继续集中复审。",
-    "next_action": "填写带正文引文的八项审核与反重复报告后统一冻结。",
-    "updated_at": "2026-11-03T17:16:41+00:00"
+    "detail": "第6章8673汉字、2轮局部修订、八项引文审核与限信息复读已完成；确认原40未达不冒称兑现，等待统一采用冻结与完成回执。",
+    "next_action": "由本轮finalize统一执行采用、daily finish及索引同步，再远端回读全部关键产物。",
+    "updated_at": "2026-11-03T17:22:28+00:00"
   },
   "chapters": [
     {
@@ -778,12 +778,6 @@
   },
   "history": [
     {
-      "at": "2026-10-31T17:10:33+00:00",
-      "phase": "REVIEWING",
-      "label": "检查本章",
-      "detail": "第3章完整初稿已登记，开始正文反向提纲、限信息审读与八项引文检查；尚未采用。"
-    },
-    {
       "at": "2026-10-31T17:18:30+00:00",
       "phase": "SAVING",
       "label": "保存进度",
@@ -866,6 +860,12 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第6章V2完成第1轮局部修订，8652汉字；已核960文当日支出与72匹分列，重建限信息资料并继续集中复审。"
+    },
+    {
+      "at": "2026-11-03T17:22:28+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第6章8673汉字、2轮局部修订、八项引文审核与限信息复读已完成；确认原40未达不冒称兑现，等待统一采用冻结与完成回执。"
     }
   ]
 }

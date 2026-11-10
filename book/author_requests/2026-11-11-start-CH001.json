@@ -1,0 +1,12 @@
+{
+  "book_id": "d9169807-b382-402b-b7d0-8e9c84d46670",
+  "received_at": "2026-11-11T04:11:30+08:00",
+  "request": "开始写\n记住参考https://github.com/1464356758/XS-KU\n里面的内容！",
+  "scope": "仅CH001：两种原创开场比较、完整写作、集中审读、release-check、采用冻结及GitHub回读；不建立定时任务，不登记平台发布",
+  "source": "current_user_message",
+  "automation_id": null,
+  "runtime_metadata": {
+    "model": "unverified",
+    "reasoning_effort": "unverified"
+  }
+}

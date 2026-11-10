@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "type": "novel-daily-task-v1",
+  "book_id": "d9169807-b382-402b-b7d0-8e9c84d46670",
+  "run_id": "8ad46d6858b8478aa1afda5414010bbf",
+  "work_id": "d9169807-b382-402b-b7d0-8e9c84d46670:2026-11-11:1",
+  "start_date": "2026-11-11",
+  "started_at": "2026-11-10T20:11:30+00:00",
+  "chapter": 1,
+  "status": "running",
+  "baseline_count": 0,
+  "baseline_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "attempts": []
+}

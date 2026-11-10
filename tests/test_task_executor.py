@@ -262,6 +262,25 @@ class ExecutorTests(WorkspaceFixture):
         self.assertFalse(any(p.name.startswith("CH002_") for p in (self.root / "chapters").glob("*")))
         self.assertTrue(online_state.validate_index(self.project)["valid"])
 
+    def test_new_platform_trigger_can_finalize_next_chapter_on_same_day(self):
+        first = self.begin()
+        completed = self.execute("finalize", run_id=first["run_id"], **self.finalize_inputs(1))
+        self.assertEqual(completed["business_status"], "chapter_completed")
+        self.assertEqual(self.begin()["business_status"], "already_completed")
+        original_owner = copy.deepcopy(self.owner)
+        # Retrying the same real platform run with another client session also deduplicates.
+        self.owner["session_id"] = "synthetic_session_retry"
+        self.assertEqual(self.begin()["business_status"], "already_completed")
+        self.owner.update(session_id="synthetic_session_002", platform_run_id="synthetic_platform_run_002")
+        second = self.begin()
+        self.assertEqual(second["chapter"], 2)
+        completed2 = self.execute("finalize", run_id=second["run_id"], **self.finalize_inputs(2))
+        self.assertEqual(completed2["business_status"], "chapter_completed")
+        self.assertNotEqual(completed["receipt_path"], completed2["receipt_path"])
+        self.owner = original_owner
+        self.assertEqual(self.begin()["business_status"], "already_completed")
+        self.assertEqual(executor.read_active(self.project)["chapter"], 2)
+
     def test_duplicate_request_id_is_not_replayed(self):
         req = self.request("preflight")
         executor.apply_request(self.project, req, "b" * 40)

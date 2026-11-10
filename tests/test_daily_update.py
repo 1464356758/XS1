@@ -78,15 +78,16 @@ class DailyTests(WorkspaceFixture):
             daily.finish(self.project, task["run_id"])
         self.assertFalse((self.root / "daily" / (daily.date_of(daily.stamp()) + ".json")).exists())
 
-    def test_completed_day_is_idempotent_and_does_not_start_next_chapter(self):
-        task = daily.begin(self.project)
+    def test_completed_request_is_idempotent_and_new_request_can_continue_same_day(self):
+        task = daily.begin(self.project, trigger_id="synthetic_request_001")
         self.release(1)
         receipt = daily.finish(self.project, task["run_id"])
-        again = daily.begin(self.project)
+        again = daily.begin(self.project, trigger_id="synthetic_request_001")
         self.assertEqual(again["action"], "already_completed")
         self.assertEqual(again["chapter"], 1)
         self.assertEqual(receipt["completed_at"], ns.load_state(self.root)["chapters"]["1"]["adopted_at"])
         self.assertEqual(daily.finish(self.project, task["run_id"])["body_sha256"], receipt["body_sha256"])
+        self.assertEqual(daily.begin(self.project, trigger_id="synthetic_request_002")["chapter"], 2)
 
     def test_missing_receipt_is_recovered_from_adoption_time(self):
         daily.begin(self.project)
@@ -95,17 +96,96 @@ class DailyTests(WorkspaceFixture):
         self.assertEqual(recovered["action"], "recovered_completion")
         self.assertEqual(recovered["chapter"], 1)
 
+    def test_three_chapters_same_day_preserve_all_receipts_and_old_retry(self):
+        receipts = []
+        for chapter in range(1, 4):
+            task = daily.begin(self.project, trigger_id=f"synthetic_trigger_{chapter:03d}")
+            self.assertEqual(task["chapter"], chapter)
+            self.release(chapter)
+            result = daily.finish(self.project, task["run_id"])
+            receipts.append(result)
+            self.assertEqual(result["date"], receipts[0]["date"])
+        self.assertEqual(len({x["receipt_path"] for x in receipts}), 3)
+        legacy = ns.read_json(self.root / "daily" / (receipts[0]["date"] + ".json"))
+        self.assertEqual(legacy["chapter"], 1)
+        active_bytes = (self.root / "daily/active.json").read_bytes()
+        for chapter, receipt in enumerate(receipts, 1):
+            self.assertEqual(ns.read_json(self.root / receipt["receipt_path"])["chapter"], chapter)
+            retried = daily.begin(self.project, trigger_id=f"synthetic_trigger_{chapter:03d}")
+            self.assertEqual(retried["action"], "already_completed")
+            self.assertEqual(retried["chapter"], chapter)
+        self.assertEqual((self.root / "daily/active.json").read_bytes(), active_bytes)
+
+    def test_default_manual_begin_can_start_second_chapter_without_extra_author_file(self):
+        task = daily.begin(self.project)
+        self.release(1)
+        daily.finish(self.project, task["run_id"])
+        self.assertEqual(daily.begin(self.project)["chapter"], 2)
+
+    def test_recovered_target_deduplicates_both_original_and_recovery_triggers(self):
+        first = daily.begin(self.project, trigger_id="synthetic_original")
+        resumed = daily.begin(self.project, resume_stopped=True, trigger_id="synthetic_recovery")
+        self.release(1)
+        daily.finish(self.project, resumed["run_id"])
+        daily.begin(self.project, trigger_id="synthetic_later_new")
+        for trigger in ("synthetic_original", "synthetic_recovery"):
+            result = daily.begin(self.project, trigger_id=trigger)
+            self.assertEqual(result["action"], "already_completed")
+            self.assertEqual(result["chapter"], 1)
+        self.assertNotEqual(first["run_id"], resumed["run_id"])
+        self.assertEqual(daily.active_record(self.root)["chapter"], 2)
+
+    def test_legacy_completed_day_does_not_block_a_new_request(self):
+        task = daily.begin(self.project)
+        self.release(1)
+        daily.finish(self.project, task["run_id"])
+        legacy = daily.active_record(self.root)
+        legacy.pop("trigger_id"); legacy.pop("trigger_ids")
+        legacy["receipt_path"] = "daily/" + daily.date_of(legacy["completed_at"]) + ".json"
+        ns.atomic_json(self.root / "daily/active.json", legacy)
+        self.assertEqual(daily.begin(self.project)["chapter"], 2)
+
+    def test_live_legacy_author_extra_target_keeps_its_lock_and_can_finish(self):
+        first = daily.begin(self.project); self.release(1)
+        daily.finish(self.project, first["run_id"])
+        current = daily.begin(self.project)
+        current.pop("trigger_id"); current.pop("trigger_ids")
+        request_path = "author_requests/synthetic_next.json"
+        state = ns.load_state(self.root)
+        request = {"book_id":state["book_id"],"source":"current_user_message","request":"下一章",
+                   "chapter":2,"baseline_count":1,"baseline_fingerprint":current["baseline_fingerprint"],
+                   "received_at":current["started_at"],"base_revision":state["revision"]}
+        ns.atomic_json(self.root / request_path, request)
+        current.update(execution_kind="author_requested_extra",author_request_path=request_path,
+                       author_request_sha256=ns.digest((self.root / request_path).read_text()))
+        ns.atomic_json(self.root / "daily/active.json", current)
+        before=(self.root / "daily/active.json").read_bytes()
+        self.assertEqual(daily.begin(self.project)["action"],"verify_in_progress")
+        self.assertEqual((self.root / "daily/active.json").read_bytes(),before)
+        self.release(2)
+        receipt=daily.finish(self.project,current["run_id"])
+        self.assertTrue(receipt["receipt_path"].startswith("daily/extra/"))
+        self.assertEqual(daily.begin(self.project)["chapter"],3)
+
+    def test_invalid_trigger_cannot_change_existing_execution(self):
+        daily.begin(self.project)
+        before = (self.root / "daily/active.json").read_bytes()
+        for trigger in ("../escape", "tiny", "x" * 257, 7):
+            with self.assertRaises(daily.ns.WorkspaceError):
+                daily.begin(self.project, trigger_id=trigger)
+        self.assertEqual((self.root / "daily/active.json").read_bytes(), before)
+
     def test_completed_active_with_lost_receipt_recovers_instead_of_starting_next(self):
         task = daily.begin(self.project)
         self.release(1)
         receipt = daily.finish(self.project, task["run_id"])
-        (self.root / "daily" / (receipt["date"] + ".json")).unlink()
+        (self.root / receipt["receipt_path"]).unlink()
         recovered = daily.begin(self.project)
         self.assertEqual(recovered["action"], "recovered_completion")
         self.assertEqual(recovered["chapter"], 1)
         self.assertEqual(recovered["run_id"], task["run_id"])
         self.assertEqual(recovered["completed_at"], receipt["completed_at"])
-        self.assertEqual(daily.begin(self.project)["action"], "already_completed")
+        self.assertEqual(daily.begin(self.project, trigger_id=task["trigger_id"])["action"], "already_completed")
 
     def test_receipt_saved_before_active_update_recovers_and_allows_the_next_day(self):
         task = daily.begin(self.project)
@@ -137,7 +217,7 @@ class DailyTests(WorkspaceFixture):
         active["work_id"] = state["book_id"] + ":" + active["start_date"] + ":1"
         ns.atomic_json(self.root / "daily/active.json", active)
         receipt = daily.finish(self.project, task["run_id"])
-        (self.root / "daily" / (receipt["date"] + ".json")).unlink()
+        (self.root / receipt["receipt_path"]).unlink()
         recovered = daily.begin(self.project)
         self.assertEqual(recovered["action"], "recovered_completion")
         self.assertEqual(recovered["date"], receipt["date"])
@@ -147,7 +227,7 @@ class DailyTests(WorkspaceFixture):
         task = daily.begin(self.project)
         self.release(1)
         receipt = daily.finish(self.project, task["run_id"])
-        (self.root / "daily" / (receipt["date"] + ".json")).unlink()
+        (self.root / receipt["receipt_path"]).unlink()
         active = daily.active_record(self.root)
         active["receipt_path"] = "../state.json"
         ns.atomic_json(self.root / "daily/active.json", active)
@@ -207,25 +287,30 @@ class DailyTests(WorkspaceFixture):
     def test_python_receipt_passes_the_same_javascript_verifier(self):
         if not shutil.which("node"):
             self.skipTest("Node is required for the cross-language contract check")
-        task = daily.begin(self.project)
-        self.release(1)
-        receipt = daily.finish(self.project, task["run_id"])
+        for chapter in (1, 2):
+            task = daily.begin(self.project)
+            self.release(chapter)
+            receipt = daily.finish(self.project, task["run_id"])
         state = ns.load_state(self.root)
         state_text = (self.root / "state.json").read_text()
-        item = state["chapters"]["1"]
+        item = state["chapters"]["2"]
         repo = "https://github.com/example/synthetic-cross-language-test"
         manifest = {"schema_version": 1, "initialized": True, "book": {"id": state["book_id"], "title": "跨语言合成测试"},
                     "source": {"repository_url": repo, "state_sha256": ns.digest(state_text)},
-                    "progress": {"adopted_chapters": 1, "actual_han": item["han_count"], "target_chapters": 100, "target_han": 900000},
-                    "task": {}, "chapters": [{"number": 1, "title": item["title"], "han_count": item["han_count"], "sha256": item["text_sha256"], "text_path": "book/" + item["text_path"]}]}
-        files = {"online/index.json": {"text": json.dumps(manifest)}, "book/state.json": {"text": state_text},
-                 "book/daily/" + receipt["date"] + ".json": {"text": json.dumps(receipt)}}
-        for relative in (receipt["body_path"], receipt["record_path"], receipt["release_path"]):
-            files["book/" + relative] = {"text": ns.inside(self.root, relative).read_text()}
+                    "progress": {"adopted_chapters": 2, "actual_han": sum(c["han_count"] for c in state["chapters"].values()), "target_chapters": 100, "target_han": 900000},
+                    "task": {}, "chapters": [{"number": n, "title": c["title"], "han_count": c["han_count"], "sha256": c["text_sha256"], "text_path": "book/" + c["text_path"]} for n, c in ((n, state["chapters"][str(n)]) for n in (1, 2))]}
+        files = {"online/index.json": {"text": json.dumps(manifest)}, "book/state.json": {"text": state_text}}
+        for path in self.root.rglob("*"):
+            if path.is_file() and path.suffix in (".json", ".txt"):
+                files["book/" + path.relative_to(self.root).as_posix()] = {"text": path.read_text()}
         entry = {"id": "synthetic_cross_language", "book_id": state["book_id"], "title": "合成测试", "repository_url": repo, "branch": "main", "enabled": True,
                  "expected_time": "00:00", "grace_minutes": 0, "effective_from": receipt["date"]}
         payload = {"entry": entry, "source": {"repository_url": repo, "branch": "main", "commit": "a" * 40, "committed_at": daily.stamp(), "files": files}}
-        code = """import {SnapshotClient} from './tools/check_updates.mjs';import {inspectBook} from './web/dist/hub-core.mjs';let text='';for await(const chunk of process.stdin)text+=chunk;const x=JSON.parse(text);console.log(JSON.stringify(await inspectBook(x.entry,{client:new SnapshotClient(x.entry,x.source)})));"""
+        code = """import {SnapshotClient} from './tools/check_updates.mjs';import {inspectBook,inspectExecution} from './web/dist/hub-core.mjs';let text='';for await(const chunk of process.stdin)text+=chunk;const x=JSON.parse(text);console.log(JSON.stringify({day:await inspectBook(x.entry,{client:new SnapshotClient(x.entry,x.source)}),execution:await inspectExecution(x.entry,{client:new SnapshotClient(x.entry,x.source)})}));"""
         result = subprocess.run(["node", "--input-type=module", "-e", code], input=json.dumps(payload), text=True, capture_output=True, cwd=Path(__file__).resolve().parents[1])
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertEqual(json.loads(result.stdout)["status"], "updated", result.stdout)
+        verified = json.loads(result.stdout)
+        self.assertEqual(verified["day"]["status"], "updated", result.stdout)
+        self.assertEqual(verified["execution"]["status"], "completed", result.stdout)
+        self.assertEqual(verified["execution"]["chapter"], 2)
+        self.assertEqual(verified["day"]["evidence"]["chapter"], 2)

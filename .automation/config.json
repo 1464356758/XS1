@@ -3,5 +3,6 @@
   "book_id": "d9169807-b382-402b-b7d0-8e9c84d46670",
   "automation_id": null,
   "repository_url": "https://github.com/1464356758/XS1",
-  "default_branch": "main"
+  "default_branch": "main",
+  "completion_policy": "per_trigger"
 }

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "author_instruction": "取消一天一章的限制！！！",
+  "policy": "per_trigger",
+  "chapters_per_day_limit": null,
+  "one_chapter_per_independent_request": true,
+  "scope": "writing_frequency_only",
+  "old_chapters_and_current_active_unchanged": true
+}

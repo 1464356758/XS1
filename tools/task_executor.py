@@ -111,10 +111,17 @@ def stopped_proof(active, proof):
 
 
 def begin_owned(project, request):
+    owner = request["controller"]
+    identity = {"automation_id": owner["automation_id"],
+                "execution_id": owner.get("platform_run_id") or owner["session_id"]}
+    trigger_id = "executor_" + ns.digest(json.dumps(identity, sort_keys=True, separators=(",", ":")))
     claimed = operator_recovery.claim_ready(project, request["controller"])
     if claimed is not None:
+        active = read_active(project)
+        daily.bind_trigger(active, trigger_id)
+        ns.atomic_json(Path(project) / "book/daily/active.json", active)
         return claimed
-    result = daily.begin(project)
+    result = daily.begin(project, trigger_id=trigger_id)
     if result["action"] == "verify_in_progress":
         if owner_equal(result.get("controller"), request["controller"]):
             if result["status"] == "blocked":
@@ -125,7 +132,7 @@ def begin_owned(project, request):
         if not stopped_proof(result, request.get("stopped_evidence")):
             return dict(result, action="recovery_required", note="核实原控制者终态；无归属的旧记录不得自动接管。")
         old_controller = result.get("controller")
-        result = daily.begin(project, resume_stopped=True)
+        result = daily.begin(project, resume_stopped=True, trigger_id=trigger_id)
         active = read_active(project)
         active.setdefault("controller_history", []).append({"controller": old_controller, "stopped_evidence": request["stopped_evidence"]})
         ns.atomic_json(Path(project) / "book/daily/active.json", active)
@@ -244,11 +251,11 @@ def _run(project, request, result):
         workflow = online.load_workflow(project)
         online.write_workflow(project, workflow, phase="WAITING_NEXT",
                               detail=f"第{active['chapter']}章已采用并冻结；平台发布另凭真实回执登记。",
-                              next_action="读取正式状态后，由下一次日更处理下一章。")
+                              next_action="读取正式状态后，可立即按新的下一章指令继续；同日不限章数。")
         workflow = online.load_workflow(project); workflow["chapter"] = active["chapter"] + 1
         ns.atomic_json(Path(project) / "book/workflow.json", workflow)
         result.update(business_status="chapter_completed", run_id=receipt["run_id"], chapter=receipt["chapter"],
-                      body_sha256=receipt["body_sha256"], receipt_path="book/daily/" + receipt["date"] + ".json")
+                      body_sha256=receipt["body_sha256"], receipt_path="book/" + receipt["receipt_path"])
     else:
         assert_owner(project, request)
         daily.block(project, request["run_id"], request.get("reason", ""))

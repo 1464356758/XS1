@@ -27,7 +27,7 @@ class WorkspaceError(ValueError):
 
 _SERIAL_MODULE = None
 _NARRATIVE_MODULE = None
-SYSTEM_VERSION = "4.3-quality"
+SYSTEM_VERSION = "4.6-xs-ku"
 
 
 def narrative_module():
@@ -50,13 +50,80 @@ def serial_module():
 
 def serial_api():
     names = ("require", "digest", "han_count", "read_json", "atomic_json", "immutable_text", "inside",
-             "load_state", "verify_files", "writer_lock", "validate_record", "records", "quote_exists", "review_status", "narrative_module")
+             "load_state", "verify_files", "writer_lock", "validate_record", "records", "quote_exists", "review_status", "narrative_module",
+             "chapter_han_range", "validate_reference_packet")
     return SimpleNamespace(**{name: globals()[name] for name in names})
 
 
 def require(condition, message):
     if not condition:
         raise WorkspaceError(message)
+
+
+def validate_reference_packet(packet):
+    require(isinstance(packet, dict) and packet.get("format") == "novel-reference-packet-v1", "教材摘要格式不符。")
+    require(set(packet) == {"format", "library_id", "library_revision", "origin", "question", "lessons"}, "教材摘要字段不符，请从已完成教材重新export。")
+    require(all(isinstance(packet.get(key), str) and packet[key].strip() for key in ("library_id", "question")), "教材须有库身份与当前写作问题。")
+    require(type(packet.get("library_revision")) is int and packet["library_revision"] >= 0, "教材库版本无效。")
+    origin = packet.get("origin")
+    require(isinstance(origin, dict) and set(origin) == {"repository_url", "commit"} and all(isinstance(origin[key], str) for key in origin), "教材摘要缺少来源仓库与版本字段。")
+    require(bool(origin["repository_url"]) == bool(origin["commit"]), "线上教材须同时提供来源仓库与提交。")
+    if origin["repository_url"]:
+        require(re.fullmatch(r"https://github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", origin["repository_url"]) is not None and re.fullmatch(r"[0-9a-f]{40}", origin["commit"]) is not None, "线上教材须绑定GitHub仓库和40位提交版本。")
+    lessons = packet.get("lessons")
+    require(isinstance(lessons, list) and lessons, "教材摘要须包含已完成的学习结论。")
+    for item in lessons:
+        fields = {"kind", "id", "sha256", "lesson", "applicability", "failure_conditions", "book_id", "source_sha256", "feedback_origin"}
+        extended = {"source_origin", "evidence_sources"}
+        require(isinstance(item, dict) and set(item) in (fields, fields | extended, fields | extended | {"source_scope"}), "教材摘要含额外或缺失字段，请重新导出学习结论。")
+        require(all(isinstance(item[key], str) and item[key].strip() for key in fields), "教材摘要字段须有实际内容。")
+        require(item["feedback_origin"] in ("model", "author", "reader", "editor"), "教材须保留实际反馈来源。")
+        require(item["kind"] in ("study", "review"), "教材记录类型无效。")
+        require(all(re.fullmatch(r"[0-9a-f]{64}", item[key]) for key in ("sha256", "source_sha256")), "教材来源哈希无效。")
+        if "source_origin" in item:
+            source = item["source_origin"]
+            require(isinstance(source, dict) and set(source) == {"repository_url", "commit", "path", "blob_sha", "size_bytes"}, "原文来源定位缺失。")
+            require(isinstance(source["repository_url"], str) and re.fullmatch(r"https://github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", source["repository_url"]) is not None, "原文仓库地址无效。")
+            require(all(isinstance(source[key], str) and re.fullmatch(r"[0-9a-f]{40}", source[key]) for key in ("commit", "blob_sha")), "原文提交或文件哈希无效。")
+            require(isinstance(source["path"], str) and source["path"] and not source["path"].startswith("/") and ".." not in Path(source["path"]).parts and "\\" not in source["path"], "原文仓库路径无效。")
+            require(type(source["size_bytes"]) is int and source["size_bytes"] > 0, "原文长度无效。")
+            evidence = item["evidence_sources"]
+            require(isinstance(evidence, list) and evidence, "教材缺少原文证据定位。")
+            for position in evidence:
+                require(isinstance(position, dict) and set(position) == {"chapter", "start_line", "end_line", "sha256", "quote_sha256"}, "原文证据定位格式无效。")
+                require(all(type(position[key]) is int and position[key] > 0 for key in ("chapter", "start_line", "end_line")) and position["start_line"] <= position["end_line"], "原文证据范围无效。")
+                require(all(isinstance(position[key], str) and re.fullmatch(r"[0-9a-f]{64}", position[key]) for key in ("sha256", "quote_sha256")), "原文证据哈希无效。")
+        if "source_scope" in item:
+            scope = item["source_scope"]
+            require(isinstance(scope, dict) and set(scope) == {"from_unit", "to_unit", "han_count", "level", "family_id", "reading_basis"}, "教材实读范围字段无效。")
+            require(all(type(scope[key]) is int and scope[key] > 0 for key in ("from_unit", "to_unit")) and type(scope["han_count"]) is int and scope["han_count"] >= 0 and scope["from_unit"] <= scope["to_unit"], "教材实读范围或字数无效。")
+            require(scope["level"] in ("book", "arc", "scene", "prose", "review") and scope["reading_basis"] == "reviewer_declared", "教材阅读声明或层次无效。")
+            require(isinstance(scope["family_id"], str) and bool(re.fullmatch(r"[0-9a-f]{24}", scope["family_id"])), "教材同书族身份无效。")
+    return packet
+
+
+def chapter_han_range(state, chapter):
+    config = state["config"]
+    opening_max = config.get("opening_chapter_han_max")
+    if opening_max is not None and chapter <= 3:
+        minimum, maximum = 1, opening_max
+    elif config["strict_length"]:
+        minimum, maximum = config["chapter_han_min"], config["chapter_han_max"]
+    else:
+        return None
+    # 冻结下一章前，保留按现行章长完成全书的空间。
+    chapters = state["chapters"]
+    target = config["target_chapters"]
+    if config["strict_length"] and config.get("serial_mode") and chapter == len(chapters) + 1 <= target:
+        opening_left = max(0, min(3, target) - chapter) if opening_max is not None else 0
+        regular_left = target - chapter - opening_left
+        adopted = sum(item["han_count"] for item in chapters.values())
+        tail_min = opening_left + regular_left * config["chapter_han_min"]
+        tail_max = opening_left * (opening_max or 0) + regular_left * config["chapter_han_max"]
+        minimum = max(minimum, config["book_han_min"] - adopted - tail_max)
+        maximum = min(maximum, config["book_han_max"] - adopted - tail_min)
+        require(minimum <= maximum, "已采用字数与剩余章长无法达到全书范围，请核对字数配置。")
+    return minimum, maximum
 
 
 def digest(text):
@@ -136,6 +203,11 @@ def load_state(root):
 
 
 def verify_files(root, state):
+    if "opening_five_plan" in state:
+        pin = state["opening_five_plan"]
+        require(isinstance(pin, dict) and isinstance(pin.get("path"), str), "前五章方案定位无效。")
+        path = inside(root, pin["path"])
+        require(path.is_file() and digest(path.read_text(encoding="utf-8")) == pin.get("sha256"), "前五章方案文件与登记版本不符。")
     for item in state["inputs"].values():
         path = inside(root, item["path"])
         require(path.is_file() and digest(path.read_text(encoding="utf-8")) == item["sha256"], "规划或作者设定与登记版本不符。")
@@ -157,15 +229,18 @@ def init(root, title, overrides=None):
     require(bool(title.strip()), "书名或临时项目名不能为空。")
     with writer_lock(root):
         require(not (Path(root) / "state.json").exists(), "已有本书进度，禁止重新初始化覆盖。")
-        config = {"target_chapters": 100, "target_han": 900000,
-                  "chapter_han_min": 8000, "chapter_han_max": 10000,
+        config = {"target_chapters": 150, "target_han": 900000,
+                  "chapter_han_target": 6000, "chapter_han_min": 5500, "chapter_han_max": 6500,
                   "book_han_min": 880000, "book_han_max": 920000,
                   "strict_length": True, "review_interval": 5, "max_local_repairs": 3,
                   "serial_mode": False, "serial_stage_size": 10, "serial_lookahead": 3,
                   "opening_hook_max_han": 800, "opening_core_max_han": 3000,
                   "opening_impact_max_han": 3000,
-                  "narrative_review_required": False}
+                  "narrative_review_required": False, "opening_five_required": False,
+                  "opening_benchmark_min_han": 10000}
         config.update(overrides or {})
+        if "chapter_han_target" not in (overrides or {}) and not config["chapter_han_min"] <= config["chapter_han_target"] <= config["chapter_han_max"]:
+            config["chapter_han_target"] = (config["chapter_han_min"] + config["chapter_han_max"]) // 2
         require(config["review_interval"] >= 1, "回看间隔必须为正数。")
         require(0 <= config["chapter_han_min"] <= config["chapter_han_max"], "章长区间无效。")
         require(isinstance(config["target_chapters"], int) and not isinstance(config["target_chapters"], bool) and config["target_chapters"] > 0, "目标章数必须为正整数。")
@@ -173,12 +248,18 @@ def init(root, title, overrides=None):
         require(0 <= config["book_han_min"] <= config["book_han_max"], "全书字数范围无效。")
         require(type(config["narrative_review_required"]) is bool, "narrative_review_required必须为布尔值。")
         require(not config["narrative_review_required"] or config["serial_mode"] is True, "叙事检查须与连载冻结一起启用。旧工程保持原检查，不静默追认。")
+        require(type(config["chapter_han_target"]) is int and config["chapter_han_min"] <= config["chapter_han_target"] <= config["chapter_han_max"], "章长目标须在允许区间内。")
+        require(type(config["opening_five_required"]) is bool and (not config["opening_five_required"] or config["narrative_review_required"]), "前五章检查须与叙事检查一起启用。")
+        require(type(config["opening_benchmark_min_han"]) is int and config["opening_benchmark_min_han"] > 0, "开篇对照阅读量须为正整数。")
+        opening_max = config.get("opening_chapter_han_max")
+        require(opening_max is None or (type(opening_max) is int and opening_max > 0), "开篇章长上限须为正整数。")
         state = {"schema_version": 2, "book_id": str(uuid.uuid4()), "title": title,
                  "revision": 0, "config": config, "chapters": {},
                  "checkpoints": [], "needs_revalidation": [], "inputs": {},
                  "input_history": [], "tasks": {}, "completion": None}
         if config["serial_mode"]:
             state["serialization"] = serial_module().new_state(config, serial_api())
+        chapter_han_range(state, 1)
         atomic_json(Path(root) / "state.json", state)
         return state
 
@@ -382,9 +463,9 @@ def validate_record(root, state, text, record):
         require(bool(event.get("id", "").strip()) and bool(event.get("description", "").strip()), "伏笔事件缺少编号或说明。")
         require(quote_exists(text, event.get("quote")), "伏笔事件的引文不在当前正文内。")
     count = han_count(text)
-    config = state["config"]
-    if config["strict_length"]:
-        require(config["chapter_han_min"] <= count <= config["chapter_han_max"], f"实测汉字数 {count} 不在配置区间。")
+    limits = chapter_han_range(state, chapter)
+    if limits is not None:
+        require(limits[0] <= count <= limits[1], f"第{chapter}章实测{count}汉字，不在{limits[0]}—{limits[1]}范围。")
     return count
 
 
@@ -525,6 +606,9 @@ def context(root, query="", budget=80000, story_time=None, profile="author", tex
              "说明：这是待阅读资料，不证明GPT已读完。字数预算按字符计，不是token预算。"]
     for kind, item in state["inputs"].items():
         parts.append(f"## {kind} {item['sha256']}\n" + inside(root, item["path"]).read_text(encoding="utf-8"))
+    if state["config"].get("opening_five_required") and len(state["chapters"]) < 5 and state.get("opening_five_plan"):
+        pin = state["opening_five_plan"]
+        parts.append("## 前五章写前方案（预测与已发生事实分开）\n" + inside(root, pin["path"]).read_text(encoding="utf-8"))
     if items:
         last = len(items)
         adopted = state["chapters"][str(last)]
@@ -639,10 +723,10 @@ def snapshot(root, out):
         # 快照同时携带本工具和关键规程，恢复不依赖原临时目录。
         package = Path(__file__).resolve().parents[1]
         files["SYSTEM/tools/novel_state.py"] = Path(__file__).read_bytes()
-        for name in ("启动指令.txt", "启动新书.txt", "每日一章指令.txt", "docs/连载冻结与发布前检查.md", "docs/写作与叙事检查.md", "docs/专项技法.md", "平台研究与选题.md", "platforms.json", "执行规程.md", "工具使用与数据格式.md", "system_config.json", "project_config.json"):
+        for name in ("启动指令.txt", "启动新书.txt", "启动小说库.txt", "每日一章指令.txt", "docs/连载冻结与发布前检查.md", "docs/写作与叙事检查.md", "docs/专项技法.md", "docs/小说参考库.md", "docs/XS-KU接入与创作.md", "reference_library/XS-KU.json", "平台研究与选题.md", "platforms.json", "执行规程.md", "工具使用与数据格式.md", "system_config.json", "project_config.json"):
             path = package / name
             if path.is_file(): files["SYSTEM/" + name] = path.read_bytes()
-        for name in ("online_state.py", "make_init_package.py", "serial_release.py", "narrative_quality.py", "daily_update.py", "check_updates.mjs"):
+        for name in ("online_state.py", "make_init_package.py", "serial_release.py", "narrative_quality.py", "opening_five.py", "novel_library.py", "reference_bridge.py", "release_source_guard.py", "daily_update.py", "check_updates.mjs"):
             path = package / "tools" / name
             if path.is_file(): files["SYSTEM/tools/" + name] = path.read_bytes()
         for name in ("core.mjs", "hub-core.mjs"):
@@ -682,7 +766,7 @@ def main():
     p.add_argument("--time", type=int)
     p.add_argument("--profile", choices=("author", "writer", "reader"), default="author")
     p.add_argument("--text"); p.add_argument("--history-from", type=int); p.add_argument("--history-to", type=int)
-    p = subs.add_parser("brief-request"); p.add_argument("--out", required=True)
+    p = subs.add_parser("brief-request"); p.add_argument("--out", required=True); p.add_argument("--references")
     p = subs.add_parser("brief-check"); p.add_argument("--file", required=True)
     p = subs.add_parser("history-search"); p.add_argument("--query", required=True); p.add_argument("--limit", type=int, default=5); p.add_argument("--before", type=int)
     p = subs.add_parser("set-input"); p.add_argument("--kind", choices=("canon", "roadmap"), required=True); p.add_argument("--file", required=True); p.add_argument("--reason", required=True); p.add_argument("--base-revision", type=int, required=True)
@@ -752,7 +836,7 @@ def main():
         elif args.command == "serial-plan":
             result = serial_module().plan(args.root, args.report, serial_api())
         elif args.command == "brief-request":
-            result = narrative_module().request_brief(args.root, args.out, serial_api())
+            result = narrative_module().request_brief(args.root, args.out, serial_api(), args.references)
         elif args.command == "brief-check":
             result = narrative_module().check_brief(args.root, args.file, serial_api())
         elif args.command == "history-search":

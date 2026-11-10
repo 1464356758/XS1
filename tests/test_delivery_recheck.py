@@ -45,6 +45,7 @@ class DeliveryRecheck(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             tmp=Path(tmp);initial=tmp/'initial.zip';make_init_package.build(ROOT,initial)
             builds=build_web_package.build(ROOT,tmp)
+            self.assertEqual(Path(builds['initial']['path']).read_bytes(), initial.read_bytes())
             with zipfile.ZipFile(builds['owner']['path']) as z:
                 self.assertEqual(z.read('downloads/novel-init.zip'),initial.read_bytes())
                 self.assertIn(b'./downloads/novel-init.zip',z.read('index.html'))

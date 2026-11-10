@@ -1,5 +1,0 @@
-{
-  "phase": "REVIEWING",
-  "updated_at": "2026-10-31T17:10:33+00:00",
-  "chapters": 2
-}

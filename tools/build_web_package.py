@@ -3,7 +3,6 @@
 import argparse
 import hashlib
 import json
-import tempfile
 from pathlib import Path
 import zipfile
 import make_init_package
@@ -40,10 +39,12 @@ def build(root=ROOT, out_dir=None):
     relay = (root / "web/server/github-relay.mjs").read_text()
     owner = {p.name: p.read_bytes() for p in dist.iterdir() if p.is_file() and p.suffix in (".html", ".js", ".mjs", ".css", ".svg", ".webmanifest")}
     owner.update(common)
-    with tempfile.TemporaryDirectory() as tmp:
-        initial=Path(tmp)/'initial.zip'
-        make_init_package.build(root, initial)
-        owner['downloads/novel-init.zip']=initial.read_bytes()
+    initial = out / "初始化系统包.zip"
+    initial_info = make_init_package.build(root, initial)
+    library = out / "小说参考库初始化包.zip"
+    library_info = make_init_package.build_library(root, library)
+    owner["downloads/novel-init.zip"] = initial.read_bytes()
+    owner["downloads/novel-library-init.zip"] = library.read_bytes()
     owner["netlify/functions/github.mjs"] = (relay + '\nexport default request=>handleGitHubRelay(request);\n').encode()
     owner["部署说明.txt"] = (root / "docs/网页部署与首次使用.md").read_bytes()
     partner_names = ["reader.html", "reader.js", "reading-state.mjs", "search.mjs", "hub-core.mjs", "core.mjs", "github-transport.mjs", "query-model.mjs", "ui.mjs", "hub.css", "icon.svg"]
@@ -54,7 +55,9 @@ def build(root=ROOT, out_dir=None):
     partner["部署说明.txt"] = "根目录和reader.html均为代发阅读页。作者在个人端保存此站的reader.html网址，再生成代发链接。无需GitHub写入凭证。代发码不是保密措施。\nNetlify使用Git连接部署或支持函数的CLI部署，让netlify/functions/github.mjs随站点部署。仅拖拽静态文件不会启用函数；请连同函数部署，避免Git版本读取受到浏览器跨域限制。详见个人端部署说明。\n".encode()
     manager = {"books.json": (root / "templates/管理清单.json").read_bytes(),
                "README.md": "# 小说更新管理仓库\n\n本包只有空清单，没有小说正文或凭证。上传到独立公开仓库并产生初始提交后，在个人端连接此仓库。小说清单与最近7天查询记录由个人端保存；查询无需预先生成报告。\n".encode()}
-    return {"owner": archive(out / "个人管理端部署包.zip", owner, "owner", version),
+    return {"initial": initial_info,
+            "library": library_info,
+            "owner": archive(out / "个人管理端部署包.zip", owner, "owner", version),
             "partner": archive(out / "代发端部署包.zip", partner, "partner", version),
             "management": archive(out / "管理仓库初始化包.zip", manager, "management", version)}
 

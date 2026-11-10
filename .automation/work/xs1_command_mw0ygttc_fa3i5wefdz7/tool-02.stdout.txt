@@ -1,5 +1,0 @@
-{
-  "phase": "SAVING",
-  "updated_at": "2026-11-03T17:22:28+00:00",
-  "chapters": 5
-}

@@ -118,7 +118,7 @@ class OnlineTests(unittest.TestCase):
         for number in (1,2):
             target=Path(self.tmp.name)/f'fresh-{number}'
             with zipfile.ZipFile(output) as archive:
-                for required in ('tools/serial_release.py','tools/narrative_quality.py','每日一章指令.txt','docs/连载冻结与发布前检查.md','docs/写作与叙事检查.md','docs/专项技法.md'):
+                for required in ('tools/serial_release.py','tools/narrative_quality.py','每日一章指令.txt','docs/连载冻结与发布前检查.md','docs/写作与叙事检查.md','docs/专项技法.md','docs/开篇试写与剧情验收.md','docs/AI网文工作流调研.md'):
                     self.assertIn(required,archive.namelist())
                 archive.extractall(target)
             run=subprocess.run([sys.executable,'tools/online_state.py','bootstrap','--repo',f'https://github.com/example/fresh-{number}'],cwd=target,capture_output=True,text=True)
@@ -127,7 +127,12 @@ class OnlineTests(unittest.TestCase):
             identities.append(state['book_id'])
             self.assertTrue(state['config']['serial_mode'])
             self.assertTrue(state['config']['narrative_review_required'])
-            self.assertEqual(json.loads((target/'project_config.json').read_text())['system_version'],'4.3-quality')
+            for chapter in (1, 3, 4, 5, 6):
+                self.assertEqual(online.ns.chapter_han_range(state, chapter), (5500, 6500))
+            self.assertEqual(state['config']['chapter_han_target'], 6000)
+            self.assertEqual(state['config']['target_chapters'], 150)
+            self.assertTrue(state['config']['opening_five_required'])
+            self.assertEqual(json.loads((target/'project_config.json').read_text())['system_version'],'4.6-xs-ku')
             self.assertEqual(state['serialization']['frozen'],{})
             self.assertEqual(state['serialization']['published'],{})
             self.assertEqual(json.loads((target/'book/workflow.json').read_text())['phase'],'WAITING_PLATFORM')

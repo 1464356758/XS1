@@ -1,0 +1,9 @@
+{
+  "name": "novel-workspace",
+  "version": "1.4.9",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  }
+}

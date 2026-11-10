@@ -3,8 +3,10 @@ import {githubFetch,parseGitRefs,parseCommitFeed} from './github-transport.mjs';
 import {normalizeQueryHistory} from './query-model.mjs';
 export {parseRepository, sha256, canonicalJSON};
 
-export const HUB_VERSION='1.4.3';
+export const HUB_VERSION='1.4.9';
+export const REFERENCE_LIBRARY='https://github.com/1464356758/XS-KU';
 export const SYSTEM_REPOSITORY='https://github.com/1464356758/xiaishuo-ZUOZONG';
+export const TEMPLATE_REPOSITORY='https://github.com/1464356758/xiaoshuoV5';
 export const STATUS={updated:'已更新',missing:'未更新',pending:'未完成',unknown:'待核实',not_due:'尚未到期',paused:'不参与检查',setup:'待初始化'};
 export class HubError extends ReaderError{}
 let publicApiRetryAt=0;
@@ -305,17 +307,21 @@ export async function inspectRegistry(registry,{now=new Date(),clientFactory=b=>
 }
 export function newBookPrompt({repository,platform='',preferences='',management=SYSTEM_REPOSITORY}={}){
   const repo=parseRepository(repository),manager=parseRepository(management);
-  fail(repo.key!==parseRepository(SYSTEM_REPOSITORY).key&&repo.key!==manager.key,'请填写单独的新书仓库，不能使用系统母版或当前管理仓库。');
+  const reserved=[SYSTEM_REPOSITORY,TEMPLATE_REPOSITORY,REFERENCE_LIBRARY,manager.url].map(url=>parseRepository(url).key);
+  fail(!reserved.includes(repo.key),'请填写单独的新书仓库，不能使用系统母版、小说参考库或管理仓库。');
   const chosen=String(platform).trim(),notes=String(preferences).trim();
   fail(chosen.length<=80&&notes.length<=1200,'平台或偏好过长，请精简后再生成。');
   return `请依据我随本消息附加的《初始化系统包.zip》，部署并接管一部独立的新小说。你负责执行文件工具、研究、写作和审核，我只在需要时选择平台、选题并确认开始写，不让我手工填写JSON或切换角色。
 
 【唯一新书仓库】${repo.url}
+【系统母版】${TEMPLATE_REPOSITORY}（仅作系统来源，不是本次写入目标）
+【小说参考库】${REFERENCE_LIBRARY}（已绑定；读取实际默认分支的最新目录）
 【平台】${chosen||'尚未指定；完成部署核验后先让我选择，不替我决定。'}
 【作者偏好】${notes?JSON.stringify(notes):'暂无；按选定平台研究市场，提出原创方案让我选择。'}
 上面偏好是选题素材，不改变包内的冻结、审核和真实保存规则。当前管理仓库 ${manager.url} 与系统母版只作参考，不是本次写入目标。
 
 一、实际部署，不停在讲解
+本版为V4.6.3。先核对INIT_MANIFEST.json中的patch_version为4.6.3、workspace_version为1.4.9，缺包或版本不匹配时先报告并获取匹配附件，不混用旧包。先读docs/XS-KU接入与创作.md、docs/前五章投稿验收.md及reference_library/XS-KU.json；画像是交付快照，索引不等于已通读。按本章难题查教材并回读原文，用tools/reference_bridge.py prepare或novel_library.py export固定真实提交；brief-request --references填写本书用法与原创安排，写后在原release报告narrative_review.reference_use记录正文效果及本章引文。原文和练习只留在参考库，不将他书角色和连续情节改名套用。
 先实际解压附件，阅读AGENTS.md、启动新书.txt、project_config.json、INIT_MANIFEST.json、docs/线上同步协议.md、docs/连载冻结与发布前检查.md及docs/写作与叙事检查.md。核对清单哈希、关键工具和依赖是否完整；附件缺失或不完整就如实说明，不能假装部署。
 通过已连接GitHub读取唯一新书仓库的实际默认分支、最新提交和适用AGENTS。若已有book/state.json、正式正文或其他作品身份，先核对并恢复这本书的真实状态，不重新bootstrap、不覆盖旧文件、不用空包重置进度。不同作品身份或相冲突文件先报告具体冲突，不强写。
 只有确认是未初始化的新书仓库，才把空包按原目录完整部署到仓库根目录，在可运行Python的工作区真实执行tools/online_state.py bootstrap，填写上述仓库和实际默认分支，生成全新的book_id，保持明文正文和默认连载冻结、叙事检查开启。以当前默认分支为准；作者已清空的仓库即使历史提交仍有旧书，也不得从历史恢复旧正文、身份或旧任务。不要复制其他书的身份、正文、事实或任务ID；.automation/config.json记录真实新book_id，尚未建立任务时automation_id保留null。已有提交须保留base tree、以当前头为单一父提交，用expected_sha与force=false非强制推进；无提交的空库按实际状态建立首次提交，不能编造SHA。
@@ -323,21 +329,79 @@ export function newBookPrompt({repository,platform='',preferences='',management=
 
 二、部署后按开书门槛推进
 我已指定平台就直接研究，不重复问；未指定则先让我选平台，不自行选择。按平台研究与选题.md核查现行官方创作、投稿、原创与AI辅助规则、签约和可核实福利，注明核查日期与官方来源。研究公开近期榜单，区分榜单类型；访问受限就记录缺口，不捏造规则、名次、样本或收益。
-默认提出8个原创选题，给暂定书名、核心卖点、主角矛盾、读者承诺、长篇展开动力、阶段变化、结局方向及主要风险。把研究和候选真实保存并同步索引，停在WAITING_TOPIC等我选择，不替我定题、不提前写正文。已有真实选择时不重复倒退。
-我选定后建立设定、人物知情与资源事实账、完整长期路线和近期3—5章安排，检查长篇是否有足够变化。默认100章、每章8000—10000汉字，作者另有要求时以实际要求为准；得到“开始写”授权后才写第一章，每次只完成一个目标章。
+默认提出8个原创选题，给暂定书名、核心卖点、主角矛盾、读者承诺、长篇展开动力、阶段变化、结局方向及主要风险。新版初始包每题补前三章结果和同题材差异。把研究和候选真实保存并同步索引，停在WAITING_TOPIC等我选择，不替我定题、不提前写正文。已有真实选择时不重复倒退。
+我选定后建立设定、人物知情与资源事实账、完整长期路线和近期3—5章安排，检查长篇是否有足够变化。默认150章、约90万汉字；每章目标6000汉字、允许5500—6500，首章起统一执行。有docs/开篇试写与剧情验收.md时按其规则选题；收到我的「开始写」后再试写首章。每次只完成一个目标章。首章前整体设计五章，按docs/前五章投稿验收.md精读两部独立开篇各至少一万汉字，绑定教材范围；每章累计全文审读，第3和第5章做样稿复核，内部准备完成不能冒称签约。
 
 三、后续持续写作的硬要求
-遵守V4.3：写前任务书、场景预算、全书历史检索，实读需要的旧章，写完整正文后做反向提纲、限信息审读、带引文的事实与因果审核及反重复检查；每五章与跨阶段的全文回看在采用前完成。同一任务最多3轮局部修订，不重置计数、不批填pass；同一上下文审读如实标same_context_approximation，不冒充独立读者。
+按本书现行规则完成写前任务书、场景预算、全书历史检索，实读需要的旧章，写完整正文后做反向提纲、限信息审读、带引文的事实与因果审核及反重复检查；每五章与跨阶段的全文回看在采用前完成。同一任务最多3轮局部修订，不重置计数、不批填pass；同一上下文审读如实标same_context_approximation，不冒充独立读者。
 采用前release-check，采用即冻结正文和事实记录；以后每日更新、每日发布，前面全部采用章只读，旧错只前向处理，禁止为续写修改前章。章节完成、GitHub保存、小说平台发布分别记录；不自动投稿、签约或购买额度，不承诺文学质量、签约收益或长期无人值守。
-定时任务仅在我明确要求并指定时间后创建或更新：先查同书已有任务，唯一复用，按docs/定时执行器.md绑定真实任务ID并做不写章的preflight；使用固定GitHub Actions执行Python，不能只因聊天本地无法git clone就跳过检查。记录实际执行归属，未知旧running不超时抢占；单次失败不自行暂停长期计划。工具批次成功不等于小说保存，必须完成审核、采用、finish、索引和远端回读。模型/思考档位没有真实运行元数据时标未验证，不承诺返回创建聊天。
+定时任务仅在我明确要求并指定时间后创建或更新：先查同书已有任务并唯一复用，将本次配置步骤与长期执行指令分开，只保存长期规则和真实仓库/book_id绑定，不把当前章次、临时草稿或旧锁写成永久状态。按docs/定时执行器.md绑定真实任务ID，先提交不写章的preflight，再核对该source_sha对应作业和result；预检通过只证明工具链可用，完整日更另须实测。每轮以最新state和begin的真实目标为准，分场景完成整章；上下文准备成功或半篇草稿不作为主动结束理由。中断保留同章检查点，核实旧控制者平台终态及执行器作业终态后合法接续，不超时抢占、不自行停用计划或另建补跑任务。普通聊天补更优先用原任务的立即运行入口，未提供时如实报告，不伪装automation controller。固定GitHub Actions只执行文件工具；不能声称脚本会再次唤醒GPT。只有chapter_completed且正式正文、审核、冻结、回执和远端哈希核验齐全才报告章节完成。模型/思考档位无真实运行元数据时标未验证，不承诺返回创建聊天。
 个人端加入小说是部署完成后的独立操作；先给我可用的新书仓库链接和真实book_id，不擅自改管理清单。日常“今日更新”仍按最新正式章节文件最近提交的北京时间日期判断，不加日报或完成回执门槛。
 
 现在先核验附件和上述仓库，实际完成部署与回读；随后按我的平台选择推进到当前合法阶段。反馈用简洁中文，给真实提交SHA、核验结果、当前阶段和我下一步只需做的选择。`;
 }
-export function writingPrompt(entry,management){
-  return `为《${entry.title}》建立或更新唯一的每日写作任务：每天北京时间（Asia/Shanghai）${entry.expected_time}执行。先按仓库与book_id查已有任务，已有就复用，不另建。实际核对任务ID、启用状态、下次时间及绑定反馈对话；不承诺一定返回创建聊天。${entry.feedback_url?'已登记反馈链接：'+entry.feedback_url+'；须核对真实绑定。':''}实际模型和思考档位取不到时标未验证，不靠提示词宣称6.1或最高档。\n本书唯一事实源：${entry.repository_url} 的${entry.branch||'实际默认分支'}。${entry.book_id?'预期book_id：'+entry.book_id+'。':''}读取AGENTS.md、docs/每日自动更新.md、docs/定时执行器.md、state/workflow、现行设定路线和daily执行证据。新初始化包已有固定执行器；旧书缺工具才按 ${SYSTEM_REPOSITORY} 的旧书接入说明审查合并，不复制state、不解冻或追认旧章。\n固定由GitHub Actions运行Python，不把定时聊天本地无法git clone当作唯一执行出口。使用已有.github/workflows/novel-executor.yml，按docs/定时执行器.md提交.automation/request.json；.automation/config.json绑定本书实际book_id与唯一任务ID。每批request_id独立，base_sha为本次实际HEAD；保留base tree、单一父提交、expected_sha和force=false。请求提交只能加入请求和待审drafts，不直接写正式正文或state，也不为每章另造工作流。\n每轮controller记录实际automation_id、独立session_id与能核实的平台运行编号（取不到为null）；后续批次复用该controller。由begin阶段真正运行daily_update.py begin：already_completed停止；recovered_completion只恢复回执不续写；continue_owned沿用本轮；recovery_required先核实原执行。只在原控制者平台终态和关联执行器作业均已核实后恢复同一章，禁止超时抢锁；旧记录无归属时保留待核实。回读远端锁和本批result后才写作。若active.operator_recovery.status为ready，按既有任务preflight→begin核验维护授权与归档；只有begin返回resumed及recovery_mode=operator_revocation才用本轮新run_id续写原章。不补造旧平台编号，不自行recover或制作维护授权，不删除锁、候选或返修次数；普通running仍按原归属与终态规则处理。\n实际读取上章、最近三章全文、五章推进、相关旧事实与知情、资源、未兑现承诺；到期五章/阶段全文回看在采用前完成。按原V4.3完成任务书、场景预算、全书相似办法检索和writer资料，然后继续写完整目标一章。context或tools_completed仅表示准备完成，不能结束整次写作。正文反向提纲、限信息审读和带引文八项审核必须实做；同上下文标same_context_approximation；最多3轮局部修订，不改冻结章、不重置计数，不批填pass。\n候选及人工实读的record/release报告放drafts，command阶段登记并审核，finalize阶段统一执行release-check→adopt→daily_update.py finish→workflow与索引。每批状态变化后执行器自动重建并验证online/index.json；任务必须读取对应请求的完整输出、实际提交、正文与回执，确认chapter_completed和哈希后才报告“已保存”。失败保留原目标并block；单次网络或工具失败不得自行暂停长期计划，不改时间、不建替代任务。未知结果先回读，不重放请求。\n${management||'管理仓库未设置'} 的勾选仅控制查询；章节采用、今日GitHub文件更新、平台发布分开。日常查询仍按最新正式章节文件最近提交的北京时间日期，不加日报/回执门槛；不自动投稿、签约、购买额度，不要求登录云浏览器。`;
+function taskLocator(entry){
+  const repo=parseRepository(entry.repository_url),branch=safeBranch(entry.branch||''),title=String(entry.title||'本书').trim();
+  fail(title&&title.length<=300,'小说名称无效。');
+  fail(entry.book_id==null||(typeof entry.book_id==='string'&&/^[A-Za-z0-9_-]{1,100}$/.test(entry.book_id)),'作品身份无效。');
+  return `【小说】${JSON.stringify(title)}\n【唯一仓库】${repo.url}\n【目标分支】${branch||'每轮读取仓库实际默认分支'}\n【作品身份】${entry.book_id||'首次配置时从该仓库state核实book_id并绑定；未核实不得开始写作。'}`;
 }
-export function repairPrompt(entry){return `恢复 ${entry.repository_url} 的最新正式状态，读取AGENTS.md、docs/定时执行器.md及book/daily/active.json和回执。复用本书唯一任务与固定执行器，不另建。若active.operator_recovery.status为ready，按既有任务的preflight→begin校验维护授权与完整归档；只有begin返回resumed、recovery_mode=operator_revocation，才用本轮新run_id接续原章，不再补造旧平台编号。不自行调用recover或制作维护授权，不删除锁、候选或返修次数。已完成先核证据后停止；本轮controller继续同一run；普通另一轮必须真实核对原平台运行终态及执行器作业终态，才能提交stopped_evidence恢复同一目标。无归属普通旧running保留待核实，不超时抢占、不重置修订次数。经command和finalize完成审核、采用、回执、索引及远端回读；工具批次成功不等于章节已保存。单次故障block，不擅自停用每日计划。`;}
+
+const DAILY_EXECUTION_RULES=`一、每轮读取真实状态
+读取AGENTS.md、docs/每日自动更新.md、docs/定时执行器.md、docs/连载冻结与发布前检查.md、docs/写作与叙事检查.md、book/state.json、book/workflow.json、online/index.json、.automation/config.json及book/daily/active.json、相关回执和请求结果。核实仓库、分支HEAD、book_id与本书唯一任务ID；发现身份冲突就报告。章次、冻结、旧锁及草稿状态以远端为准，不采用任务创建时的聊天摘要。active、回执或进度文件尚不存在时，区分首次运行无记录与真实读取失败，不编造旧执行。已有作者授权按已确认路线持续日更，无需每天重问“开始”；未选题或缺少设定路线时仍不能越过开书门槛。
+
+二、先提交，再核验执行
+使用已有.github/workflows/novel-executor.yml与tools/task_executor.py，不把本地无法git clone当作唯一执行出口。每批读最新HEAD及其commit.tree.sha，把真实tree SHA传给create_tree的base_tree_sha，增量加入.automation/request.json和必要drafts；保留base tree、单一父提交、expected_sha和force=false。不必把全部递归树条目重新列出；请求提交不直接改state、冻结正文或系统源码。
+每轮先提交preflight请求，再查该source_sha对应的GitHub Actions及.automation/results/<request_id>.json；没有提交前的“本轮作业”不能成为提交前提。检查request_id、source_sha、book_id、controller和完整输出。结果未知先回读远端已有请求与作业，不换编号重放操作。只有真实工具报错才记录具体工具、错误码或返回信息，不用“尚未取得”代替实际尝试。
+
+三、取得同一目标的合法执行权
+私下peek本任务，controller使用实际automation_id、每轮独立session_id和能核实的本轮platform_run_id（取不到填null并标未验证），本轮各批复用。preflight通过后由begin真正运行daily_update.py begin；回读锁与result后才写作，目标只取begin实际返回的一章。遵守本书completion_policy；per_trigger按现行协议提供同次触发重试保持一致的稳定trigger_id，不擅自改策略。already_completed停止；recovered_completion只恢复回执不续写；continue_owned沿用本轮。
+先区分维护检查点和普通旧锁：若active.operator_recovery.status为ready，按既有任务preflight→begin核验已有维护授权与归档；只有begin返回resumed及recovery_mode=operator_revocation才以本轮新run_id续写原章，不补造未知的旧平台编号。其余recovery_required或另一轮blocked/running，必须先核实原controller的确切平台运行终态和全部关联执行器作业终态，才能按stopped_evidence恢复同一目标；当前新运行的终态不能冒充旧运行。无归属或无法核实的普通旧锁保留待核，不超时抢占，不伪造session或执行编号。不自行recover或制作维护授权，不删除锁、候选或返修次数。
+
+四、完成正文和实质审核
+新书当前配置每章目标6000汉字、允许5500—6500，含前五章；已有书仍以该书正式state为准。启用opening_five_required时按docs/前五章投稿验收.md完成写前五章方案、同类样本与逐章累计审读。
+如果本书已绑定reference_library，读取绑定参考库的最新catalog，按本章难题检索并回读真实来源，通过brief-request --references填写application与originality。写后在同一release报告的narrative_review.reference_use填写实际效果、原创性判断和本章引文；未接入新版的旧书沿用其真实配置，不追认旧章通过。
+实际读取上章、最近三章全文、五章推进、相关旧事实与知情、资源和未兑现承诺；到期五章/阶段全文回看在采用前完成。按本书配置完成brief-request、干净任务书、场景预算、brief-check、全书相似办法检索及writer资料。context或tools_completed仅表示本批准备完成，按当前目标章的实际章长配置继续写完整章。有docs/开篇试写与剧情验收.md时按其规则验证实际结果。
+可按任务书分3—5个有效场景连续写作，保存同章工作稿再合成全文。不能仅因准备完成、草稿暂不足字数或尚未审核就主动结束本轮；不得灌水、降字数或批填pass赶完成。每个实质检查点保存drafts中本章进度文件，记录真实run_id、阶段、草稿路径/哈希/实测字数、已完成场景及下一步；接续时回读稿件与result验证，进度文件不冒充采用证据。
+实际生成并阅读reader资料，完成正文反向提纲、限信息审读、人物主动性、对立方行动、真实变化、兑现与续读理由、八项带引文审核和反重复；同上下文标same_context_approximation。最多3轮局部修订，不改冻结章、不重置计数。候选、record和真实release报告放drafts，经command核验；既有未完稿只续写同一章。
+
+五、以章节证据验收
+finalize统一执行release-check→adopt冻结→daily_update.py finish→workflow与索引；读取对应result、实际提交、正式正文与记录、完成回执及哈希。只有business_status=chapter_completed且远端回读全部匹配才输出“本轮章节已完成”。任务平台completed、Actions绿色、预检通过或tools_completed都不能代替章节完成。
+真实故障、执行限制或审核无法通过时保留稿件和原目标；在确实持有本轮执行权时block并回读，输出“本轮章节未完成”，列最后完成阶段、真实原因/原始错误、检查点、原目标和下一步。单次网络或工具失败不得自行暂停长期计划，不改时间、不建替代任务。工具未提供自动续跑能力时不能声称已安排补跑；下一次合法运行继续原目标，不跳章。
+反馈给真实任务ID、目标章、run_id、实测字数、采用状态及证据链接。实际模型和思考档位取不到时标未验证，不靠提示词宣称6.1或最高档。不自动投稿、签约、购买额度或调用外部AI API，不要求登录云浏览器；平台发布另凭真实回执登记。`;
+
+export function dailyTaskPrompt(entry){return `${taskLocator(entry)}\n\n${DAILY_EXECUTION_RULES}`;}
+
+export function writingPrompt(entry,management){
+  const locator=taskLocator(entry),time=String(entry.expected_time||'');
+  fail(/^([01]\d|2[0-3]):[0-5]\d$/.test(time),'每天执行时间无效。');
+  const feedback=entry.feedback_url?validateChatURL(entry.feedback_url):'';
+  const manager=management?parseRepository(management).url:'管理仓库未设置';
+  return `请为本书建立或更新唯一的每日写作任务：每天北京时间（Asia/Shanghai）${time}执行。\n${locator}
+
+【本次配置，不保存为每日执行内容】
+先读本书最新状态与.automation/config.json，私下按仓库、book_id和已有任务ID查找同书任务；已有就复用，不另建。查不到或身份不一致时核实具体缺口，不在未确定没有同书有效任务时另建。保持既有反馈绑定，不承诺一定返回创建聊天。${feedback?'已登记反馈链接：'+feedback+'；须核对真实绑定。':''}
+仅将下方两个标记之间的长期指令保存为任务prompt；只用实测身份补齐缺失book_id，不把本次配置步骤、当前章次、临时草稿路径、旧锁编号、运行结果或聊天总结写成永久状态。每次执行仍须重新读GitHub。
+实际核对任务ID、启用状态、时区、日程、下次时间及反馈对话；平台没有返回的字段写未验证，不自行编造。将真实绑定写入本书配置，保留原completion_policy等既有字段。旧书缺固定工具时按 ${SYSTEM_REPOSITORY} 的旧书接入说明审查合并，不复制state、不解冻或追认旧章。
+做一次不写章的preflight并回读对应作业与result。配置反馈分开报告“任务配置已核对”“工具预检通过”“完整日更已实测/待实测”；预检通过不能宣称稳定日更或章节已写成。本条仅配置计划，不为测试自动写章、抢锁、另建补跑任务或改变本书质量门槛。
+
+【长期任务指令开始】
+${dailyTaskPrompt(entry)}
+【长期任务指令结束】
+
+${manager} 的勾选仅控制今日更新查询，不是本书写作授权或完成证据；查询仍按最新正式章节文件最近提交的北京时间日期判断，不加日报/回执门槛。`;
+}
+
+export function repairPrompt(entry){
+  return `请现在核查并接续本书当前未完成的一个目标章，不改每日计划。\n${taskLocator(entry)}
+先读取AGENTS.md、docs/定时执行器.md、最新state/workflow、book/daily/active.json、草稿进度及完成回执。已经完成且证据齐全就报告无需补更并停止，不新开下一章；回执缺失按recovered_completion恢复证据。先区分已有授权的operator_recovery.status=ready维护检查点与普通旧锁；普通旧锁须核实原控制者确切平台运行终态与全部关联执行器作业终态，未知旧running不超时抢占。
+若在普通聊天中收到本指令，先peek核对.automation/config.json绑定的唯一任务。确认确有未完目标，且已核实原运行与作业终态或已有合法ready维护检查点后，优先使用平台提供的原任务“立即运行”入口执行一次，复用本书唯一任务与固定执行器，不另建、不改日程。入口未提供、任务未启用或调用被拒绝时如实报告，不伪装定时运行的automation controller，不手改锁或借用旧session。请求成功只报告“已发起补更”；只有这次新运行的实际结果与对应GitHub章节证据匹配才能报告完成，不把旧一轮结果当作本次结果。
+若本消息本来就在原任务的实际运行内，使用本轮真实controller按现行协议preflight→begin；普通另一轮须提供stopped_evidence合法恢复同一目标。若active.operator_recovery.status为ready，只核验已有维护授权；只有begin返回resumed且recovery_mode=operator_revocation才以本轮新run_id接续原章。不自行recover或制作维护授权，不删除锁、候选或返修次数。
+
+实际执行补更时沿用以下逐阶段写作与验收规则，不把规则本身另建为任务：
+${DAILY_EXECUTION_RULES}`;
+}
+
 export function checkerPrompt(management,branch){
   return `可选：请在本聊天建立每天北京时间20:00执行的查询任务；必须实际创建成功才报告启用状态和下次运行时间。\n每次读取 ${management} 的 ${branch||'默认分支'} 最新books.json，查询所有enabled=true的小说，不受expected_time、effective_from或宽限时间限制。按最新正式章节文件的最近一次Git提交日期（Asia/Shanghai）判断今天是否更新；只有改配置、改报告不能算更新。读取失败标unknown，不能算未更新。\n程序位于通用系统仓库 ${SYSTEM_REPOSITORY}。固定其提交后下载tools/query_today.mjs及web/dist/today-query.mjs、query-model.mjs、hub-core.mjs、core.mjs、github-transport.mjs，保留相对目录。程序只读模式不需要GPT API Key；公开查询正常路径使用Git版本发现、公开原文和章节文件历史，不依赖匿名REST调用。\n运行node tools/query_today.mjs --management ${management} --branch ${branch||'main'} --output /tmp/today-result.json。已有正确GitHub管理仓库写入授权时可用--write及仅在环境内的NOVEL_HUB_GITHUB_TOKEN，把最近7天查询观察保存到books.json；仅有GitHub连接器时按相同规则读取真实章节日期，原子比较books.json版本并写回query_history。保存前核对文件版本，冲突不覆盖。未实际写回并回读成功不能宣称已记录。不得打开别的小说聊天、代写下一章或到小说平台发布。`;
 }

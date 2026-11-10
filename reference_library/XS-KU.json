@@ -1,0 +1,3906 @@
+{
+  "format": "xs-ku-reference-profile-v1",
+  "library_id": "300553a5-d4fb-4f1c-b1d1-154daf74c92e",
+  "origin": {
+    "repository_url": "https://github.com/1464356758/XS-KU",
+    "commit": "f3b66ec5305aa28c75998c4fd1f58227358404a4"
+  },
+  "catalog_sha256": "461e863f2fba90839694c6340a643e2d9e8f7a26adaf60e0ad8eb810b405b0f4",
+  "library_revision": 581,
+  "is_delivery_snapshot": true,
+  "refresh_rule": "每次查库读取实际默认分支的最新catalog；本文件不限制新增原文。",
+  "indexed": {
+    "source_files": 171,
+    "title_author_families": 168,
+    "reading_units": 74608,
+    "source_bytes": 541198341,
+    "extensionless_files": 31
+  },
+  "declared_study_scope": {
+    "books": 6,
+    "reading_units": 9,
+    "studies": 12,
+    "practices": 1,
+    "reviews": 1,
+    "full_library_read": false
+  },
+  "signing_status": "作者提供时声明为签约参考小说；具体平台与送审版本未逐本核实。",
+  "lessons": [
+    {
+      "id": "3b59a0797be03dee563075ff",
+      "sha256": "3b59a0797be03dee563075ff23f6147e59bbf0016ae3c2388e9ae08914031bc1",
+      "path": "studies/3b59a0797be03dee563075ff.json",
+      "title": "1955：冒牌留子从装备栏开始",
+      "source": {
+        "book_id": "17c865d808e029c53130bc95",
+        "from_chapter": 1,
+        "source_sha256": "2f8f723e68957706becc9a57d9d6eb06feeec658e135086c16f47d150ed745ab",
+        "to_chapter": 2
+      },
+      "question": "身份优势怎样同时制造能力考验",
+      "technique": "让一个有价值的身份附带眼下必须兑现的能力要求，再用当前场景中的物件把风险和可用资源同时带出来。",
+      "applicability": "角色受到某种资格、名声或职责的期待，而且读者已经看见兑现它的困难。",
+      "failure_conditions": "身份危机若只靠反复自言自语维持会停滞；新能力若立刻抹去所有困难，身份压力也会失去作用。",
+      "terms": [
+        "身份反差",
+        "能力考验",
+        "年代",
+        "科技",
+        "开篇"
+      ],
+      "feedback_origin": "model"
+    },
+    {
+      "id": "752f2623b936c2e4e7e3d26a",
+      "sha256": "752f2623b936c2e4e7e3d26a902fa29bc8022c828414dde1c72fa2856f3d6098",
+      "path": "studies/752f2623b936c2e4e7e3d26a.json",
+      "title": "1955：冒牌留子从装备栏开始",
+      "source": {
+        "book_id": "17c865d808e029c53130bc95",
+        "from_chapter": 1,
+        "source_sha256": "2f8f723e68957706becc9a57d9d6eb06feeec658e135086c16f47d150ed745ab",
+        "to_chapter": 2
+      },
+      "question": "能力成长怎样和人物关系互相推动",
+      "technique": "把能力反馈放进一次具体行动，令行动同时改变人物关系，并把新资源的限制在本轮兑现后交代清楚。",
+      "applicability": "成长型主角确实需要训练、他人帮助或新资源，资源有明确的使用边界。",
+      "failure_conditions": "不断新增加成却没有实际难题会空转；限制临到失败才临时补出会破坏可信度。",
+      "terms": [
+        "成长",
+        "关系变化",
+        "能力边界",
+        "反馈",
+        "科技"
+      ],
+      "feedback_origin": "model"
+    },
+    {
+      "id": "d63498080a52916e7aef5223",
+      "sha256": "d63498080a52916e7aef52230403d2167aaa97ba3fd519787de2620017406033",
+      "path": "studies/d63498080a52916e7aef5223.json",
+      "title": "卖个早点，怎么上班族全迟到了",
+      "source": {
+        "book_id": "2da9b981774956ba6c42b5fd",
+        "from_chapter": 1,
+        "source_sha256": "bd94e722f24aa780eae45465a8bfc9a71ab845efacfe427852136f5b2accaad7",
+        "to_chapter": 2
+      },
+      "question": "日常对白怎样承载不同的人物目标",
+      "technique": "给同一件日常事安排不同诉求，让人物通过接话、误会和转移话题争取自己的愿望，最后由主角的决定改变当天安排。",
+      "applicability": "亲友或同事关系已足够清楚，日常事件能够承接本书当前目标。",
+      "failure_conditions": "每个人只负责说笑却没有真实所求会变成段子堆积；同一种打闹连续重复会削弱人物差异。",
+      "terms": [
+        "日常",
+        "对白诉求",
+        "家庭",
+        "轻松",
+        "经营"
+      ],
+      "feedback_origin": "model"
+    },
+    {
+      "id": "747ea2eaefa9074b8b3942e4",
+      "sha256": "747ea2eaefa9074b8b3942e4eee6d343b1999c0989fe099d645e6cd153109330",
+      "path": "studies/747ea2eaefa9074b8b3942e4.json",
+      "title": "卖个早点，怎么上班族全迟到了",
+      "source": {
+        "book_id": "2da9b981774956ba6c42b5fd",
+        "from_chapter": 1,
+        "source_sha256": "bd94e722f24aa780eae45465a8bfc9a71ab845efacfe427852136f5b2accaad7",
+        "to_chapter": 2
+      },
+      "question": "手艺成长怎样写成看得见的行动",
+      "technique": "围绕一件要做成的事，给出可观察的缺点、一次有针对性的调整和新反馈，让提升来自行动。",
+      "applicability": "题材卖点包含技能、经营或实际制作，细节会影响人物的下一步选择。",
+      "failure_conditions": "逐步流程若不改变目标、判断或情绪，会形成教程式拖延；多次重试需要有不同发现，并最终交付有分量的结果。",
+      "terms": [
+        "技能",
+        "尝试",
+        "反馈",
+        "经营",
+        "兑现"
+      ],
+      "feedback_origin": "model"
+    },
+    {
+      "id": "3e96ac26c8e885791041fe4e",
+      "sha256": "3e96ac26c8e885791041fe4eddc3f6f41831c19e52b20d38d149892726a94e89",
+      "path": "studies/3e96ac26c8e885791041fe4e.json",
+      "title": "公路求生：我靠板车苟成神",
+      "source": {
+        "book_id": "02595a3dcb10868d542a266c",
+        "from_chapter": 1,
+        "source_sha256": "ca4d297cdba6fca599928ef983cf7ed0204c3ab60cee8e2b3d2c3682d6314b01",
+        "to_chapter": 2
+      },
+      "question": "个人愿望怎样改变一次有风险的选择",
+      "technique": "先让主角有一个看起来合理的选择，再让另一条路径触及她更在意的具体愿望，促使她主动承担已知风险。",
+      "applicability": "主角的愿望已用具体人或事件建立，两个选项的好处与缺点能被读者理解。",
+      "failure_conditions": "另一条路若明显毫无代价，选择就会失去分量；开篇规则表过长也可能压住行动，需要按本书实际情境取舍。",
+      "terms": [
+        "主动选择",
+        "个人愿望",
+        "风险",
+        "求生",
+        "开篇"
+      ],
+      "feedback_origin": "model"
+    },
+    {
+      "id": "f534e026157ce8de4a40c1d7",
+      "sha256": "f534e026157ce8de4a40c1d7a20fbaca21b71eaeb6640d8ee9815b6adba5e6a3",
+      "path": "studies/f534e026157ce8de4a40c1d7.json",
+      "title": "公路求生：我靠板车苟成神",
+      "source": {
+        "book_id": "02595a3dcb10868d542a266c",
+        "from_chapter": 1,
+        "source_sha256": "ca4d297cdba6fca599928ef983cf7ed0204c3ab60cee8e2b3d2c3682d6314b01",
+        "to_chapter": 2
+      },
+      "question": "一项奖励怎样同时引出外部危险与关系悬念",
+      "technique": "把一次进展放进其他人能察觉的环境，写清谁因此获利或受威胁，再让主角处理这些反应时付出一个具体代价。",
+      "applicability": "信息有明确传播渠道，不同人物依据各自掌握的消息作出合理行动。",
+      "failure_conditions": "对手若凭空知道秘密会断因果；误会如果长期靠拒绝沟通维持，可能只剩机械拖延。",
+      "terms": [
+        "结果后果",
+        "消息传播",
+        "关系悬念",
+        "求生",
+        "误会"
+      ],
+      "feedback_origin": "model"
+    },
+    {
+      "id": "f4ae7753db77eaf7cebf71d5",
+      "sha256": "f4ae7753db77eaf7cebf71d5730cc759dfec2f8696969fb5f3f752dbfaa0dade",
+      "path": "studies/f4ae7753db77eaf7cebf71d5.json",
+      "title": "封总，太太想跟你离婚很久了",
+      "source": {
+        "book_id": "cd50e5b371b89bfd6de79dc6",
+        "from_chapter": 1,
+        "source_sha256": "2c4ccc332351c47d07219926abb7ba9a0423a2caf8a52a53a9c751bf6d4d42a2",
+        "to_chapter": 1
+      },
+      "question": "关系里的疏离怎样通过具体物件表现",
+      "technique": "选择一个与人物愿望直接相关的物件或安排，借对方怎样对待它显露关系，让情绪跟着具体行为变化。",
+      "applicability": "读者先理解人物希望得到的那一点关心，物件能在场景内自然出现。",
+      "failure_conditions": "只用旁白宣布某人不爱主角会削弱现场感；连续同质冷遇需要推动决定，避免仅重复刺激情绪。",
+      "terms": [
+        "关系",
+        "物件",
+        "情绪",
+        "婚恋",
+        "视角"
+      ],
+      "feedback_origin": "model"
+    },
+    {
+      "id": "974c8a19f1a88f9e9ff4b2f8",
+      "sha256": "974c8a19f1a88f9e9ff4b2f8e945403678b3b1a357f40fc72bf067a6b09ded51",
+      "path": "studies/974c8a19f1a88f9e9ff4b2f8.json",
+      "title": "封总，太太想跟你离婚很久了",
+      "source": {
+        "book_id": "cd50e5b371b89bfd6de79dc6",
+        "from_chapter": 1,
+        "source_sha256": "2c4ccc332351c47d07219926abb7ba9a0423a2caf8a52a53a9c751bf6d4d42a2",
+        "to_chapter": 1
+      },
+      "question": "一章里的情绪怎样落到主角行动",
+      "technique": "让人物原本能接受的解释在一场具体见证中站不住脚，再把情绪转成当场能做、会改变关系的决定。",
+      "applicability": "这一决定与人物此前的忍让、期待及新看到的证据有明确因果。",
+      "failure_conditions": "若只在章末宣告想改变而没有行动，下一章仍可能回到原地；人物突然转向需要正文中的积累。",
+      "terms": [
+        "情绪兑现",
+        "主角决定",
+        "关系变化",
+        "婚恋",
+        "章末"
+      ],
+      "feedback_origin": "model"
+    },
+    {
+      "id": "b734383387139ae948fbdec7",
+      "sha256": "b734383387139ae948fbdec7781855b3405db800f37320a12eb234c23b5171e4",
+      "path": "studies/b734383387139ae948fbdec7.json",
+      "title": "死亡回档，48小时拯救世界",
+      "source": {
+        "book_id": "9be25336cbefba34244926ba",
+        "from_chapter": 1,
+        "source_sha256": "5aad08d8ffd42be3d3f7df19e9594831004f9caac81184c1b2dce62386c394ad",
+        "to_chapter": 1
+      },
+      "question": "异常怎样被人物亲自验证",
+      "technique": "先给一组容易识别的日常细节，再让它们以相同顺序重现，促使主角改变一项行动并观察后果。",
+      "applicability": "悬疑或幻想开篇需要让异常逐步成为人物可使用的信息。",
+      "failure_conditions": "重复段落若只复述已经知道的事会拖沓；每次重现应增加验证、选择或新的风险。",
+      "terms": [
+        "悬疑",
+        "验证",
+        "信息揭示",
+        "回档",
+        "主动试探"
+      ],
+      "feedback_origin": "model"
+    },
+    {
+      "id": "f280f73c755e403ca36e1c58",
+      "sha256": "f280f73c755e403ca36e1c585909fd816d1969eb905b738708acd729087beade",
+      "path": "studies/f280f73c755e403ca36e1c58.json",
+      "title": "死亡回档，48小时拯救世界",
+      "source": {
+        "book_id": "9be25336cbefba34244926ba",
+        "from_chapter": 1,
+        "source_sha256": "5aad08d8ffd42be3d3f7df19e9594831004f9caac81184c1b2dce62386c394ad",
+        "to_chapter": 1
+      },
+      "question": "使用优势留下的痕迹怎样带来新问题",
+      "technique": "在主角使用独特优势时同时留下他人能看见的证据，再让他人基于有限信息作出另一种解释。",
+      "applicability": "能力使用存在观察者或记录，误解与对方实际掌握的信息相符。",
+      "failure_conditions": "凭空给主角安罪名会损伤可信度；专业程序与事实须在新书创作时独立核对，不能把样书当专业依据。",
+      "terms": [
+        "优势代价",
+        "证据",
+        "误解",
+        "悬疑",
+        "后果"
+      ],
+      "feedback_origin": "model"
+    },
+    {
+      "id": "9e94ce8b42b4c630c965fb30",
+      "sha256": "9e94ce8b42b4c630c965fb30fa7d7bccb6cc840b34070b89311bad093e12a738",
+      "path": "studies/9e94ce8b42b4c630c965fb30.json",
+      "title": "村里有只白骨精",
+      "source": {
+        "book_id": "db4a4bbdfaa8327b83c90146",
+        "from_chapter": 1,
+        "source_sha256": "405e19e84955b7a42230688d263fff69d44edad9f97733de7b993af6677118a9",
+        "to_chapter": 1
+      },
+      "question": "主角的生活目标怎样连接到对立方利益",
+      "technique": "把主角最怕失去的生活条件写成具体资源，再明确另一方得到这项资源的好处，使双方行动具有持续理由。",
+      "applicability": "市井、经商或家庭题材需要一个可见的生存目标，并有不同人争取同一资源。",
+      "failure_conditions": "本单元前段有较长背景，迁移时应结合目标平台调整切入点；人物的怀疑须与已证实事实分别保留。",
+      "terms": [
+        "利益",
+        "生活目标",
+        "资源",
+        "古代",
+        "人物知情"
+      ],
+      "feedback_origin": "model"
+    },
+    {
+      "id": "21341b1a64c21b336f313460",
+      "sha256": "21341b1a64c21b336f313460068cf43f9294f167eebca4089818f21349c8ed8a",
+      "path": "studies/21341b1a64c21b336f313460.json",
+      "title": "村里有只白骨精",
+      "source": {
+        "book_id": "db4a4bbdfaa8327b83c90146",
+        "from_chapter": 1,
+        "source_sha256": "405e19e84955b7a42230688d263fff69d44edad9f97733de7b993af6677118a9",
+        "to_chapter": 1
+      },
+      "question": "日常小目标怎样让细节进入动作",
+      "technique": "先给一个人物此刻在意的小目标，再选择会阻碍或帮助行动的感官细节，让意外改变当前处境。",
+      "applicability": "日常场景需要生活质感，并且小目标能连接人物的处境或关系。",
+      "failure_conditions": "小意外连续出现却不接回主要追求，会使情节琐碎；细节应服从视角人物此刻关注的东西。",
+      "terms": [
+        "细节",
+        "动作",
+        "日常",
+        "视角",
+        "场景"
+      ],
+      "feedback_origin": "model"
+    }
+  ],
+  "books": [
+    {
+      "id": "f768bec19f704e5d74f1bdfa",
+      "title": "what the fuck !",
+      "author": "落漠",
+      "family_id": "9574c20a3526695491e01d56",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "what the fuck !-落漠】-126 番外 世界游 全文完 (1).txt",
+        "blob_sha": "f768bec19f704e5d74f1bdfaece765036d1fa490",
+        "size_bytes": 1803055
+      },
+      "reading_units": 126,
+      "manifest_path": "books/f768bec19f704e5d74f1bdfa_52e79a75f4f4.json",
+      "manifest_sha256": "52e79a75f4f4401e3b3aef3c63dc20ebe06ba0bc8ed42caad8d52dfd67a683ed"
+    },
+    {
+      "id": "17c865d808e029c53130bc95",
+      "title": "1955：冒牌留子从装备栏开始",
+      "author": "麻布崽",
+      "family_id": "298f7c8a87bb2055e85bc61d",
+      "platform": "",
+      "genre": "年代工业",
+      "genre_hints": [
+        "年代",
+        "科技"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【1955：冒牌留子从装备栏开始-麻布崽】-第109章 庆功宴，叫副厂长（二更）",
+        "blob_sha": "17c865d808e029c53130bc9582ef106c0bef14aa",
+        "size_bytes": 808547
+      },
+      "reading_units": 110,
+      "manifest_path": "books/17c865d808e029c53130bc95_f9654c202928.json",
+      "manifest_sha256": "f9654c202928586a80cfccd316741f1457b0676ad1d4c8ab036778c22ca26b5d"
+    },
+    {
+      "id": "7f0aca50ea285f1e17eebb8d",
+      "title": "1978，我考上了哈工大",
+      "author": "葫芦村人",
+      "family_id": "3e43a92215f19377e42f9e9f",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代",
+        "科技"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【1978，我考上了哈工大-葫芦村人】-673 从苏联网到大鱼，谢威成公敌，众单位领导撸袖子了",
+        "blob_sha": "7f0aca50ea285f1e17eebb8d70be8057e922c06c",
+        "size_bytes": 7273476
+      },
+      "reading_units": 686,
+      "manifest_path": "books/7f0aca50ea285f1e17eebb8d_3dc17fdf4984.json",
+      "manifest_sha256": "3dc17fdf498439fe20c953ede1f3424f5ee33fc70ad6400a975a3772bd552c0e"
+    },
+    {
+      "id": "6e206384223390e39c02858b",
+      "title": "1979黄金时代",
+      "author": "睡觉会变白",
+      "family_id": "c4972a3fc8bb3842268f0d90",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【1979黄金时代-睡觉会变白】-第1329章 处理结果",
+        "blob_sha": "6e206384223390e39c02858bc5dccbfee1d69205",
+        "size_bytes": 10137105
+      },
+      "reading_units": 1371,
+      "manifest_path": "books/6e206384223390e39c02858b_1c8cecf2d25e.json",
+      "manifest_sha256": "1c8cecf2d25e241e4cd5ec851732d457513fb2942c357782913fa9bf0e573c74"
+    },
+    {
+      "id": "704c55fb4e55ad4bee0bb2bb",
+      "title": "1980：从报名参军开始",
+      "author": "维斯特帕列",
+      "family_id": "e3ebae5e8a0b4ae163898f1d",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【1980：从报名参军开始-维斯特帕列】-第1029章 扩产",
+        "blob_sha": "704c55fb4e55ad4bee0bb2bb30b52668c48b3ee9",
+        "size_bytes": 4868939
+      },
+      "reading_units": 1031,
+      "manifest_path": "books/704c55fb4e55ad4bee0bb2bb_9986d20b99dd.json",
+      "manifest_sha256": "9986d20b99dd155815ca0e61627b9180a53981862357160320f3010b17c3c1de"
+    },
+    {
+      "id": "e5f37be0c0dce7bd007c3b45",
+      "title": "1988，从街边小店开始",
+      "author": "霍晓",
+      "family_id": "9f1b0069ebcdb9f0eafe787b",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代",
+        "经营"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【1988，从街边小店开始-霍晓】-第四百三十三章 考验刚刚开始",
+        "blob_sha": "e5f37be0c0dce7bd007c3b459a42593bc9bb3402",
+        "size_bytes": 2535860
+      },
+      "reading_units": 433,
+      "manifest_path": "books/e5f37be0c0dce7bd007c3b45_793fd7a7d03e.json",
+      "manifest_sha256": "793fd7a7d03e4a52eea80c0a44f7c546ba213d5f91df575a1b12944e44f53925"
+    },
+    {
+      "id": "931dd12be2d0fdfff5e9446f",
+      "title": "1994：菜农逆袭",
+      "author": "野生的冰糖葫芦",
+      "family_id": "c5fd4f825f415373c3f17af5",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "经营"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【1994：菜农逆袭-野生的冰糖葫芦】-第848章 坂田没有机会了",
+        "blob_sha": "931dd12be2d0fdfff5e9446ff92753ea01731406",
+        "size_bytes": 8274414
+      },
+      "reading_units": 862,
+      "manifest_path": "books/931dd12be2d0fdfff5e9446f_39e0860153de.json",
+      "manifest_sha256": "39e0860153ded1399329f5ed5105d4ea46ab7f6b8893129c1d5ab67f4d3c740d"
+    },
+    {
+      "id": "b33b6a7f4b1076b7ba362f69",
+      "title": "1女7男",
+      "author": "甄尼特",
+      "family_id": "50ea181d39ba2ba080c3c674",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【1女7男-甄尼特】-28 后记 (1)",
+        "blob_sha": "b33b6a7f4b1076b7ba362f69b97ebd1f449effc4",
+        "size_bytes": 523609
+      },
+      "reading_units": 28,
+      "manifest_path": "books/b33b6a7f4b1076b7ba362f69_d79f26dff04a.json",
+      "manifest_sha256": "d79f26dff04abd8c1eac2ce2d50054f82bb630a1c2b21704391ca6e37e4ba91a"
+    },
+    {
+      "id": "619d8dcb53c64867712a6c29",
+      "title": "38岁吃软饭？我选择幼驯染",
+      "author": "吾剑也未尝不利也",
+      "family_id": "044859838cc484ede35e9061",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "婚恋"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【38岁吃软饭？我选择幼驯染-吾剑也未尝不利也】-第二百零七章 原来这么有锋芒吗，雪雪",
+        "blob_sha": "619d8dcb53c64867712a6c29ed983728a3949cbc",
+        "size_bytes": 1930841
+      },
+      "reading_units": 207,
+      "manifest_path": "books/619d8dcb53c64867712a6c29_f83750b96c30.json",
+      "manifest_sha256": "f83750b96c3095987c38a8cd40fe1a47954d0def9eb74eae535a1266460bfa5f"
+    },
+    {
+      "id": "2004e0a05c995af8b44369cb",
+      "title": "50年代：从一枚储物戒开始",
+      "author": "菲力亲王",
+      "family_id": "acc6c8afbf0bd4f03fd32a37",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【50年代：从一枚储物戒开始-菲力亲王】-第1282章 破坏铁路线",
+        "blob_sha": "2004e0a05c995af8b44369cb7b390d18d0d1f0fc",
+        "size_bytes": 7765543
+      },
+      "reading_units": 1284,
+      "manifest_path": "books/2004e0a05c995af8b44369cb_130b1b447f18.json",
+      "manifest_sha256": "130b1b447f18a59c0f5227ba59f4593e1bcce8fc615947f9f1d5710f6fcac06b"
+    },
+    {
+      "id": "71d83c2bb9e945b83e768d47",
+      "title": "The Queen",
+      "author": "小陆纯子",
+      "family_id": "0209314f14801e03f6220232",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【The Queen-小陆纯子】-98 为了未来⑧ (1)",
+        "blob_sha": "71d83c2bb9e945b83e768d47b4ba7cad9651e198",
+        "size_bytes": 1180608
+      },
+      "reading_units": 98,
+      "manifest_path": "books/71d83c2bb9e945b83e768d47_f6b2f8a0de0c.json",
+      "manifest_sha256": "f6b2f8a0de0cca327382ef7720bd0f3ae7e7947e660f96ca7e8d1ca3f1268eb3"
+    },
+    {
+      "id": "53ef78e53742e15bc27d3a56",
+      "title": "[猎人]The Coming Rain",
+      "author": "樱木祭灵",
+      "family_id": "7dcff594a0aa15dc9651b41a",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "同人"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【[猎人]The Coming Rain-樱木祭灵】-62 62",
+        "blob_sha": "53ef78e53742e15bc27d3a5663e0261b4f2715bc",
+        "size_bytes": 97183
+      },
+      "reading_units": 62,
+      "manifest_path": "books/53ef78e53742e15bc27d3a56_f9714e82255a.json",
+      "manifest_sha256": "f9714e82255a03d63065cdde1c07bea3c055658e7102605a1490e42e0c52476c"
+    },
+    {
+      "id": "05d5a0e9c731b370c23c583a",
+      "title": "dying in the sun",
+      "author": "筱祭",
+      "family_id": "645dacf44ac233351561b0a4",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【dying in the sun-筱祭】-27 后记 (1)",
+        "blob_sha": "05d5a0e9c731b370c23c583a23055a08a0a7d23a",
+        "size_bytes": 256731
+      },
+      "reading_units": 27,
+      "manifest_path": "books/05d5a0e9c731b370c23c583a_de4c2a18d10d.json",
+      "manifest_sha256": "de4c2a18d10ddcb70caf1809c4a0a54746fcdd685afebd1a7b67c7b91ed12b54"
+    },
+    {
+      "id": "4880b15fce3df21e048670c8",
+      "title": "一天领俩证，另嫁小叔前夫悔哭了",
+      "author": "垚火火",
+      "family_id": "0ca6174fab2f2a2a1bea81e0",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "婚恋"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【一天领俩证，另嫁小叔前夫悔哭了-垚火火】-第一次偷溜出门就受伤了.txt",
+        "blob_sha": "4880b15fce3df21e048670c82ac46ce16b351f51",
+        "size_bytes": 1064450
+      },
+      "reading_units": 173,
+      "manifest_path": "books/4880b15fce3df21e048670c8_6cb7c46e6185.json",
+      "manifest_sha256": "6cb7c46e618598d12ea86f52c083ae73d8709da13104cd4f1442b16535e62e73"
+    },
+    {
+      "id": "6ce8564bd5200272abc6184c",
+      "title": "一线大腕（高干）-北倾】",
+      "author": "106 【番外六",
+      "family_id": "1c0b70fe3e502eeecfeb16e5",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【一线大腕（高干）-北倾】-106 【番外六】之后会有期 (1).txt",
+        "blob_sha": "6ce8564bd5200272abc6184cc3d711bd8011a560",
+        "size_bytes": 192301
+      },
+      "reading_units": 18,
+      "manifest_path": "books/6ce8564bd5200272abc6184c_cfc4b20aae1e.json",
+      "manifest_sha256": "cfc4b20aae1ec31119dc90f84cc7f5c214ad732d9f892ed84b661f68710b79b0"
+    },
+    {
+      "id": "5fc7d55b799b3ed0853cfe50",
+      "title": "一觉醒来后，死对头校花竟然叫我老公",
+      "author": "金猫作者鸭",
+      "family_id": "0af0b2ed6b6924da7a2cf618",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "婚恋"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【一觉醒来后，死对头校花竟然叫我老公-金猫作者鸭】-第一卷 第390章 自驾游开启.txt",
+        "blob_sha": "5fc7d55b799b3ed0853cfe50226d7385b0a0211c",
+        "size_bytes": 2954872
+      },
+      "reading_units": 390,
+      "manifest_path": "books/5fc7d55b799b3ed0853cfe50_04380772a04d.json",
+      "manifest_sha256": "04380772a04dbc9dd8972c42f8518c0d626679a67878005b608db22e4f7d5370"
+    },
+    {
+      "id": "940305bd3f1edb9739aa99cd",
+      "title": "七零小可怜进城后被团宠了！",
+      "author": "锦垚儿",
+      "family_id": "111d09faadfb3a31f87b39c6",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【七零小可怜进城后被团宠了！-锦垚儿】-第272章：遇到.txt",
+        "blob_sha": "940305bd3f1edb9739aa99cd4806617bb6e948cc",
+        "size_bytes": 1326573
+      },
+      "reading_units": 272,
+      "manifest_path": "books/940305bd3f1edb9739aa99cd_27da1daf77d8.json",
+      "manifest_sha256": "27da1daf77d882a3e2bc42a92f77e2e127422bc050c51ff2a3c288c6a2fe08e0"
+    },
+    {
+      "id": "1fa982026ca0ef154325a06d",
+      "title": "七零小福宝虐渣爹，全大院追着宠",
+      "author": "云菲飞",
+      "family_id": "f2d23aa76d6ff5cfefea5fbf",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【七零小福宝虐渣爹，全大院追着宠-云菲飞】-第252章 别人还能偷我的作文不成？.txt",
+        "blob_sha": "1fa982026ca0ef154325a06d7b6cd68a90a93dbf",
+        "size_bytes": 1212480
+      },
+      "reading_units": 252,
+      "manifest_path": "books/1fa982026ca0ef154325a06d_ef442e5c01a7.json",
+      "manifest_sha256": "ef442e5c01a797c178c93e0607ada2f4a402a715c7633c15dc3c3d2acad6f259"
+    },
+    {
+      "id": "f30ea80e55b11a7ce31a9b2f",
+      "title": "下山入世，我的手段能通神",
+      "author": "丸子很咸鱼",
+      "family_id": "d5ffaebbf9386cc66f4a006b",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【下山入世，我的手段能通神-丸子很咸鱼】-第126章 谁要毁掉尸体？.txt",
+        "blob_sha": "f30ea80e55b11a7ce31a9b2f26222c3d1875ec98",
+        "size_bytes": 662637
+      },
+      "reading_units": 127,
+      "manifest_path": "books/f30ea80e55b11a7ce31a9b2f_8bccd13b561d.json",
+      "manifest_sha256": "8bccd13b561da7b613017622774a7659f460a423a38173922f0626196d84f059"
+    },
+    {
+      "id": "293e2eafe6e8f1bd8ee8b500",
+      "title": "不守寡，我养的小狼狗竟是顶级大佬",
+      "author": "小铜钱",
+      "family_id": "8bd199c9baa1a837607f32a6",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【不守寡，我养的小狼狗竟是顶级大佬-小铜钱】-第一卷 第122章 2",
+        "blob_sha": "293e2eafe6e8f1bd8ee8b500b1a2f1ad73d2b851",
+        "size_bytes": 707375
+      },
+      "reading_units": 122,
+      "manifest_path": "books/293e2eafe6e8f1bd8ee8b500_ea7a93e21bfb.json",
+      "manifest_sha256": "ea7a93e21bfb26ec4a952064033a99b8cdbb60011798c3bc787efd83af1ecf2f"
+    },
+    {
+      "id": "f1e6a60ad43c7e7a8b23b6ae",
+      "title": "云灵仙路",
+      "author": "七月里的小七",
+      "family_id": "cc79a7cd05c39982ae768b9b",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "修仙"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【云灵仙路-七月里的小七】-第六百六十三章 可怖命福祸咒，无字石碑.txt",
+        "blob_sha": "f1e6a60ad43c7e7a8b23b6ae3354a352fa647098",
+        "size_bytes": 7226164
+      },
+      "reading_units": 675,
+      "manifest_path": "books/f1e6a60ad43c7e7a8b23b6ae_0fe26782ef29.json",
+      "manifest_sha256": "0fe26782ef29432afed555979788f0360ec42a8a5684633b877a9aec2e731b1c"
+    },
+    {
+      "id": "6d79a4bc93b9acea0873bea4",
+      "title": "人在警界：步步高升",
+      "author": "蚂蚁搞对象",
+      "family_id": "36a0eda493828c0948dc1ad8",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "悬疑"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【人在警界：步步高升-蚂蚁搞对象】-第950章 郭市长的小动作.txt",
+        "blob_sha": "6d79a4bc93b9acea0873bea40a0a621700030100",
+        "size_bytes": 6865077
+      },
+      "reading_units": 950,
+      "manifest_path": "books/6d79a4bc93b9acea0873bea4_65dc7507427d.json",
+      "manifest_sha256": "65dc7507427dda8507ec58baa75278b04a211eeb1f7094ac8fda84228d606b6f"
+    },
+    {
+      "id": "0d82ed3e9b1157c98a7259c7",
+      "title": "人鳗-郑小陌说】",
+      "author": "43 【人类的番外之二",
+      "family_id": "17d7f04b00ca979d596fed0c",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【人鳗-郑小陌说】-43 【人类的番外之二】 永生的恶之花 (1).txt",
+        "blob_sha": "0d82ed3e9b1157c98a7259c7db32b7629d32e656",
+        "size_bytes": 398619
+      },
+      "reading_units": 43,
+      "manifest_path": "books/0d82ed3e9b1157c98a7259c7_9d430a23b20c.json",
+      "manifest_sha256": "9d430a23b20c351507e8cb088200ce7d017f763806ad4c303b988326821a0568"
+    },
+    {
+      "id": "094c9503e37c3623a2995562",
+      "title": "从1984开始的淘金生涯",
+      "author": "指尖灵",
+      "family_id": "6777f9c3b292aad9150c8a7b",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代",
+        "经营"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【从1984开始的淘金生涯-指尖灵】-第58章 往前看",
+        "blob_sha": "094c9503e37c3623a299556209e69e899ec557ef",
+        "size_bytes": 3818209
+      },
+      "reading_units": 518,
+      "manifest_path": "books/094c9503e37c3623a2995562_e447092c604a.json",
+      "manifest_sha256": "e447092c604a3af35530100cb0b40616d4b3a59de7bcea7f3bc481341513d3ac"
+    },
+    {
+      "id": "189aff6bfe968a9470f4568b",
+      "title": "从市委大秘到权力之巅",
+      "author": "洗礼先生",
+      "family_id": "afbd1e4018e556e6a5b7e356",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "职场"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【从市委大秘到权力之巅-洗礼先生】-第一卷 第873章 借东风.txt",
+        "blob_sha": "189aff6bfe968a9470f4568b68668ed481e370b8",
+        "size_bytes": 4271744
+      },
+      "reading_units": 873,
+      "manifest_path": "books/189aff6bfe968a9470f4568b_ea20a44d686f.json",
+      "manifest_sha256": "ea20a44d686fdad9574b93e384a5c8384adc7bc93ef0ef67f1c7c1f0b8fe17e9"
+    },
+    {
+      "id": "73a435e0293d84127efceccc",
+      "title": "从穷小子到江湖巅峰",
+      "author": "兜里有馅饼",
+      "family_id": "f282a1bbc5ecba64c4fb1f86",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【从穷小子到江湖巅峰-兜里有馅饼】-第一卷 第1112章 我要投诉你们！.txt",
+        "blob_sha": "73a435e0293d84127efceccc2b6206a543011f7b",
+        "size_bytes": 5429044
+      },
+      "reading_units": 1112,
+      "manifest_path": "books/73a435e0293d84127efceccc_f211b28637b6.json",
+      "manifest_sha256": "f211b28637b60432771b837e729201ca808de6fccef687a646bf180ab945d957"
+    },
+    {
+      "id": "038b4cd73382369812d00ac5",
+      "title": "从镇长开始问鼎青云",
+      "author": "王公子",
+      "family_id": "9b2ad7656af5e5b31e90ff75",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "职场"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【从镇长开始问鼎青云-王公子】-第一卷 第208章 此生有你，何其幸.txt",
+        "blob_sha": "038b4cd73382369812d00ac5acbccf1458c05927",
+        "size_bytes": 1273471
+      },
+      "reading_units": 209,
+      "manifest_path": "books/038b4cd73382369812d00ac5_f495fdd27a26.json",
+      "manifest_sha256": "f495fdd27a26de8f766b105a3326ca21a47ddea1b5726b4739f06c13a102bef4"
+    },
+    {
+      "id": "f29a21d019bd341bab9b3880",
+      "title": "从高校学霸到科研大能",
+      "author": "不吃小南瓜",
+      "family_id": "447ee63ea4d76b682882a918",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "科技"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【从高校学霸到科研大能-不吃小南瓜】-第261章 哈利波特真把汽车开过来了！.txt",
+        "blob_sha": "f29a21d019bd341bab9b38803188343f193ca1fc",
+        "size_bytes": 2295112
+      },
+      "reading_units": 263,
+      "manifest_path": "books/f29a21d019bd341bab9b3880_38d17fb2349a.json",
+      "manifest_sha256": "38d17fb2349a1c3854c86b8b1ee17f0b9f38c12775feb5fb2e5af57cb0f3b9b4"
+    },
+    {
+      "id": "13be9036af2884c1a40b0f15",
+      "title": "仕途巅峰：从市委大秘开始！",
+      "author": "就爱吃牛肉",
+      "family_id": "927b8d132103f3837b6a4b58",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "职场"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【仕途巅峰：从市委大秘开始！-就爱吃牛肉】-第一卷 第352章 剧毒危机！.txt",
+        "blob_sha": "13be9036af2884c1a40b0f15534af20682971aa1",
+        "size_bytes": 1821989
+      },
+      "reading_units": 352,
+      "manifest_path": "books/13be9036af2884c1a40b0f15_c701d1c65df2.json",
+      "manifest_sha256": "c701d1c65df241a80ca21ce179a1701a9ccda750855e0b591ea3e9c97a6e48a4"
+    },
+    {
+      "id": "3d45dd82f4f56f2e1a55c773",
+      "title": "仙域科技霸主",
+      "author": "试剑天涯",
+      "family_id": "940fca31e738ebc6b058e699",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "修仙"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【仙域科技霸主-试剑天涯】-完本感言；新书：修真大工业时代 (1).txt",
+        "blob_sha": "3d45dd82f4f56f2e1a55c773c1417b34adcaa6dd",
+        "size_bytes": 18073203
+      },
+      "reading_units": 1850,
+      "manifest_path": "books/3d45dd82f4f56f2e1a55c773_79b007157ceb.json",
+      "manifest_sha256": "79b007157ceba916f7ab9687cd3ce0485252ddbe6ca4194deaad0f2d64eeadf8"
+    },
+    {
+      "id": "4f8bcbd5ea3a8bee9c0c9f20",
+      "title": "仙子，求你别再从书里出来了",
+      "author": "佛系和尚",
+      "family_id": "a9a25b72814a4bf2b7b634f7",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "修仙"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【仙子，求你别再从书里出来了-佛系和尚】-第一卷 第596章 我真牛逼！.txt",
+        "blob_sha": "4f8bcbd5ea3a8bee9c0c9f20cad7b20b982089fb",
+        "size_bytes": 4751042
+      },
+      "reading_units": 597,
+      "manifest_path": "books/4f8bcbd5ea3a8bee9c0c9f20_342962082806.json",
+      "manifest_sha256": "34296208280623a1b7a8412770f99c82dfd354a1b6e5190b95e22ef583b2151a"
+    },
+    {
+      "id": "02595a3dcb10868d542a266c",
+      "title": "公路求生：我靠板车苟成神",
+      "author": "芝士榴莲啵啵",
+      "family_id": "83e1cc1a73d0bab1b41b6869",
+      "platform": "",
+      "genre": "游戏求生",
+      "genre_hints": [
+        "求生"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【公路求生：我靠板车苟成神-芝士榴莲啵啵】-第164章 垃圾也能拿出来当情报？.txt",
+        "blob_sha": "02595a3dcb10868d542a266c4762d844aec59cb5",
+        "size_bytes": 809214
+      },
+      "reading_units": 164,
+      "manifest_path": "books/02595a3dcb10868d542a266c_0938da021e85.json",
+      "manifest_sha256": "0938da021e85a7394b7db40a87c954250d9a83b57f208f33c8ffd386512cc320"
+    },
+    {
+      "id": "14704b0ab25cf3cebb40abfe",
+      "title": "六零奶团被读心，带飞全家成团宠",
+      "author": "秋天的信",
+      "family_id": "e886bde2cfe8e77bad63ee98",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【六零奶团被读心，带飞全家成团宠-秋天的信】-第348章 挖了人家父亲的坟？.txt",
+        "blob_sha": "14704b0ab25cf3cebb40abfeaea257243a25aab3",
+        "size_bytes": 1594248
+      },
+      "reading_units": 348,
+      "manifest_path": "books/14704b0ab25cf3cebb40abfe_2fbd2740a9b6.json",
+      "manifest_sha256": "2fbd2740a9b641142147d309e4e7f759a00832e8e2840c8b70df781b51f46be9"
+    },
+    {
+      "id": "17a5961c7a16800af052f00b",
+      "title": "六零香江摆地摊，全港喊我大佬",
+      "author": "六月浩雪",
+      "family_id": "29f81adadcead101fa7153fc",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代",
+        "经营"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【六零香江摆地摊，全港喊我大佬-六月浩雪】-第四十章 打架.txt",
+        "blob_sha": "17a5961c7a16800af052f00b4973e8b6606de21c",
+        "size_bytes": 260708
+      },
+      "reading_units": 40,
+      "manifest_path": "books/17a5961c7a16800af052f00b_803ad8c74eca.json",
+      "manifest_sha256": "803ad8c74eca2c69b00fcee642ec5046289f7978e7eadb2089d70f3c7db80368"
+    },
+    {
+      "id": "1273022f222533ce8ac501c0",
+      "title": "军号余声",
+      "author": "曙光创作",
+      "family_id": "0c9afb7896e6785831ea1843",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【军号余声-曙光创作】-第203集：绝境反杀·猎影收网.txt",
+        "blob_sha": "1273022f222533ce8ac501c0093f0f8ab4c9e31b",
+        "size_bytes": 2038977
+      },
+      "reading_units": 203,
+      "manifest_path": "books/1273022f222533ce8ac501c0_31e4124a516c.json",
+      "manifest_sha256": "31e4124a516ca0c8736bab008f61c34cb932c19184ddf46139c12cde37f0091b"
+    },
+    {
+      "id": "76ea7ae116523734328b52e2",
+      "title": "冥界来的大小姐，今天又掀桌了吗",
+      "author": "夏日粉末",
+      "family_id": "dbd35734fc5d388caf1ac5b7",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【冥界来的大小姐，今天又掀桌了吗-夏日粉末】-第一百六十章 脑子有病.txt",
+        "blob_sha": "76ea7ae116523734328b52e22bd1a31d97ffbf75",
+        "size_bytes": 627824
+      },
+      "reading_units": 160,
+      "manifest_path": "books/76ea7ae116523734328b52e2_880b59cf93b1.json",
+      "manifest_sha256": "880b59cf93b15cde81764a665d70f8ffc148553d959e297f2fd6ecd984e1bffe"
+    },
+    {
+      "id": "c1827a0dd33a84001579e064",
+      "title": "凡人修仙传：番外",
+      "author": "忘语",
+      "family_id": "2b409f2f3c01df5bbd9fb1f0",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "修仙"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【凡人修仙传：番外-忘语】-厉飞雨记 (1).txt",
+        "blob_sha": "c1827a0dd33a84001579e0640f9be6ce376408b1",
+        "size_bytes": 28603
+      },
+      "reading_units": 1,
+      "manifest_path": "books/c1827a0dd33a84001579e064_60943971d793.json",
+      "manifest_sha256": "60943971d7939726628b847b8294d0e40df630b62f81380066322b643ba122fb"
+    },
+    {
+      "id": "4c9d2c8a56017d4faa5854f7",
+      "title": "出殡日你没时间，我重生崛起你发疯",
+      "author": "一尾金鱼",
+      "family_id": "14ed882bf1f99998ea85b8fa",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【出殡日你没时间，我重生崛起你发疯-一尾金鱼】-第580章：联系增援",
+        "blob_sha": "4c9d2c8a56017d4faa5854f7f028326eb173772e",
+        "size_bytes": 2645810
+      },
+      "reading_units": 601,
+      "manifest_path": "books/4c9d2c8a56017d4faa5854f7_eadf53c44505.json",
+      "manifest_sha256": "eadf53c4450516c2dbfeb86492dd2c821ba069fffd69842b54aad3e0e2c5cccf"
+    },
+    {
+      "id": "a0487503def735fc5fb08dd1",
+      "title": "列车求生，我能升华一切！-听孔雀】",
+      "author": "第968章 【白银遗物·杰作宝箱（13级）",
+      "family_id": "87b9c92f41dc6153ff86d676",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "求生"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【列车求生，我能升华一切！-听孔雀】-第968章 【白银遗物·杰作宝箱（13级）】.txt",
+        "blob_sha": "a0487503def735fc5fb08dd1b1921e4fc82a2646",
+        "size_bytes": 7197666
+      },
+      "reading_units": 968,
+      "manifest_path": "books/a0487503def735fc5fb08dd1_f44c3491c550.json",
+      "manifest_sha256": "f44c3491c5503f3a5564d603b01faa4a714fd2badc270d9f507d830ca265d80a"
+    },
+    {
+      "id": "effdd76cae7af909cb18f866",
+      "title": "刚上大学，我成了兼职奶爸",
+      "author": "山止风禾",
+      "family_id": "bef196f92e36c0abb47e0d52",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【刚上大学，我成了兼职奶爸-山止风禾】-第722章：知女莫若母.txt",
+        "blob_sha": "effdd76cae7af909cb18f866e2c356cabea0cc9c",
+        "size_bytes": 3437778
+      },
+      "reading_units": 734,
+      "manifest_path": "books/effdd76cae7af909cb18f866_0fa2e575b482.json",
+      "manifest_sha256": "0fa2e575b482381647103d5c00320f62182cf0b1af07103984e85bc7ded07770"
+    },
+    {
+      "id": "3e4af6c3392f655f4e3ce494",
+      "title": "刚准备高考，离婚逆袭系统来了",
+      "author": "七月封阳",
+      "family_id": "5dcf4c30c1dbb3a650645f15",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "婚恋"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【刚准备高考，离婚逆袭系统来了-七月封阳】-第964章 解开心结.txt",
+        "blob_sha": "3e4af6c3392f655f4e3ce49462f26ed57c0184c9",
+        "size_bytes": 11200951
+      },
+      "reading_units": 1040,
+      "manifest_path": "books/3e4af6c3392f655f4e3ce494_1f01002a7618.json",
+      "manifest_sha256": "1f01002a7618162aa3eb694318615480bb305b1ea9fa8f766c23641c503ed5fc"
+    },
+    {
+      "id": "464a9e4eb5d9291ae16919a0",
+      "title": "刚离婚，被白富美拉去领证",
+      "author": "富婆收割机",
+      "family_id": "170510babf56ad369187d8cf",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "婚恋"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【刚离婚，被白富美拉去领证-富婆收割机】-第417章 赤手空拳打死大白鲨.txt",
+        "blob_sha": "464a9e4eb5d9291ae16919a09bb38d99d7a7dfed",
+        "size_bytes": 3222364
+      },
+      "reading_units": 417,
+      "manifest_path": "books/464a9e4eb5d9291ae16919a0_73930ea84f9f.json",
+      "manifest_sha256": "73930ea84f9f03eb0edb7135d7bacf07f8cae29e3b5f1481a151b3e705588285"
+    },
+    {
+      "id": "cd13b9a1bf5e272e3378ca4c",
+      "title": "刚被校花拒，中年系统提前觉醒",
+      "author": "橙子也疯狂",
+      "family_id": "6808468415471007e143a4e4",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "婚恋"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【刚被校花拒，中年系统提前觉醒-橙子也疯狂】-第二百二十章，未婚妻，未婚夫.txt",
+        "blob_sha": "cd13b9a1bf5e272e3378ca4c0798f3e8d97e2d58",
+        "size_bytes": 1583554
+      },
+      "reading_units": 220,
+      "manifest_path": "books/cd13b9a1bf5e272e3378ca4c_1406a488f491.json",
+      "manifest_sha256": "1406a488f491fb36203d39d2a86c23269b66b8315128d530a0bc676a6832d7b5"
+    },
+    {
+      "id": "1b3741d05fe29fa67f875297",
+      "title": "北电艺考，系统说是合欢宗",
+      "author": "九头狮子猫",
+      "family_id": "53f2c7950bc48f01cb727aa7",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【北电艺考，系统说是合欢宗-九头狮子猫】-第633章 刘艺菲万岁",
+        "blob_sha": "1b3741d05fe29fa67f8752971b07f6442ce64e09",
+        "size_bytes": 4727547
+      },
+      "reading_units": 633,
+      "manifest_path": "books/1b3741d05fe29fa67f875297_e9be85bd119d.json",
+      "manifest_sha256": "e9be85bd119d050a2ffdb1b103777807148811d0f3398eb859f5e8b64fd7747d"
+    },
+    {
+      "id": "b5b5e35fe31074aea939186a",
+      "title": "医学美利坚：我靠恶魔度过斩杀线",
+      "author": "咆哮的麦子",
+      "family_id": "6aad77cfba2d37a03a2f738c",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【医学美利坚：我靠恶魔度过斩杀线-咆哮的麦子】-第130章 新的开始（免费更，求月票！）.txt",
+        "blob_sha": "b5b5e35fe31074aea939186a02234787ea283164",
+        "size_bytes": 846672
+      },
+      "reading_units": 131,
+      "manifest_path": "books/b5b5e35fe31074aea939186a_efdcc22ac988.json",
+      "manifest_sha256": "efdcc22ac9888d034cc71c3ea61eae8edb6d281e9949b03be2d8052d79c2763c"
+    },
+    {
+      "id": "b3dbebbab64b93f4cc8d6b33",
+      "title": "医道官途：离婚后，我重整权力圈",
+      "author": "真想火",
+      "family_id": "dfdbe4178b68edee8ea580aa",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "婚恋",
+        "职场"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【医道官途：离婚后，我重整权力圈-真想火】-第160章周雪梅又挨耳光.txt",
+        "blob_sha": "b3dbebbab64b93f4cc8d6b3337446db8ba26701d",
+        "size_bytes": 1161005
+      },
+      "reading_units": 160,
+      "manifest_path": "books/b3dbebbab64b93f4cc8d6b33_bed3ebf35fd6.json",
+      "manifest_sha256": "bed3ebf35fd60f2b38d1840fc5d7b16f39443d28746c853130971b4954bb2720"
+    },
+    {
+      "id": "2db28d0810c5e710d9f6dd90",
+      "title": "半岛白金时代",
+      "author": "牙医谢科特",
+      "family_id": "45b233c2550be1c349cdeb18",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【半岛白金时代-牙医谢科特】-第610章 汪汪队",
+        "blob_sha": "2db28d0810c5e710d9f6dd900470f6235012dccd",
+        "size_bytes": 3675363
+      },
+      "reading_units": 645,
+      "manifest_path": "books/2db28d0810c5e710d9f6dd90_c0d6916de8ed.json",
+      "manifest_sha256": "c0d6916de8ed691d2c7c0a9311805df3d146b64a9ae7607fd5b73649188eecd3"
+    },
+    {
+      "id": "f65d9eb91208f7c3040ed2ed",
+      "title": "单身妈妈",
+      "author": "人海中",
+      "family_id": "718ad7cef2543d82d296e104",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【单身妈妈-人海中】-番外番（二） (1).txt",
+        "blob_sha": "f65d9eb91208f7c3040ed2ed3008094192c4085e",
+        "size_bytes": 400785
+      },
+      "reading_units": 91,
+      "manifest_path": "books/f65d9eb91208f7c3040ed2ed_5f1fc51a9ba0.json",
+      "manifest_sha256": "5f1fc51a9ba022abea3ac9ee836b04c34be6b7c898081c6e00d0a8cf8d5bdc92"
+    },
+    {
+      "id": "2da9b981774956ba6c42b5fd",
+      "title": "卖个早点，怎么上班族全迟到了",
+      "author": "练腿摸鱼仔",
+      "family_id": "c845370d0adc06acb6b8a0a1",
+      "platform": "",
+      "genre": "美食经营",
+      "genre_hints": [
+        "经营"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【卖个早点，怎么上班族全迟到了-练腿摸鱼仔】-第282章 财迷的夏沐宸.txt",
+        "blob_sha": "2da9b981774956ba6c42b5fd414a027c1ada3434",
+        "size_bytes": 2000227
+      },
+      "reading_units": 282,
+      "manifest_path": "books/2da9b981774956ba6c42b5fd_2e872c570c5f.json",
+      "manifest_sha256": "2e872c570c5fbde8fa7bd787e30d7da1cf2bffd3129549820632b75013280a1f"
+    },
+    {
+      "id": "44c016cf9a2dd25e8809bfb7",
+      "title": "危情依赖",
+      "author": "八歧大猫",
+      "family_id": "0ea36282a7890c1192833bdd",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【危情依赖-八歧大猫】-第一卷 第90章 喜欢狗自己养一只。.txt",
+        "blob_sha": "44c016cf9a2dd25e8809bfb7deb75546be338211",
+        "size_bytes": 708463
+      },
+      "reading_units": 90,
+      "manifest_path": "books/44c016cf9a2dd25e8809bfb7_03c0c793e012.json",
+      "manifest_sha256": "03c0c793e0121f1b8f63cb4c75eeaa7070a957596bbc568d2df9f92e2683ef69"
+    },
+    {
+      "id": "322180238e355a2c7da890a0",
+      "title": "变身流氓鹦鹉，让校花全网社死！",
+      "author": "锦鲤旺",
+      "family_id": "121da66dd4e8397d34291f61",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "婚恋"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【变身流氓鹦鹉，让校花全网社死！-锦鲤旺】-第580章 朕要加速修炼！",
+        "blob_sha": "322180238e355a2c7da890a0dcd3c37fe8bf5fa3",
+        "size_bytes": 4321207
+      },
+      "reading_units": 580,
+      "manifest_path": "books/322180238e355a2c7da890a0_38bfba1c8e59.json",
+      "manifest_sha256": "38bfba1c8e5982ff0a242eee5097d31e37fd2b9f498908fe3dc60fa827df0d6d"
+    },
+    {
+      "id": "deaf7ed08364d2f8ddf902a1",
+      "title": "因目击而亡",
+      "author": "THE MOON",
+      "family_id": "f12a5510ea991a8891cbd82f",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【因目击而亡-THE MOON】-9 最后的结局 (1).txt",
+        "blob_sha": "deaf7ed08364d2f8ddf902a1dcb6bac38171a203",
+        "size_bytes": 45787
+      },
+      "reading_units": 9,
+      "manifest_path": "books/deaf7ed08364d2f8ddf902a1_f9d59ff0e48d.json",
+      "manifest_sha256": "f9d59ff0e48d0629c6a1017060c9554b7b841880e1276e20ec98ed5ff268dc32"
+    },
+    {
+      "id": "e1c016ee3b7c2917036913b5",
+      "title": "在线鉴宠，大哥这狗认为在训你啊",
+      "author": "天黑别出声",
+      "family_id": "ef3bfb078107d5bf0b23398d",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【在线鉴宠，大哥这狗认为在训你啊-天黑别出声】-第1282章 有点银灰了.txt",
+        "blob_sha": "e1c016ee3b7c2917036913b5f4e4eed7f968135f",
+        "size_bytes": 8093440
+      },
+      "reading_units": 1285,
+      "manifest_path": "books/e1c016ee3b7c2917036913b5_bd2592541645.json",
+      "manifest_sha256": "bd2592541645fb4612548f4acf6d27edf476b94da7413b1534fd8da0c6b7b9c7"
+    },
+    {
+      "id": "5cd9780cc6ab9ca61c0cbc8b",
+      "title": "大岐国梼杌之尧贺",
+      "author": "togayther",
+      "family_id": "0f9ea7fb0b22d16208d20366",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【大岐国梼杌之尧贺-togayther】-8 番外·他们的过去和外来 (1).txt",
+        "blob_sha": "5cd9780cc6ab9ca61c0cbc8ba0deb638c38bd421",
+        "size_bytes": 41102
+      },
+      "reading_units": 8,
+      "manifest_path": "books/5cd9780cc6ab9ca61c0cbc8b_388278e2e471.json",
+      "manifest_sha256": "388278e2e471e80e7fdec0b296d165772af271329a75c20dcf75b27132505755"
+    },
+    {
+      "id": "c86e05944cad274018985f45",
+      "title": "天龙八部之行云覆雨",
+      "author": "翌翼",
+      "family_id": "818193853c4f0cd1fbf99854",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "同人"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【天龙八部之行云覆雨-翌翼】-40 第四十章 少年时 (1).txt",
+        "blob_sha": "c86e05944cad274018985f4578da5c895cb2a794",
+        "size_bytes": 464104
+      },
+      "reading_units": 40,
+      "manifest_path": "books/c86e05944cad274018985f45_8c149492d771.json",
+      "manifest_sha256": "8c149492d77138ff3e330bd7d15eb4c84accec4cdefef8d3eab7460ffa39b821"
+    },
+    {
+      "id": "a2f08b3ae133d682bc375046",
+      "title": "太太请安分",
+      "author": "刘家长子.CS",
+      "family_id": "bf43fb0a8dffdc38b6fd821c",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "婚恋"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【太太请安分-刘家长子.CS】-第405章 隐瞒.txt",
+        "blob_sha": "a2f08b3ae133d682bc3750467fad8d83c5df9929",
+        "size_bytes": 3221796
+      },
+      "reading_units": 406,
+      "manifest_path": "books/a2f08b3ae133d682bc375046_99f087eaf682.json",
+      "manifest_sha256": "99f087eaf6827170581e1fb19b07cd26314b329ea598176501602fc31c3418fb"
+    },
+    {
+      "id": "172217d50596c85a53388608",
+      "title": "她去父留子后，裴总失控跪下了",
+      "author": "灼夏夏",
+      "family_id": "762616e7139a86ac39093853",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【她去父留子后，裴总失控跪下了-灼夏夏】-第一卷 第52章 乔婉你没家么？.txt",
+        "blob_sha": "172217d50596c85a533886083bbd9324af2287cd",
+        "size_bytes": 403034
+      },
+      "reading_units": 52,
+      "manifest_path": "books/172217d50596c85a53388608_a1fde4382be4.json",
+      "manifest_sha256": "a1fde4382be4166467cac0ff90f1e46d2b6d9f6d01395b98c89107c0f1cbd1b4"
+    },
+    {
+      "id": "697db340d6ca1bf92aa10455",
+      "title": "娇娇向导一哭，顶级哨兵们舍身护",
+      "author": "九重天揽月",
+      "family_id": "c685adab0a5a36783a5db994",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【娇娇向导一哭，顶级哨兵们舍身护-九重天揽月】-第180章 傅斯年，老男人？.txt",
+        "blob_sha": "697db340d6ca1bf92aa104557403e75f0aa0b00c",
+        "size_bytes": 820875
+      },
+      "reading_units": 180,
+      "manifest_path": "books/697db340d6ca1bf92aa10455_37c553e3b9f6.json",
+      "manifest_sha256": "37c553e3b9f6e880bfa04e9a2155d801bce13938d35db2460729f596ac6c7b9f"
+    },
+    {
+      "id": "82ac1566faf449bd0369e6a3",
+      "title": "婚日诱吻",
+      "author": "毛兮",
+      "family_id": "64451b9922286ecf78b3fd4c",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "婚恋"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【婚日诱吻-毛兮】-第一卷 第74章 当真.txt",
+        "blob_sha": "82ac1566faf449bd0369e6a364632853aeb8ed1f",
+        "size_bytes": 543364
+      },
+      "reading_units": 74,
+      "manifest_path": "books/82ac1566faf449bd0369e6a3_63f48349b9a6.json",
+      "manifest_sha256": "63f48349b9a6878ddd56b44520198b12696cd3a1460a2389f9d3da8eac626a13"
+    },
+    {
+      "id": "d21abfa0eaf0bb4a04f66d87",
+      "title": "婚色",
+      "author": "七明禾",
+      "family_id": "b8aa3b75010156f4cdf047a3",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "婚恋"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【婚色-七明禾】-番外   蒋生 (1).txt",
+        "blob_sha": "d21abfa0eaf0bb4a04f66d87fba32df188f3cfa6",
+        "size_bytes": 719100
+      },
+      "reading_units": 92,
+      "manifest_path": "books/d21abfa0eaf0bb4a04f66d87_20f4d48e3868.json",
+      "manifest_sha256": "20f4d48e38685b15977ed7719bbfeca4a0c394d087f717f1da02272ad7977622"
+    },
+    {
+      "id": "21e34ebd23e5153c0d46572f",
+      "title": "嫡女为谋：重生之倾世毒妃",
+      "author": "风轻",
+      "family_id": "305e3ce3b8019767c2e47c63",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【嫡女为谋：重生之倾世毒妃-风轻】-番外  前世篇（五） (1).txt",
+        "blob_sha": "21e34ebd23e5153c0d46572febab088e6e88f4e4",
+        "size_bytes": 8961273
+      },
+      "reading_units": 820,
+      "manifest_path": "books/21e34ebd23e5153c0d46572f_62cebedabb2d.json",
+      "manifest_sha256": "62cebedabb2db998c73346536128dcdf755a0816f838c4b41e5756730a44c9f1"
+    },
+    {
+      "id": "c17b7059239336ec5d12669c",
+      "title": "子承母业，我在豪门当佣人",
+      "author": "西椰蟹",
+      "family_id": "9dcf077918e9df630445ac69",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【子承母业，我在豪门当佣人-西椰蟹】-第845章 咱们的大宝贝今天情况怎么样？.txt",
+        "blob_sha": "c17b7059239336ec5d12669c1f6e9641d234e144",
+        "size_bytes": 4613390
+      },
+      "reading_units": 845,
+      "manifest_path": "books/c17b7059239336ec5d12669c_fd2d8b113220.json",
+      "manifest_sha256": "fd2d8b113220bd538652c4f45315ff0724ec6bf2554b5bbf0e8027166e5de71f"
+    },
+    {
+      "id": "c43ee17e0c008abe3f9e7b38",
+      "title": "孤雏",
+      "author": "珠珠女孩",
+      "family_id": "e95e8eef73dcf29c6d873580",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【孤雏-珠珠女孩】-第13章 只要你把我们陪高兴了，一切好说.txt",
+        "blob_sha": "c43ee17e0c008abe3f9e7b389f418ce1b1c785f9",
+        "size_bytes": 89075
+      },
+      "reading_units": 13,
+      "manifest_path": "books/c43ee17e0c008abe3f9e7b38_c6c3d53d30f1.json",
+      "manifest_sha256": "c6c3d53d30f15878973adfe91cacd218aa93977f520dc506409517a2e5281870"
+    },
+    {
+      "id": "900857d55b237fd2ac2b4198",
+      "title": "孽欲",
+      "author": "苏一一",
+      "family_id": "de4c0e02abdfe7080189d3b9",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【孽欲-苏一一】-第32章 (1).txt",
+        "blob_sha": "900857d55b237fd2ac2b419824d4d4e74641fdee",
+        "size_bytes": 5672
+      },
+      "reading_units": 1,
+      "manifest_path": "books/900857d55b237fd2ac2b4198_8d6fa793ae68.json",
+      "manifest_sha256": "8d6fa793ae68bbdb4318b01516c7500039f126b7c0201f968f46e8ca2eb0c7d2"
+    },
+    {
+      "id": "d44848210cb18f524c82c8dd",
+      "title": "官场从秘书开始",
+      "author": "老冰棍",
+      "family_id": "0c78ef50d5eb44ddf52f6ac6",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "职场"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【官场从秘书开始-老冰棍】-第2268章 校长驾到.txt",
+        "blob_sha": "d44848210cb18f524c82c8ddd74cc2325a4da5bb",
+        "size_bytes": 16323542
+      },
+      "reading_units": 2265,
+      "manifest_path": "books/d44848210cb18f524c82c8dd_66355807677e.json",
+      "manifest_sha256": "66355807677e3300233f00b06ea8b17d12466fda31aa05a1a6163bfb4b48ccb0"
+    },
+    {
+      "id": "837a687f93245f47a629ec1b",
+      "title": "官场：重生后我无人可挡",
+      "author": "捡了个宝",
+      "family_id": "bfb070383c3a6e8775f3151b",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "职场"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【官场：重生后我无人可挡-捡了个宝】-第1071章 到处都有这样的地方.txt",
+        "blob_sha": "837a687f93245f47a629ec1b7476d51d9d6a67d6",
+        "size_bytes": 7203894
+      },
+      "reading_units": 1071,
+      "manifest_path": "books/837a687f93245f47a629ec1b_103a068fb2c8.json",
+      "manifest_sha256": "103a068fb2c8511fd0ada6682392e7bbc3cd6a0962f6a7c1697a0241e75f9d31"
+    },
+    {
+      "id": "76b6ec8c2624664ac1ac594d",
+      "title": "官场：重生后我权势滔天",
+      "author": "血染军刀",
+      "family_id": "0fda55cf733978b0064f37f8",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "职场"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【官场：重生后我权势滔天-血染军刀】-第991章 送钱来了.txt",
+        "blob_sha": "76b6ec8c2624664ac1ac594d1b56fd416d0a33ba",
+        "size_bytes": 7037087
+      },
+      "reading_units": 991,
+      "manifest_path": "books/76b6ec8c2624664ac1ac594d_214097331952.json",
+      "manifest_sha256": "2140973319522177007457186b43e20e530c007c26230dd8d028b25e32b630a4"
+    },
+    {
+      "id": "cd50e5b371b89bfd6de79dc6",
+      "title": "封总，太太想跟你离婚很久了",
+      "author": "云中觅",
+      "family_id": "7384786dbe85b30e6a846159",
+      "platform": "",
+      "genre": "现代婚恋",
+      "genre_hints": [
+        "婚恋"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【封总，太太想跟你离婚很久了-云中觅】-第一卷 第616章 无法企及.txt",
+        "blob_sha": "cd50e5b371b89bfd6de79dc60afa3c52d187be54",
+        "size_bytes": 2924187
+      },
+      "reading_units": 616,
+      "manifest_path": "books/cd50e5b371b89bfd6de79dc6_18c14662ee1d.json",
+      "manifest_sha256": "18c14662ee1d2cb7099eb4f6e8469791e7456091309178e4660fddf3245acb0f"
+    },
+    {
+      "id": "bdca16b9a980fd7660dde9c5",
+      "title": "小吃摊通万界，我报效祖国上岸了",
+      "author": "齐笑",
+      "family_id": "8be1e39749958f71dafe0f28",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【小吃摊通万界，我报效祖国上岸了-齐笑】-第231章树大招风？.txt",
+        "blob_sha": "bdca16b9a980fd7660dde9c5f96e8d6b14d599e3",
+        "size_bytes": 1159888
+      },
+      "reading_units": 229,
+      "manifest_path": "books/bdca16b9a980fd7660dde9c5_849f0771b0d9.json",
+      "manifest_sha256": "849f0771b0d94ab9ba2bb8590809fed12951901d1ced6ae29aebe616cb98b0b7"
+    },
+    {
+      "id": "77ebe99527d04d37acb5fa09",
+      "title": "小齐历险记",
+      "author": "小齐闯天下",
+      "family_id": "722e68b98ea3a447e22b2de3",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【小齐历险记-小齐闯天下】-放假了.txt",
+        "blob_sha": "77ebe99527d04d37acb5fa092a333a1caaf6cc75",
+        "size_bytes": 205719
+      },
+      "reading_units": 51,
+      "manifest_path": "books/77ebe99527d04d37acb5fa09_0199bbf81549.json",
+      "manifest_sha256": "0199bbf81549105251ddf916bdd0a55c3b795749f87484c550816e73c0499bbe"
+    },
+    {
+      "id": "c9a8dd53389b43f777924e47",
+      "title": "工程师的学霸系统",
+      "author": "爱糖的存钱罐",
+      "family_id": "5abeb95835d2b15c2baca7f9",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "科技"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【工程师的学霸系统-爱糖的存钱罐】-第五百二十一章 两院院士.txt",
+        "blob_sha": "c9a8dd53389b43f777924e47672bcc862db75074",
+        "size_bytes": 2770456
+      },
+      "reading_units": 527,
+      "manifest_path": "books/c9a8dd53389b43f777924e47_ba2ea65199da.json",
+      "manifest_sha256": "ba2ea65199daf1a233326557f9f6d95509a91e48b40db26e694928b1901b5399"
+    },
+    {
+      "id": "9b881d90fce415f5cdd83777",
+      "title": "席先生，你被太太踢出局了！",
+      "author": "九醉",
+      "family_id": "4a377c8952189db519bd7333",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "婚恋"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【席先生，你被太太踢出局了！-九醉】-第一卷 第215章 黄雀在后.txt",
+        "blob_sha": "9b881d90fce415f5cdd83777a66e51178ccc7bfc",
+        "size_bytes": 1169606
+      },
+      "reading_units": 215,
+      "manifest_path": "books/9b881d90fce415f5cdd83777_619e4e654140.json",
+      "manifest_sha256": "619e4e65414007a822bd91b045dfd837a0577feff50bc4a9746358029b3a90d8"
+    },
+    {
+      "id": "5d96753bc8024359be924897",
+      "title": "帮美艳少妇捉奸，遇上络腮胡",
+      "author": "情话腻心",
+      "family_id": "1547d36f709e794f1e8a6725",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【帮美艳少妇捉奸，遇上络腮胡-情话腻心】-第389章 神级茶道：绿茶也是茶道",
+        "blob_sha": "5d96753bc8024359be924897d801928f001ee4fe",
+        "size_bytes": 2675988
+      },
+      "reading_units": 389,
+      "manifest_path": "books/5d96753bc8024359be924897_cc0a433866fa.json",
+      "manifest_sha256": "cc0a433866fa08ab1df0fa3bb1d17cd4f83faa59606ff7e1c96b54bbb32b5bc1"
+    },
+    {
+      "id": "505a017e879e18225ea89545",
+      "title": "年少情深被辜负，他跪了我不要了",
+      "author": "雪诏宸",
+      "family_id": "058375f72583180feba08749",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【年少情深被辜负，他跪了我不要了-雪诏宸】-031难道，你真的有在改变？.txt",
+        "blob_sha": "505a017e879e18225ea8954542721223eb1e0fbd",
+        "size_bytes": 253352
+      },
+      "reading_units": 31,
+      "manifest_path": "books/505a017e879e18225ea89545_ba24289aa6ec.json",
+      "manifest_sha256": "ba24289aa6ece08b6bf3e71137dcdaf9ce6cbdcf40d3ff02f3a0a5ac2a8410ed"
+    },
+    {
+      "id": "f538387e71c92e4cbda3c819",
+      "title": "引他失控",
+      "author": "一燕云歌笑",
+      "family_id": "2519dd29499494a05b43678d",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【引他失控-一燕云歌笑】-第一卷 第76章 钱？那是咱们最不缺的东西.txt",
+        "blob_sha": "f538387e71c92e4cbda3c819c9975f102c4b9bbb",
+        "size_bytes": 556225
+      },
+      "reading_units": 76,
+      "manifest_path": "books/f538387e71c92e4cbda3c819_05dc03e1c010.json",
+      "manifest_sha256": "05dc03e1c010fc1b7609344a9ac7b37973629d6596955a9c41ff55801253a081"
+    },
+    {
+      "id": "bf18748159142d5fedda0901",
+      "title": "影综魂穿两界当富豪",
+      "author": "星辰V北拱",
+      "family_id": "307c766885a6a07a45cdd448",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【影综魂穿两界当富豪-星辰V北拱】-第1339章 落日熔金·江边孤影.txt",
+        "blob_sha": "bf18748159142d5fedda09016c6911542002c462",
+        "size_bytes": 10682293
+      },
+      "reading_units": 1340,
+      "manifest_path": "books/bf18748159142d5fedda0901_533bc3e1aa5b.json",
+      "manifest_sha256": "533bc3e1aa5b1d8141d6f0ca9dcd58542e847dda5bcb59adddcd12d0f5d35c77"
+    },
+    {
+      "id": "067825934c2fddde8444be33",
+      "title": "心有不甘",
+      "author": "随侯珠",
+      "family_id": "839fa6024e11fb81f3c2612b",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【心有不甘-随侯珠】-72 心有不甘生活番外 (1).txt",
+        "blob_sha": "067825934c2fddde8444be3350b057012ebdc2d7",
+        "size_bytes": 843143
+      },
+      "reading_units": 72,
+      "manifest_path": "books/067825934c2fddde8444be33_3ee4082e3a1e.json",
+      "manifest_sha256": "3ee4082e3a1e73e48bb1b5cad82319af7da9f23de9593453b9cf1b0780ee47c3"
+    },
+    {
+      "id": "aef15c4e802554db64250554",
+      "title": "总是迟到的侦探",
+      "author": "THE MOON",
+      "family_id": "5e50e18d1ab61c02c4e7dcd6",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【总是迟到的侦探-THE MOON】-18 第七案 歌谣杀人事件(完）.txt",
+        "blob_sha": "aef15c4e802554db642505540e9a2758ecc49d9d",
+        "size_bytes": 276173
+      },
+      "reading_units": 18,
+      "manifest_path": "books/aef15c4e802554db64250554_e554564520db.json",
+      "manifest_sha256": "e554564520dbb254dd893fd1542f507658c019a6e12c5ed90667cdfe8fe5c948"
+    },
+    {
+      "id": "7290c9396bb4feaf68b3f2ad",
+      "title": "总裁的私有宝贝-祸水泱泱】",
+      "author": "番外14【淼淼",
+      "family_id": "db79deb58c8a426958d865ec",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【总裁的私有宝贝-祸水泱泱】-番外14【淼淼】 (1).txt",
+        "blob_sha": "7290c9396bb4feaf68b3f2ad20efac0bd6a36c39",
+        "size_bytes": 3914233
+      },
+      "reading_units": 608,
+      "manifest_path": "books/7290c9396bb4feaf68b3f2ad_ffe3309cac6e.json",
+      "manifest_sha256": "ffe3309cac6e85cb0f4207d7208592b616c53c7cd5ac9669ec6a3a3ddbce8882"
+    },
+    {
+      "id": "ffe63dd95aaae22ba13c5ac8",
+      "title": "情岸",
+      "author": "鹤鹤甜",
+      "family_id": "e4839d802c282f85fbb50dc2",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【情岸-鹤鹤甜】-第一卷 第172章 嗯，他是挺装的.txt",
+        "blob_sha": "ffe63dd95aaae22ba13c5ac85c96ea26b1d6caa7",
+        "size_bytes": 1093166
+      },
+      "reading_units": 172,
+      "manifest_path": "books/ffe63dd95aaae22ba13c5ac8_a21c448bd73d.json",
+      "manifest_sha256": "a21c448bd73d021d69edf0d680ca31339fd9730864becc2fd48298aba67524a7"
+    },
+    {
+      "id": "d8a0eabf3d4d56115f12bfec",
+      "title": "惹她干嘛？第一豪门千金不好惹",
+      "author": "金欣玥",
+      "family_id": "b20c5ddfd0719504826a16c5",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【惹她干嘛？第一豪门千金不好惹-金欣玥】-第一卷 第138章 -两个孩子一起生病.txt",
+        "blob_sha": "d8a0eabf3d4d56115f12bfec113fe8411b60ad9e",
+        "size_bytes": 859378
+      },
+      "reading_units": 138,
+      "manifest_path": "books/d8a0eabf3d4d56115f12bfec_99dff9fc7d02.json",
+      "manifest_sha256": "99dff9fc7d028f06dd210a04b87910713540633b08e9e775b1e94221867e7baa"
+    },
+    {
+      "id": "cb258d1866cf85d4848bdb3e",
+      "title": "成全他和小三后，我挺孕肚被大佬亲红温",
+      "author": "汗手汗脚",
+      "family_id": "ecb65c9bd49f9938b0566a9b",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【成全他和小三后，我挺孕肚被大佬亲红温-汗手汗脚】-第三百六十二章 什么时候把日子定了",
+        "blob_sha": "cb258d1866cf85d4848bdb3efdda143fe6fc1f5f",
+        "size_bytes": 1902661
+      },
+      "reading_units": 362,
+      "manifest_path": "books/cb258d1866cf85d4848bdb3e_a91260300aac.json",
+      "manifest_sha256": "a91260300aac0b86786a38c502272f3a51c1ba920f3d39f633757520fbee0fac"
+    },
+    {
+      "id": "5f7034de8d44663d3723a32b",
+      "title": "我为众神撰写讣告",
+      "author": "墨莺儿啦",
+      "family_id": "f0129513babafa30b1097b0d",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【我为众神撰写讣告-墨莺儿啦】-第16章 投影万物（加更求追读~）.txt",
+        "blob_sha": "5f7034de8d44663d3723a32b5fed6fa0879e9af2",
+        "size_bytes": 130014
+      },
+      "reading_units": 16,
+      "manifest_path": "books/5f7034de8d44663d3723a32b_af32b9024366.json",
+      "manifest_sha256": "af32b902436652535d61faf88809e5175e1fb431a64a811b6b7e4c70c97c7a87"
+    },
+    {
+      "id": "51f9175a2878666df7746888",
+      "title": "我在北极抓龙的日子",
+      "author": "花雨凉",
+      "family_id": "65c7f6be900de175df9a2065",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【我在北极抓龙的日子-花雨凉】-第830章 番茄鸡蛋面.txt",
+        "blob_sha": "51f9175a2878666df7746888f538f1b4b3b534f3",
+        "size_bytes": 8499384
+      },
+      "reading_units": 830,
+      "manifest_path": "books/51f9175a2878666df7746888_9c61a728458f.json",
+      "manifest_sha256": "9c61a728458fd92a8745d221c90359d584aea764cd048dc4ecb116707db5e7b3"
+    },
+    {
+      "id": "fded9616013b472c8594bdfe",
+      "title": "我在北美当地主",
+      "author": "陶良辰",
+      "family_id": "1ec52396713fb1e4c9e3dd32",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【我在北美当地主-陶良辰】-第310章 文旅开卷，朝珠换金马，差价几千万？（12600求订阅！）.txt",
+        "blob_sha": "fded9616013b472c8594bdfe64e38ff3bc875832",
+        "size_bytes": 1872055
+      },
+      "reading_units": 312,
+      "manifest_path": "books/fded9616013b472c8594bdfe_9b08c7b6bd4f.json",
+      "manifest_sha256": "9b08c7b6bd4f0641fe73faf2c368e04f14669f2c1c28abae178637132413ec5d"
+    },
+    {
+      "id": "3859439c9bee57301b7eb674",
+      "title": "我在末日当老六",
+      "author": "弥撒",
+      "family_id": "8edd0b29f8318c3730fde297",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "求生"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【我在末日当老六-弥撒】-第338章 有人乱入.txt",
+        "blob_sha": "3859439c9bee57301b7eb67487b7d6fdbee7fba4",
+        "size_bytes": 1522158
+      },
+      "reading_units": 338,
+      "manifest_path": "books/3859439c9bee57301b7eb674_09f48f3c2c22.json",
+      "manifest_sha256": "09f48f3c2c22de44ee0263e24924e66b9306a12884119fa26da8d4bf5d2849d4"
+    },
+    {
+      "id": "85f6030c8d3f0ebde612ec42",
+      "title": "我在游戏里炸沉了一艘米国航母",
+      "author": "书生剑客123",
+      "family_id": "9f9be91a17ad1c82292c95df",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【我在游戏里炸沉了一艘米国航母-书生剑客123】-第351章 东京和首尔先急了.txt",
+        "blob_sha": "85f6030c8d3f0ebde612ec427b4440393826619e",
+        "size_bytes": 2486334
+      },
+      "reading_units": 351,
+      "manifest_path": "books/85f6030c8d3f0ebde612ec42_0705691f057e.json",
+      "manifest_sha256": "0705691f057e3ce05a81a0e6e6592746bf037777b8bec2fc77905da9067e3677"
+    },
+    {
+      "id": "430d6b7dbd986acc01c2c9be",
+      "title": "我在网购平台薅的全是真货",
+      "author": "杯盏长生酒",
+      "family_id": "041648b55421e151bf30eb99",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【我在网购平台薅的全是真货-杯盏长生酒】-第1263章 好久不见！.txt",
+        "blob_sha": "430d6b7dbd986acc01c2c9be147c1cfa4d7e1be7",
+        "size_bytes": 11428419
+      },
+      "reading_units": 1264,
+      "manifest_path": "books/430d6b7dbd986acc01c2c9be_c6fc04ccc832.json",
+      "manifest_sha256": "c6fc04ccc83205952ea29ef4197d64ba4b134978ead2945aaf80898ee7ff03bf"
+    },
+    {
+      "id": "2154204f3f6c9665bf2a6de6",
+      "title": "我是主播，真不是神豪！",
+      "author": "赵九洲",
+      "family_id": "9baa618036074db13994aa79",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【我是主播，真不是神豪！-赵九洲】-第482章 太毁剧了!.txt",
+        "blob_sha": "2154204f3f6c9665bf2a6de6d0ce8fa4193d2400",
+        "size_bytes": 3918739
+      },
+      "reading_units": 482,
+      "manifest_path": "books/2154204f3f6c9665bf2a6de6_a7e66d2a83b8.json",
+      "manifest_sha256": "a7e66d2a83b8fe4195d6a30c9a01fdd3bd5da3b31edf9ffd6d4d7aa7c75db2d5"
+    },
+    {
+      "id": "f47833df4f14d88cb550e179",
+      "title": "我有情报系统，怎么可能空网",
+      "author": "藏在树荫",
+      "family_id": "65b92d973d9bd59982024426",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【我有情报系统，怎么可能空网-藏在树荫】-第477章 偶遇.txt",
+        "blob_sha": "f47833df4f14d88cb550e179fc20fa8c3703ffd4",
+        "size_bytes": 3302302
+      },
+      "reading_units": 477,
+      "manifest_path": "books/f47833df4f14d88cb550e179_e1d4e599a596.json",
+      "manifest_sha256": "e1d4e599a5968d63f7cdf08743971104af8979f75398b43b3938eb8b7297667a"
+    },
+    {
+      "id": "e77ee27a90c6f3daf211032f",
+      "title": "我的女友不是僵尸",
+      "author": "普通慕奶伊",
+      "family_id": "f54a93fd856d2c1af678b3a7",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【我的女友不是僵尸-普通慕奶伊】-第一卷 第266章 尘埃落定（二合一）.txt",
+        "blob_sha": "e77ee27a90c6f3daf211032f0c598b4edf62c146",
+        "size_bytes": 1548259
+      },
+      "reading_units": 266,
+      "manifest_path": "books/e77ee27a90c6f3daf211032f_6d0997dc8b93.json",
+      "manifest_sha256": "6d0997dc8b93737b8fe0e83b732bb5190a38e29b7af0b009e305e23bf0afe308"
+    },
+    {
+      "id": "9c8b4ed4055d1657619c4c01",
+      "title": "我的男神老板",
+      "author": "潘家三少",
+      "family_id": "ac773763cc2c7d9a8613d78e",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【我的男神老板-潘家三少】-第282章-柳如尧.txt",
+        "blob_sha": "9c8b4ed4055d1657619c4c0114bbe20a96b42a5e",
+        "size_bytes": 2063980
+      },
+      "reading_units": 282,
+      "manifest_path": "books/9c8b4ed4055d1657619c4c01_65b5f5117cf0.json",
+      "manifest_sha256": "65b5f5117cf05464d24ed415328684bf8b15b1fdf3c17e76a29a033139cda331"
+    },
+    {
+      "id": "e6ffe4b6102288f80d90afac",
+      "title": "我的病娇机械妻",
+      "author": "豆浆牛奶真好喝",
+      "family_id": "45a71f174c8ea645550676b9",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【我的病娇机械妻-豆浆牛奶真好喝】-第242章 主人，又一次呢.txt",
+        "blob_sha": "e6ffe4b6102288f80d90afac7caad93cbc61d025",
+        "size_bytes": 2856125
+      },
+      "reading_units": 242,
+      "manifest_path": "books/e6ffe4b6102288f80d90afac_0a75a5f74128.json",
+      "manifest_sha256": "0a75a5f7412898f4271888cf4f91e4e36ce7f72d166b588eacab4f7c6de31b97"
+    },
+    {
+      "id": "874c0a85900e22ee4a8e9a8a",
+      "title": "我的绝色夫君",
+      "author": "幕南",
+      "family_id": "751af100489f756e6c1a5b31",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【我的绝色夫君-幕南】-番外二 惊悚叫声的来源 (1).txt",
+        "blob_sha": "874c0a85900e22ee4a8e9a8ae405dc68953bed06",
+        "size_bytes": 1407205
+      },
+      "reading_units": 207,
+      "manifest_path": "books/874c0a85900e22ee4a8e9a8a_4cfe668f66db.json",
+      "manifest_sha256": "4cfe668f66dbce7f19ac1a851f1b03f7e8b9cfb155882fc17fc09d9ce235f013"
+    },
+    {
+      "id": "309c5076b9c456e5cae0c0d1",
+      "title": "我的资本，有点大",
+      "author": "虎夔的黄帝蚩尤",
+      "family_id": "9fb21f26fbc29e619df5340d",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【我的资本，有点大-虎夔的黄帝蚩尤】-第319章 好自为之.txt",
+        "blob_sha": "309c5076b9c456e5cae0c0d17dd4c3f56987c275",
+        "size_bytes": 2764349
+      },
+      "reading_units": 319,
+      "manifest_path": "books/309c5076b9c456e5cae0c0d1_d26579f296cf.json",
+      "manifest_sha256": "d26579f296cf53363e5d9b29432c61671cda02bd9fe24c50147dc043a8c941cc"
+    },
+    {
+      "id": "0a0c3d91288b6a218eb64181",
+      "title": "我，枪神！",
+      "author": "如水意",
+      "family_id": "5ed40aafdc1ae301e66070ff",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【我，枪神！-如水意】-第402章 包围.txt",
+        "blob_sha": "0a0c3d91288b6a218eb6418167649e23cba683f9",
+        "size_bytes": 2981142
+      },
+      "reading_units": 421,
+      "manifest_path": "books/0a0c3d91288b6a218eb64181_61c4c7b58718.json",
+      "manifest_sha256": "61c4c7b5871829f0e008859498b87e280035fdf5646beaf182afa5867980b3c8"
+    },
+    {
+      "id": "3930bbf91396419a141f6842",
+      "title": "我，社畜，变身破碎少女赖上兄弟",
+      "author": "双鱼的羊",
+      "family_id": "4cc02cbb672149a7553823ff",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【我，社畜，变身破碎少女赖上兄弟-双鱼的羊】-第253章 坏心眼的苏羽.txt",
+        "blob_sha": "3930bbf91396419a141f6842af3991701bcbffee",
+        "size_bytes": 1781682
+      },
+      "reading_units": 253,
+      "manifest_path": "books/3930bbf91396419a141f6842_763e748ff458.json",
+      "manifest_sha256": "763e748ff458ceea6829e103b6ec3d4bbe65b4c4ab5db77496e3357358ee26d5"
+    },
+    {
+      "id": "db2b7d6c00d551f1dde341bd",
+      "title": "才刚上班失业系统就来，咒我？",
+      "author": "伪装小白",
+      "family_id": "bdebc10180cc79d8cc493a47",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【才刚上班失业系统就来，咒我？-伪装小白】-第136章 高消费门店以次充好（4K3求追读）",
+        "blob_sha": "db2b7d6c00d551f1dde341bd84fde20d416a2a4d",
+        "size_bytes": 691307
+      },
+      "reading_units": 137,
+      "manifest_path": "books/db2b7d6c00d551f1dde341bd_300b80fda329.json",
+      "manifest_sha256": "300b80fda329f5e1090a27918c376d4981962bf28a77e88ec0bafca4538897f7"
+    },
+    {
+      "id": "eb8b58faa3798d070c10aa80",
+      "title": "拿我照片网恋，真当你是主角啊？",
+      "author": "两只烤鸭yya",
+      "family_id": "70db0902f35993f7ebe68d3a",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【拿我照片网恋，真当你是主角啊？-两只烤鸭yya】-第191章 楚依到来！出关了！.txt",
+        "blob_sha": "eb8b58faa3798d070c10aa805ae81cbe7131c0f9",
+        "size_bytes": 1564274
+      },
+      "reading_units": 191,
+      "manifest_path": "books/eb8b58faa3798d070c10aa80_d96a286817f9.json",
+      "manifest_sha256": "d96a286817f916dd1900f8edae027c70898e8878c91db621d82063d9867e0e2c"
+    },
+    {
+      "id": "ee95d5731927d1238cbbb877",
+      "title": "改运奇书",
+      "author": "写小说的斯巴达",
+      "family_id": "4593dc10a62b80839efd9da8",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【改运奇书-写小说的斯巴达】-第652章 一会儿你帮我搭把手就行.txt",
+        "blob_sha": "ee95d5731927d1238cbbb877b6529f7456288a79",
+        "size_bytes": 5423183
+      },
+      "reading_units": 652,
+      "manifest_path": "books/ee95d5731927d1238cbbb877_e31d3be75d63.json",
+      "manifest_sha256": "e31d3be75d63999d0c23991c02134ee0dca207f0d65d5d4b898871710c8983f8"
+    },
+    {
+      "id": "577c01458562107de4a02b6b",
+      "title": "文豪1983：我在文化馆工作",
+      "author": "烟云风华",
+      "family_id": "d59f6bed0e79d27ab1077898",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【文豪1983：我在文化馆工作-烟云风华】-第324章 茅盾文学奖！.txt",
+        "blob_sha": "577c01458562107de4a02b6bf7e1f75fc0528a00",
+        "size_bytes": 1857190
+      },
+      "reading_units": 324,
+      "manifest_path": "books/577c01458562107de4a02b6b_8358cb52cc46.json",
+      "manifest_sha256": "8358cb52cc460c46a13e50d76e0b61d036c0254f6b23550beeadb535a65f51ea"
+    },
+    {
+      "id": "a460de35995e43be5da6ca00",
+      "title": "日入百万：我把县城氪成超一线",
+      "author": "凉皮不要麻酱",
+      "family_id": "5d7779cd7524ce57a56922bb",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "经营"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【日入百万：我把县城氪成超一线-凉皮不要麻酱】-上架感言（必看）.txt",
+        "blob_sha": "a460de35995e43be5da6ca00d25a88bbb9832486",
+        "size_bytes": 453027
+      },
+      "reading_units": 66,
+      "manifest_path": "books/a460de35995e43be5da6ca00_c40b48972cbc.json",
+      "manifest_sha256": "c40b48972cbc56f1c76e2b78b2460f1eabc297f34693950c349d54a346303009"
+    },
+    {
+      "id": "333a1897a7fbacce9377c998",
+      "title": "权力巅峰：SSSS级村书记！",
+      "author": "荒苑爆红",
+      "family_id": "917c58c1370f5d053ad4bd69",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "职场"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【权力巅峰：SSSS级村书记！-荒苑爆红】-第一卷 第612章 始末缘由.txt",
+        "blob_sha": "333a1897a7fbacce9377c998a974dde9a014f0b7",
+        "size_bytes": 3116409
+      },
+      "reading_units": 613,
+      "manifest_path": "books/333a1897a7fbacce9377c998_1c6f16908b7b.json",
+      "manifest_sha256": "1c6f16908b7bae478c77b94d731deef7d836947216b0b87ba34499f1fe128364"
+    },
+    {
+      "id": "395c5b0b3a4daca2a62d3b52",
+      "title": "权力巅峰：从基层民警开始",
+      "author": "必看",
+      "family_id": "7c61e1cf7d1070336f6895ce",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "悬疑",
+        "职场"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【权力巅峰：从基层民警开始-必看】-第286章 图穷匕见：撤县设区的终局之杀.txt",
+        "blob_sha": "395c5b0b3a4daca2a62d3b526ca7bca0e20e260a",
+        "size_bytes": 3111402
+      },
+      "reading_units": 287,
+      "manifest_path": "books/395c5b0b3a4daca2a62d3b52_dd2614f4ad13.json",
+      "manifest_sha256": "dd2614f4ad1318e0eb90079bea75ad43e39364d98c292a250ac1bf6ae1dfd05b"
+    },
+    {
+      "id": "7f34e5c57e80d512c0f98c0e",
+      "title": "权力巅峰：从第一秘书开始",
+      "author": "林新儿",
+      "family_id": "348e755b4a4344e9a9906877",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "职场"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【权力巅峰：从第一秘书开始-林新儿】-第1148章：动手收拾.txt",
+        "blob_sha": "7f34e5c57e80d512c0f98c0ea2890f4d1eb05190",
+        "size_bytes": 5899053
+      },
+      "reading_units": 1148,
+      "manifest_path": "books/7f34e5c57e80d512c0f98c0e_69690660c4b3.json",
+      "manifest_sha256": "69690660c4b31a4801f845419838542ed1fabc87aa0e7d866065a7937d5ea11b"
+    },
+    {
+      "id": "db4a4bbdfaa8327b83c90146",
+      "title": "村里有只白骨精",
+      "author": "清歌一片",
+      "family_id": "726de9436154f28751a191a0",
+      "platform": "",
+      "genre": "古代市井",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【村里有只白骨精-清歌一片】-78 78 (1).txt",
+        "blob_sha": "db4a4bbdfaa8327b83c9014671c1069b65a85283",
+        "size_bytes": 1003827
+      },
+      "reading_units": 78,
+      "manifest_path": "books/db4a4bbdfaa8327b83c90146_65e73d2b7433.json",
+      "manifest_sha256": "65e73d2b743329c4dea217acf0d7c3476792b164ac63959075dbb132c6e05963"
+    },
+    {
+      "id": "716d6841f10c5653afee7c5c",
+      "title": "梦幻人生",
+      "author": "破军星",
+      "family_id": "0b7683c68419586a501ca69b",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【梦幻人生-破军星】-89 番外 (1).txt",
+        "blob_sha": "716d6841f10c5653afee7c5c8c290eabb9bf584e",
+        "size_bytes": 715001
+      },
+      "reading_units": 89,
+      "manifest_path": "books/716d6841f10c5653afee7c5c_c606ef79aea1.json",
+      "manifest_sha256": "c606ef79aea16e3417e0f509e360c39bb34075a3f4a6c139b835324406a1c4a3"
+    },
+    {
+      "id": "30fb2d6717fd8a1fbe330aee",
+      "title": "步步登阶",
+      "author": "江湖如梦",
+      "family_id": "d830354709dcee1c878cf9bf",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【步步登阶-江湖如梦】-第一卷 第963章 不忘初心",
+        "blob_sha": "30fb2d6717fd8a1fbe330aee6ddbdf13b1eb93e1",
+        "size_bytes": 6790311
+      },
+      "reading_units": 963,
+      "manifest_path": "books/30fb2d6717fd8a1fbe330aee_f45ddf3a9f56.json",
+      "manifest_sha256": "f45ddf3a9f5603e4947e1d21cfa2e031de247e9ada5f0cdf1eec75f2721c5630"
+    },
+    {
+      "id": "9be25336cbefba34244926ba",
+      "title": "死亡回档，48小时拯救世界",
+      "author": "稻香锅巴",
+      "family_id": "e667c1288aec5f5b9cb33bb7",
+      "platform": "",
+      "genre": "悬疑回档",
+      "genre_hints": [
+        "悬疑"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【死亡回档，48小时拯救世界-稻香锅巴】-第376章 反向观察.txt",
+        "blob_sha": "9be25336cbefba34244926ba4e656282fa9ef569",
+        "size_bytes": 3131718
+      },
+      "reading_units": 376,
+      "manifest_path": "books/9be25336cbefba34244926ba_18026becd35e.json",
+      "manifest_sha256": "18026becd35ecd3d79e4b03c80163a54afd3a074e734fb64c8ec4a0d9a1e2a67"
+    },
+    {
+      "id": "1fd4b0d3f197e515ef7bda1a",
+      "title": "每天六千万，只能在县城花？",
+      "author": "凤失凰",
+      "family_id": "d351b09410df5b658adbe343",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "经营"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【每天六千万，只能在县城花？-凤失凰】-第309章 云梦智造.txt",
+        "blob_sha": "1fd4b0d3f197e515ef7bda1aa7fc44016a9c539f",
+        "size_bytes": 2305955
+      },
+      "reading_units": 309,
+      "manifest_path": "books/1fd4b0d3f197e515ef7bda1a_508f6aed137f.json",
+      "manifest_sha256": "508f6aed137f6a6733c181f6aa72aa06dd01a97c33265de5034372ca879bd3d8"
+    },
+    {
+      "id": "bd711425cfc9c30b6960108c",
+      "title": "汀南丝雨",
+      "author": "狄戈",
+      "family_id": "a1039adbe14a9f6f36ccc83f",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【汀南丝雨-狄戈】-55 番外四、幼儿园风波 (1).txt",
+        "blob_sha": "bd711425cfc9c30b6960108c0b738b9678c04d15",
+        "size_bytes": 587049
+      },
+      "reading_units": 56,
+      "manifest_path": "books/bd711425cfc9c30b6960108c_9278b92a321a.json",
+      "manifest_sha256": "9278b92a321a8a4802afd8034f664be7eb05ea2fc23da5736afcd96c3c7d3d5c"
+    },
+    {
+      "id": "9ac6132f22bd865ad29e178a",
+      "title": "沈总人前禁欲大佬，人后跪地轻宠",
+      "author": "晴照里",
+      "family_id": "63b1113669849a7f6e3ccec8",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【沈总人前禁欲大佬，人后跪地轻宠-晴照里】-第一卷 第69章 被囚禁.txt",
+        "blob_sha": "9ac6132f22bd865ad29e178a9c70f3b74253c4d4",
+        "size_bytes": 539074
+      },
+      "reading_units": 69,
+      "manifest_path": "books/9ac6132f22bd865ad29e178a_2823e6824c7f.json",
+      "manifest_sha256": "2823e6824c7fb43e362f2957ad273444f2166e02d7f020fb987f83c702de0af4"
+    },
+    {
+      "id": "f53228001ff77a457cda58e6",
+      "title": "混在模特圈，我的情报每日刷新-狮驼岭一小妖】",
+      "author": "第14章 ：你什么档次还邀请我？【6K",
+      "family_id": "8a92e1bf6a9409612a7b0b29",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【混在模特圈，我的情报每日刷新-狮驼岭一小妖】-第14章 ：你什么档次还邀请我？【6K】.txt",
+        "blob_sha": "f53228001ff77a457cda58e61b4a8e9c4d17bd16",
+        "size_bytes": 3683491
+      },
+      "reading_units": 646,
+      "manifest_path": "books/f53228001ff77a457cda58e6_b50ade936999.json",
+      "manifest_sha256": "b50ade936999dfe85a7df5372176aa4c72d493c3890b10bc6d2e30134e138faf"
+    },
+    {
+      "id": "a1e8f76db9842437981b5a80",
+      "title": "渣夫算计我肚子，父女我都不要了",
+      "author": "宇睿麻麻",
+      "family_id": "ae0c53c5193e5b0d7df19543",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【渣夫算计我肚子，父女我都不要了-宇睿麻麻】-第一卷 第51章 我有专门的定制车，给四岁孩子用的.txt",
+        "blob_sha": "a1e8f76db9842437981b5a802e40a6516d111e94",
+        "size_bytes": 358225
+      },
+      "reading_units": 51,
+      "manifest_path": "books/a1e8f76db9842437981b5a80_4506effe4bac.json",
+      "manifest_sha256": "4506effe4bac20bcff9841ba60009dbc6d5adf0783106a0f3127b1c312e7f288"
+    },
+    {
+      "id": "5b8fde977d7c89709a0f9472",
+      "title": "港夜沉溺",
+      "author": "明越",
+      "family_id": "4367e2a8a043243ddcc10b2c",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【港夜沉溺-明越】-第364章 过分殷勤.txt",
+        "blob_sha": "5b8fde977d7c89709a0f947273f2ab308594aad1",
+        "size_bytes": 1796803
+      },
+      "reading_units": 364,
+      "manifest_path": "books/5b8fde977d7c89709a0f9472_63157b5154db.json",
+      "manifest_sha256": "63157b5154dbd6035806e4fd4a95ab549e5c0a2cbbefe64ed060c0c7df51d431"
+    },
+    {
+      "id": "2dc50c34dde27106c1119bd8",
+      "title": "湘阳路警事",
+      "author": "明珠蒋蒋",
+      "family_id": "7f3c59ba47879e11e1dbe831",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "悬疑"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【湘阳路警事-明珠蒋蒋】-第168章  跨年夜，持械斗殴！.txt",
+        "blob_sha": "2dc50c34dde27106c1119bd8e134245c010046e5",
+        "size_bytes": 1238346
+      },
+      "reading_units": 168,
+      "manifest_path": "books/2dc50c34dde27106c1119bd8_e324c00df08b.json",
+      "manifest_sha256": "e324c00df08bbd2a5f998f9f9d20117dfcd95eed2c30e8a040f252c500ead854"
+    },
+    {
+      "id": "e78efd6bf3d73fa65853aa33",
+      "title": "演的越惨我越强，粉丝求我别刀了",
+      "author": "青蜓队长",
+      "family_id": "f58990f77d67fe22e2438322",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【演的越惨我越强，粉丝求我别刀了-青蜓队长】-第716章 雷泽宽的执拗.txt",
+        "blob_sha": "e78efd6bf3d73fa65853aa33fc93478466bbe7e3",
+        "size_bytes": 5761456
+      },
+      "reading_units": 716,
+      "manifest_path": "books/e78efd6bf3d73fa65853aa33_efe7bbd80d44.json",
+      "manifest_sha256": "efe7bbd80d449667abf7fa735ae966c6bd0caa1d8de47b499f46e46266cf368f"
+    },
+    {
+      "id": "3db32f94b4a55a65441643d3",
+      "title": "火红年代：开发北大荒，种田赶山养全家",
+      "author": "慎思量",
+      "family_id": "278a93eb9529d520345f653f",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【火红年代：开发北大荒，种田赶山养全家-慎思量】-第二百九十章 我靠，真大腿！.txt",
+        "blob_sha": "3db32f94b4a55a65441643d3ca3f62890aa0493a",
+        "size_bytes": 1964909
+      },
+      "reading_units": 289,
+      "manifest_path": "books/3db32f94b4a55a65441643d3_2302d7fd90a5.json",
+      "manifest_sha256": "2302d7fd90a5320a8b8079f25e841efa6ba59cdbced179f7b37f104d9ba9a062"
+    },
+    {
+      "id": "30d7c1d6310b2aa2869b0448",
+      "title": "烧错香，供错魂，女鬼大佬赖上门",
+      "author": "姬道人",
+      "family_id": "07f001d5f4aff5f28c4b42c7",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "悬疑"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【烧错香，供错魂，女鬼大佬赖上门-姬道人】-第九百一十八章 应对之法.txt",
+        "blob_sha": "30d7c1d6310b2aa2869b04482601996385b697c4",
+        "size_bytes": 7009229
+      },
+      "reading_units": 918,
+      "manifest_path": "books/30d7c1d6310b2aa2869b0448_03e1e476f605.json",
+      "manifest_sha256": "03e1e476f6057e5e3fcc9eb1ef01c7dfedc8c953780963615e312a4769c09588"
+    },
+    {
+      "id": "b3645dc0d24bbf54a3b0ab83",
+      "title": "狂仙出狱",
+      "author": "紫枫",
+      "family_id": "9bd3064b266e0c0e5f3a58ab",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "修仙"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【狂仙出狱-紫枫】-第1892章  突破契机.txt",
+        "blob_sha": "b3645dc0d24bbf54a3b0ab83dda6636ec583b919",
+        "size_bytes": 13056771
+      },
+      "reading_units": 1892,
+      "manifest_path": "books/b3645dc0d24bbf54a3b0ab83_cdf554d1132d.json",
+      "manifest_sha256": "cdf554d1132d9c1fdd77ca4e4fcda78f7c6bce9be0369854a52b77b861782d44"
+    },
+    {
+      "id": "08f3d85856c4e0a5c83d5ded",
+      "title": "狂仙出狱",
+      "author": "紫枫",
+      "family_id": "9bd3064b266e0c0e5f3a58ab",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "修仙"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【狂仙出狱-紫枫】-第2135章  九天对决.txt",
+        "blob_sha": "08f3d85856c4e0a5c83d5ded23e6b1e66be212aa",
+        "size_bytes": 14814813
+      },
+      "reading_units": 2135,
+      "manifest_path": "books/08f3d85856c4e0a5c83d5ded_d5733ad79df3.json",
+      "manifest_sha256": "d5733ad79df3d290371968fd9f03743ed15b3e45beaf729aa5a294b8c4581150"
+    },
+    {
+      "id": "c49a051cf4339e8b69c250c9",
+      "title": "玄学大佬不装了，渣全家崩溃颤抖",
+      "author": "A白歌",
+      "family_id": "c3d9628d0b46f9f02285a0df",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "悬疑"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【玄学大佬不装了，渣全家崩溃颤抖-A白歌】-第一卷 第48章 你越来越光芒万丈.txt",
+        "blob_sha": "c49a051cf4339e8b69c250c992d397a85d4ef75c",
+        "size_bytes": 349454
+      },
+      "reading_units": 48,
+      "manifest_path": "books/c49a051cf4339e8b69c250c9_0e022f4427a2.json",
+      "manifest_sha256": "0e022f4427a2aabc7d87c8f66eaca7d2f86edd5ca7114305be9498a42fe51bab"
+    },
+    {
+      "id": "273b2189c5146c69cf9588b8",
+      "title": "白家小包子",
+      "author": "Bhythe",
+      "family_id": "c4ffc11f55bf581b8b729ef8",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【白家小包子-Bhythe】-35 番外二 白小白出生",
+        "blob_sha": "273b2189c5146c69cf9588b8178aac232e992096",
+        "size_bytes": 312306
+      },
+      "reading_units": 35,
+      "manifest_path": "books/273b2189c5146c69cf9588b8_1fc91a729fdc.json",
+      "manifest_sha256": "1fc91a729fdc1eb7a55af41dfd5a61010f3f38c9dd75d9e9ed6545cba7d62e60"
+    },
+    {
+      "id": "70523738016760d784fa7321",
+      "title": "直播被毛茸茸托梦后，我火了",
+      "author": "苏之灵",
+      "family_id": "eea36ed9df7d5b4eb9fbe2f4",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【直播被毛茸茸托梦后，我火了-苏之灵】-第三百九十三章 怎么每次都是针对我.txt",
+        "blob_sha": "70523738016760d784fa73212972d2b42f9e3071",
+        "size_bytes": 1802226
+      },
+      "reading_units": 393,
+      "manifest_path": "books/70523738016760d784fa7321_6a8117eecce8.json",
+      "manifest_sha256": "6a8117eecce8cc2723f4dd203368999d1d0e4423e78603697a75990739fe9f19"
+    },
+    {
+      "id": "cc29e2b7fb30d538828b5f0f",
+      "title": "相亲就能变强：我有一个相亲系统",
+      "author": "风中有你的叹息",
+      "family_id": "eddf8cd2cba12aae883d432b",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【相亲就能变强：我有一个相亲系统-风中有你的叹息】-第445章 恶人自有恶人磨.txt",
+        "blob_sha": "cc29e2b7fb30d538828b5f0fdc5b414b2a8a5ae0",
+        "size_bytes": 3264803
+      },
+      "reading_units": 445,
+      "manifest_path": "books/cc29e2b7fb30d538828b5f0f_0f829b410f89.json",
+      "manifest_sha256": "0f829b410f8997af2cb626bebf922fcfd74d23032134af38e291214d5ad9c148"
+    },
+    {
+      "id": "74e4939dd8eb3b905cc3b6e3",
+      "title": "看见命运？我伪装神棍直播成国宝",
+      "author": "姬朔",
+      "family_id": "7f141a95e3ff7c7139ac68dd",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【看见命运？我伪装神棍直播成国宝-姬朔】-第320章.txt",
+        "blob_sha": "74e4939dd8eb3b905cc3b6e3ffe73219d203705b",
+        "size_bytes": 1505601
+      },
+      "reading_units": 320,
+      "manifest_path": "books/74e4939dd8eb3b905cc3b6e3_eacb90249c82.json",
+      "manifest_sha256": "eacb90249c824a8f6ffe4342f64cf83cb318cd9b08196a9fb549a97f22987ac5"
+    },
+    {
+      "id": "9eed3e2a3721b77a25008ba6",
+      "title": "神算真千金，傅太太被豪门圈宠爆",
+      "author": "小猪盖被",
+      "family_id": "785f6ea2e5c266ccd0e6b22e",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "婚恋"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【神算真千金，傅太太被豪门圈宠爆-小猪盖被】-第一卷 第877章 白虎降临（1）.txt",
+        "blob_sha": "9eed3e2a3721b77a25008ba6763f3681e6d04f1d",
+        "size_bytes": 5039612
+      },
+      "reading_units": 877,
+      "manifest_path": "books/9eed3e2a3721b77a25008ba6_2022b9deb7c7.json",
+      "manifest_sha256": "2022b9deb7c7f8ca5016cd728b4a563c5191b17b34ec7c54232f32cf3ed38161"
+    },
+    {
+      "id": "6b1236c081f9bac45840db8c",
+      "title": "神豪从逆袭人生开始",
+      "author": "潇潇清枫",
+      "family_id": "c509184e15e3a3a951e6c6aa",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【神豪从逆袭人生开始-潇潇清枫】-第四百五十四章：误闯天家.txt",
+        "blob_sha": "6b1236c081f9bac45840db8ca85a23e5d78ed5f3",
+        "size_bytes": 4334644
+      },
+      "reading_units": 461,
+      "manifest_path": "books/6b1236c081f9bac45840db8c_015ac23530ff.json",
+      "manifest_sha256": "015ac23530ffbe2e1982d588a6d9ab56dde3c203d73a0ca89d37a1cb16a19519"
+    },
+    {
+      "id": "452b7ad71bc153aabaaf10e2",
+      "title": "离婚不离身",
+      "author": "瑞惜妈妈",
+      "family_id": "81646666d4ee1e9b78bd16d6",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "婚恋"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【离婚不离身-瑞惜妈妈】-对女人不离不弃的，只有赘肉而已。 (1).txt",
+        "blob_sha": "452b7ad71bc153aabaaf10e2e2f149b6f939d5e9",
+        "size_bytes": 3675475
+      },
+      "reading_units": 403,
+      "manifest_path": "books/452b7ad71bc153aabaaf10e2_d6b414ca2464.json",
+      "manifest_sha256": "d6b414ca2464095a44bf0b55f2f8a765014843931a013a285a8319b9311c8746"
+    },
+    {
+      "id": "e719dba38e8526cb4e8f593b",
+      "title": "离婚后，绝美女总裁带娃找上门",
+      "author": "司徒长卿",
+      "family_id": "efe652e0058149140784581b",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "婚恋"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【离婚后，绝美女总裁带娃找上门-司徒长卿】-第991章 混沌魔元石.txt",
+        "blob_sha": "e719dba38e8526cb4e8f593baa69c910d60021e0",
+        "size_bytes": 3911638
+      },
+      "reading_units": 997,
+      "manifest_path": "books/e719dba38e8526cb4e8f593b_09916de93b94.json",
+      "manifest_sha256": "09916de93b94e5a710261aee7d508a45d68fa97c7943dbe7a1a6e8dff2abbf3d"
+    },
+    {
+      "id": "71c66c9644da4d1cb6a6467a",
+      "title": "空之轨迹同人The light belongs to you",
+      "author": "月下谁惜萧声碎",
+      "family_id": "bd305ffad1b0555cd1dad0c2",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "同人"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【空之轨迹同人The light belongs to you-月下谁惜萧声碎】-49 最终篇 结局 (1).txt",
+        "blob_sha": "71c66c9644da4d1cb6a6467a8499c51aec1239a0",
+        "size_bytes": 622926
+      },
+      "reading_units": 49,
+      "manifest_path": "books/71c66c9644da4d1cb6a6467a_6551f9ad82fb.json",
+      "manifest_sha256": "6551f9ad82fb99eb16ca7c9e683fa81ed0fbcd3d597d73c16f6f91b3ad4be77f"
+    },
+    {
+      "id": "9320e95a7e018aafaeb45c21",
+      "title": "穿书反派，我让龙王妹妹住被窝",
+      "author": "旧月",
+      "family_id": "4e25361fd320afa54759843a",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【穿书反派，我让龙王妹妹住被窝-旧月】-第1064章 她断然不会嫁给萧归",
+        "blob_sha": "9320e95a7e018aafaeb45c21934bee6165cfcffe",
+        "size_bytes": 8083555
+      },
+      "reading_units": 1064,
+      "manifest_path": "books/9320e95a7e018aafaeb45c21_eb48be1e92f1.json",
+      "manifest_sha256": "eb48be1e92f1ee4410dd722bf26cd829859950a5e8832e0458d903e5e96c62c0"
+    },
+    {
+      "id": "04ca80e67a2a9edd6a03bc0e",
+      "title": "穿书反派，我让龙王妹妹住被窝",
+      "author": "旧月",
+      "family_id": "4e25361fd320afa54759843a",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【穿书反派，我让龙王妹妹住被窝-旧月】-第904章 外包清洁工",
+        "blob_sha": "04ca80e67a2a9edd6a03bc0ed70915f08d7525ce",
+        "size_bytes": 6823659
+      },
+      "reading_units": 904,
+      "manifest_path": "books/04ca80e67a2a9edd6a03bc0e_2599731d2207.json",
+      "manifest_sha256": "2599731d22077ff44e85694a422c048e76e115b49963e9ff07d3179f290a30fa"
+    },
+    {
+      "id": "ea994088074ad20f7b3da9d1",
+      "title": "穿成七零作精，上交系统变国宠",
+      "author": "楼星吟",
+      "family_id": "18a379e9377cb2759fb30028",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【穿成七零作精，上交系统变国宠-楼星吟】-第041章 震憾体验飞行器",
+        "blob_sha": "ea994088074ad20f7b3da9d1a390c6ecb3448112",
+        "size_bytes": 312050
+      },
+      "reading_units": 41,
+      "manifest_path": "books/ea994088074ad20f7b3da9d1_4b03788ffd16.json",
+      "manifest_sha256": "4b03788ffd1628cbf2cc7ad28d3c5352b4406a1eb1af4cbf145ab199f717db45"
+    },
+    {
+      "id": "0b570542b4d0cb9127bc14ea",
+      "title": "穿越59，带着妹妹大鱼大肉",
+      "author": "傲娇的莹莹",
+      "family_id": "542684d97244b247c5cf5006",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【穿越59，带着妹妹大鱼大肉-傲娇的莹莹】-第392章 大毛那边惊喜多多",
+        "blob_sha": "0b570542b4d0cb9127bc14eabe35911ee1165303",
+        "size_bytes": 2705886
+      },
+      "reading_units": 392,
+      "manifest_path": "books/0b570542b4d0cb9127bc14ea_4f88254cc31d.json",
+      "manifest_sha256": "4f88254cc31d62c483f8dc45e73cb7daafa2f123e6987b190fa16881a54cd568"
+    },
+    {
+      "id": "42a3eb60c60dac09b65e8c17",
+      "title": "穿越70，我被身边的人宠坏了",
+      "author": "故园风雪",
+      "family_id": "eb36b9bbd701c8ef38774804",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【穿越70，我被身边的人宠坏了-故园风雪】-第545章 我不就这点出息嘛",
+        "blob_sha": "42a3eb60c60dac09b65e8c176f0c7b0fedc76db7",
+        "size_bytes": 3944439
+      },
+      "reading_units": 554,
+      "manifest_path": "books/42a3eb60c60dac09b65e8c17_e590149ebcc1.json",
+      "manifest_sha256": "e590149ebcc1eb9f95b1bd899776832f7254424c53aa768b413b61575887c4cc"
+    },
+    {
+      "id": "1c33d0dea62aa384f9009c94",
+      "title": "穿越七零，从知青到人生赢家",
+      "author": "路过的街角",
+      "family_id": "8989f63bee611b8bd0a59a08",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【穿越七零，从知青到人生赢家-路过的街角】-第494章 东西二宫？",
+        "blob_sha": "1c33d0dea62aa384f9009c940266f8acb8648047",
+        "size_bytes": 3671638
+      },
+      "reading_units": 494,
+      "manifest_path": "books/1c33d0dea62aa384f9009c94_c66012b63064.json",
+      "manifest_sha256": "c66012b63064e0c70ef8b1e04c3256f9ca37361c8a5ea9511873c3a3fab1ec28"
+    },
+    {
+      "id": "2132e5039ea48a0b22661640",
+      "title": "穿越成少校，没叫你当大帅",
+      "author": "多吃葡萄干",
+      "family_id": "b0be364e457ad7bb3bf4523f",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【穿越成少校，没叫你当大帅-多吃葡萄干】-第18章 返回凤城",
+        "blob_sha": "2132e5039ea48a0b22661640c7cc33f56793afff",
+        "size_bytes": 143769
+      },
+      "reading_units": 18,
+      "manifest_path": "books/2132e5039ea48a0b22661640_6d9cdcb31197.json",
+      "manifest_sha256": "6d9cdcb31197f69442fd9a90949e8453760201c8fe669bd9abe5008715f56a31"
+    },
+    {
+      "id": "a519d49f1db3467c0d3b5181",
+      "title": "系统傍身，全球第一检",
+      "author": "录事参军",
+      "family_id": "ab4fab949352b78e1d1f3f7d",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【系统傍身，全球第一检-录事参军】-第54章 名誉领事.txt",
+        "blob_sha": "a519d49f1db3467c0d3b5181520ca7f9465fb728",
+        "size_bytes": 2162990
+      },
+      "reading_units": 239,
+      "manifest_path": "books/a519d49f1db3467c0d3b5181_20bdc260ed31.json",
+      "manifest_sha256": "20bdc260ed31fbe5ec0b768174a48055337319d825f07ef82ebeb2b5c722a00a"
+    },
+    {
+      "id": "6c688bec18bdc7f4c0dabf1f",
+      "title": "系统，我真不是苏联学霸",
+      "author": "无机糖",
+      "family_id": "4cd3626294a4bde6d2794a77",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "科技"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【系统，我真不是苏联学霸-无机糖】-第96章 黄金（5K）.txt",
+        "blob_sha": "6c688bec18bdc7f4c0dabf1f7db63afe34106fbd",
+        "size_bytes": 738233
+      },
+      "reading_units": 99,
+      "manifest_path": "books/6c688bec18bdc7f4c0dabf1f_4ca52e5581c3.json",
+      "manifest_sha256": "4ca52e5581c311e1fc013a23e25610ee58f32e3419873680aa35a84cff3cbd01"
+    },
+    {
+      "id": "c72bdc2242a8a586e869e50a",
+      "title": "苟在官场当老六",
+      "author": "提笔圈地",
+      "family_id": "56e01358428317bbd24a749c",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "职场"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【苟在官场当老六-提笔圈地】-第 550 章 宋父的憋屈.txt",
+        "blob_sha": "c72bdc2242a8a586e869e50ac0aee914fa8fe751",
+        "size_bytes": 4677844
+      },
+      "reading_units": 549,
+      "manifest_path": "books/c72bdc2242a8a586e869e50a_b880bc1f63bb.json",
+      "manifest_sha256": "b880bc1f63bbc32182e379d87fe179915298243e8aeed9530ba24950491c1300"
+    },
+    {
+      "id": "6ac63e0199580fec06f64630",
+      "title": "药膳小店通古今：被全网追着喂饭",
+      "author": "知絮言霜",
+      "family_id": "49ac192acc2510404a8ec479",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "经营"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【药膳小店通古今：被全网追着喂饭-知絮言霜】-第70章，梅庭烹雪问归处，一纸药膳系两端.txt",
+        "blob_sha": "6ac63e0199580fec06f64630667c7707419b4cf6",
+        "size_bytes": 417659
+      },
+      "reading_units": 70,
+      "manifest_path": "books/6ac63e0199580fec06f64630_03284ce3f60a.json",
+      "manifest_sha256": "03284ce3f60a1daa813867cf2e5150844600cc101788843a625f1b6c9ad257bf"
+    },
+    {
+      "id": "f77dbd2f4e358c11e0b9e4c3",
+      "title": "蛊师秘录",
+      "author": "古陵轩邈",
+      "family_id": "f7c3559d6f2c12e671f16bb0",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "悬疑"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【蛊师秘录-古陵轩邈】-第94章 奇门黑市.txt",
+        "blob_sha": "f77dbd2f4e358c11e0b9e4c3d03abc700387a4ae",
+        "size_bytes": 1117642
+      },
+      "reading_units": 94,
+      "manifest_path": "books/f77dbd2f4e358c11e0b9e4c3_0f222a83d7ab.json",
+      "manifest_sha256": "0f222a83d7ab93e07879d34ea2ff9f6ee19c24e84ca83cc7741928b77f161a45"
+    },
+    {
+      "id": "de42f84393588012a5f5a07c",
+      "title": "被诈骗不要慌，反手送他沙漠之鹰",
+      "author": "白巨翼",
+      "family_id": "4c9076a057c40fd68694363a",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【被诈骗不要慌，反手送他沙漠之鹰-白巨翼】-第903章 真是笑死我了",
+        "blob_sha": "de42f84393588012a5f5a07c081d7af6bd1c019b",
+        "size_bytes": 10073324
+      },
+      "reading_units": 897,
+      "manifest_path": "books/de42f84393588012a5f5a07c_7bb59fbf2510.json",
+      "manifest_sha256": "7bb59fbf25107deaa93c3018bd26c37eae088e3ddb3cdcd4e557144004952c36"
+    },
+    {
+      "id": "c5151d57f935010c14ae383d",
+      "title": "让你复读战高四，你被空军捡漏了",
+      "author": "蜉蝣于天地间",
+      "family_id": "b960f32838868f7da3979612",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "科技"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【让你复读战高四，你被空军捡漏了-蜉蝣于天地间】-第435章 不要过度神话美军.txt",
+        "blob_sha": "c5151d57f935010c14ae383d05c2428b4753d7a7",
+        "size_bytes": 3308199
+      },
+      "reading_units": 442,
+      "manifest_path": "books/c5151d57f935010c14ae383d_a58b1d8ed183.json",
+      "manifest_sha256": "a58b1d8ed183a06511a9942920f72b7b0d2c41ca641adc445d423647236b3554"
+    },
+    {
+      "id": "7daafe546d37dd84828c9ba5",
+      "title": "说好小众软件，抖音爆火全球？",
+      "author": "番茄君子",
+      "family_id": "d4ad79b0a48b503fac681853",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "经营"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【说好小众软件，抖音爆火全球？-番茄君子】-第180章 奇迹团，落后一万经济翻盘！.txt",
+        "blob_sha": "7daafe546d37dd84828c9ba50fc728f560a513fc",
+        "size_bytes": 1548329
+      },
+      "reading_units": 180,
+      "manifest_path": "books/7daafe546d37dd84828c9ba5_b119e546b1a0.json",
+      "manifest_sha256": "b119e546b1a03077d824ae776704a85034b2f45de785ac3d824c0c4d21381994"
+    },
+    {
+      "id": "2833d9ce362e29065dcea088",
+      "title": "资本家少爷重生，搬空仇家下乡去",
+      "author": "黄金一箩筐",
+      "family_id": "15cfd784f9b55c72c3762fee",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【资本家少爷重生，搬空仇家下乡去-黄金一箩筐】-第375章 找老婆就要找古明月这种.txt",
+        "blob_sha": "2833d9ce362e29065dcea088583fe86f12ac741b",
+        "size_bytes": 2735957
+      },
+      "reading_units": 375,
+      "manifest_path": "books/2833d9ce362e29065dcea088_36809e062f0a.json",
+      "manifest_sha256": "36809e062f0a00deea08c3806c1fa542acb811d2f9a0a933c3911c6e36ab0db0"
+    },
+    {
+      "id": "c415e9892e36a3d68c0d2c12",
+      "title": "遥远的救世主",
+      "author": "豆豆",
+      "family_id": "3e2f72ac6f8a7fb71dba6b24",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【遥远的救世主-豆豆】-《遥远的救世主》第四部分(59) (1).txt",
+        "blob_sha": "c415e9892e36a3d68c0d2c1215121170c843885b",
+        "size_bytes": 1114875
+      },
+      "reading_units": 185,
+      "manifest_path": "books/c415e9892e36a3d68c0d2c12_e55e7f991051.json",
+      "manifest_sha256": "e55e7f9910519caa8a828f299fe55efb66815d464c0658575e3968016e6aa0c7"
+    },
+    {
+      "id": "98c6546be53ec1ad1e845756",
+      "title": "遥远的救世主",
+      "author": "豆豆",
+      "family_id": "3e2f72ac6f8a7fb71dba6b24",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【遥远的救世主-豆豆】-《遥远的救世主》第四部分(59).txt",
+        "blob_sha": "98c6546be53ec1ad1e8457569e502a486635f4db",
+        "size_bytes": 1103960
+      },
+      "reading_units": 185,
+      "manifest_path": "books/98c6546be53ec1ad1e845756_201b68553c3d.json",
+      "manifest_sha256": "201b68553c3d63d320717faf26bab9bbc0c76c45e428432567c88d411e0374ae"
+    },
+    {
+      "id": "a104b1475843eaf46148d088",
+      "title": "都市狂医-寒门崛起",
+      "author": "老水湾的一笑",
+      "family_id": "9380504abb384224a152ff79",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【都市狂医-寒门崛起-老水湾的一笑】-第一百四十七章宗门大比.txt",
+        "blob_sha": "a104b1475843eaf46148d088f106f45465c3b272",
+        "size_bytes": 1260402
+      },
+      "reading_units": 147,
+      "manifest_path": "books/a104b1475843eaf46148d088_7cf472c4906e.json",
+      "manifest_sha256": "7cf472c4906e30dda25eb06a7d4c94b60a520ab59b3166f44aaef21a4122949e"
+    },
+    {
+      "id": "bb19ce5f4bb4ec92c3c35d34",
+      "title": "都重生了谁还混社会",
+      "author": "无聊小白啊",
+      "family_id": "a9859fd41e63739f9fd37f4d",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【都重生了谁还混社会-无聊小白啊】-第1204章 秦江的女人、折面子的秦松柏！.txt",
+        "blob_sha": "bb19ce5f4bb4ec92c3c35d34d8d5481f3ecb9477",
+        "size_bytes": 8266136
+      },
+      "reading_units": 1204,
+      "manifest_path": "books/bb19ce5f4bb4ec92c3c35d34_e79b00142131.json",
+      "manifest_sha256": "e79b001421317f7bd3aab6fb5bf5b584804274c442920093cd9036f04397964f"
+    },
+    {
+      "id": "f89ca33f5b7cde01bdbb340b",
+      "title": "都重生了，谁还装富二代啊",
+      "author": "爱和美式",
+      "family_id": "4ed5609705d105ddcbbd1e69",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【都重生了，谁还装富二代啊-爱和美式】-第287章 京城宴与这群无聊的二代们.txt",
+        "blob_sha": "f89ca33f5b7cde01bdbb340bba5625f00e0bd99f",
+        "size_bytes": 2904400
+      },
+      "reading_units": 287,
+      "manifest_path": "books/f89ca33f5b7cde01bdbb340b_155a4c58d290.json",
+      "manifest_sha256": "155a4c58d290d9c4054748e784f881e41ffe045c148e7fbd43712f556e4fa0e0"
+    },
+    {
+      "id": "abb0a23db455060259c6433c",
+      "title": "重回1978：我靠打猎养全家",
+      "author": "二八单杠",
+      "family_id": "bb1fb11e64bb5c779d9f0f34",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【重回1978：我靠打猎养全家-二八单杠】-第 43 章 论枪.txt",
+        "blob_sha": "abb0a23db455060259c6433c14c69ff8cce5ae8d",
+        "size_bytes": 458409
+      },
+      "reading_units": 55,
+      "manifest_path": "books/abb0a23db455060259c6433c_53cbaea881fd.json",
+      "manifest_sha256": "53cbaea881fd3028f3c0e1b6c94290c2ff6e02e30a33a8cd3a6f1dfafee74065"
+    },
+    {
+      "id": "c372fd12b70da4836c6fcc55",
+      "title": "重回八零高考前，养老系统来了",
+      "author": "梓云溪",
+      "family_id": "3a7c95a1adf5d503f20c6397",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【重回八零高考前，养老系统来了-梓云溪】-268 小夏真正凶的不得了.txt",
+        "blob_sha": "c372fd12b70da4836c6fcc552b375c6900987ab7",
+        "size_bytes": 1321333
+      },
+      "reading_units": 268,
+      "manifest_path": "books/c372fd12b70da4836c6fcc55_92856f49fcb9.json",
+      "manifest_sha256": "92856f49fcb9b2fe0a1cd133b23f3bafda2cb9bf02220a4889e47895d4481115"
+    },
+    {
+      "id": "aee9e4ff1f620af0b2870f79",
+      "title": "重生1976：开局迎娶资本家大小姐",
+      "author": "日月成名",
+      "family_id": "3c8f1d971c5c1629caac6958",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【重生1976：开局迎娶资本家大小姐-日月成名】-第589章  随你选，我全能！.txt",
+        "blob_sha": "aee9e4ff1f620af0b2870f79271c33d6350db7f9",
+        "size_bytes": 4194755
+      },
+      "reading_units": 589,
+      "manifest_path": "books/aee9e4ff1f620af0b2870f79_0c6455839b6d.json",
+      "manifest_sha256": "0c6455839b6daf079487d4f61e817f202bb51188d8428906e326dd90aceec989"
+    },
+    {
+      "id": "31f05f309b83b7d96f6fcb0f",
+      "title": "重生1985，少年大有可为",
+      "author": "v奔跑的蜗牛v",
+      "family_id": "c90fac9104107cea8fe828aa",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【重生1985，少年大有可为-v奔跑的蜗牛v】-第653章 等待命运馈赠.txt",
+        "blob_sha": "31f05f309b83b7d96f6fcb0f559493df6e2a03d4",
+        "size_bytes": 4571572
+      },
+      "reading_units": 653,
+      "manifest_path": "books/31f05f309b83b7d96f6fcb0f_9decc3475cfc.json",
+      "manifest_sha256": "9decc3475cfc7f49d88be4cfaa9c12e5556dd2245471c1343d62cd5f483295b3"
+    },
+    {
+      "id": "8a0bf23a1ead12aa834fa571",
+      "title": "重生69除夕夜分家断亲退婚养家",
+      "author": "风九元",
+      "family_id": "6d0eaa22384256bd9353b880",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代",
+        "婚恋"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【重生69除夕夜分家断亲退婚养家-风九元】-第237章 大混战，这日子没法过了啊.txt",
+        "blob_sha": "8a0bf23a1ead12aa834fa57150d2d0b1aa01f619",
+        "size_bytes": 1690621
+      },
+      "reading_units": 237,
+      "manifest_path": "books/8a0bf23a1ead12aa834fa571_69b88a309f58.json",
+      "manifest_sha256": "69b88a309f583bb664be4043bac944d7dd2f7a919338e466e6c6e3ddcfa9cf85"
+    },
+    {
+      "id": "6af40144ecbe42c6be51651b",
+      "title": "重生70年代，开局接盘美艳娇妻",
+      "author": "作者浪里小白龙",
+      "family_id": "3921d162f433933e1d64cd18",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【重生70年代，开局接盘美艳娇妻-作者浪里小白龙】-第1169章 前女友的消息.txt",
+        "blob_sha": "6af40144ecbe42c6be51651b3d015ee227feee4e",
+        "size_bytes": 8141963
+      },
+      "reading_units": 1169,
+      "manifest_path": "books/6af40144ecbe42c6be51651b_680b36271cc8.json",
+      "manifest_sha256": "680b36271cc8a9672888168e3b32d26a771b9b79fb8a5c20498d22645649ecaf"
+    },
+    {
+      "id": "a4042b4857fface3565ef044",
+      "title": "重生70：致富从资本家小姐找上门开始",
+      "author": "白公子",
+      "family_id": "3a35fa25af678cf9d48b60bd",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【重生70：致富从资本家小姐找上门开始-白公子】-第一卷 第236章 你刚刚准备怎么伤我？.txt",
+        "blob_sha": "a4042b4857fface3565ef044549b0417a423702a",
+        "size_bytes": 1440686
+      },
+      "reading_units": 236,
+      "manifest_path": "books/a4042b4857fface3565ef044_c53c56656077.json",
+      "manifest_sha256": "c53c56656077ebce2759f439f665264206fb418b5803779a4e833e705b2d5d58"
+    },
+    {
+      "id": "bd381620c641dfbf46f76c09",
+      "title": "重生之深爱",
+      "author": "问鬼",
+      "family_id": "d4fab75c2a3f62973a14859f",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【重生之深爱-问鬼】-107 番外三：人心（16） (1).txt",
+        "blob_sha": "bd381620c641dfbf46f76c09ee862047b2cda8c5",
+        "size_bytes": 1227632
+      },
+      "reading_units": 107,
+      "manifest_path": "books/bd381620c641dfbf46f76c09_f5751dd1027d.json",
+      "manifest_sha256": "f5751dd1027dd0e08640a9b15bce81ee08c755561aa2ca9a15a16a213a33e254"
+    },
+    {
+      "id": "533e420c4fea05fe225bab43",
+      "title": "重生了，那就收割她们的忠诚吧",
+      "author": "叁石平金泽",
+      "family_id": "cbfbc586443fceb7433a9327",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【重生了，那就收割她们的忠诚吧-叁石平金泽】-我推的孩子 第30节：你的银行卡到账280万.txt",
+        "blob_sha": "533e420c4fea05fe225bab43d34d31644d231d5b",
+        "size_bytes": 308696
+      },
+      "reading_units": 30,
+      "manifest_path": "books/533e420c4fea05fe225bab43_3a2da33002c1.json",
+      "manifest_sha256": "3a2da33002c1e4f5f1ce79e852953e0bdfb4122310c2c8310a1f91b9b5fcd289"
+    },
+    {
+      "id": "9c1bca045c003948ab06ed86",
+      "title": "重生开局被卖，她在七零杀疯了",
+      "author": "笑寒烟",
+      "family_id": "5f5afd3edda45d4a37677428",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "年代"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【重生开局被卖，她在七零杀疯了-笑寒烟】-第151章 难缠.txt",
+        "blob_sha": "9c1bca045c003948ab06ed864e50c095f00b6711",
+        "size_bytes": 695884
+      },
+      "reading_units": 151,
+      "manifest_path": "books/9c1bca045c003948ab06ed86_f8c94df4ce37.json",
+      "manifest_sha256": "f8c94df4ce377929bd3de92de2fdbee94b68c11686ec264a4afb7dafb08e28c0"
+    },
+    {
+      "id": "3d9e9114b1394fa6761185d5",
+      "title": "重生香江，我的表哥是跛豪",
+      "author": "叁更不息",
+      "family_id": "5814f11c2d95b954e9e485cc",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【重生香江，我的表哥是跛豪-叁更不息】-第137章 跟了林远山，变成奸人模样.txt",
+        "blob_sha": "3d9e9114b1394fa6761185d51b8aaf6e91be9d7a",
+        "size_bytes": 865157
+      },
+      "reading_units": 138,
+      "manifest_path": "books/3d9e9114b1394fa6761185d5_51068456691a.json",
+      "manifest_sha256": "51068456691a027f7ab0f3ebd5da6e79829a9e4e3c349951592230b37b24b8fa"
+    },
+    {
+      "id": "f65174a8ade67540e72896fa",
+      "title": "野花满山村",
+      "author": "三杯鸡",
+      "family_id": "a1d5ed6aed0de2036f9cf0fe",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【野花满山村-三杯鸡】-第2298章 自负了啊.txt",
+        "blob_sha": "f65174a8ade67540e72896faa2a0da6b7d1d46fc",
+        "size_bytes": 17078142
+      },
+      "reading_units": 2298,
+      "manifest_path": "books/f65174a8ade67540e72896fa_d91b955853a3.json",
+      "manifest_sha256": "d91b955853a398f536dbd5ad831526f18ec32dc3537c5b135d6720f428f24d6b"
+    },
+    {
+      "id": "8ff0987d6e36003188313fad",
+      "title": "针锋对决",
+      "author": "水千丞",
+      "family_id": "75e015321b30c45c76f24644",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【针锋对决-水千丞】-120 王 (1).txt",
+        "blob_sha": "8ff0987d6e36003188313fadd65aaeb942a3dc80",
+        "size_bytes": 1288295
+      },
+      "reading_units": 120,
+      "manifest_path": "books/8ff0987d6e36003188313fad_dc321a449bda.json",
+      "manifest_sha256": "dc321a449bda71766302a9f61e37ff95a3dfe90f89fceb505fbe270a305adcb2"
+    },
+    {
+      "id": "fdd69ba51b32cc7cc09c8eb3",
+      "title": "针锋相对之战场",
+      "author": "清风辰辰",
+      "family_id": "3bd0de6721720e425aebbddf",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【针锋相对之战场-清风辰辰】-第0435章晨光照疑影 急件藏锋暗布网.txt",
+        "blob_sha": "fdd69ba51b32cc7cc09c8eb3499c2124ba3307e5",
+        "size_bytes": 7077000
+      },
+      "reading_units": 447,
+      "manifest_path": "books/fdd69ba51b32cc7cc09c8eb3_db1015ca45d4.json",
+      "manifest_sha256": "db1015ca45d4d2e40803be7432f738cd85a3c8698100ee6277a1881680b4c785"
+    },
+    {
+      "id": "2cf36fe8891b811e11e14d04",
+      "title": "错怪她五年，商先生跪红了眼",
+      "author": "九汐",
+      "family_id": "89000edd1ab7b4f53b58a36b",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【错怪她五年，商先生跪红了眼-九汐】-第一卷 第141章 三份亲子鉴定.txt",
+        "blob_sha": "2cf36fe8891b811e11e14d0445249d480d9d493f",
+        "size_bytes": 1064006
+      },
+      "reading_units": 141,
+      "manifest_path": "books/2cf36fe8891b811e11e14d04_51ab6a7f80f9.json",
+      "manifest_sha256": "51ab6a7f80f94fd4cd3c37e4e7f70e18b69a1d06bafe2d9abf38fb380568c915"
+    },
+    {
+      "id": "fd35468cbc201bb779df0dfb",
+      "title": "隐婚四年，他让我替白月光养孩子",
+      "author": "阿京姐",
+      "family_id": "e8c146aac3f7685cfa8d16cd",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "婚恋"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【隐婚四年，他让我替白月光养孩子-阿京姐】-第一卷 第36章 求我让你生一个.txt",
+        "blob_sha": "fd35468cbc201bb779df0dfbbc72ccba88e8469c",
+        "size_bytes": 279784
+      },
+      "reading_units": 36,
+      "manifest_path": "books/fd35468cbc201bb779df0dfb_762cb35688b4.json",
+      "manifest_sha256": "762cb35688b4dde8b530b78dd34197fc32e3081b7c8ab66515a925a84f2b056a"
+    },
+    {
+      "id": "96bd3a45d73db9005e3aea17",
+      "title": "顾总，你前妻改嫁后身价千亿了",
+      "author": "嘟嘟宝",
+      "family_id": "33e0dc07ac4f3ebfc24d7751",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [
+        "婚恋"
+      ],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【顾总，你前妻改嫁后身价千亿了-嘟嘟宝】-第一卷 第379章 是亲生的么.txt",
+        "blob_sha": "96bd3a45d73db9005e3aea17eb09d4c61b62be14",
+        "size_bytes": 1788001
+      },
+      "reading_units": 379,
+      "manifest_path": "books/96bd3a45d73db9005e3aea17_2fa97787dd2f.json",
+      "manifest_sha256": "2fa97787dd2ff73033528f1a971110738ee76765644d47a5f0435ad5b8b224d7"
+    },
+    {
+      "id": "cf784f630efd5a7c8b46e3e5",
+      "title": "饥荒年：屯子里的日子好快活",
+      "author": "文鱼多",
+      "family_id": "22076e98cd5aec4b49b1d225",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【饥荒年：屯子里的日子好快活-文鱼多】-第850章 严苛的入职前考试！.txt",
+        "blob_sha": "cf784f630efd5a7c8b46e3e56dbf2a59ddb9acff",
+        "size_bytes": 5916597
+      },
+      "reading_units": 850,
+      "manifest_path": "books/cf784f630efd5a7c8b46e3e5_6529409dfddc.json",
+      "manifest_sha256": "6529409dfddc01614695f08555be78cc126cd867641396ba6302bb21b71c19bd"
+    },
+    {
+      "id": "dca2c6326d4d2340c9a3a90e",
+      "title": "黑莲花替身网恋后，继承者任我撩",
+      "author": "萧小月",
+      "family_id": "ecbc438bdb8e7e6cbe980955",
+      "platform": "",
+      "genre": "",
+      "genre_hints": [],
+      "genre_hints_basis": "filename_inference",
+      "origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【黑莲花替身网恋后，继承者任我撩-萧小月】-第34章 斐寂珩的占有欲.txt",
+        "blob_sha": "dca2c6326d4d2340c9a3a90ede1a22533c3121c1",
+        "size_bytes": 258965
+      },
+      "reading_units": 34,
+      "manifest_path": "books/dca2c6326d4d2340c9a3a90e_31407f72934f.json",
+      "manifest_sha256": "31407f72934f54e2d06b7a59e95c9467a4e9b0f038da41837dfbd97b43fed533"
+    }
+  ]
+}

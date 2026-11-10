@@ -3,8 +3,13 @@
 from __future__ import annotations
 
 import json
+import importlib.util
 from pathlib import Path
 import re
+
+_opening_spec = importlib.util.spec_from_file_location("novel_opening_five", Path(__file__).with_name("opening_five.py"))
+opening_five = importlib.util.module_from_spec(_opening_spec)
+_opening_spec.loader.exec_module(opening_five)
 
 
 def nonempty(value):
@@ -99,9 +104,25 @@ def surface_scan(text):
 
 
 def brief_skeleton(state, a):
-    return dict(brief_bindings(state, a), decision="pending", writer_brief="",
+    bindings = brief_bindings(state, a)
+    config = state["config"]
+    budget = config.get("chapter_han_target", config["chapter_han_min"])
+    chapter = bindings["chapter"]
+    if config.get("opening_chapter_han_max") is not None:
+        if chapter <= 3:
+            budget = 3500
+        elif config["strict_length"]:
+            remaining = config["target_chapters"] - chapter + 1
+            adopted = sum(item["han_count"] for item in state["chapters"].values())
+            budget = (config["target_han"] - adopted + remaining - 1) // remaining
+    limits = a.chapter_han_range(state, chapter)
+    if limits is not None:
+        budget = max(limits[0], min(budget, limits[1]))
+    result = dict(bindings, decision="pending", writer_brief="",
                 hard_boundaries=[""], reader_promise="", history_queries=[""],
-                scene_plan=[{"purpose": "", "target_han": state["config"]["chapter_han_min"]}])
+                scene_plan=[{"purpose": "", "target_han": budget}])
+    opening_five.add_brief_fields(state, result)
+    return result
 
 
 def validate_brief(state, brief, a):
@@ -114,21 +135,56 @@ def validate_brief(state, brief, a):
     a.require(isinstance(scenes, list) and scenes, "先安排有作用的场景，再写长章。")
     for scene in scenes:
         a.require(isinstance(scene, dict) and nonempty(scene.get("purpose")) and type(scene.get("target_han")) is int and scene["target_han"] > 0, "场景须有具体作用与正整数汉字预算。")
-    if state["config"]["strict_length"]:
+    limits = a.chapter_han_range(state, brief["chapter"])
+    if limits is not None:
         total = sum(x["target_han"] for x in scenes)
-        a.require(state["config"]["chapter_han_min"] <= total <= state["config"]["chapter_han_max"], "场景预算合计与本书章长不符。预算不等于正文实测字数。")
+        a.require(limits[0] <= total <= limits[1], f"场景预算合计{total}汉字，不在本章{limits[0]}—{limits[1]}范围。")
     queries = brief.get("history_queries")
     a.require(isinstance(queries, list) and (not state["chapters"] or queries) and all(query_terms(x) for x in queries), "非首章须准备有效历史检索词，不能只填标点；首章可留空列表。")
     prose = "\n".join([brief["writer_brief"], brief["reader_promise"], *boundaries, *[x["purpose"] for x in scenes]])
     a.require(not surface_scan(prose), "干净任务书含制作字段、审稿标签或制作句；控制信息留在任务书元数据。")
+    if "references" in brief:
+        references = brief["references"]
+        a.require(isinstance(references, dict), "参考教材须包含摘要、版本和本书用法。")
+        packet = a.validate_reference_packet(references.get("packet"))
+        a.require(references.get("packet_sha256") == a.digest(encoded(packet)), "参考教材摘要版本不符。")
+        a.require(all(nonempty(references.get(key)) for key in ("application", "originality")), "写明本章怎样运用教材，以及人物、办法和代价的原创安排。")
+        a.require(not surface_scan(references["application"] + references["originality"]), "教材用法含制作字段，请用自然语言描述本书场景。")
+    opening_five.validate_brief(state, brief, a)
     return brief
 
 
-def request_brief(root, out, a):
+def library_binding(root, brief, a):
+    path = Path(root).resolve().parent / "project_config.json"
+    config = a.read_json(path) if path.exists() else {}
+    binding = config.get("reference_library", {})
+    a.require(isinstance(binding, dict), "project_config.reference_library须为对象。")
+    repository = binding.get("repository_url", "")
+    a.require(isinstance(repository, str), "参考库仓库地址须为字符串。")
+    repository = repository.rstrip("/")
+    if repository:
+        references = brief.get("references", {})
+        packet = references.get("packet", {})
+        a.require(packet.get("origin", {}).get("repository_url") == repository,
+                  "本书已绑定参考库，先查阅教材并使用brief-request --references生成本章任务书。")
+        if binding.get("library_id"):
+            a.require(packet.get("library_id") == binding["library_id"], "教材库身份与本书绑定不符。")
+        if binding.get("require_source_locations"):
+            a.require(all("source_origin" in lesson and "evidence_sources" in lesson
+                          for lesson in packet.get("lessons", [])), "本书要求保留实际原文定位，请重新导出教材。")
+
+
+def request_brief(root, out, a, references=None):
     state = a.load_state(root); a.verify_files(root, state)
     target = Path(out).resolve()
     a.require(not target.exists() and not target.is_relative_to(Path(root).resolve()), "任务书草稿用作品目录外的新路径，不能覆盖已有资料。")
-    a.atomic_json(target, brief_skeleton(state, a))
+    brief = brief_skeleton(state, a)
+    if references is not None:
+        packet = a.validate_reference_packet(a.read_json(references))
+        brief["references"] = {"packet": packet, "packet_sha256": a.digest(encoded(packet)),
+                               "application": "", "originality": ""}
+    library_binding(root, brief, a)
+    a.atomic_json(target, brief)
     return {"path": str(target), "decision": "pending", "note": "GPT读真实来源后填写；模板不算完成。"}
 
 
@@ -136,6 +192,8 @@ def check_brief(root, path, a):
     with a.writer_lock(root):
         state = a.load_state(root); a.verify_files(root, state)
         brief = validate_brief(state, a.read_json(path), a)
+        library_binding(root, brief, a)
+        opening_five.register_plan(root, state, brief, a)
         body = json.dumps(brief, ensure_ascii=False, indent=2) + "\n"; sha = a.digest(body)
         relative = f"briefs/CH{brief['chapter']:03d}_{sha}.json"
         a.immutable_text(a.inside(root, relative), body)
@@ -150,7 +208,10 @@ def current_brief(root, state, a):
     a.require(isinstance(pin, dict), "先brief-request、实际填写并brief-check，再生成写作资料或发布前检查。")
     body = a.inside(root, pin["path"]).read_text(encoding="utf-8")
     a.require(a.digest(body) == pin["sha256"], "已登记写作任务书被改写。")
-    return validate_brief(state, json.loads(body), a), pin["sha256"]
+    brief = validate_brief(state, json.loads(body), a)
+    library_binding(root, brief, a)
+    opening_five.verify_plan(root, state, a)
+    return brief, pin["sha256"]
 
 
 def writer_packet(root, state, a):
@@ -159,6 +220,11 @@ def writer_packet(root, state, a):
              "## 本章读者体验", brief["reader_promise"], "## 场景安排"]
     for i, scene in enumerate(brief["scene_plan"], 1):
         parts.append(f"{i}. {scene['purpose']}（约{scene['target_han']}汉字，按叙事需要调整）")
+    if "references" in brief:
+        references = brief["references"]
+        parts += ["## 本章采用的写法", references["application"],
+                  "## 本书的原创安排", references["originality"]]
+    parts += opening_five.writer_focus(state, brief)
     if state["chapters"]:
         item = state["chapters"][str(len(state["chapters"]))]
         parts += ["## 上一章正式正文", a.inside(root, item["text_path"]).read_text(encoding="utf-8")]
@@ -183,7 +249,7 @@ def reader_packet(root, state, text, a, history_from=None, history_to=None):
         item = state["chapters"][str(n)]
         gate = state.get("serialization", {}).get("gates", {}).get(str(n))
         review = None
-        if not partial and n <= count - 3 and gate:
+        if not partial and not opening_five.enabled(state) and n <= count - 3 and gate:
             body = a.inside(root, gate["path"]).read_text(encoding="utf-8")
             a.require(a.digest(body) == gate["sha256"], "历史读者回顾的检查文件已改变。")
             report = json.loads(body)
@@ -208,7 +274,7 @@ def skeleton(root, state, text, record, a):
     brief, _ = current_brief(root, state, a)
     _, coverage = reader_packet(root, state, text, a)
     ev = {"chapter": record["chapter"], "sha256": a.digest(text), "quote": ""}
-    return {"schema_version": 1,
+    result = {"schema_version": 1,
             "actual_scenes": [{"event": "", "choice": "", "change": "", "evidence": [dict(ev)]}],
             "plan_comparison": "",
             "reader": {"mode": "pending", "limitation": "", "coverage": coverage,
@@ -219,6 +285,12 @@ def skeleton(root, state, text, record, a):
                         "queries": list(brief["history_queries"]), "comparisons": [], "no_match_reason": ""},
             "reader_updates": [], "reader_update_note": "",
             "surface_findings": [dict(item, decision="pending", reason="") for item in surface_scan(text)]}
+    if "references" in brief:
+        result["reference_use"] = {"packet_sha256": brief["references"]["packet_sha256"],
+                                   "outcome": "pending", "application_observed": "",
+                                   "originality_review": "", "evidence": [dict(ev)]}
+    opening_five.add_review_fields(root, state, text, record, brief, result, a)
+    return result
 
 
 def validate(root, state, text, record, review, a):
@@ -278,4 +350,14 @@ def validate(root, state, text, record, review, a):
     for actual, item in zip(found, expected):
         a.require(isinstance(actual, dict) and all(actual.get(k) == v for k, v in item.items()), "制作语言扫描位置或文本不符。")
         a.require(actual.get("decision") == "story_context" and nonempty(actual.get("reason")), "疑似制作语言仍未处理：修正文后重查；确为故事内容时说明语境。")
+    brief, _ = current_brief(root, state, a)
+    if "references" in brief:
+        usage = review.get("reference_use")
+        a.require(isinstance(usage, dict) and usage.get("packet_sha256") == brief["references"]["packet_sha256"],
+                  "教材效果检查没有绑定当前任务书的教材版本。")
+        a.require(usage.get("outcome") in ("applied", "adapted", "not_used") and
+                  all(nonempty(usage.get(key)) for key in ("application_observed", "originality_review")),
+                  "教材效果尚未审读：填写实际用法、未采用原因或调整，以及原创性判断。")
+        evidence_list(root, state, text, n, usage.get("evidence"), a)
+    opening_five.validate_review(root, state, text, record, brief, review, a, evidence_list)
     return review

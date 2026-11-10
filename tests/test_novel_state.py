@@ -14,7 +14,7 @@ class WorkspaceFixture(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.root = Path(self.temp.name) / "book"
-        ns.init(self.root, "测试书", {"strict_length": False, "review_interval": 5})
+        ns.init(self.root, "测试书", {"strict_length": False, "review_interval": 5, "target_chapters": 100})
         source = Path(self.temp.name) / "input.md"
         for kind in ("canon", "roadmap"):
             source.write_text("测试资料：仅用于机制验证，不是小说。", encoding="utf-8")

@@ -28,6 +28,8 @@ class PrivateBookTests(unittest.TestCase):
         legacy = ns.read_json(self.project / 'system_config.json')
         legacy['serial_mode'] = False
         legacy['narrative_review_required'] = False
+        legacy['opening_five_required'] = False
+        legacy.pop('opening_chapter_han_max', None)
         ns.atomic_json(self.project / 'system_config.json', legacy)
         online.bootstrap(self.project, 'https://github.com/example/synthetic')
         for kind in ('canon', 'roadmap'):

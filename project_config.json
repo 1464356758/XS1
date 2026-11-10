@@ -1,6 +1,6 @@
 {
-  "system_version": "4.3-quality",
-  "project_name": "退婚后，我把赔来的染坊开成了皇商",
+  "system_version": "4.6-xs-ku",
+  "project_name": "未命名小说",
   "book_root": "book",
   "authority": {
     "mode": "github",
@@ -13,8 +13,8 @@
     "chapter_order": "serial",
     "route_window_min": 3,
     "route_window_max": 5,
-    "platform": "qimao",
-    "genre": "古代女强/种田经商"
+    "platform": null,
+    "genre": null
   },
   "execution": {
     "context_character_budget": 80000,
@@ -27,5 +27,13 @@
     "requires_reader_key": false
   },
   "management_url": "https://novel-workspace-v44.qq1464356758.chatgpt.site/",
-  "workspace_version": "1.4.3"
+  "workspace_version": "1.4.9",
+  "reference_library": {
+    "repository_url": "https://github.com/1464356758/XS-KU",
+    "branch": "main",
+    "library_id": "300553a5-d4fb-4f1c-b1d1-154daf74c92e",
+    "profile_path": "reference_library/XS-KU.json",
+    "require_source_locations": true
+  },
+  "patch_version": "4.6.3"
 }

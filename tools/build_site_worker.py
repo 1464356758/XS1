@@ -34,6 +34,10 @@ def build(root=ROOT, out=None, partner=False):
             make_init_package.build(root, initial)
             data=initial.read_bytes()
             downloads['/downloads/novel-init.zip']={'base64':base64.b64encode(data).decode('ascii'),'sha256':hashlib.sha256(data).hexdigest()}
+            reference=Path(tmp)/'library.zip'
+            make_init_package.build_library(root, reference)
+            data=reference.read_bytes()
+            downloads['/downloads/novel-library-init.zip']={'base64':base64.b64encode(data).decode('ascii'),'sha256':hashlib.sha256(data).hexdigest()}
     source += "const DOWNLOADS=" + json.dumps(downloads,separators=(",", ":")) + ";\n"
     source += """
 export default {async fetch(request){
@@ -42,7 +46,7 @@ export default {async fetch(request){
   if(!['GET','HEAD'].includes(request.method))return new Response('Method not allowed',{status:405});
   const file=DOWNLOADS[url.pathname];
   if(file)return new Response(request.method==='HEAD'?null:Uint8Array.from(atob(file.base64),c=>c.charCodeAt(0)),{headers:{
-    'Content-Type':'application/zip','Content-Disposition':"attachment; filename=novel-init.zip; filename*=UTF-8''%E5%88%9D%E5%A7%8B%E5%8C%96%E7%B3%BB%E7%BB%9F%E5%8C%85.zip",
+    'Content-Type':'application/zip','Content-Disposition':'attachment; filename='+url.pathname.split('/').pop(),
     'Cache-Control':'no-store','X-Content-Type-Options':'nosniff','X-Content-SHA256':file.sha256
   }});
   const asset=ASSETS[url.pathname==='/'?'/index.html':url.pathname];

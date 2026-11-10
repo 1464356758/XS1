@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""100×9000汉字合成数据验证；不调用模型、不验证文学质量。"""
+"""150×6000汉字合成数据验证；不调用模型、不验证文学质量。"""
 import importlib.util
 import json
 from pathlib import Path
@@ -17,7 +17,7 @@ def run():
         source = base / "input.md"; source.write_text("合成数据，不是小说。统一时间刻度为测试序号。", encoding="utf-8")
         for kind in ("canon", "roadmap"):
             ns.set_input(root, kind, source, "机制测试", ns.load_state(root)["revision"])
-        body = "测试" * 4500
+        body = "测试" * 3000
         draft = base / "draft.txt"; draft.write_text(body, encoding="utf-8")
         record_path = base / "record.json"; report_path = base / "review.json"
 
@@ -31,7 +31,7 @@ def run():
             report_path.write_text(json.dumps(report, ensure_ascii=False), encoding="utf-8")
             ns.checkpoint(root, report_path)
 
-        for chapter in range(1, 101):
+        for chapter in range(1, 151):
             state = ns.load_state(root)
             ns.candidate(root, chapter, draft)
             record = {"chapter": chapter, "title": "合成数据", "stage": f"S{(chapter-1)//10+1:02d}",
@@ -49,7 +49,7 @@ def run():
         state = ns.load_state(root)
         ending = {"base_revision": state["revision"], "decision": "complete", "blocking_issues": [],
                   **{k: "构造结论，仅用于机制测试" for k in ("main_conflict", "character_choice", "promise_payoffs", "remaining_open_questions")},
-                  "evidence": [{"chapter": 100, "sha256": state["chapters"]["100"]["text_sha256"], "quote": "测试"}]}
+                  "evidence": [{"chapter": 150, "sha256": state["chapters"]["150"]["text_sha256"], "quote": "测试"}]}
         report_path.write_text(json.dumps(ending, ensure_ascii=False), encoding="utf-8")
         completed = ns.finish(root, report_path)
         exported = ns.export_text(root, base / "story.txt")
@@ -60,10 +60,10 @@ def run():
         restored_spec = importlib.util.spec_from_file_location("restored_novel", restored / "SYSTEM/tools/novel_state.py")
         restored_tool = importlib.util.module_from_spec(restored_spec); restored_spec.loader.exec_module(restored_tool)
         status = restored_tool.status(restored)
-        assert status["actual_han"] == 900000 and status["adopted_chapters"] == 100 and status["completed"]
-        assert saved["valid"] and completed["completed"] and exported["chapters"] == 100 and len(packet) <= 40000
-        return {"synthetic_only": True, "chapters": 100, "han_per_chapter": 9000, "actual_han": status["actual_han"],
-                "window_reviews": 20, "stage_reviews": 10, "completion_gate": "passed", "export": "passed",
+        assert status["actual_han"] == 900000 and status["adopted_chapters"] == 150 and status["completed"]
+        assert saved["valid"] and completed["completed"] and exported["chapters"] == 150 and len(packet) <= 40000
+        return {"synthetic_only": True, "chapters": 150, "han_per_chapter": 6000, "actual_han": status["actual_han"],
+                "window_reviews": 30, "stage_reviews": 15, "completion_gate": "passed", "export": "passed",
                 "snapshot_integrity": "passed", "restore_with_bundled_tool": "passed", "context_characters": len(packet),
                 "model_calls": 0, "literary_quality_evaluated": False, "note": "阅读声明和报告均为人工构造；不是90万字小说质量验证。"}
 

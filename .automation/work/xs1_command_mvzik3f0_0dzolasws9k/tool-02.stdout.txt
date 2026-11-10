@@ -1,4 +1,0 @@
-{
-  "path": "/tmp/novel-tool-batch-tyag8op8/project/drafts/CH005_writer.md",
-  "characters": 11097
-}

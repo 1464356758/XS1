@@ -26,7 +26,7 @@ PROTOCOL = "novel-task-executor-v1"
 ID = re.compile(r"[A-Za-z0-9_-]{8,100}")
 TOOLS = {"brief-request", "brief-check", "history-search", "context", "candidate",
          "repair", "check-record", "release-request", "release-check", "set-input", "incident"}
-PATH_FLAGS = {"--text", "--record", "--report", "--file", "--out"}
+PATH_FLAGS = {"--text", "--record", "--report", "--file", "--out", "--references"}
 
 
 def now():
@@ -153,11 +153,15 @@ def command_spec(project, command):
     else:
         raise ns.WorkspaceError("仅执行仓库既有小说/索引工具，不接受任意脚本或shell。")
     for i, value in enumerate(args):
-        if value in PATH_FLAGS:
-            require(i + 1 < len(args), "路径参数缺少值。")
-            safe_path(project, args[i + 1])
-            if value == "--out":
-                require(args[i + 1].startswith(("drafts/", ".automation/work/")), "输出只放drafts或本轮工作资料目录。")
+        flag, separator, inline_value = value.partition("=") if value.startswith("--") else (value, "", "")
+        if flag.startswith("--") and flag not in PATH_FLAGS:
+            require(not any(option.startswith(flag) for option in PATH_FLAGS), "路径参数须使用完整名称，不能使用缩写。")
+        if flag in PATH_FLAGS:
+            require(separator or i + 1 < len(args), "路径参数缺少值。")
+            path = inline_value if separator else args[i + 1]
+            safe_path(project, path)
+            if flag == "--out":
+                require(path.startswith(("drafts/", ".automation/work/")), "输出只放drafts或本轮工作资料目录。")
     return [sys.executable, "tools/" + script, *args]
 
 

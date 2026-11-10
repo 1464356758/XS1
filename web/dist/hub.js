@@ -1,3 +1,4 @@
+import {mountPlatformPicker} from './platform-picker.mjs';
 import {GitHubClient,HubError,SYSTEM_REPOSITORY,parseRepository,safeBranch,blankRegistry,validateRegistry,validateChatURL,dayInShanghai,tomorrow,loadRegistry,saveRegistry,loadBook,readFormalChapter,encodeLocator,STATUS,newBookPrompt,writingPrompt,repairPrompt,checkerPrompt,randomId,validateReaderURL,validateLocalBackup,inspectExecution} from './hub-core.mjs';
 import {AutoSync,mergeRegistries} from './auto-sync.mjs';
 import {inspectTodayRegistry,selectionFingerprint,savedQuery,queryState,rememberQuery,QUERY_STATUS} from './today-query.mjs';
@@ -155,7 +156,7 @@ function updateNewBookPrompt(){
 async function copyNewBookPrompt(){const text=updateNewBookPrompt();if(!text){$('newBookRepo').reportValidity();return;}try{await copyText(text);$('newBookPromptStatus').textContent='已复制。请在新的 GPT 工作聊天中附加初始化包，再粘贴发送。';toast('新书指令已复制。');}catch(e){$('newBookPromptStatus').textContent='指令已生成，请在预览框中长按选中并复制。';throw e;}}
 action($('openNewBookPrompt'),()=>{setView('newBook');$('newBookRepo').focus();});
 for(const id of ['newBookRepo','newBookPreferences'])$(id).addEventListener('input',updateNewBookPrompt);
-$('newBookPlatform').addEventListener('change',updateNewBookPrompt);
+mountPlatformPicker({input:$('newBookPlatformSearch'),clear:$('newBookPlatformClear'),sort:$('newBookPlatformSort'),select:$('newBookPlatform'),status:$('newBookPlatformStatus'),empty:$('newBookPlatformEmpty'),detail:$('newBookPlatformDetail'),source:$('newBookPlatformSource'),onChange:updateNewBookPrompt});
 $('newBookPromptForm').addEventListener('submit',event=>{event.preventDefault();copyNewBookPrompt().catch(e=>toast(e.message));});
 action($('copyNewBookPrompt'),copyNewBookPrompt);
 function updateWritingPrompt({resetTime=false}={}){
@@ -173,7 +174,7 @@ function updateWritingPrompt({resetTime=false}={}){
   return text;
 }
 function openWritingPrompt(book=null){setView('prompts');if(book){chooseBook('writingBook',book);updateWritingPrompt({resetTime:true});}}
-async function copyWritingPrompt(){const text=updateWritingPrompt();if(!text)throw new HubError('请先选择小说和有效执行时间。');try{await copyText(text);$('writingPromptStatus').textContent='已复制完整指令，请到本书 GPT 工作聊天粘贴并发送。';toast('日更指令已复制。');}catch(e){$('writingPromptStatus').textContent='完整指令已生成，请在预览框中长按选中并复制。';throw e;}}
+async function copyWritingPrompt(){const text=updateWritingPrompt();if(!text)throw new HubError('请先选择小说和有效执行时间。');try{await copyText(text);$('writingPromptStatus').textContent='已复制配置与长期执行指令，请到本书 GPT 工作聊天粘贴并更新原任务。';toast('日更指令已复制。');}catch(e){$('writingPromptStatus').textContent='完整指令已生成，请在预览框中长按选中并复制。';throw e;}}
 action($('openWritingPrompt'),()=>openWritingPrompt());
 $('writingBook').addEventListener('change',()=>updateWritingPrompt({resetTime:true}));$('writingTime').addEventListener('input',()=>updateWritingPrompt());
 $('writingPromptForm').addEventListener('submit',event=>{event.preventDefault();copyWritingPrompt().catch(e=>toast(e.message));});

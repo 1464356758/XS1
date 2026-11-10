@@ -30,6 +30,31 @@ def prefix_fingerprint(state, count):
     return ns.digest(json.dumps(values, ensure_ascii=False, sort_keys=True, separators=(",", ":")))
 
 
+def author_binding(root, state, value):
+    """核对显式手动加更的原始作者指令；默认日更不使用这个入口。"""
+    path = value.get("author_request_path")
+    ns.require(isinstance(path, str) and path.startswith("author_requests/") and
+               len(Path(path).parts) == 2, "手动加更须绑定本书author_requests中的作者指令。")
+    text = ns.inside(root, path).read_text(encoding="utf-8")
+    request = json.loads(text)
+    ns.require(ns.digest(text) == value.get("author_request_sha256") and
+               request.get("book_id") == state["book_id"] and
+               request.get("source") == "current_user_message" and
+               request.get("request", "").strip() in ("下一章", "继续下一章", "开始下一章") and
+               request.get("chapter") == value["chapter"] and
+               request.get("baseline_count") == value["baseline_count"] and
+               request.get("baseline_fingerprint") == value["baseline_fingerprint"],
+               "手动加更的作者指令、目标章或前文基线不匹配。")
+    received = datetime.fromisoformat(request["received_at"])
+    ns.require(received.tzinfo is not None and received <= datetime.fromisoformat(value["started_at"]),
+               "作者指令时间晚于执行开始。")
+    return request
+
+
+def extra_receipt_path(value, day):
+    return f"daily/extra/{day}_CH{value['chapter']:03d}_{value['run_id']}.json"
+
+
 def load(project):
     root = Path(project).resolve() / "book"
     ns.require((root / "state.json").is_file(), "尚未初始化小说；先完成平台、选题和规划，不创建空的每日任务。")
@@ -69,6 +94,8 @@ def verify_receipt(root, state, receipt):
                receipt.get("release_path") == gate["path"] and receipt.get("work_id") == state["book_id"] + ":" + receipt["start_date"] + ":" + str(n) and
                receipt["start_date"] == date_of(receipt["started_at"]) and datetime.fromisoformat(receipt["started_at"]) <= datetime.fromisoformat(receipt["completed_at"]),
                "每日完成记录的目标、来源或开始时间无效。")
+    if receipt.get("execution_kind") == "author_requested_extra":
+        author_binding(root, state, receipt)
     return receipt
 
 
@@ -93,6 +120,8 @@ def validate_active(state, active):
 
 def finish_locked(root, state, active):
     validate_active(state, active)
+    if active.get("execution_kind") == "author_requested_extra":
+        author_binding(root, state, active)
     n = active["chapter"]
     ns.require(len(state["chapters"]) == n, "只能为刚完成的目标章出具回执；存在额外章节需人工核实。")
     item, gate = formal_evidence(root, state, n)
@@ -108,46 +137,53 @@ def finish_locked(root, state, active):
                "body_path": item["text_path"], "body_sha256": item["text_sha256"],
                "record_path": item["record_path"], "record_sha256": item["record_sha256"],
                "release_path": gate["path"], "release_sha256": gate["sha256"], "state_revision": state["revision"]}
+    if active.get("execution_kind") == "author_requested_extra":
+        receipt.update({key: active[key] for key in ("execution_kind", "author_request_path", "author_request_sha256")})
     verify_receipt(root, state, receipt)
     path = root / "daily" / (receipt["date"] + ".json")
     if path.exists():
         old = verify_receipt(root, state, ns.read_json(path))
-        ns.require(old["run_id"] == receipt["run_id"] and old["body_sha256"] == receipt["body_sha256"], "当天已有其他有效完成记录，不能覆盖。")
-        receipt = old
-    else:
+        if old["run_id"] == receipt["run_id"] and old["body_sha256"] == receipt["body_sha256"]:
+            receipt = old
+        else:
+            ns.require(active.get("execution_kind") == "author_requested_extra", "当天已有其他有效完成记录，不能覆盖。")
+            path = ns.inside(root, extra_receipt_path(active, receipt["date"]))
+            if path.exists():
+                old = verify_receipt(root, state, ns.read_json(path))
+                ns.require(old["run_id"] == receipt["run_id"] and old["body_sha256"] == receipt["body_sha256"], "加更回执已存在且绑定不同，停止覆盖。")
+                receipt = old
+    if not path.exists():
         ns.immutable_text(path, json.dumps(receipt, ensure_ascii=False, indent=2) + "\n")
-    ns.atomic_json(root / "daily/active.json", dict(active, status="completed", completed_at=adopted, receipt_path="daily/" + receipt["date"] + ".json"))
+    ns.atomic_json(root / "daily/active.json", dict(active, status="completed", completed_at=adopted, receipt_path=path.relative_to(root).as_posix()))
     return dict(receipt, action="completed", remote_sync_required=True)
 
 
-def begin(project, resume_stopped=False):
+def begin(project, resume_stopped=False, author_request=None):
     root, _ = load(project)
     with ns.writer_lock(root):
         _, state = load(project)
         today = date_of(stamp())
         existing = root / "daily" / (today + ".json")
-        if existing.exists():
-            receipt = verify_receipt(root, state, ns.read_json(existing))
-            # A stop between immutable receipt creation and active update must
-            # not leave tomorrow trapped in yesterday's running target.
-            active = active_record(root)
-            if active and active.get("run_id") == receipt["run_id"] and active.get("status") != "completed":
-                result = finish_locked(root, state, active)
-                result["action"] = "recovered_completion"
-                return result
-            return {"action": "already_completed", "chapter": receipt["chapter"], "date": today, "run_id": receipt["run_id"]}
+        receipt = verify_receipt(root, state, ns.read_json(existing)) if existing.exists() else None
         active = active_record(root)
         if active:
             validate_active(state, active)
+            if active.get("execution_kind") == "author_requested_extra":
+                author_binding(root, state, active)
             completed_missing_receipt = False
             if active["status"] == "completed":
                 receipt_path = active.get("receipt_path")
                 expected_path = "daily/" + date_of(active["completed_at"]) + ".json"
-                ns.require(receipt_path == expected_path, "完成执行的回执路径无效。")
+                allowed = [expected_path]
+                if active.get("execution_kind") == "author_requested_extra":
+                    allowed.append(extra_receipt_path(active, date_of(active["completed_at"])))
+                ns.require(receipt_path in allowed, "完成执行的回执路径无效。")
                 completed_missing_receipt = not (root / receipt_path).exists()
                 if not completed_missing_receipt:
                     old = verify_receipt(root, state, ns.read_json(root / receipt_path))
                     ns.require(old["run_id"] == active["run_id"] and old["chapter"] == active["chapter"], "完成执行和回执不是同一个任务。")
+                    if old["date"] == today:
+                        receipt = old
             if active["status"] in ("running", "blocked") or completed_missing_receipt:
                 # 回执丢失时依据 adopt 实际时间恢复，不能把昨日采用改记为今天。
                 if str(active["chapter"]) in state["chapters"]:
@@ -162,6 +198,8 @@ def begin(project, resume_stopped=False):
                 active = dict(active, run_id=uuid.uuid4().hex, status="running", resumed_at=stamp(), attempts=history[-30:], reason="")
                 ns.atomic_json(root / "daily/active.json", active)
                 return dict(active, action="resumed", remote_sync_required=True)
+        if receipt and not author_request:
+            return {"action": "already_completed", "chapter": receipt["chapter"], "date": today, "run_id": receipt["run_id"]}
         ns.require(state["completion"] is None and len(state["chapters"]) < state["config"]["target_chapters"], "小说已达到目标，先处理完稿流程。")
         ns.require(set(state["inputs"]) == {"canon", "roadmap"}, "尚未完成作者设定和路线，不能自动开写。")
         ns.require(state.get("serialization", {}).get("enabled"), "每日更新要求连载冻结；旧书须按真实情况升级，不自动启用或改写旧章。")
@@ -170,6 +208,12 @@ def begin(project, resume_stopped=False):
                   "run_id": uuid.uuid4().hex, "work_id": state["book_id"] + ":" + today + ":" + str(n),
                   "start_date": today, "started_at": stamp(), "chapter": n, "status": "running",
                   "baseline_count": n - 1, "baseline_fingerprint": prefix_fingerprint(state, n - 1), "attempts": []}
+        if author_request:
+            text = ns.inside(root, author_request).read_text(encoding="utf-8")
+            active.update(execution_kind="author_requested_extra", author_request_path=author_request,
+                          author_request_sha256=ns.digest(text))
+            request = author_binding(root, state, active)
+            ns.require(request.get("base_revision") == state["revision"], "作者加更指令基于旧进度，先重新核对当前章。")
         ns.atomic_json(root / "daily/active.json", active)
         return dict(active, action="started", remote_sync_required=True,
                     note="先原子同步本执行记录并回读确认；并发写入失败时重新读取，不能继续并行写作。")
@@ -204,13 +248,14 @@ def main():
     p.add_argument("--project", default=".")
     sub = p.add_subparsers(dest="command", required=True)
     s = sub.add_parser("begin"); s.add_argument("--resume-stopped", action="store_true", help="仅在旧执行实际停止后使用，不自动抢占")
+    s.add_argument("--author-request", help="仅用于作者本轮明确要求下一章的本书指令文件；自动日更不传此项")
     for name in ("finish", "block"):
         s = sub.add_parser(name); s.add_argument("--run-id", required=True)
         if name == "block": s.add_argument("--reason", required=True)
     sub.add_parser("status")
     args = p.parse_args()
     try:
-        if args.command == "begin": result = begin(args.project, args.resume_stopped)
+        if args.command == "begin": result = begin(args.project, args.resume_stopped, args.author_request)
         elif args.command == "finish": result = finish(args.project, args.run_id)
         elif args.command == "block": result = block(args.project, args.run_id, args.reason)
         else:

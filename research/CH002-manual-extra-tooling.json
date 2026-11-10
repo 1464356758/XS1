@@ -1,0 +1,18 @@
+{
+  "reason": "同日明确下一章与每日一次幂等行为需要分别记录。",
+  "changed": [
+    "tools/daily_update.py",
+    "docs/每日自动更新.md",
+    "tests/test_author_extra.py"
+  ],
+  "new_behavior": "显式--author-request绑定本书原话、当前目标和前文指纹；额外回执独立保存，原日回执不改。",
+  "default_schedule": "无参数的begin仍每日一次；有未终结运行先核对，不创建并行目标。",
+  "verification": {
+    "author_extra_regression_cases": 8,
+    "daily_existing_regression_cases": 18,
+    "task_executor_regression_cases": 19,
+    "result": "passed; fixtures only; no formal text in tests"
+  },
+  "test_fixture_note": "拆分新增测试时曾出现setUp超类绑定错误，已以独立setUp修复并重跑；不涉及正式书籍数据。",
+  "book_id": "d9169807-b382-402b-b7d0-8e9c84d46670"
+}

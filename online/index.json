@@ -4,18 +4,18 @@
   "initialized": true,
   "book": {
     "id": "d9169807-b382-402b-b7d0-8e9c84d46670",
-    "title": "未命名小说",
+    "title": "离婚后，前夫的婚礼请我救场",
     "platform": "qimao",
-    "selected_topic_id": null
+    "selected_topic_id": "T01"
   },
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-11-10T18:51:48+00:00",
-    "state_revision": 0,
-    "workflow_revision": 3,
-    "state_sha256": "bdee0b55ff82f5174c7bd004e174f60ee4a392b1474d012f9d8573d5a9c52b7f",
-    "workflow_sha256": "dfb76ca158c1bc0885ff05319df6c23efd89c299da0aedc02c8c95b3111f7650",
+    "generated_at": "2026-11-10T19:00:54+00:00",
+    "state_revision": 1,
+    "workflow_revision": 4,
+    "state_sha256": "bc5fe29abce58ba7999d1cac3e2e4ef96b051a77883595ee69387fc17f1adfd2",
+    "workflow_sha256": "24b9bdf6f5d4d73cc5d2a5c86a1f62ba268c4d8e7a1365f59a2110a4d599b383",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -38,12 +38,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WAITING_TOPIC",
-    "label": "等待选择题材",
+    "phase": "PLANNING",
+    "label": "长篇规划",
     "chapter": 1,
-    "detail": "已准备8个原创选题，等待作者选择。",
-    "next_action": "作者选择候选编号后，进行长篇规划；当前不写正文。",
-    "updated_at": "2026-11-10T18:51:48+00:00"
+    "detail": "已选定《离婚后，前夫的婚礼请我救场》，准备长篇规划。",
+    "next_action": "建立作者设定、阶段因果、结局条件和近期3—5章路线。",
+    "updated_at": "2026-11-10T19:00:54+00:00"
   },
   "chapters": [],
   "topics": [
@@ -891,6 +891,12 @@
       "phase": "WAITING_TOPIC",
       "label": "等待选择题材",
       "detail": "已准备8个原创选题，等待作者选择。"
+    },
+    {
+      "at": "2026-11-10T19:00:54+00:00",
+      "phase": "PLANNING",
+      "label": "长篇规划",
+      "detail": "已选定《离婚后，前夫的婚礼请我救场》，准备长篇规划。"
     }
   ]
 }

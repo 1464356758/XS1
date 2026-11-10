@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "type": "novel-chapter-remote-verification",
+  "repository": "1464356758/XS1",
+  "branch": "main",
+  "content_commit_sha": "7a6dbc8255a3a8aa5e0428bdeba4c805f79078e5",
+  "content_tree_sha": "dafd9bdb07f2882bcbf1358c9c96ae523344da1f",
+  "single_parent_sha": "5f689c4ded26793c5bbbc48ca3c938e20ab9c791",
+  "verified_at": "2026-11-11T04:57:50.128031+08:00",
+  "book_id": "d9169807-b382-402b-b7d0-8e9c84d46670",
+  "chapter": 1,
+  "han_count": 5933,
+  "state_revision": 4,
+  "result": "verified",
+  "all_repository_file_list_and_git_hashes_matched": 164,
+  "raw_content_sha256_checks": {
+    "book/state.json": {
+      "git_blob_sha": "cbf16db2868653db330b1077bc65390ddfd9c9ee",
+      "sha256": "d1263ba24dfd6e1c48d0c6c30c6b2f90d470462cd099381d121127522f650430"
+    },
+    "book/workflow.json": {
+      "git_blob_sha": "6d188190c8e3e726153d78c48f02861bc661d6bb",
+      "sha256": "e784eb880764b1af3a5e8b2c81c229507e5f339edc07d9596c67f1cd241a2e47"
+    },
+    "online/index.json": {
+      "git_blob_sha": "f391fe49c3711ec43aeaa726a9eea668c6ad2162",
+      "sha256": "787f568ef392d0f29c8aff8644abb8f969b043cc23f87a4370f9a7d06bc22831"
+    },
+    "book/chapters/CH001_102d803100838bd6e055bef2ab92f61d144a24d3ddbbf745fa512a219c4681cc.txt": {
+      "git_blob_sha": "c64bccb61cb7aee3dce962925035ef6f07bafd23",
+      "sha256": "102d803100838bd6e055bef2ab92f61d144a24d3ddbbf745fa512a219c4681cc"
+    },
+    "book/records/CH001_457d45e50885f1a6406d86d3bd81276d5d3ecfd4e2e097f7275c556303b2515e.json": {
+      "git_blob_sha": "f617363f46a9974677dcfb9366e6235e795f5d86",
+      "sha256": "457d45e50885f1a6406d86d3bd81276d5d3ecfd4e2e097f7275c556303b2515e"
+    },
+    "book/releases/CH001_5a2ae7908515ceee50feed08f6499a155f3b2c2e8390602c58ffa0f8a505b957.json": {
+      "git_blob_sha": "771370e009f19dbf04e91f607e719d7087f0fbbc",
+      "sha256": "5a2ae7908515ceee50feed08f6499a155f3b2c2e8390602c58ffa0f8a505b957"
+    },
+    "book/daily/2026-11-11.json": {
+      "git_blob_sha": "9d21cda6b0ece2ee01200eea1ea7a3a56569aa77",
+      "sha256": "010fe391637110eb26ce8f1106763acad1e99b8e2234329becef77e833e2c2f9"
+    },
+    "book/daily/active.json": {
+      "git_blob_sha": "6b1fd1b83b7ce34a22aadaf790427d0fa75acf5b",
+      "sha256": "b4cec2b129519077a014f6be698a6aa610f9115d30bf3d134a83d376b4cb92a7"
+    },
+    ".automation/config.json": {
+      "git_blob_sha": "04ac77612793373268a1a650857b786e20e8c47f",
+      "sha256": "92af96abead5aefc07e17bab64a604a28490d5b13a1d8be01a01cff388d127b6"
+    }
+  },
+  "frozen_body_and_record": true,
+  "release_gate_used": true,
+  "receipt_status": "completed",
+  "run_id": "8ad46d6858b8478aa1afda5414010bbf",
+  "workflow_phase": "WAITING_NEXT",
+  "next_target": 2,
+  "automation_id": null,
+  "platform_publication": "unreported",
+  "limits": "只证明所列真实提交和版本的文件及状态一致；同上下文模型审读不等于独立读者或平台验收。此报告是在回读后保存，不声称已提前验证承载本报告的后续提交。"
+}

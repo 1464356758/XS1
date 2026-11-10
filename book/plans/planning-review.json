@@ -1,0 +1,76 @@
+{
+  "book_id": "d9169807-b382-402b-b7d0-8e9c84d46670",
+  "checked_at": "2026-11-11T03:24:01+08:00",
+  "mode": "same_context_approximation",
+  "assessment_source": "model_editorial_planning_review",
+  "decision": "planning_ready_for_author_start",
+  "writing_authorized": false,
+  "review_scope": [
+    "canon与角色基线",
+    "150章未来路线",
+    "前五章结果链和6000字场景预算",
+    "开篇资源预算",
+    "两部独立各万字教材"
+  ],
+  "resolved_design_issues": [
+    {
+      "issue": "女主为什么会到前夫婚礼现场，是否为制造受辱而主动旁观？",
+      "resolution": "D-1确认的工具交接；她不参加宴席，工具不属于在用设施，额外求助在取物时发生。"
+    },
+    {
+      "issue": "已离职身份与首章接手权限冲突。",
+      "resolution": "个人独立委托由新娘确认，酒店只确认自己的可用空间与职责；不恢复映礼管理权。"
+    },
+    {
+      "issue": "第三章失误会不会让首轮卖点一直没有结果？",
+      "resolution": "婚礼实际完成与结算在第三章内；原声缺失是有限但不可逆的代价，不把预付款当交付。"
+    },
+    {
+      "issue": "第四章澄清是否在否认真实的旧任经历？",
+      "resolution": "争议固定为误标现任职务，承认旧任贡献；不把全部旧公司成果自动划给女主。"
+    },
+    {
+      "issue": "男主是不是无限现金与场地外挂？",
+      "resolution": "泊岸持股40%、有合伙人与经营压力，澜庭酒店不属于他；首单由客户本人选择。"
+    },
+    {
+      "issue": "主角学会边界后中段突然失误会不会只是作者强推？",
+      "resolution": "中段改为跨主体传播链路与授权范围的新复杂度；必须写出可见提醒、错误判断及后果，不能让她明知拒绝还故意伤害。成稿不成立就调整未来路线。"
+    },
+    {
+      "issue": "150章只靠前夫不断叫她回去是否空转？",
+      "resolution": "15阶段切换真实困难与关系目标；感情调用减少，CH120旧线明确收束，结尾处理男主经营与主角生活。"
+    },
+    {
+      "issue": "参考原文连续情节是否被改名移植？",
+      "resolution": "本书已离婚、婚礼职业、有偿急单与平等协作，避开海外生日、女儿冷遇、记者被打、豪门报复及强制亲密事件链。"
+    }
+  ],
+  "program_checks": {
+    "chapters_1_to_150_contiguous": true,
+    "provisional_titles_distinct": true,
+    "opening_scene_budget_each": 6000,
+    "total_planned_han": 900000,
+    "planned_cash_math_checked": true,
+    "opening_reference_scope_gate": true,
+    "formal_input_files_verified": true,
+    "official_chapters_remain_zero": true,
+    "real_reference_integration": {
+      "result": "passed",
+      "tests": 1,
+      "synthetic_temporary_book_only": true
+    },
+    "author_context_characters": 21081
+  },
+  "semantic_limits": "模型在同一上下文作规划审读；无正文、无独立读者反馈。结构可展开不证明每章好看或会签约。",
+  "pending_before_first_adoption": [
+    "作者明确开始写",
+    "首章两种原创开场比较",
+    "正式brief与原文用法登记",
+    "完整正文及真实引文审读",
+    "release-check与冻结",
+    "正文采用后GitHub回读"
+  ],
+  "submission_status": "not_submitted",
+  "signed_status": "unverified_not_claimed"
+}

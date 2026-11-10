@@ -1,0 +1,192 @@
+{
+  "book_id": "d9169807-b382-402b-b7d0-8e9c84d46670",
+  "as_of": "开篇D0 09:20，故事时间560分钟",
+  "status": "pre_story_canon_baseline",
+  "adopted_evidence": false,
+  "known_at_chapter": null,
+  "note": "章前创作基线，不写入serialization事实或承诺；实际发生后由带正文引文的章后记录更新。",
+  "facts": [
+    {
+      "id": "B01",
+      "kind": "state",
+      "key": "marriage:xu_cheng",
+      "value": "2025-12-18离婚已办妥",
+      "holders": [
+        "许知夏",
+        "程景行"
+      ],
+      "valid_from": -174240,
+      "source": "canon婚姻基线",
+      "truth_status": "author_defined_pre_story"
+    },
+    {
+      "id": "B02",
+      "kind": "state",
+      "key": "work:xu:employment",
+      "value": "2026-01-12离职交接完成；现个人工作室",
+      "holders": [
+        "许知夏",
+        "程景行"
+      ],
+      "valid_from": -138240,
+      "source": "canon职业基线",
+      "truth_status": "author_defined_pre_story"
+    },
+    {
+      "id": "B03",
+      "kind": "state",
+      "key": "cash:xu:available",
+      "value": 22600,
+      "unit": "CNY",
+      "holders": [
+        "许知夏"
+      ],
+      "valid_from": 560,
+      "source": "canon开篇余额",
+      "truth_status": "author_defined_pre_story"
+    },
+    {
+      "id": "B04",
+      "kind": "state",
+      "key": "receivables:xu",
+      "value": [
+        {
+          "amount": 2400,
+          "due_story_day": 12
+        },
+        {
+          "amount": 2400,
+          "due_story_day": 20
+        }
+      ],
+      "holders": [
+        "许知夏",
+        "各自的零活客户"
+      ],
+      "valid_from": 560,
+      "source": "canon应收基线",
+      "truth_status": "author_defined_pre_story",
+      "note": "不得加入可用现金；与前夫无关"
+    },
+    {
+      "id": "B05",
+      "kind": "state",
+      "key": "rent:xu",
+      "value": {
+        "monthly": 2200,
+        "paid_through_story_day": 29
+      },
+      "holders": [
+        "许知夏",
+        "房东"
+      ],
+      "valid_from": 560,
+      "source": "canon居住基线",
+      "truth_status": "author_defined_pre_story"
+    },
+    {
+      "id": "B06",
+      "kind": "state",
+      "key": "props:xu:toolboxes",
+      "value": "两箱常用工具属于许；D0在澜庭酒店后区待约定交接",
+      "holders": [
+        "许知夏",
+        "程景行",
+        "负责交接的映礼人员"
+      ],
+      "valid_from": 560,
+      "source": "canon取物约定",
+      "truth_status": "author_defined_pre_story"
+    },
+    {
+      "id": "B07",
+      "kind": "knowledge",
+      "key": "appointment:collection",
+      "value": "D0 09:20酒店后区取物；许不参加宴席",
+      "holder": "许知夏",
+      "valid_from": -600,
+      "source": "canon D-1确认",
+      "truth_status": "author_defined_pre_story"
+    },
+    {
+      "id": "B08",
+      "kind": "belief",
+      "key": "cheng:can_call_xu",
+      "value": "遇急事可像以前一样让许无偿接手",
+      "holder": "程景行",
+      "valid_from": 560,
+      "source": "canon人物缺陷",
+      "truth_status": "character_belief_not_objective_entitlement"
+    },
+    {
+      "id": "B09",
+      "kind": "knowledge",
+      "key": "li:xu_identity",
+      "value": "知道许为前妻、映礼旧执行负责人；只听过程的有限说法",
+      "holder": "黎蔓",
+      "valid_from": 560,
+      "source": "canon人物知情",
+      "truth_status": "author_defined_pre_story"
+    },
+    {
+      "id": "B10",
+      "kind": "state",
+      "key": "he:company_control",
+      "value": {
+        "company": "泊岸",
+        "equity_percent": 40,
+        "other_shareholder": "罗湛60%",
+        "venue": "汀和馆"
+      },
+      "holders": [
+        "贺行舟",
+        "罗湛"
+      ],
+      "valid_from": 560,
+      "source": "canon机构基线",
+      "truth_status": "author_defined_pre_story"
+    }
+  ],
+  "knowledge_matrix": [
+    {
+      "holder": "许知夏",
+      "knows": "个人余额、离婚离职、取物约定、自己旧工作",
+      "does_not_know": "程与黎的私下谈话、供应商未来动作、贺的全部经营状况"
+    },
+    {
+      "holder": "程景行",
+      "knows": "许到场原因、她过去技能与工作习惯",
+      "does_not_know": "她私账、她独立客户决定、她对贺的未来感受"
+    },
+    {
+      "holder": "黎蔓",
+      "knows": "自己婚礼需求、许的公开身份、自己愿付的费用",
+      "does_not_know": "许的全部婚内经历、映礼每项旧成果权属"
+    },
+    {
+      "holder": "贺行舟",
+      "knows": "泊岸档期、可提供的资源、同行公开信息",
+      "does_not_know": "许的婚姻内情、银行余额、未展示项目细节"
+    },
+    {
+      "holder": "唐澄",
+      "knows": "自己的排期和报价、熟悉的现场分工",
+      "does_not_know": "其他同伴的私人安排与未公开资金"
+    },
+    {
+      "holder": "罗真",
+      "knows": "自身花材、档期、育儿时间",
+      "does_not_know": "许没有告诉她的承诺或追加要求"
+    },
+    {
+      "holder": "季衡",
+      "knows": "拍摄约定、自己的素材与设备",
+      "does_not_know": "未被通知的流程变化、客户未授权的隐私"
+    },
+    {
+      "holder": "丁晗与方旻",
+      "knows": "自己婚礼期待与总预算",
+      "does_not_know": "许与前夫旧争执中的全部真相"
+    }
+  ]
+}

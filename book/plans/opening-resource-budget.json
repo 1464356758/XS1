@@ -1,0 +1,116 @@
+{
+  "book_id": "d9169807-b382-402b-b7d0-8e9c84d46670",
+  "status": "planning_only_not_actual_cash",
+  "currency": "CNY",
+  "personal_living_costs": "开篇已付租金与生活预留不视为免费；实际有新支出按正文更新。本表只列推动场景的计划收支，不作为当前已赚收入。",
+  "client_total_budget": 18000,
+  "client_budget_is_not_protagonist_income": true,
+  "first_independent_project": {
+    "quoted_service_fee": 4800,
+    "advance": 1600,
+    "original_balance": 3200,
+    "proposed_deduction": 800,
+    "actual_receipt_if_plan_occurs": 4000
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "opening_cash": 22600,
+      "receipts": [
+        {
+          "amount": 3600,
+          "type": "已完成服务费"
+        }
+      ],
+      "payments": [
+        {
+          "amount": 160,
+          "type": "交通"
+        },
+        {
+          "amount": 70,
+          "type": "耗材"
+        }
+      ],
+      "planned_closing_cash": 25970
+    },
+    {
+      "chapter": 2,
+      "opening_cash": 25970,
+      "receipts": [
+        {
+          "amount": 1600,
+          "type": "首单预付款，尚未赚取"
+        }
+      ],
+      "payments": [
+        {
+          "amount": 380,
+          "type": "试摆材料"
+        },
+        {
+          "amount": 850,
+          "type": "约定范围的租用/搬运成本"
+        }
+      ],
+      "planned_closing_cash": 26340
+    },
+    {
+      "chapter": 3,
+      "opening_cash": 26340,
+      "receipts": [
+        {
+          "amount": 2400,
+          "type": "调整后尾款；原尾款3200减800"
+        }
+      ],
+      "payments": [
+        {
+          "amount": 500,
+          "type": "约定现场协作成本"
+        },
+        {
+          "amount": 120,
+          "type": "交通"
+        }
+      ],
+      "planned_closing_cash": 28120
+    },
+    {
+      "chapter": 4,
+      "opening_cash": 28120,
+      "receipts": [],
+      "payments": [],
+      "planned_closing_cash": 28120
+    },
+    {
+      "chapter": 5,
+      "opening_cash": 28120,
+      "receipts": [
+        {
+          "amount": 1200,
+          "type": "已完成场地测试服务费"
+        }
+      ],
+      "payments": [
+        {
+          "amount": 280,
+          "type": "交通与材料"
+        }
+      ],
+      "planned_closing_cash": 29040
+    }
+  ],
+  "later_baseline_receivables": [
+    {
+      "amount": 2400,
+      "due_story_day": 12,
+      "planned_observation_chapter": 6
+    },
+    {
+      "amount": 2400,
+      "due_story_day": 20,
+      "planned_observation_chapter": 10
+    }
+  ]
+}

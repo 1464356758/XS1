@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "d9169807-b382-402b-b7d0-8e9c84d46670",
   "title": "离婚后，前夫的婚礼请我救场",
-  "revision": 1,
+  "revision": 3,
   "config": {
     "target_chapters": 150,
     "target_han": 900000,
@@ -27,8 +27,34 @@
   "chapters": {},
   "checkpoints": [],
   "needs_revalidation": [],
-  "inputs": {},
-  "input_history": [],
+  "inputs": {
+    "canon": {
+      "kind": "canon",
+      "path": "inputs/canon_dd8e4c79300bf46bfc464a0d02a8d5ff0d7d0d2e58db598b6e671d5aaeb52033.md",
+      "sha256": "dd8e4c79300bf46bfc464a0d02a8d5ff0d7d0d2e58db598b6e671d5aaeb52033",
+      "reason": "作者选择T01后的开书设定、初始身份与硬边界"
+    },
+    "roadmap": {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_6ec767dc7221d45b929aa6f804281d7c6dab4c8af9990abe6083e2621e256ad3.md",
+      "sha256": "6ec767dc7221d45b929aa6f804281d7c6dab4c8af9990abe6083e2621e256ad3",
+      "reason": "T01完整150章路线、15阶段与前五章因果安排"
+    }
+  },
+  "input_history": [
+    {
+      "kind": "canon",
+      "path": "inputs/canon_dd8e4c79300bf46bfc464a0d02a8d5ff0d7d0d2e58db598b6e671d5aaeb52033.md",
+      "sha256": "dd8e4c79300bf46bfc464a0d02a8d5ff0d7d0d2e58db598b6e671d5aaeb52033",
+      "reason": "作者选择T01后的开书设定、初始身份与硬边界"
+    },
+    {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_6ec767dc7221d45b929aa6f804281d7c6dab4c8af9990abe6083e2621e256ad3.md",
+      "sha256": "6ec767dc7221d45b929aa6f804281d7c6dab4c8af9990abe6083e2621e256ad3",
+      "reason": "T01完整150章路线、15阶段与前五章因果安排"
+    }
+  ],
   "tasks": {},
   "completion": null,
   "serialization": {

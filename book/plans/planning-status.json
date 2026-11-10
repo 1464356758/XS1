@@ -1,0 +1,15 @@
+{
+  "book_id": "d9169807-b382-402b-b7d0-8e9c84d46670",
+  "topic_id": "T01",
+  "title": "离婚后，前夫的婚礼请我救场",
+  "phase": "PLANNING",
+  "planning_ready": true,
+  "author_topic_request": "T01",
+  "writing_authorized": false,
+  "adopted_chapters": 0,
+  "target_chapters": 150,
+  "target_han": 900000,
+  "reference_commit": "f978c6d81eabe84267debcbd7499c89d4c9abc2c",
+  "next_user_action": "开始写",
+  "note": "准备阶段完成，不登记正文完成、投稿、签约或自动任务。"
+}

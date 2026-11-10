@@ -1,0 +1,60 @@
+{
+  "checked_at": "2026-11-11T03:24:01+08:00",
+  "purpose": "小说职业场景边界，非现实法律或经营建议",
+  "title_check": {
+    "query": "离婚后，前夫的婚礼请我救场",
+    "result": "本轮公开检索未见可确认的同名结果；搜索覆盖有限，不是平台可登记名称保证。"
+  },
+  "sources": [
+    {
+      "id": "P01",
+      "title": "国家市场监管总局合同示范文本库：黑龙江省婚宴服务合同2024版",
+      "url": "https://htsfwb.samr.gov.cn/View?id=86e4e7c7-041e-4cc3-a57e-5b89a1acb22d",
+      "observed": "明确服务、时间地点、价款与个人信息保护；仅作为区分婚宴服务与个人统筹的职业常识参考。",
+      "boundary": "地方示范文本，不当作全国统一现行裁判或每笔本书合同的已确定责任。"
+    },
+    {
+      "id": "P02",
+      "title": "全国标准信息平台：DB6101/T 3240-2025 婚庆服务规范",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=36A32F5CE1BAFF45E06397BE0A0A33D9",
+      "observed": "页面列西安推荐性地方标准，涉及策划、筹备、典礼、客户信息与评价等范围。",
+      "boundary": "本轮只读官方元信息，未声称读完标准全文，不外推为全国强制要求。"
+    },
+    {
+      "id": "P03",
+      "title": "北京市婚礼服务合同官方历史文本",
+      "url": "https://scjgj.beijing.gov.cn/bsfw/bmfw/sfwbbm/shxfl/qtwb/202203/t20220308_2624737.html",
+      "observed": "提供不同服务项目及新增项目、费用与素材使用边界的结构例子。",
+      "boundary": "文本标2007、页面2022且含旧法称谓，只用来识别需区分的项目，不直接套用其法律结论与期限。"
+    },
+    {
+      "id": "P04",
+      "title": "纵横官方：席先生，你被太太踢出局了！章节及身份",
+      "url": "https://read.zongheng.com/chapter/1480770/111291198.html",
+      "observed": "官方可见九醉与该书身份，作为跨平台同类参考的来源核查。",
+      "boundary": "不声称是七猫榜单作品或已核七猫首发。"
+    }
+  ],
+  "opening_reference": {
+    "repository_url": "https://github.com/1464356758/XS-KU",
+    "commit": "f978c6d81eabe84267debcbd7499c89d4c9abc2c",
+    "catalog_revision": 583,
+    "studies": [
+      "91e609a3e501531214478d3e",
+      "0f75ae5c9d1f962f8808ea9d"
+    ],
+    "han_counts": [
+      11042,
+      11864
+    ],
+    "reading_units": "两书均1—6",
+    "full_books_read": false,
+    "source_reader_mode": "same_context_approximation",
+    "raw_original_copied_to_XS1": false
+  },
+  "not_inferred": [
+    "没有根据合同示范文本替角色自动赢官司",
+    "没有把有报价当真实市场行情",
+    "没有把读取片段等同通读整书或获得平台认可"
+  ]
+}

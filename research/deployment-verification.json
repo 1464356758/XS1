@@ -1,0 +1,118 @@
+{
+  "checked_at": "2026-11-11T02:51:48+08:00",
+  "repository_url": "https://github.com/1464356758/XS1",
+  "default_branch": "main",
+  "book_id": "d9169807-b382-402b-b7d0-8e9c84d46670",
+  "author_authorization": "用户要求独立新书，并在末尾明确“把原来的删除”。本次按清除旧工作区处理，保留Git提交历史。",
+  "base_commit": "a1afc25ebf34226ace8ec9ddd46f1efc6bf06b89",
+  "base_tree": "d791223515c3612dad1b21a08ba12fb0c91625ee",
+  "deployment_commit": "2c1e1ddf360d0b9831fcf864a20f5e5cdd6d046d",
+  "deployment_tree": "480d9846a5cdbbca1c415ea48bcdbcb0256919b7",
+  "retired_book": {
+    "title": "退婚后，我把赔来的染坊开成了皇商",
+    "adopted_chapters": 6,
+    "current_files_removed": true,
+    "history_preserved": true
+  },
+  "package": {
+    "uploaded_name": "初始化系统包(1).zip",
+    "sha256": "1a869a10b36a080b66046eb292c64ea3879ba6a0e9cc0bbc907a0ac47bed0b37",
+    "patch_version": "4.6.3",
+    "workspace_version": "1.4.9",
+    "files_in_zip": 122,
+    "manifest_entries": 121,
+    "missing": [],
+    "hash_mismatch": [],
+    "unlisted": []
+  },
+  "bootstrap": {
+    "executed": true,
+    "already_initialized": false,
+    "fresh_book_id": "d9169807-b382-402b-b7d0-8e9c84d46670",
+    "adopted_chapters": 0,
+    "config": {
+      "target_chapters": 150,
+      "target_han": 900000,
+      "chapter_han_target": 6000,
+      "chapter_han_min": 5500,
+      "chapter_han_max": 6500,
+      "book_han_min": 880000,
+      "book_han_max": 920000,
+      "strict_length": true,
+      "review_interval": 5,
+      "max_local_repairs": 3,
+      "serial_mode": true,
+      "serial_stage_size": 10,
+      "serial_lookahead": 3,
+      "opening_hook_max_han": 800,
+      "opening_core_max_han": 3000,
+      "opening_impact_max_han": 3000,
+      "narrative_review_required": true,
+      "opening_five_required": true,
+      "opening_benchmark_min_han": 10000
+    },
+    "storage": "plain_files_v1"
+  },
+  "remote_readback": {
+    "deployment_files": 124,
+    "all_git_blob_hashes_match": true,
+    "critical_tools": 18,
+    "state_workflow_index_identity_match": true,
+    "state_and_workflow_and_index_read": true,
+    "online_state_tool_content_read": true
+  },
+  "checks": {
+    "python_suite": {
+      "tests": 217,
+      "result": "OK",
+      "skipped": 1,
+      "skip_reason": "完整套件默认跳过需显式实库路径的测试"
+    },
+    "real_reference_integration": {
+      "tests": 1,
+      "result": "OK",
+      "library_commit": "f3b66ec5305aa28c75998c4fd1f58227358404a4",
+      "synthetic_frozen_chapter_only": true,
+      "source_library_unchanged": true
+    },
+    "web_suite": {
+      "tests": 166,
+      "passed": 166,
+      "failed": 0
+    },
+    "validate_index": true
+  },
+  "github_actions": {
+    "validation": {
+      "run_id": 42877600426,
+      "source_sha": "2c1e1ddf360d0b9831fcf864a20f5e5cdd6d046d",
+      "conclusion": "success"
+    },
+    "retired_request_deletion_trigger": {
+      "run_id": 42877600496,
+      "job_id": 130044958739,
+      "conclusion": "failure",
+      "confirmed_reason": "清除旧.automation/request.json触发旧路径事件；执行器因请求文件不存在退出2，Persist步骤跳过。",
+      "novel_written": false,
+      "new_request_submitted": false
+    }
+  },
+  "automation": {
+    "new_automation_created": false,
+    "automation_id": null,
+    "old_binding_copied": false,
+    "previous_external_automation_status": "未查询或修改；不能把删除仓库配置等同于平台定时任务已取消。",
+    "preflight_status": "没有新任务，未提交定时预检请求",
+    "daily_writing_status": "未实测"
+  },
+  "runtime_metadata": {
+    "model": "unverified",
+    "reasoning_effort": "unverified"
+  },
+  "scope_of_writes": [
+    "1464356758/XS1"
+  ],
+  "reference_library_modified": false,
+  "management_list_modified": false,
+  "next_legal_gate": "WAITING_TOPIC：作者选编号后规划；首章前补齐两部同类独立开篇各万字教材并获得开始写授权。"
+}

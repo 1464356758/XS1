@@ -1,0 +1,516 @@
+{
+  "format": "novel-reference-packet-v1",
+  "library_id": "300553a5-d4fb-4f1c-b1d1-154daf74c92e",
+  "library_revision": 581,
+  "origin": {
+    "repository_url": "https://github.com/1464356758/XS-KU",
+    "commit": "f3b66ec5305aa28c75998c4fd1f58227358404a4"
+  },
+  "question": "候选选题研究：比较愿望、主动选择、可见结果与代价；仅为已读局部教材，不作为首章两部一万字开篇验收",
+  "lessons": [
+    {
+      "kind": "study",
+      "id": "3b59a0797be03dee563075ff",
+      "sha256": "3b59a0797be03dee563075ff23f6147e59bbf0016ae3c2388e9ae08914031bc1",
+      "lesson": "让一个有价值的身份附带眼下必须兑现的能力要求，再用当前场景中的物件把风险和可用资源同时带出来。",
+      "applicability": "角色受到某种资格、名声或职责的期待，而且读者已经看见兑现它的困难。",
+      "failure_conditions": "身份危机若只靠反复自言自语维持会停滞；新能力若立刻抹去所有困难，身份压力也会失去作用。",
+      "feedback_origin": "model",
+      "book_id": "17c865d808e029c53130bc95",
+      "source_sha256": "2f8f723e68957706becc9a57d9d6eb06feeec658e135086c16f47d150ed745ab",
+      "source_origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【1955：冒牌留子从装备栏开始-麻布崽】-第109章 庆功宴，叫副厂长（二更）",
+        "blob_sha": "17c865d808e029c53130bc9582ef106c0bef14aa",
+        "size_bytes": 808547
+      },
+      "evidence_sources": [
+        {
+          "chapter": 1,
+          "start_line": 112,
+          "end_line": 112,
+          "sha256": "bbdf7c61b5bdec67998c923768e15f54eebe1db807585a675b0927440a131df2",
+          "quote_sha256": "77168f23a9ed0ab7692cd24c80bd583f497a315144a0fe44352ef5486d09ba9f"
+        },
+        {
+          "chapter": 2,
+          "start_line": 190,
+          "end_line": 190,
+          "sha256": "0e25d963e07030c26f6a2d88057acd13bdf2645cd34b39fdaf569a43af5ea464",
+          "quote_sha256": "a352f54a66325b4c5abe6d4cb05e7ef9caf9fe48a313b598dd6f70f9628b8ebd"
+        }
+      ],
+      "source_scope": {
+        "from_unit": 1,
+        "to_unit": 2,
+        "han_count": 7325,
+        "level": "arc",
+        "family_id": "298f7c8a87bb2055e85bc61d",
+        "reading_basis": "reviewer_declared"
+      }
+    },
+    {
+      "kind": "study",
+      "id": "752f2623b936c2e4e7e3d26a",
+      "sha256": "752f2623b936c2e4e7e3d26a902fa29bc8022c828414dde1c72fa2856f3d6098",
+      "lesson": "把能力反馈放进一次具体行动，令行动同时改变人物关系，并把新资源的限制在本轮兑现后交代清楚。",
+      "applicability": "成长型主角确实需要训练、他人帮助或新资源，资源有明确的使用边界。",
+      "failure_conditions": "不断新增加成却没有实际难题会空转；限制临到失败才临时补出会破坏可信度。",
+      "feedback_origin": "model",
+      "book_id": "17c865d808e029c53130bc95",
+      "source_sha256": "2f8f723e68957706becc9a57d9d6eb06feeec658e135086c16f47d150ed745ab",
+      "source_origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【1955：冒牌留子从装备栏开始-麻布崽】-第109章 庆功宴，叫副厂长（二更）",
+        "blob_sha": "17c865d808e029c53130bc9582ef106c0bef14aa",
+        "size_bytes": 808547
+      },
+      "evidence_sources": [
+        {
+          "chapter": 2,
+          "start_line": 266,
+          "end_line": 266,
+          "sha256": "0e25d963e07030c26f6a2d88057acd13bdf2645cd34b39fdaf569a43af5ea464",
+          "quote_sha256": "db23b427e9fa64881bdc6319f91ac860241a7b685a0e996a959337dfbd43d686"
+        },
+        {
+          "chapter": 2,
+          "start_line": 286,
+          "end_line": 286,
+          "sha256": "0e25d963e07030c26f6a2d88057acd13bdf2645cd34b39fdaf569a43af5ea464",
+          "quote_sha256": "683ca99b5740d427ecea567c908a5e5e29dedcc6f2f31938312ee9243c08495f"
+        }
+      ],
+      "source_scope": {
+        "from_unit": 1,
+        "to_unit": 2,
+        "han_count": 7325,
+        "level": "arc",
+        "family_id": "298f7c8a87bb2055e85bc61d",
+        "reading_basis": "reviewer_declared"
+      }
+    },
+    {
+      "kind": "study",
+      "id": "d63498080a52916e7aef5223",
+      "sha256": "d63498080a52916e7aef52230403d2167aaa97ba3fd519787de2620017406033",
+      "lesson": "给同一件日常事安排不同诉求，让人物通过接话、误会和转移话题争取自己的愿望，最后由主角的决定改变当天安排。",
+      "applicability": "亲友或同事关系已足够清楚，日常事件能够承接本书当前目标。",
+      "failure_conditions": "每个人只负责说笑却没有真实所求会变成段子堆积；同一种打闹连续重复会削弱人物差异。",
+      "feedback_origin": "model",
+      "book_id": "2da9b981774956ba6c42b5fd",
+      "source_sha256": "bd94e722f24aa780eae45465a8bfc9a71ab845efacfe427852136f5b2accaad7",
+      "source_origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【卖个早点，怎么上班族全迟到了-练腿摸鱼仔】-第282章 财迷的夏沐宸.txt",
+        "blob_sha": "2da9b981774956ba6c42b5fd414a027c1ada3434",
+        "size_bytes": 2000227
+      },
+      "evidence_sources": [
+        {
+          "chapter": 1,
+          "start_line": 16,
+          "end_line": 16,
+          "sha256": "2d0992e3478423a4a0cba149ccfe30d1d08db8ba8333def5f53cf5f7073f634a",
+          "quote_sha256": "1c69b571c45d0175737769e31bff8f2fc458c2898d219a9ae1dfe9bd8610df75"
+        },
+        {
+          "chapter": 1,
+          "start_line": 88,
+          "end_line": 88,
+          "sha256": "2d0992e3478423a4a0cba149ccfe30d1d08db8ba8333def5f53cf5f7073f634a",
+          "quote_sha256": "c5c8e1891d3c8c00346c2d4327cf064d9fd1944bba0a27db9969bfaf9bd5451e"
+        }
+      ],
+      "source_scope": {
+        "from_unit": 1,
+        "to_unit": 2,
+        "han_count": 4250,
+        "level": "arc",
+        "family_id": "c845370d0adc06acb6b8a0a1",
+        "reading_basis": "reviewer_declared"
+      }
+    },
+    {
+      "kind": "study",
+      "id": "747ea2eaefa9074b8b3942e4",
+      "sha256": "747ea2eaefa9074b8b3942e4eee6d343b1999c0989fe099d645e6cd153109330",
+      "lesson": "围绕一件要做成的事，给出可观察的缺点、一次有针对性的调整和新反馈，让提升来自行动。",
+      "applicability": "题材卖点包含技能、经营或实际制作，细节会影响人物的下一步选择。",
+      "failure_conditions": "逐步流程若不改变目标、判断或情绪，会形成教程式拖延；多次重试需要有不同发现，并最终交付有分量的结果。",
+      "feedback_origin": "model",
+      "book_id": "2da9b981774956ba6c42b5fd",
+      "source_sha256": "bd94e722f24aa780eae45465a8bfc9a71ab845efacfe427852136f5b2accaad7",
+      "source_origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【卖个早点，怎么上班族全迟到了-练腿摸鱼仔】-第282章 财迷的夏沐宸.txt",
+        "blob_sha": "2da9b981774956ba6c42b5fd414a027c1ada3434",
+        "size_bytes": 2000227
+      },
+      "evidence_sources": [
+        {
+          "chapter": 2,
+          "start_line": 129,
+          "end_line": 129,
+          "sha256": "3208c05f474cea215bad1297c0b09fbf940c641d65bf73c85a307d7aee710fd5",
+          "quote_sha256": "e48069c4d790ee54a6d93142d8533ea3685bf6631095c62d841263b1a1b85035"
+        },
+        {
+          "chapter": 2,
+          "start_line": 159,
+          "end_line": 159,
+          "sha256": "3208c05f474cea215bad1297c0b09fbf940c641d65bf73c85a307d7aee710fd5",
+          "quote_sha256": "10f1d545a37e36cdd60419b58430907f02a27151208e7b2f63b0850709cf93e9"
+        }
+      ],
+      "source_scope": {
+        "from_unit": 1,
+        "to_unit": 2,
+        "han_count": 4250,
+        "level": "arc",
+        "family_id": "c845370d0adc06acb6b8a0a1",
+        "reading_basis": "reviewer_declared"
+      }
+    },
+    {
+      "kind": "study",
+      "id": "3e96ac26c8e885791041fe4e",
+      "sha256": "3e96ac26c8e885791041fe4eddc3f6f41831c19e52b20d38d149892726a94e89",
+      "lesson": "先让主角有一个看起来合理的选择，再让另一条路径触及她更在意的具体愿望，促使她主动承担已知风险。",
+      "applicability": "主角的愿望已用具体人或事件建立，两个选项的好处与缺点能被读者理解。",
+      "failure_conditions": "另一条路若明显毫无代价，选择就会失去分量；开篇规则表过长也可能压住行动，需要按本书实际情境取舍。",
+      "feedback_origin": "model",
+      "book_id": "02595a3dcb10868d542a266c",
+      "source_sha256": "ca4d297cdba6fca599928ef983cf7ed0204c3ab60cee8e2b3d2c3682d6314b01",
+      "source_origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【公路求生：我靠板车苟成神-芝士榴莲啵啵】-第164章 垃圾也能拿出来当情报？.txt",
+        "blob_sha": "02595a3dcb10868d542a266c4762d844aec59cb5",
+        "size_bytes": 809214
+      },
+      "evidence_sources": [
+        {
+          "chapter": 1,
+          "start_line": 71,
+          "end_line": 71,
+          "sha256": "d7f9f0c2602e79374a161c6d7b9df20380b04ce837c1e660fd63853f123059d0",
+          "quote_sha256": "8a4e243dc610e34b5ca5f85568ba3f1dad54a5293dc5c0615574bbbaf068beee"
+        },
+        {
+          "chapter": 2,
+          "start_line": 83,
+          "end_line": 83,
+          "sha256": "75d97cdfa45dfad23457a021a8d892bf291681f6d029c303c0528fbdbe29d3e6",
+          "quote_sha256": "167262d48c33968cd303c551afceae3a286f149adcde34bf4995d884a8a5bde8"
+        }
+      ],
+      "source_scope": {
+        "from_unit": 1,
+        "to_unit": 2,
+        "han_count": 3514,
+        "level": "arc",
+        "family_id": "83e1cc1a73d0bab1b41b6869",
+        "reading_basis": "reviewer_declared"
+      }
+    },
+    {
+      "kind": "study",
+      "id": "f534e026157ce8de4a40c1d7",
+      "sha256": "f534e026157ce8de4a40c1d7a20fbaca21b71eaeb6640d8ee9815b6adba5e6a3",
+      "lesson": "把一次进展放进其他人能察觉的环境，写清谁因此获利或受威胁，再让主角处理这些反应时付出一个具体代价。",
+      "applicability": "信息有明确传播渠道，不同人物依据各自掌握的消息作出合理行动。",
+      "failure_conditions": "对手若凭空知道秘密会断因果；误会如果长期靠拒绝沟通维持，可能只剩机械拖延。",
+      "feedback_origin": "model",
+      "book_id": "02595a3dcb10868d542a266c",
+      "source_sha256": "ca4d297cdba6fca599928ef983cf7ed0204c3ab60cee8e2b3d2c3682d6314b01",
+      "source_origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【公路求生：我靠板车苟成神-芝士榴莲啵啵】-第164章 垃圾也能拿出来当情报？.txt",
+        "blob_sha": "02595a3dcb10868d542a266c4762d844aec59cb5",
+        "size_bytes": 809214
+      },
+      "evidence_sources": [
+        {
+          "chapter": 2,
+          "start_line": 157,
+          "end_line": 157,
+          "sha256": "75d97cdfa45dfad23457a021a8d892bf291681f6d029c303c0528fbdbe29d3e6",
+          "quote_sha256": "5b624cc858a8ec783c44250a9503e6fec25f7d69b4733539d129bf66d7c86d20"
+        },
+        {
+          "chapter": 2,
+          "start_line": 140,
+          "end_line": 140,
+          "sha256": "75d97cdfa45dfad23457a021a8d892bf291681f6d029c303c0528fbdbe29d3e6",
+          "quote_sha256": "0399b356f09e5ce57beac1f04a6a8753f63ffd011145c642740644df025f9c97"
+        }
+      ],
+      "source_scope": {
+        "from_unit": 1,
+        "to_unit": 2,
+        "han_count": 3514,
+        "level": "arc",
+        "family_id": "83e1cc1a73d0bab1b41b6869",
+        "reading_basis": "reviewer_declared"
+      }
+    },
+    {
+      "kind": "study",
+      "id": "f4ae7753db77eaf7cebf71d5",
+      "sha256": "f4ae7753db77eaf7cebf71d5730cc759dfec2f8696969fb5f3f752dbfaa0dade",
+      "lesson": "选择一个与人物愿望直接相关的物件或安排，借对方怎样对待它显露关系，让情绪跟着具体行为变化。",
+      "applicability": "读者先理解人物希望得到的那一点关心，物件能在场景内自然出现。",
+      "failure_conditions": "只用旁白宣布某人不爱主角会削弱现场感；连续同质冷遇需要推动决定，避免仅重复刺激情绪。",
+      "feedback_origin": "model",
+      "book_id": "cd50e5b371b89bfd6de79dc6",
+      "source_sha256": "2c4ccc332351c47d07219926abb7ba9a0423a2caf8a52a53a9c751bf6d4d42a2",
+      "source_origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【封总，太太想跟你离婚很久了-云中觅】-第一卷 第616章 无法企及.txt",
+        "blob_sha": "cd50e5b371b89bfd6de79dc60afa3c52d187be54",
+        "size_bytes": 2924187
+      },
+      "evidence_sources": [
+        {
+          "chapter": 1,
+          "start_line": 19,
+          "end_line": 19,
+          "sha256": "4acd5c27cadd045f19ae191eb791689a28f754a28a667f1251d5838c9a534f82",
+          "quote_sha256": "09d7aee0e7103f6bcb730474ec696de667334d225c0fbd2cce4075efca430bb4"
+        },
+        {
+          "chapter": 1,
+          "start_line": 23,
+          "end_line": 23,
+          "sha256": "4acd5c27cadd045f19ae191eb791689a28f754a28a667f1251d5838c9a534f82",
+          "quote_sha256": "38223a5ad00c35976475ec82226c2d690469e5ebed3efc4ca118fbc8039c2e09"
+        }
+      ],
+      "source_scope": {
+        "from_unit": 1,
+        "to_unit": 1,
+        "han_count": 1972,
+        "level": "scene",
+        "family_id": "7384786dbe85b30e6a846159",
+        "reading_basis": "reviewer_declared"
+      }
+    },
+    {
+      "kind": "study",
+      "id": "974c8a19f1a88f9e9ff4b2f8",
+      "sha256": "974c8a19f1a88f9e9ff4b2f8e945403678b3b1a357f40fc72bf067a6b09ded51",
+      "lesson": "让人物原本能接受的解释在一场具体见证中站不住脚，再把情绪转成当场能做、会改变关系的决定。",
+      "applicability": "这一决定与人物此前的忍让、期待及新看到的证据有明确因果。",
+      "failure_conditions": "若只在章末宣告想改变而没有行动，下一章仍可能回到原地；人物突然转向需要正文中的积累。",
+      "feedback_origin": "model",
+      "book_id": "cd50e5b371b89bfd6de79dc6",
+      "source_sha256": "2c4ccc332351c47d07219926abb7ba9a0423a2caf8a52a53a9c751bf6d4d42a2",
+      "source_origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【封总，太太想跟你离婚很久了-云中觅】-第一卷 第616章 无法企及.txt",
+        "blob_sha": "cd50e5b371b89bfd6de79dc60afa3c52d187be54",
+        "size_bytes": 2924187
+      },
+      "evidence_sources": [
+        {
+          "chapter": 1,
+          "start_line": 93,
+          "end_line": 93,
+          "sha256": "4acd5c27cadd045f19ae191eb791689a28f754a28a667f1251d5838c9a534f82",
+          "quote_sha256": "06d85b1648ee9649dc4b9b7315f8b82293a960c885ab0a809dfaf2681b8ea865"
+        },
+        {
+          "chapter": 1,
+          "start_line": 105,
+          "end_line": 105,
+          "sha256": "4acd5c27cadd045f19ae191eb791689a28f754a28a667f1251d5838c9a534f82",
+          "quote_sha256": "c3538e389d7a9fcd56d937a362fb05ebb9bcbad3497847bc1ea1f2a82a1c22de"
+        }
+      ],
+      "source_scope": {
+        "from_unit": 1,
+        "to_unit": 1,
+        "han_count": 1972,
+        "level": "scene",
+        "family_id": "7384786dbe85b30e6a846159",
+        "reading_basis": "reviewer_declared"
+      }
+    },
+    {
+      "kind": "study",
+      "id": "b734383387139ae948fbdec7",
+      "sha256": "b734383387139ae948fbdec7781855b3405db800f37320a12eb234c23b5171e4",
+      "lesson": "先给一组容易识别的日常细节，再让它们以相同顺序重现，促使主角改变一项行动并观察后果。",
+      "applicability": "悬疑或幻想开篇需要让异常逐步成为人物可使用的信息。",
+      "failure_conditions": "重复段落若只复述已经知道的事会拖沓；每次重现应增加验证、选择或新的风险。",
+      "feedback_origin": "model",
+      "book_id": "9be25336cbefba34244926ba",
+      "source_sha256": "5aad08d8ffd42be3d3f7df19e9594831004f9caac81184c1b2dce62386c394ad",
+      "source_origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【死亡回档，48小时拯救世界-稻香锅巴】-第376章 反向观察.txt",
+        "blob_sha": "9be25336cbefba34244926ba4e656282fa9ef569",
+        "size_bytes": 3131718
+      },
+      "evidence_sources": [
+        {
+          "chapter": 1,
+          "start_line": 53,
+          "end_line": 53,
+          "sha256": "f633173ead951f657ae20da292fc3fc710faa781c06a1815360a6f59e59717b4",
+          "quote_sha256": "2c55c2a92a5363e210be603fbfc8cf4f04c72ec7036450337ee040a0d2570222"
+        },
+        {
+          "chapter": 1,
+          "start_line": 61,
+          "end_line": 61,
+          "sha256": "f633173ead951f657ae20da292fc3fc710faa781c06a1815360a6f59e59717b4",
+          "quote_sha256": "bcdc89e1ed31b57894b1f23cb3dabbacc498adb986e0cc4c430e226466af0ce2"
+        }
+      ],
+      "source_scope": {
+        "from_unit": 1,
+        "to_unit": 1,
+        "han_count": 2229,
+        "level": "scene",
+        "family_id": "e667c1288aec5f5b9cb33bb7",
+        "reading_basis": "reviewer_declared"
+      }
+    },
+    {
+      "kind": "study",
+      "id": "f280f73c755e403ca36e1c58",
+      "sha256": "f280f73c755e403ca36e1c585909fd816d1969eb905b738708acd729087beade",
+      "lesson": "在主角使用独特优势时同时留下他人能看见的证据，再让他人基于有限信息作出另一种解释。",
+      "applicability": "能力使用存在观察者或记录，误解与对方实际掌握的信息相符。",
+      "failure_conditions": "凭空给主角安罪名会损伤可信度；专业程序与事实须在新书创作时独立核对，不能把样书当专业依据。",
+      "feedback_origin": "model",
+      "book_id": "9be25336cbefba34244926ba",
+      "source_sha256": "5aad08d8ffd42be3d3f7df19e9594831004f9caac81184c1b2dce62386c394ad",
+      "source_origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【死亡回档，48小时拯救世界-稻香锅巴】-第376章 反向观察.txt",
+        "blob_sha": "9be25336cbefba34244926ba4e656282fa9ef569",
+        "size_bytes": 3131718
+      },
+      "evidence_sources": [
+        {
+          "chapter": 1,
+          "start_line": 125,
+          "end_line": 125,
+          "sha256": "f633173ead951f657ae20da292fc3fc710faa781c06a1815360a6f59e59717b4",
+          "quote_sha256": "15790917a6e3c0e7cc8c89005a7b4284121c0e76cc2285eb0febfd59a7d0ce68"
+        },
+        {
+          "chapter": 1,
+          "start_line": 136,
+          "end_line": 136,
+          "sha256": "f633173ead951f657ae20da292fc3fc710faa781c06a1815360a6f59e59717b4",
+          "quote_sha256": "064c451c014728c06497fd1f45e9ca386e1a32f8d649aa8465a3748e69d4ce6f"
+        }
+      ],
+      "source_scope": {
+        "from_unit": 1,
+        "to_unit": 1,
+        "han_count": 2229,
+        "level": "scene",
+        "family_id": "e667c1288aec5f5b9cb33bb7",
+        "reading_basis": "reviewer_declared"
+      }
+    },
+    {
+      "kind": "study",
+      "id": "9e94ce8b42b4c630c965fb30",
+      "sha256": "9e94ce8b42b4c630c965fb30fa7d7bccb6cc840b34070b89311bad093e12a738",
+      "lesson": "把主角最怕失去的生活条件写成具体资源，再明确另一方得到这项资源的好处，使双方行动具有持续理由。",
+      "applicability": "市井、经商或家庭题材需要一个可见的生存目标，并有不同人争取同一资源。",
+      "failure_conditions": "本单元前段有较长背景，迁移时应结合目标平台调整切入点；人物的怀疑须与已证实事实分别保留。",
+      "feedback_origin": "model",
+      "book_id": "db4a4bbdfaa8327b83c90146",
+      "source_sha256": "405e19e84955b7a42230688d263fff69d44edad9f97733de7b993af6677118a9",
+      "source_origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【村里有只白骨精-清歌一片】-78 78 (1).txt",
+        "blob_sha": "db4a4bbdfaa8327b83c9014671c1069b65a85283",
+        "size_bytes": 1003827
+      },
+      "evidence_sources": [
+        {
+          "chapter": 1,
+          "start_line": 25,
+          "end_line": 25,
+          "sha256": "0ee117759bf72e29d18cd8afc28dfa78e1f10eadd55c891b78cd6e6793c85a21",
+          "quote_sha256": "903286131e908088530b2dde8f76eb07ea6bb8cf88bc6e0fb1a6f87225797920"
+        },
+        {
+          "chapter": 1,
+          "start_line": 23,
+          "end_line": 23,
+          "sha256": "0ee117759bf72e29d18cd8afc28dfa78e1f10eadd55c891b78cd6e6793c85a21",
+          "quote_sha256": "e7ce1764a92c50fb50947e7c1d39107ec650406d30756419abc75802fef65af2"
+        }
+      ],
+      "source_scope": {
+        "from_unit": 1,
+        "to_unit": 1,
+        "han_count": 3630,
+        "level": "scene",
+        "family_id": "726de9436154f28751a191a0",
+        "reading_basis": "reviewer_declared"
+      }
+    },
+    {
+      "kind": "study",
+      "id": "21341b1a64c21b336f313460",
+      "sha256": "21341b1a64c21b336f313460068cf43f9294f167eebca4089818f21349c8ed8a",
+      "lesson": "先给一个人物此刻在意的小目标，再选择会阻碍或帮助行动的感官细节，让意外改变当前处境。",
+      "applicability": "日常场景需要生活质感，并且小目标能连接人物的处境或关系。",
+      "failure_conditions": "小意外连续出现却不接回主要追求，会使情节琐碎；细节应服从视角人物此刻关注的东西。",
+      "feedback_origin": "model",
+      "book_id": "db4a4bbdfaa8327b83c90146",
+      "source_sha256": "405e19e84955b7a42230688d263fff69d44edad9f97733de7b993af6677118a9",
+      "source_origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【村里有只白骨精-清歌一片】-78 78 (1).txt",
+        "blob_sha": "db4a4bbdfaa8327b83c9014671c1069b65a85283",
+        "size_bytes": 1003827
+      },
+      "evidence_sources": [
+        {
+          "chapter": 1,
+          "start_line": 27,
+          "end_line": 27,
+          "sha256": "0ee117759bf72e29d18cd8afc28dfa78e1f10eadd55c891b78cd6e6793c85a21",
+          "quote_sha256": "e4e92232d8f6605a6314efba009168f25aca68a7415c4eb6369c12a8cb0d69cd"
+        },
+        {
+          "chapter": 1,
+          "start_line": 28,
+          "end_line": 28,
+          "sha256": "0ee117759bf72e29d18cd8afc28dfa78e1f10eadd55c891b78cd6e6793c85a21",
+          "quote_sha256": "25fb812be08307469cde9588bc4d9285d0a0c7e630eac025176140a427277880"
+        }
+      ],
+      "source_scope": {
+        "from_unit": 1,
+        "to_unit": 1,
+        "han_count": 3630,
+        "level": "scene",
+        "family_id": "726de9436154f28751a191a0",
+        "reading_basis": "reviewer_declared"
+      }
+    }
+  ]
+}

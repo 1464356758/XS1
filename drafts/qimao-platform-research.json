@@ -1,0 +1,446 @@
+{
+  "platform": "qimao",
+  "checked_at": "2026-11-11T02:51:48+08:00",
+  "coverage_status": "partial",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "七猫作家帮助中心",
+      "url": "https://zuozhe.qimao.com/front/help-center",
+      "accessed_at": "2026-11-11T02:51:48+08:00",
+      "access_status": "search_index_only",
+      "note": "搜索可见官方帮助内容，直接打开返回浏览器不兼容；不把搜索抓取日期当作规则生效日期。"
+    },
+    {
+      "id": "S02",
+      "title": "当前公开页面：七猫中文网2025年作家签约政策",
+      "url": "https://m.qimao.com/welfare-police",
+      "accessed_at": "2026-11-11T02:51:48+08:00",
+      "access_status": "live_page_read",
+      "published_at": "页面标题为2025，具体发布日期及是否有后续替代版未确认"
+    },
+    {
+      "id": "S03",
+      "title": "原创作品登载规则和服务约定",
+      "url": "https://zhushou.qimao.com/writer-rules/68466f6ae4a81e7ec312f8cd/",
+      "accessed_at": "2026-11-11T02:51:48+08:00",
+      "access_status": "live_page_read"
+    },
+    {
+      "id": "S04",
+      "title": "男生新书日榜",
+      "url": "https://www.qimao.com/paihang/boy/new/date/",
+      "accessed_at": "2026-11-11T02:44:01+08:00",
+      "visible_rule": "基于昨日书籍热度排行",
+      "visible_entries": 20
+    },
+    {
+      "id": "S05",
+      "title": "女生新书日榜",
+      "url": "https://www.qimao.com/paihang/girl/new/date/",
+      "accessed_at": "2026-11-11T02:44:06+08:00",
+      "visible_rule": "基于昨日书籍热度排行",
+      "visible_entries": 20
+    },
+    {
+      "id": "S06",
+      "title": "女生大热日榜",
+      "url": "https://www.qimao.com/paihang/girl/hot/date/",
+      "accessed_at": "2026-11-11T02:44:13+08:00",
+      "visible_rule": "基于昨日书籍热度排行",
+      "visible_entries": 20
+    },
+    {
+      "id": "S07",
+      "title": "男生收藏榜",
+      "url": "https://www.qimao.com/paihang/boy/collect/date/",
+      "accessed_at": "2026-11-11T02:44:18+08:00",
+      "visible_rule": "基于书籍收藏总数排行",
+      "visible_entries": 20
+    },
+    {
+      "id": "S08",
+      "title": "七猫编辑联系方式及公开收稿方向",
+      "url": "https://zuozhe.qimao.com/front/contact-editor",
+      "accessed_at": "2026-11-11T02:51:48+08:00",
+      "access_status": "search_index_only",
+      "note": "仅用公开收稿类别辅助判断；未向编辑发送消息。"
+    },
+    {
+      "id": "S09",
+      "title": "微短剧剧本征集活动参赛规则",
+      "url": "https://zuozhe.qimao.com/front/custom-activity/15",
+      "accessed_at": "2026-11-11T02:51:48+08:00",
+      "access_status": "search_index_only",
+      "note": "其中禁止AI的表述明确针对该活动，不扩张为所有长篇小说规则。"
+    },
+    {
+      "id": "S10",
+      "title": "2025公开政策图：保底全勤",
+      "url": "https://cdn-front.qimao.com/qimao/m/img/fuli/2025/guaranteed-attendance-award.49ba381.jpeg",
+      "accessed_at": "2026-11-11T02:51:48+08:00",
+      "access_status": "image_read"
+    },
+    {
+      "id": "S11",
+      "title": "2025公开政策图：纯分成阶梯全勤",
+      "url": "https://cdn-front.qimao.com/qimao/m/img/fuli/2025/pure-division.9316300.jpeg",
+      "accessed_at": "2026-11-11T02:51:48+08:00",
+      "access_status": "image_read"
+    },
+    {
+      "id": "S12",
+      "title": "2025公开政策图：超级纯分成全勤",
+      "url": "https://cdn-front.qimao.com/qimao/m/img/fuli/2025/super-pure-division.f5088fd.jpeg",
+      "accessed_at": "2026-11-11T02:51:48+08:00",
+      "access_status": "image_read"
+    }
+  ],
+  "rules": [
+    {
+      "topic": "账号与作品创建",
+      "status": "verified",
+      "source_id": "S03",
+      "conclusion": "作者注册采用实名；作品上传须遵守平台登载规则。当前只准备文件，不代注册或投稿。"
+    },
+    {
+      "topic": "网站直发签约申请",
+      "status": "verified",
+      "source_id": "S02",
+      "related_source_ids": [
+        "S01"
+      ],
+      "conclusion": "公开政策要求开篇2万字及大纲、投稿表；帮助中心搜索内容亦列七猫直发2万字后申请。"
+    },
+    {
+      "topic": "邮箱内投材料差异",
+      "status": "unknown",
+      "source_id": "S01",
+      "related_source_ids": [
+        "S02"
+      ],
+      "conclusion": "帮助中心搜索内容列开篇1万字和完整大纲；公开政策页列2万字。尚未确定渠道，投递前核对当时后台或所选编辑要求，不把两种口径拼成统一规定。"
+    },
+    {
+      "topic": "签约与收益模式",
+      "status": "verified",
+      "source_id": "S02",
+      "conclusion": "页面列保底及超保底分成、纯分成、超级纯分成；获得哪种合同与稿费以实际评估、签约为准。"
+    },
+    {
+      "topic": "全勤福利与6000字章长",
+      "status": "verified",
+      "source_id": "S02",
+      "related_source_ids": [
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "conclusion": "全勤另看合同、有效更新及数据条件；同月多书不叠领。每天6000字不等于必得福利。"
+    },
+    {
+      "topic": "2026福利是否另有替代政策",
+      "status": "unknown",
+      "source_id": "S02",
+      "conclusion": "本轮可读公开页仍以2025命名，未确认存在覆盖它的2026细则；不据旧页测算本书收入。"
+    },
+    {
+      "topic": "原创与权利",
+      "status": "verified",
+      "source_id": "S03",
+      "conclusion": "登载规则要求自主独立创作并具备所需权利，禁止抄袭及侵权。参考库只学习叙事办法，不移植连续情节。"
+    },
+    {
+      "topic": "长篇小说AI辅助与AI正文边界",
+      "status": "unknown",
+      "source_id": "S03",
+      "related_source_ids": [
+        "S09"
+      ],
+      "conclusion": "未核到本轮适用于普通长篇投稿的清晰AI使用边界或比例；原创义务不等于平台承诺接收AI正文。已见某剧本活动禁AI，不能外推为全站长篇规则。投稿前再核实，保持使用情况真实。"
+    },
+    {
+      "topic": "章长与150章规划",
+      "status": "unknown",
+      "source_id": null,
+      "conclusion": "6000汉字/章、5500—6500区间、150章约90万字是本书配置；没有把这些数值标成七猫统一签约规定。"
+    }
+  ],
+  "rank_samples": [
+    {
+      "title": "野性攀登",
+      "author": "老虎本尊",
+      "category": "都市 / 商战职场",
+      "list_name": "男生新书日榜",
+      "rank": 2,
+      "observed_at": "2026-11-11T02:44:01+08:00",
+      "book_url": "https://www.qimao.com/shuku/13408218/",
+      "source_id": "S04",
+      "visible_metric": {
+        "heat": "7.1万",
+        "length": "49.25万字"
+      },
+      "reading_scope": "已读榜单简介，未读该站正文；开篇节奏待核",
+      "mechanism_analysis": "简介以低位职员的处境、被误认的身份和关系变化组织逆袭期待；职业真实性与具体开篇未核。",
+      "analysis_source": "model_analysis_of_public_description",
+      "sample_role": "current_new_book_comparison"
+    },
+    {
+      "title": "大道仙炉",
+      "author": "林冰炎",
+      "category": "武侠仙侠 / 古典仙侠",
+      "list_name": "男生新书日榜",
+      "rank": 6,
+      "observed_at": "2026-11-11T02:44:01+08:00",
+      "book_url": "https://www.qimao.com/shuku/13309743/",
+      "source_id": "S04",
+      "visible_metric": {
+        "heat": "4.8万",
+        "length": "34.02万字"
+      },
+      "reading_scope": "已读榜单简介，未读该站正文；开篇节奏待核",
+      "mechanism_analysis": "简介把底层身份、资源缺口与可反复兑现的能力放在一起；不能据简介断言首章兑现位置。",
+      "analysis_source": "model_analysis_of_public_description",
+      "sample_role": "current_new_book_comparison"
+    },
+    {
+      "title": "赶山79：大雪荒年，我提枪护三家！",
+      "author": "侃哥",
+      "category": "都市 / 乡村生活",
+      "list_name": "男生新书日榜",
+      "rank": 7,
+      "observed_at": "2026-11-11T02:44:01+08:00",
+      "book_url": "https://www.qimao.com/shuku/13362843/",
+      "source_id": "S04",
+      "visible_metric": {
+        "heat": "2.6万",
+        "length": "43.28万字"
+      },
+      "reading_scope": "已读榜单简介，未读该站正文；开篇节奏待核",
+      "mechanism_analysis": "简介将资源获得与要保护的人绑定；不能把乡村生活榜上的表现推断为所有年代题材都好签。",
+      "analysis_source": "model_analysis_of_public_description",
+      "sample_role": "current_new_book_comparison"
+    },
+    {
+      "title": "厌术神匠",
+      "author": "长耳朵的兔子",
+      "category": "奇闻异事 / 奇门秘术",
+      "list_name": "男生新书日榜",
+      "rank": 10,
+      "observed_at": "2026-11-11T02:44:01+08:00",
+      "book_url": "https://www.qimao.com/shuku/13342959/",
+      "source_id": "S04",
+      "visible_metric": {
+        "heat": "2.1万",
+        "length": "32.63万字"
+      },
+      "reading_scope": "已读榜单简介，未读该站正文；开篇节奏待核",
+      "mechanism_analysis": "简介用职业物件与旧事形成追问；这里只比较悬疑承诺，不沿用其人物、受害经历或奇术机制。",
+      "analysis_source": "model_analysis_of_public_description",
+      "sample_role": "current_new_book_comparison"
+    },
+    {
+      "title": "夫人反差太大，司总沦陷了！",
+      "author": "九九月",
+      "category": "现代言情 / 总裁豪门",
+      "list_name": "女生新书日榜",
+      "rank": 1,
+      "observed_at": "2026-11-11T02:44:06+08:00",
+      "book_url": "https://www.qimao.com/shuku/13030701/",
+      "source_id": "S05",
+      "visible_metric": {
+        "heat": "50.4万",
+        "length": "40.48万字"
+      },
+      "reading_scope": "已读榜单简介，未读该站正文；开篇节奏待核",
+      "mechanism_analysis": "简介把婚姻身份和人物内外反差作为关系动力；不复制读心、穿书或婚内事件组合。",
+      "analysis_source": "model_analysis_of_public_description",
+      "sample_role": "current_new_book_comparison"
+    },
+    {
+      "title": "谢总，夫人已改嫁，让你跪远点",
+      "author": "乐希",
+      "category": "现代言情 / 总裁豪门",
+      "list_name": "女生新书日榜",
+      "rank": 2,
+      "observed_at": "2026-11-11T02:44:06+08:00",
+      "book_url": "https://www.qimao.com/shuku/13156719/",
+      "source_id": "S05",
+      "visible_metric": {
+        "heat": "19.0万",
+        "length": "36.32万字"
+      },
+      "reading_scope": "已读榜单简介，未读该站正文；开篇节奏待核",
+      "mechanism_analysis": "简介明确旧关系退出与新关系竞争，情绪目标直观；不能由榜单替代本书情绪线试读。",
+      "analysis_source": "model_analysis_of_public_description",
+      "sample_role": "current_new_book_comparison"
+    },
+    {
+      "title": "流民医女：开荒把残夫养成战神",
+      "author": "姜不厌",
+      "category": "古代言情 / 种田经商",
+      "list_name": "女生新书日榜",
+      "rank": 11,
+      "observed_at": "2026-11-11T02:44:06+08:00",
+      "book_url": "https://www.qimao.com/shuku/13157514/",
+      "source_id": "S05",
+      "visible_metric": {
+        "heat": "3.5万",
+        "length": "39.97万字"
+      },
+      "reading_scope": "已读榜单简介，未读该站正文；开篇节奏待核",
+      "mechanism_analysis": "可见类别为种田经商，简介承诺职业能力与共同生存；新书不复用医疗、残夫和战神组合。",
+      "analysis_source": "model_analysis_of_public_description",
+      "sample_role": "current_new_book_comparison"
+    },
+    {
+      "title": "换嫁首长，美貌军医杀疯家属院",
+      "author": "素衣小小",
+      "category": "现代言情 / 年代重生",
+      "list_name": "女生新书日榜",
+      "rank": 17,
+      "observed_at": "2026-11-11T02:44:06+08:00",
+      "book_url": "https://www.qimao.com/shuku/13275039/",
+      "source_id": "S05",
+      "visible_metric": {
+        "heat": "2.3万",
+        "length": "48.01万字"
+      },
+      "reading_scope": "已读榜单简介，未读该站正文；开篇节奏待核",
+      "mechanism_analysis": "可见年代分类与婚姻身份冲突；新候选的维修职业和姐妹关系属于待验证的差异方向。",
+      "analysis_source": "model_analysis_of_public_description",
+      "sample_role": "current_new_book_comparison"
+    },
+    {
+      "title": "封总，太太想跟你离婚很久了",
+      "author": "云中觅",
+      "category": "现代言情 / 总裁豪门",
+      "list_name": "女生大热日榜",
+      "rank": 1,
+      "observed_at": "2026-11-11T02:44:13+08:00",
+      "book_url": "https://www.qimao.com/shuku/1879266/",
+      "source_id": "S06",
+      "visible_metric": {
+        "heat": "167.9万",
+        "length": "98.09万字"
+      },
+      "reading_scope": "已读榜单简介，未读该站正文；开篇节奏待核",
+      "mechanism_analysis": "婚恋关系的持续冷遇推动人物离开。另实读参考库旧快照首阅读单元，不能据此声称读过当前连载全文。",
+      "analysis_source": "model_analysis_of_public_description",
+      "sample_role": "long_selling_supplement",
+      "additional_reference_reading": "XS-KU旧原文版本的首网页阅读单元，详见reference-reading-log.json；非当前官网正文。"
+    },
+    {
+      "title": "朱门春闺",
+      "author": "琼玉",
+      "category": "古代言情 / 宫闱宅斗",
+      "list_name": "女生大热日榜",
+      "rank": 4,
+      "observed_at": "2026-11-11T02:44:13+08:00",
+      "book_url": "https://www.qimao.com/shuku/2085985/",
+      "source_id": "S06",
+      "visible_metric": {
+        "heat": "54.1万",
+        "length": "229.51万字"
+      },
+      "reading_scope": "已读榜单简介，未读该站正文；开篇节奏待核",
+      "mechanism_analysis": "简介以关系退出、新选择与身份压力维持长线情感；不能据此认定古代职业经营已获同等验证。",
+      "analysis_source": "model_analysis_of_public_description",
+      "sample_role": "long_selling_supplement"
+    },
+    {
+      "title": "民间诡闻实录",
+      "author": "罗樵森",
+      "category": "奇闻异事 / 奇门秘术",
+      "list_name": "男生收藏榜",
+      "rank": 2,
+      "observed_at": "2026-11-11T02:44:18+08:00",
+      "book_url": "https://www.qimao.com/shuku/197091/",
+      "source_id": "S07",
+      "visible_metric": {
+        "heat": null,
+        "length": "243.5万字"
+      },
+      "reading_scope": "已读榜单简介，未读该站正文；开篇节奏待核",
+      "mechanism_analysis": "收藏榜长销补充样本，职业身份连接连续故事；不是2026新书表现，也无公开可见收藏数量。",
+      "analysis_source": "model_analysis_of_public_description",
+      "sample_role": "classic_supplement"
+    },
+    {
+      "title": "最强学霸系统",
+      "author": "佛系和尚",
+      "category": "都市 / 热血校园",
+      "list_name": "男生收藏榜",
+      "rank": 3,
+      "observed_at": "2026-11-11T02:44:18+08:00",
+      "book_url": "https://www.qimao.com/shuku/152973/",
+      "source_id": "S07",
+      "visible_metric": {
+        "heat": null,
+        "length": "372.31万字"
+      },
+      "reading_scope": "已读榜单简介，未读该站正文；开篇节奏待核",
+      "mechanism_analysis": "收藏榜经典补充样本，成长结果直观；不作为本轮新书签约概率依据。",
+      "analysis_source": "model_analysis_of_public_description",
+      "sample_role": "classic_supplement"
+    }
+  ],
+  "ranking_methodology": {
+    "types": [
+      "新书日榜",
+      "大热日榜",
+      "收藏榜"
+    ],
+    "public_pages": 4,
+    "sample_count": 12,
+    "distinctions": "新书/大热日榜基于昨日书籍热度，收藏榜基于累计收藏；收藏数量未展示，不把榜位、热度换算为收入。男生新书页注明低于50万字且每天更新。",
+    "coverage": "12个可回查样本；8个新书样本为主体，2个大热与2个收藏样本作补充。所有网站样本仅读榜单简介，未宣称已精读其开篇。",
+    "limits": "不推测完读、均留、订阅、稿费或签约通过率；页面随时变化，数值只代表各条记录的观察时刻。"
+  },
+  "market_conclusions": [
+    {
+      "statement": "女频新书与大热样本可见直接的关系矛盾、身份反差及退出旧关系的承诺，适合把本书愿望放在现场选择里。",
+      "basis": [
+        "S05",
+        "S06"
+      ],
+      "kind": "model_inference",
+      "limit": "样本有选择偏差，不据此断言其他女频方向没市场。"
+    },
+    {
+      "statement": "男频新书样本的能力、资源需求及被保护的人较容易从简介识别；本轮候选把优势限制和首轮结果提前写明。",
+      "basis": [
+        "S04"
+      ],
+      "kind": "model_inference",
+      "limit": "对具体开篇写法仍需原文精读。"
+    },
+    {
+      "statement": "职业经营、姐妹创业、灵兽客栈和渡口求生是差异探索，不是已经由当前同子题材榜单验证的赢家。",
+      "basis": [
+        "S04",
+        "S05",
+        "S08"
+      ],
+      "kind": "model_inference",
+      "limit": "选定后补同子题材原文，试写验证。"
+    }
+  ],
+  "gaps": [
+    "普通长篇的AI辅助/生成正文规则未取得清晰现行官方说明。",
+    "帮助中心直读受浏览器兼容页限制，邮箱1万字与公开政策2万字仍待按实际投递渠道核对。",
+    "公开福利页标题仍为2025，未确认后续版本；金额不作收益预算。",
+    "网站样本只读榜单简介；参考库原文为独立来源旧快照，不能混作当前官网全文。",
+    "选题未定，两部同类开篇各至少一万汉字的arc/book教材门槛尚未完成；不得因此开始首章。",
+    "八个书名均为暂定，选定后做平台重名及更近子题材核查。"
+  ],
+  "reference_use": {
+    "library_commit": "f3b66ec5305aa28c75998c4fd1f58227358404a4",
+    "catalog_revision": 581,
+    "reading_log": "research/reference-reading-log.json",
+    "packet": "research/selection-reference-packet.json",
+    "scope": "6部9阅读单元，共22920汉字。只有局部实读，没有两部各一万字验收。",
+    "platform_verification": "封总的七猫公开作品身份可回查S06；其他参考书具体平台、签约送审版本仍待核。",
+    "selection_only": true
+  }
+}

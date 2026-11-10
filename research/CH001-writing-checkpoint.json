@@ -1,0 +1,11 @@
+{
+  "book_id": "d9169807-b382-402b-b7d0-8e9c84d46670",
+  "chapter": 1,
+  "run_id": "8ad46d6858b8478aa1afda5414010bbf",
+  "status": "complete_draft_registered_for_review",
+  "complete": true,
+  "local_path": "/workspace/scratch/d0cd899c1d09/CH001-v1.txt",
+  "partial_sha256": "3765665769fb1f121b31969dbda35ff2da9b29c8b616f974f6c457ff926b86f1",
+  "completed_scenes": "全章初稿完整；不代表已冻结或远端已保存",
+  "note": "完整初稿登记候选，后续改动均沿同一任务repair计数。"
+}

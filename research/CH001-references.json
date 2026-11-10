@@ -1,0 +1,152 @@
+{
+  "format": "novel-reference-packet-v1",
+  "library_id": "300553a5-d4fb-4f1c-b1d1-154daf74c92e",
+  "library_revision": 583,
+  "origin": {
+    "repository_url": "https://github.com/1464356758/XS-KU",
+    "commit": "f978c6d81eabe84267debcbd7499c89d4c9abc2c"
+  },
+  "question": "关系惯例 主动选择 职业 结果兑现",
+  "lessons": [
+    {
+      "kind": "study",
+      "id": "91e609a3e501531214478d3e",
+      "sha256": "91e609a3e501531214478d3e51452d102409614593ca2fe0a10f43ee9539929e",
+      "lesson": "先明确人物曾持续付出的具体劳动或亲近期待，让一次选择实际终止其中一项；随后让受影响的人依据旧认知作出反应，再用新的行动兑现自我追求。区分决定、他人邀请与已经交付的成果。",
+      "applicability": "适用于有明确旧关系惯例、人物能做出现实选择的婚恋与职业双线开篇；角色仍需有去处、技能范围与行动成本。对七猫的适配另结合官方榜单，不能凭本次阅读推出签约率。",
+      "failure_conditions": "连续被轻视却没有新选择或处境变化会重复；隐藏天才、巨额资金、旧伙伴无条件接纳不能直接拿来填本书资源缺口。本书不沿用生日—女儿礼物—餐厅见证—赴机场—回原公司这一串事件；前3000汉字要完成婚礼救场结果。",
+      "feedback_origin": "model",
+      "book_id": "cd50e5b371b89bfd6de79dc6",
+      "source_sha256": "2c4ccc332351c47d07219926abb7ba9a0423a2caf8a52a53a9c751bf6d4d42a2",
+      "source_origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【封总，太太想跟你离婚很久了-云中觅】-第一卷 第616章 无法企及.txt",
+        "blob_sha": "cd50e5b371b89bfd6de79dc60afa3c52d187be54",
+        "size_bytes": 2924187
+      },
+      "evidence_sources": [
+        {
+          "chapter": 1,
+          "start_line": 105,
+          "end_line": 105,
+          "sha256": "4acd5c27cadd045f19ae191eb791689a28f754a28a667f1251d5838c9a534f82",
+          "quote_sha256": "c2a9e1b1de9da5937a89f7bb31a85d1e152efc7248164026dcde60b883adf0b6"
+        },
+        {
+          "chapter": 2,
+          "start_line": 180,
+          "end_line": 180,
+          "sha256": "220e467836897ba86c3c2b4274bec519bfa9f0de1b7485ba153fee118d3feb76",
+          "quote_sha256": "b2a17b08c1e80d553201a3895163744f1fdad93ff686c544d8534e424b32a591"
+        },
+        {
+          "chapter": 3,
+          "start_line": 264,
+          "end_line": 264,
+          "sha256": "b42de65f55a18abd012374bd639dfbe72e10e0f732f8204584ba2326284e5e44",
+          "quote_sha256": "8d4c8501a93b216e1d63cef0afa0084e26766159d683ad1a56a968fdc36d038b"
+        },
+        {
+          "chapter": 4,
+          "start_line": 370,
+          "end_line": 370,
+          "sha256": "a470d3e6fa40f9e3d358c291aa2078a301bbedcf38ff724174c6855ef9b989ec",
+          "quote_sha256": "491e102633be4cdd7db78d4f807827f75030f6b6eba6e470d0b9d5143a85b697"
+        },
+        {
+          "chapter": 5,
+          "start_line": 421,
+          "end_line": 421,
+          "sha256": "cdf5d84cf9efe1e518f6cdfd092136d51c3f467427ed43ff41228ac768018f1d",
+          "quote_sha256": "fac533bbec89f554702195e75d6846ffa48602f7968a99210b8c33d5324b4cf0"
+        },
+        {
+          "chapter": 6,
+          "start_line": 504,
+          "end_line": 504,
+          "sha256": "f90f505670c29f74f1966a5d4a426b35a48238448d62cfa74809c3d9d0fa0349",
+          "quote_sha256": "bc065708a479ecdf45a3a72a72951d1dd762de1ee94c9deb0cccc8c3caecf2c5"
+        }
+      ],
+      "source_scope": {
+        "from_unit": 1,
+        "to_unit": 6,
+        "han_count": 11042,
+        "level": "arc",
+        "family_id": "7384786dbe85b30e6a846159",
+        "reading_basis": "reviewer_declared"
+      }
+    },
+    {
+      "kind": "study",
+      "id": "0f75ae5c9d1f962f8808ea9d",
+      "sha256": "0f75ae5c9d1f962f8808ea9d99af7cd6720fe16b8be310365dd295cd05465e24",
+      "lesson": "让职业行动产生关系后果，并给下一次应对准备具体资源、可信信息与失败可能；行动以后检查原本目标究竟完成了多少，保留未证实的原因。新信息须改变实际选择，而不是只增加一次受伤或猜疑。",
+      "applicability": "适用于现代婚恋与职业冲突并行的故事；需独立核实专业事实，确保角色掌握的信息有来源。此书官方可查纵横入口，只用于同类叙事对照，不当作本轮七猫市场榜单证据。",
+      "failure_conditions": "不能移植记者受伤、豪门庇护、失胎、俱乐部报复等人物与连续事件；不以强制亲密制造本书感情推进，不用重复羞辱替代交付。备用人手缺席的原因必须有独立来源或保留为推测。",
+      "feedback_origin": "model",
+      "book_id": "9b881d90fce415f5cdd83777",
+      "source_sha256": "e751db36ccf0cdc86fd3c96d889eab84a131ade38d41bef9a579854bec80276a",
+      "source_origin": {
+        "repository_url": "https://github.com/1464356758/XS-KU",
+        "commit": "90dbe70eec0ffd89b75bf98705bb402fbc6d6b54",
+        "path": "【席先生，你被太太踢出局了！-九醉】-第一卷 第215章 黄雀在后.txt",
+        "blob_sha": "9b881d90fce415f5cdd83777a66e51178ccc7bfc",
+        "size_bytes": 1169606
+      },
+      "evidence_sources": [
+        {
+          "chapter": 1,
+          "start_line": 45,
+          "end_line": 45,
+          "sha256": "247346e72cb40a70758f799fc01adb67bbe217e4c83116c9787246d7ee87825e",
+          "quote_sha256": "f6eb7b785ed8773b909d58640236b57e3fdd6000e9ca1197aec9108dd9960654"
+        },
+        {
+          "chapter": 2,
+          "start_line": 145,
+          "end_line": 145,
+          "sha256": "1f4ab5be6f102dbc340ec6855fb9f23337fb7578220f1cb95655476dfbb391af",
+          "quote_sha256": "aaa1be2c639fa3aa7a6e168c752003be2c33dee0af9acbce76db82591b0ce853"
+        },
+        {
+          "chapter": 3,
+          "start_line": 280,
+          "end_line": 280,
+          "sha256": "0ccb1ffad77984484cac11abe3764b353dfd35e23292b6a576dae3cadc0cf771",
+          "quote_sha256": "1ce46f4de4e04cc454a68cda5f774046689dc7bbd99d8cccb245d8d45d074867"
+        },
+        {
+          "chapter": 4,
+          "start_line": 352,
+          "end_line": 352,
+          "sha256": "4b772ddaa0a193143e27080544e3b3395e8ec298670a12ff6d12cb1c4c5cb9df",
+          "quote_sha256": "4563b528e826498d077fcbc2ecca76195a7739fa5057795708d779579b363b30"
+        },
+        {
+          "chapter": 5,
+          "start_line": 403,
+          "end_line": 403,
+          "sha256": "3853869413386d814011583e3cee49f2ce1d36cf7992330886d473a78d5e832d",
+          "quote_sha256": "dcc37d6b1ece4b886f839a5a28b62de70832c4ca77d83494a633d51f1ba4a5a6"
+        },
+        {
+          "chapter": 6,
+          "start_line": 490,
+          "end_line": 490,
+          "sha256": "f14e1083c47a34cf0fcce19c78f03bdd63b530426500f4005b69c1a53b543306",
+          "quote_sha256": "95883f9ea02f266fbd33ffb522b5c75da27163f62bcfec2c1d5701418a487fab"
+        }
+      ],
+      "source_scope": {
+        "from_unit": 1,
+        "to_unit": 6,
+        "han_count": 11864,
+        "level": "arc",
+        "family_id": "4a377c8952189db519bd7333",
+        "reading_basis": "reviewer_declared"
+      }
+    }
+  ]
+}

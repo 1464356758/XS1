@@ -55,7 +55,24 @@
       "reason": "T01完整150章路线、15阶段与前五章因果安排"
     }
   ],
-  "tasks": {},
+  "tasks": {
+    "1": {
+      "task_id": "3103d823-5e33-402f-8d2a-2a504c5febaf",
+      "chapter": 1,
+      "mode": "write",
+      "phase": "candidate",
+      "repairs": 0,
+      "history": [
+        {
+          "sha256": "3765665769fb1f121b31969dbda35ff2da9b29c8b616f974f6c457ff926b86f1",
+          "reason": "初稿",
+          "repairs": 0
+        }
+      ],
+      "candidate_sha256": "3765665769fb1f121b31969dbda35ff2da9b29c8b616f974f6c457ff926b86f1",
+      "candidate_path": "candidates/CH001_3765665769fb1f121b31969dbda35ff2da9b29c8b616f974f6c457ff926b86f1.txt"
+    }
+  },
   "completion": null,
   "serialization": {
     "schema_version": 1,
@@ -65,5 +82,15 @@
     "gates": {},
     "promises": {},
     "incidents": {}
+  },
+  "opening_five_plan": {
+    "path": "opening_plans/78175f9150f4d221ecf7497014ac3e65d28fa86c0d22d20e9c227ebb4c1dc7e1.json",
+    "sha256": "78175f9150f4d221ecf7497014ac3e65d28fa86c0d22d20e9c227ebb4c1dc7e1"
+  },
+  "writing_briefs": {
+    "1": {
+      "path": "briefs/CH001_2f4d30bf7fe5515801fc6e0841ddf349155ee7b42a3a7baa600064cd3baf1e83.json",
+      "sha256": "2f4d30bf7fe5515801fc6e0841ddf349155ee7b42a3a7baa600064cd3baf1e83"
+    }
   }
 }

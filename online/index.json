@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS1",
     "branch": "main",
-    "generated_at": "2026-11-10T20:11:30+00:00",
+    "generated_at": "2026-11-10T20:43:51+00:00",
     "state_revision": 3,
-    "workflow_revision": 6,
-    "state_sha256": "c72964ed27e992019e0652cc8a47cfca94d512a89bc190249269e7a9bdac2630",
-    "workflow_sha256": "d5959aa1d3bc6b58d6dfaeeef89c1f85205944072f0ca19a92f4fca52ea44ac1",
+    "workflow_revision": 8,
+    "state_sha256": "1c3cc7fd515a8e8daf8ca0828008b141af0451d821f08eb551b5a5a5ccefab32",
+    "workflow_sha256": "230a67c6dc256ecefcf30f45c0fcd76bd64dc72b9b3693b853092ad98f4d1639",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -38,12 +38,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WRITING",
-    "label": "撰写正文",
+    "phase": "REVISING",
+    "label": "局部修订",
     "chapter": 1,
-    "detail": "作者已明确开始写；本轮只完成CH001。正在回读XS-KU教材并准备任务书与两种原创开场。",
-    "next_action": "比较开场，登记任务书，完整起草并集中审读CH001至冻结。",
-    "updated_at": "2026-11-10T20:11:30+00:00"
+    "detail": "5842汉字完整初稿已登记。全文审读发现公司介绍取消缺明确来源，另核上菜时间和余额；准备同一任务第1轮局部返修。",
+    "next_action": "补清当事人决定和时间资源边界，重新全文审读与release-check。",
+    "updated_at": "2026-11-10T20:43:51+00:00"
   },
   "chapters": [],
   "topics": [
@@ -909,6 +909,18 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "作者已明确开始写；本轮只完成CH001。正在回读XS-KU教材并准备任务书与两种原创开场。"
+    },
+    {
+      "at": "2026-11-10T20:42:03+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "首章完整初稿已登记候选，开始累计全文审读与事实因果检查；仅处理CH001。"
+    },
+    {
+      "at": "2026-11-10T20:43:51+00:00",
+      "phase": "REVISING",
+      "label": "局部修订",
+      "detail": "5842汉字完整初稿已登记。全文审读发现公司介绍取消缺明确来源，另核上菜时间和余额；准备同一任务第1轮局部返修。"
     }
   ]
 }

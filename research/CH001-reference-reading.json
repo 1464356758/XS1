@@ -1,0 +1,60 @@
+{
+  "book_id": "d9169807-b382-402b-b7d0-8e9c84d46670",
+  "chapter": 1,
+  "library_commit": "f978c6d81eabe84267debcbd7499c89d4c9abc2c",
+  "library_revision": 583,
+  "packet_sha256": "343b868781598454bb28e292318193fddf163f24c65e1f5f5fb2636808c6aaca",
+  "reading_basis": "model_actual_reading_declared_not_automatic_proof",
+  "prior_opening_reading": [
+    {
+      "book_id": "cd50e5b371b89bfd6de79dc6",
+      "from_unit": 1,
+      "to_unit": 6,
+      "han_count": 11042,
+      "study_id": "91e609a3e501531214478d3e"
+    },
+    {
+      "book_id": "9b881d90fce415f5cdd83777",
+      "from_unit": 1,
+      "to_unit": 6,
+      "han_count": 11864,
+      "study_id": "0f75ae5c9d1f962f8808ea9d"
+    }
+  ],
+  "chapter_reread": [
+    {
+      "book_id": "cd50e5b371b89bfd6de79dc6",
+      "unit": 1,
+      "lines": [
+        1,
+        105
+      ]
+    },
+    {
+      "book_id": "cd50e5b371b89bfd6de79dc6",
+      "unit": 5,
+      "lines": [
+        405,
+        435
+      ]
+    },
+    {
+      "book_id": "9b881d90fce415f5cdd83777",
+      "unit": 4,
+      "lines": [
+        343,
+        357
+      ]
+    },
+    {
+      "book_id": "9b881d90fce415f5cdd83777",
+      "unit": 5,
+      "lines": [
+        358,
+        405
+      ]
+    }
+  ],
+  "learning": "关系惯例在实际拒绝和接手后变化；职业行动的结果、知情、资源与代价分别由现场支持。",
+  "limits": "索引不是已读全库，原文网页单元不冒称实际章。第二部为跨平台技法参照；参考库原文不作现实专业规范。原文、原文引文与原作练习不复制进新书。"
+}

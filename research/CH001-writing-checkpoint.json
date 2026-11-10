@@ -2,10 +2,10 @@
   "book_id": "d9169807-b382-402b-b7d0-8e9c84d46670",
   "chapter": 1,
   "run_id": "8ad46d6858b8478aa1afda5414010bbf",
-  "status": "complete_draft_registered_for_review",
+  "status": "closed_after_adopt_and_finish",
   "complete": true,
-  "local_path": "/workspace/scratch/d0cd899c1d09/CH001-v1.txt",
-  "partial_sha256": "3765665769fb1f121b31969dbda35ff2da9b29c8b616f974f6c457ff926b86f1",
-  "completed_scenes": "全章初稿完整；不代表已冻结或远端已保存",
-  "note": "完整初稿登记候选，后续改动均沿同一任务repair计数。"
+  "partial_sha256": "102d803100838bd6e055bef2ab92f61d144a24d3ddbbf745fa512a219c4681cc",
+  "completed_scenes": "完整正文、审核、采用冻结及finish回执已真实形成；远端验证由提交后实际读取进行",
+  "note": "旧本地草稿位置不作事实源；以后只读state指向冻稿。",
+  "formal_path": "book/chapters/CH001_102d803100838bd6e055bef2ab92f61d144a24d3ddbbf745fa512a219c4681cc.txt"
 }

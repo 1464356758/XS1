@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 8,
+  "revision": 9,
   "book_id": "d9169807-b382-402b-b7d0-8e9c84d46670",
-  "phase": "REVISING",
+  "phase": "WAITING_NEXT",
   "platform": "qimao",
   "selected_topic": {
     "id": "T01",
@@ -55,7 +55,7 @@
   },
   "research_path": "research/platform_0959d289a33d6c8964019fe8af472a5c1f37ee6958acae97623a70abf2119fbe.json",
   "topics_path": "research/topics_40403042362a5e4a74132b0f237f7e3edabfe3eb1ccbcd5f9abfb2ffa64f35cf.json",
-  "chapter": 1,
+  "chapter": 2,
   "history": [
     {
       "at": "2026-11-10T18:39:14+00:00",
@@ -110,9 +110,15 @@
       "phase": "REVISING",
       "label": "局部修订",
       "detail": "5842汉字完整初稿已登记。全文审读发现公司介绍取消缺明确来源，另核上菜时间和余额；准备同一任务第1轮局部返修。"
+    },
+    {
+      "at": "2026-11-10T20:55:21+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "CH001《今天请许知夏》5933汉字已集中审读、2轮局部返修、release-check、采用冻结及finish。下一目标CH002，尚未启动。"
     }
   ],
-  "detail": "5842汉字完整初稿已登记。全文审读发现公司介绍取消缺明确来源，另核上菜时间和余额；准备同一任务第1轮局部返修。",
-  "next_action": "补清当事人决定和时间资源边界，重新全文审读与release-check。",
-  "updated_at": "2026-11-10T20:43:51+00:00"
+  "detail": "CH001《今天请许知夏》5933汉字已集中审读、2轮局部返修、release-check、采用冻结及finish。下一目标CH002，尚未启动。",
+  "next_action": "作者说“下一章”后，读取最新状态与XS-KU，完成CH002至冻结。",
+  "updated_at": "2026-11-10T20:55:21+00:00"
 }

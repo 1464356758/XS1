@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "d9169807-b382-402b-b7d0-8e9c84d46670",
   "title": "离婚后，前夫的婚礼请我救场",
-  "revision": 3,
+  "revision": 4,
   "config": {
     "target_chapters": 150,
     "target_han": 900000,
@@ -24,7 +24,18 @@
     "opening_five_required": true,
     "opening_benchmark_min_han": 10000
   },
-  "chapters": {},
+  "chapters": {
+    "1": {
+      "title": "今天请许知夏",
+      "stage": "S01",
+      "text_path": "chapters/CH001_102d803100838bd6e055bef2ab92f61d144a24d3ddbbf745fa512a219c4681cc.txt",
+      "text_sha256": "102d803100838bd6e055bef2ab92f61d144a24d3ddbbf745fa512a219c4681cc",
+      "record_path": "records/CH001_457d45e50885f1a6406d86d3bd81276d5d3ecfd4e2e097f7275c556303b2515e.json",
+      "record_sha256": "457d45e50885f1a6406d86d3bd81276d5d3ecfd4e2e097f7275c556303b2515e",
+      "han_count": 5933,
+      "adopted_at": "2026-11-10T20:52:32+00:00"
+    }
+  },
   "checkpoints": [],
   "needs_revalidation": [],
   "inputs": {
@@ -60,27 +71,87 @@
       "task_id": "3103d823-5e33-402f-8d2a-2a504c5febaf",
       "chapter": 1,
       "mode": "write",
-      "phase": "candidate",
-      "repairs": 0,
+      "phase": "adopted",
+      "repairs": 2,
       "history": [
         {
           "sha256": "3765665769fb1f121b31969dbda35ff2da9b29c8b616f974f6c457ff926b86f1",
           "reason": "初稿",
           "repairs": 0
+        },
+        {
+          "sha256": "d4a456cb01f7a7651638e36bab56932b75b9c0c8e0cc46810055c773ec4aba35",
+          "reason": "第1轮局部返修：I01补黎蔓亲自取消仪式内公司介绍及唐澄传达来源；I02明确只先上冷碟；I03补六元买菜支出使章末余额可核；I04删检查式旁白、实写试音和双方戴戒指。",
+          "repairs": 1
+        },
+        {
+          "sha256": "102d803100838bd6e055bef2ab92f61d144a24d3ddbbf745fa512a219c4681cc",
+          "reason": "第2轮局部返修：V2全文复读发现介绍已取消，后段叙述仍写成现行安排；加“照他原先的安排”限定为程想恢复的旧方案，保留新娘取消及对手反应。其余正文不改。",
+          "repairs": 2
         }
       ],
-      "candidate_sha256": "3765665769fb1f121b31969dbda35ff2da9b29c8b616f974f6c457ff926b86f1",
-      "candidate_path": "candidates/CH001_3765665769fb1f121b31969dbda35ff2da9b29c8b616f974f6c457ff926b86f1.txt"
+      "candidate_sha256": "102d803100838bd6e055bef2ab92f61d144a24d3ddbbf745fa512a219c4681cc",
+      "candidate_path": "candidates/CH001_102d803100838bd6e055bef2ab92f61d144a24d3ddbbf745fa512a219c4681cc.txt"
     }
   },
   "completion": null,
   "serialization": {
     "schema_version": 1,
     "enabled": true,
-    "frozen": {},
+    "frozen": {
+      "1": {
+        "text_sha256": "102d803100838bd6e055bef2ab92f61d144a24d3ddbbf745fa512a219c4681cc",
+        "record_sha256": "457d45e50885f1a6406d86d3bd81276d5d3ecfd4e2e097f7275c556303b2515e"
+      }
+    },
     "published": {},
-    "gates": {},
-    "promises": {},
+    "gates": {
+      "1": {
+        "path": "releases/CH001_5a2ae7908515ceee50feed08f6499a155f3b2c2e8390602c58ffa0f8a505b957.json",
+        "sha256": "5a2ae7908515ceee50feed08f6499a155f3b2c2e8390602c58ffa0f8a505b957",
+        "used": true
+      }
+    },
+    "promises": {
+      "C01": {
+        "history": [
+          {
+            "id": "C01",
+            "action": "set",
+            "deadline_chapter": 2,
+            "reason": "本章只约定次日10点咨询，CH002必须实际见面回答需要与可接范围；客户尚未委托婚礼，不能替主角预先承诺完成CH003。",
+            "evidence": {
+              "chapter": 1,
+              "sha256": "102d803100838bd6e055bef2ab92f61d144a24d3ddbbf745fa512a219c4681cc",
+              "quote": "丁晗和方旻当着她的面核了时间，约在许知夏住处附近的一家咖啡馆。他们加了联系方式，没有交定金，谁也没在酒店门口匆忙决定一场婚礼。"
+            },
+            "chapter": 1
+          }
+        ],
+        "deadline_chapter": 2,
+        "status": "open",
+        "last_reviewed_chapter": 1
+      },
+      "O01": {
+        "history": [
+          {
+            "id": "O01",
+            "action": "complete",
+            "deadline_chapter": 1,
+            "reason": "转场后的母亲讲话和双方戴戒指已发生，11:27尾款到账并交接结束，当次救场和付费已闭合。",
+            "evidence": {
+              "chapter": 1,
+              "sha256": "102d803100838bd6e055bef2ab92f61d144a24d3ddbbf745fa512a219c4681cc",
+              "quote": "黎蔓拿出手机，付了剩下的一千八。许知夏看见到账，回复收齐，把这次临时服务结束的消息也一并发给她。"
+            },
+            "chapter": 1
+          }
+        ],
+        "deadline_chapter": 1,
+        "status": "closed",
+        "last_reviewed_chapter": 1
+      }
+    },
     "incidents": {}
   },
   "opening_five_plan": {
@@ -89,8 +160,8 @@
   },
   "writing_briefs": {
     "1": {
-      "path": "briefs/CH001_2f4d30bf7fe5515801fc6e0841ddf349155ee7b42a3a7baa600064cd3baf1e83.json",
-      "sha256": "2f4d30bf7fe5515801fc6e0841ddf349155ee7b42a3a7baa600064cd3baf1e83"
+      "path": "briefs/CH001_1a7c62844d060b50ab709e4cda3a82ff5967eae0ed399c8bfe3e345c398989af.json",
+      "sha256": "1a7c62844d060b50ab709e4cda3a82ff5967eae0ed399c8bfe3e345c398989af"
     }
   }
 }

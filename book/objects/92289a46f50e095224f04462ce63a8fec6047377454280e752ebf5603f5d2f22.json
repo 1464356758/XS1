@@ -1,0 +1,25 @@
+{
+  "assessment_path": "book/objects/07dee06410f8d4ddd796e4e3284c3ebf9136e72fca0a5061cdedb444c5ac285a.json",
+  "assessment_sha256": "07dee06410f8d4ddd796e4e3284c3ebf9136e72fca0a5061cdedb444c5ac285a",
+  "attachments": {
+    "memory": "book/objects/e9dcf35005caa4f96181170dc696bd75ba9c138c4535b63890c559526be50469.md",
+    "plan": "book/objects/0c4e3d1e5084f48df96f1765099d849fea16f96a732f630a4b50fb2655c0b87b.md",
+    "review": "book/objects/4a56eacc9d532757ae7202335b5b22b1855159f4ac49e211571a80f08292d521.md"
+  },
+  "book_id": "e52be1a5-df40-4e7e-9b60-573b82124c1d",
+  "frozen_at": "2026-11-15T23:44:38.786847+00:00",
+  "han_count": 5759,
+  "hashes": {
+    "memory": "e9dcf35005caa4f96181170dc696bd75ba9c138c4535b63890c559526be50469",
+    "plan": "0c4e3d1e5084f48df96f1765099d849fea16f96a732f630a4b50fb2655c0b87b",
+    "review": "4a56eacc9d532757ae7202335b5b22b1855159f4ac49e211571a80f08292d521",
+    "text": "d3e8d02e5b640c4dc8e739de7e4e3158eebdc41a19d7b6cf5d9b96feeefd7724"
+  },
+  "number": 1,
+  "previous_record_sha256": null,
+  "request_id": "CH001-20261116-61432baae58f4911b3360ca73fc5b639",
+  "schema": "novel-v6-chapter",
+  "text_path": "book/chapters/CH001_d3e8d02e5b640c4dc8e739de7e4e3158eebdc41a19d7b6cf5d9b96feeefd7724.txt",
+  "text_sha256": "d3e8d02e5b640c4dc8e739de7e4e3158eebdc41a19d7b6cf5d9b96feeefd7724",
+  "title": "这只还活着"
+}

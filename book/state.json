@@ -5,13 +5,25 @@
     5500,
     6500
   ],
-  "chapters": {},
+  "chapters": {
+    "1": {
+      "frozen_at": "2026-11-15T23:44:38.786847+00:00",
+      "han_count": 5759,
+      "number": 1,
+      "record_path": "objects/92289a46f50e095224f04462ce63a8fec6047377454280e752ebf5603f5d2f22.json",
+      "record_sha256": "92289a46f50e095224f04462ce63a8fec6047377454280e752ebf5603f5d2f22",
+      "request_id": "CH001-20261116-61432baae58f4911b3360ca73fc5b639",
+      "text_path": "chapters/CH001_d3e8d02e5b640c4dc8e739de7e4e3158eebdc41a19d7b6cf5d9b96feeefd7724.txt",
+      "text_sha256": "d3e8d02e5b640c4dc8e739de7e4e3158eebdc41a19d7b6cf5d9b96feeefd7724",
+      "title": "这只还活着"
+    }
+  },
   "platform": "七猫中文网",
   "repository_url": "https://github.com/1464356758/XS1",
-  "revision": 0,
+  "revision": 1,
   "schema": "novel-v6",
   "target_chapters": 150,
   "title": "别人献祭灵兽，我把祭品养成了神",
-  "updated_at": "2026-11-15T16:48:39.112487+00:00",
+  "updated_at": "2026-11-15T23:44:38.786847+00:00",
   "version": "6.3.0"
 }

@@ -26,6 +26,15 @@
     "title": "别人献祭灵兽，我把祭品养成了神",
     "base_commit": "c0948f85134f48bc5cd39f4b75fc164fe97bc7b6",
     "plan_path": "book/plan.md",
-    "writing_started": false
+    "writing_started": true
+  },
+  "first_chapter": {
+    "number": 1,
+    "title": "这只还活着",
+    "han_count": 5759,
+    "request_id": "CH001-20261116-61432baae58f4911b3360ca73fc5b639",
+    "text_sha256": "d3e8d02e5b640c4dc8e739de7e4e3158eebdc41a19d7b6cf5d9b96feeefd7724",
+    "record_path": "book/objects/92289a46f50e095224f04462ce63a8fec6047377454280e752ebf5603f5d2f22.json",
+    "publication_status": "unconfirmed"
   }
 }

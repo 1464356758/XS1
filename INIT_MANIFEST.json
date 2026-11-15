@@ -1,0 +1,15 @@
+{
+  "version": "6.3.0",
+  "engine": "novel-v6",
+  "files": {
+    "AGENTS.md": "d568fed56889e2f582b2f799fda8db28ca34b3d5a3d43443693a5f264f82917b",
+    "CRAFT.md": "13716de681981dc305127c0b3c5f34eaa77c07700e1459fa64fbf8ca01b8b498",
+    "README.md": "1c6f5871530a91d886dc78efb8fea01f9e82c8a97d2443666234c76cc0ecf63d",
+    "THIRD_PARTY_NOTICES.md": "15e98c2dc2869e6a6468cdb758921b6f55ea1c65e64955f3493958671b6fcf65",
+    "WORKFLOW.md": "6e40bcdd5ad9829735788d98f982f9443470b76a7a8684b288630a5eaf58c3ea",
+    "novel.py": "49f1138703fc47fa566981c675e8b06b01db5de06325e4cacb69d3f1929401df",
+    "templates/plan.md": "18f2c8905e9787a0e5379324f9c7187d0b5dcbde750d0ca163755ea0de14b002",
+    "tools/prose_check.py": "389f5105bc832918a69e2f5d14090f1b4de779618666ec892b7d4316287e7610",
+    "启动新书.txt": "f64d4af8fff57e4f15b7239a0fc08cfeb367c92001d10bbaf9754676a154f269"
+  }
+}

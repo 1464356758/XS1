@@ -14,10 +14,18 @@
   "initial_state_remote_exact_match": true,
   "initial_index_remote_exact_match": true,
   "platform": "七猫中文网",
-  "topic_selected": null,
+  "topic_selected": "T05",
   "reference_repository": "https://github.com/1464356758/XS-KU",
   "reference_default_branch": "main",
   "reference_commit": "f978c6d81eabe84267debcbd7499c89d4c9abc2c",
   "literary_quality": "unverified",
-  "platform_submission": "not_submitted"
+  "platform_submission": "not_submitted",
+  "selection": {
+    "date_asia_shanghai": "2026-11-16",
+    "author_input": "t5",
+    "title": "别人献祭灵兽，我把祭品养成了神",
+    "base_commit": "c0948f85134f48bc5cd39f4b75fc164fe97bc7b6",
+    "plan_path": "book/plan.md",
+    "writing_started": false
+  }
 }

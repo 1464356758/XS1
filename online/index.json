@@ -21,8 +21,8 @@
     "state_sha256": "adfcd848d32b224e0efb6b3d5d3fba52e5ac3d3accdcb95127ac4eb1d08aae2c"
   },
   "task": {
-    "label": "等待作者指令",
+    "label": "接续草稿",
     "next_action": "读取WORKFLOW.md并按当前作品继续",
-    "phase": "PLANNING"
+    "phase": "WRITING"
   }
 }

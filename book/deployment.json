@@ -1,0 +1,23 @@
+{
+  "schema": "xs1-v6-deployment-evidence",
+  "checked_date_asia_shanghai": "2026-11-16",
+  "package_version": "6.3.0",
+  "repository_url": "https://github.com/1464356758/XS1",
+  "default_branch": "main",
+  "predeployment_head": "636e0f0dc48856f4bfe587a40a8eea5229ec4e45",
+  "predeployment_tree": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
+  "predeployment_contents": [],
+  "initial_deployment_commit": "a48cba7374a52cbbc779e49199e704ec049d8c4d",
+  "initial_deployment_tree": "cb329a59429a086aa8d939046cd375d889b36bfe",
+  "book_id": "e52be1a5-df40-4e7e-9b60-573b82124c1d",
+  "initial_state_sha256": "75473252d5fc4cb89dfa8c4326633db1e683978de1daa56461ae84369c22a5f9",
+  "initial_state_remote_exact_match": true,
+  "initial_index_remote_exact_match": true,
+  "platform": "七猫中文网",
+  "topic_selected": null,
+  "reference_repository": "https://github.com/1464356758/XS-KU",
+  "reference_default_branch": "main",
+  "reference_commit": "f978c6d81eabe84267debcbd7499c89d4c9abc2c",
+  "literary_quality": "unverified",
+  "platform_submission": "not_submitted"
+}

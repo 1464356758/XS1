@@ -12,14 +12,22 @@
       "sha256": "d3e8d02e5b640c4dc8e739de7e4e3158eebdc41a19d7b6cf5d9b96feeefd7724",
       "text_path": "book/chapters/CH001_d3e8d02e5b640c4dc8e739de7e4e3158eebdc41a19d7b6cf5d9b96feeefd7724.txt",
       "title": "这只还活着"
+    },
+    {
+      "han_count": 5790,
+      "number": 2,
+      "publication_status": "unconfirmed",
+      "sha256": "d5534f156666929d231636bfac76b500504da7d03c618d272200490ea6a8cadf",
+      "text_path": "book/chapters/CH002_d5534f156666929d231636bfac76b500504da7d03c618d272200490ea6a8cadf.txt",
+      "title": "它没打算跟我走"
     }
   ],
   "engine": "novel-v6",
-  "generated_at": "2026-11-15T23:44:38.786847+00:00",
+  "generated_at": "2026-11-16T00:16:30.383635+00:00",
   "initialized": true,
   "progress": {
-    "actual_han": 5759,
-    "adopted_chapters": 1,
+    "actual_han": 11549,
+    "adopted_chapters": 2,
     "target_chapters": 150,
     "target_han": 900000
   },
@@ -27,11 +35,11 @@
   "source": {
     "branch": "main",
     "repository_url": "https://github.com/1464356758/XS1",
-    "state_sha256": "2634241115e3369564fda5400c7ac77881a603cacdeed7aa3b94afa445516cf9"
+    "state_sha256": "eabbcc010a7f3a682d48771c462756ea01b1c980fbbe8b26a33a12690a9c253a"
   },
   "task": {
-    "label": "接续草稿",
+    "label": "等待作者指令",
     "next_action": "读取WORKFLOW.md并按当前作品继续",
-    "phase": "WRITING"
+    "phase": "WAITING_NEXT"
   }
 }

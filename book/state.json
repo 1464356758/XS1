@@ -16,14 +16,25 @@
       "text_path": "chapters/CH001_d3e8d02e5b640c4dc8e739de7e4e3158eebdc41a19d7b6cf5d9b96feeefd7724.txt",
       "text_sha256": "d3e8d02e5b640c4dc8e739de7e4e3158eebdc41a19d7b6cf5d9b96feeefd7724",
       "title": "这只还活着"
+    },
+    "2": {
+      "frozen_at": "2026-11-16T00:16:30.383635+00:00",
+      "han_count": 5790,
+      "number": 2,
+      "record_path": "objects/a85b63b8c18045ba336f9c4651f0c2d260f481cebc08e847c02d7529f223aca2.json",
+      "record_sha256": "a85b63b8c18045ba336f9c4651f0c2d260f481cebc08e847c02d7529f223aca2",
+      "request_id": "CH002-20261116-7dbf6fe23cf3407f8be7fe54456f491a",
+      "text_path": "chapters/CH002_d5534f156666929d231636bfac76b500504da7d03c618d272200490ea6a8cadf.txt",
+      "text_sha256": "d5534f156666929d231636bfac76b500504da7d03c618d272200490ea6a8cadf",
+      "title": "它没打算跟我走"
     }
   },
   "platform": "七猫中文网",
   "repository_url": "https://github.com/1464356758/XS1",
-  "revision": 1,
+  "revision": 2,
   "schema": "novel-v6",
   "target_chapters": 150,
   "title": "别人献祭灵兽，我把祭品养成了神",
-  "updated_at": "2026-11-15T23:44:38.786847+00:00",
+  "updated_at": "2026-11-16T00:16:30.383635+00:00",
   "version": "6.3.0"
 }

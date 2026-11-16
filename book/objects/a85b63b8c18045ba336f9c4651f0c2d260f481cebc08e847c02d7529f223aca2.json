@@ -1,0 +1,25 @@
+{
+  "assessment_path": "book/objects/4865e5fb51ac369da6a8398cf479d773d307e5d00cc26a9c8348b6686c99af83.json",
+  "assessment_sha256": "4865e5fb51ac369da6a8398cf479d773d307e5d00cc26a9c8348b6686c99af83",
+  "attachments": {
+    "memory": "book/objects/36fb5620428597731630b34471bcc288d9fcd53ca0a02f65f9ce4b7dcbe2e3f3.md",
+    "plan": "book/objects/16f1d244128123afdd0f8cdd1cf7937eb0a983b020a0fbb499521aa34e15bc3b.md",
+    "review": "book/objects/84fac4d7631048b3393b9e13e41e3f8e63e15b056a329043c3f0b4b038927a8f.md"
+  },
+  "book_id": "e52be1a5-df40-4e7e-9b60-573b82124c1d",
+  "frozen_at": "2026-11-16T00:16:30.383635+00:00",
+  "han_count": 5790,
+  "hashes": {
+    "memory": "36fb5620428597731630b34471bcc288d9fcd53ca0a02f65f9ce4b7dcbe2e3f3",
+    "plan": "16f1d244128123afdd0f8cdd1cf7937eb0a983b020a0fbb499521aa34e15bc3b",
+    "review": "84fac4d7631048b3393b9e13e41e3f8e63e15b056a329043c3f0b4b038927a8f",
+    "text": "d5534f156666929d231636bfac76b500504da7d03c618d272200490ea6a8cadf"
+  },
+  "number": 2,
+  "previous_record_sha256": "92289a46f50e095224f04462ce63a8fec6047377454280e752ebf5603f5d2f22",
+  "request_id": "CH002-20261116-7dbf6fe23cf3407f8be7fe54456f491a",
+  "schema": "novel-v6-chapter",
+  "text_path": "book/chapters/CH002_d5534f156666929d231636bfac76b500504da7d03c618d272200490ea6a8cadf.txt",
+  "text_sha256": "d5534f156666929d231636bfac76b500504da7d03c618d272200490ea6a8cadf",
+  "title": "它没打算跟我走"
+}

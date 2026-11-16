@@ -1,0 +1,15 @@
+{
+  "status": "candidates_only",
+  "book_id": "e52be1a5-df40-4e7e-9b60-573b82124c1d",
+  "state_sha256": "2634241115e3369564fda5400c7ac77881a603cacdeed7aa3b94afa445516cf9",
+  "draft_sha256": "d5534f156666929d231636bfac76b500504da7d03c618d272200490ea6a8cadf",
+  "chapter": 2,
+  "draft_han": 5790,
+  "history_chapters": 1,
+  "method": "literal_sentence_min_18_han_whitespace_ignored",
+  "candidate_count": 0,
+  "omitted_candidates": 0,
+  "locations_per_side_limit": 4,
+  "candidates": [],
+  "limits": "只找字面长句重复；不判断近似改写、情节雷同、AI率或文学质量。回读上下文判断必要回扣，不自动删除；无候选不表示无问题。"
+}

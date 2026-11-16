@@ -27,14 +27,25 @@
       "text_path": "chapters/CH002_d5534f156666929d231636bfac76b500504da7d03c618d272200490ea6a8cadf.txt",
       "text_sha256": "d5534f156666929d231636bfac76b500504da7d03c618d272200490ea6a8cadf",
       "title": "它没打算跟我走"
+    },
+    "3": {
+      "frozen_at": "2026-11-16T04:31:37.014550+00:00",
+      "han_count": 5734,
+      "number": 3,
+      "record_path": "objects/248086e64baf881334b1c507346133d590efc676bd79bc61f41403e16b973872.json",
+      "record_sha256": "248086e64baf881334b1c507346133d590efc676bd79bc61f41403e16b973872",
+      "request_id": "CH003-20261116-c4001c4cf94d40f5af3b0972a0693bd3",
+      "text_path": "chapters/CH003_c909c7bf082b9f8d5bcb99be6d81e75e4ea02ac4765b910537f75c72590c0d86.txt",
+      "text_sha256": "c909c7bf082b9f8d5bcb99be6d81e75e4ea02ac4765b910537f75c72590c0d86",
+      "title": "先松手的人"
     }
   },
   "platform": "七猫中文网",
   "repository_url": "https://github.com/1464356758/XS1",
-  "revision": 2,
+  "revision": 3,
   "schema": "novel-v6",
   "target_chapters": 150,
   "title": "别人献祭灵兽，我把祭品养成了神",
-  "updated_at": "2026-11-16T00:16:30.383635+00:00",
+  "updated_at": "2026-11-16T04:31:37.014550+00:00",
   "version": "6.3.0"
 }

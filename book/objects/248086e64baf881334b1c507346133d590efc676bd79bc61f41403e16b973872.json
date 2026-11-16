@@ -1,0 +1,25 @@
+{
+  "assessment_path": "book/objects/a69696878801392cab978ef3c1396b568f82a60b2ff5dc2f3b287ff7c641cf9d.json",
+  "assessment_sha256": "a69696878801392cab978ef3c1396b568f82a60b2ff5dc2f3b287ff7c641cf9d",
+  "attachments": {
+    "memory": "book/objects/e58d087ed8aa132fdb98e4d01375cfcda747913d5191cd9f4fb37e8835e16e27.md",
+    "plan": "book/objects/c56f9309a18b2a6fd28f614430ee540cc10909489a39d259f47926825458dccc.md",
+    "review": "book/objects/ee9959a75b788e71d002036c049b05a20b703f601d19b67eefa5d3c829cba91c.md"
+  },
+  "book_id": "e52be1a5-df40-4e7e-9b60-573b82124c1d",
+  "frozen_at": "2026-11-16T04:31:37.014550+00:00",
+  "han_count": 5734,
+  "hashes": {
+    "memory": "e58d087ed8aa132fdb98e4d01375cfcda747913d5191cd9f4fb37e8835e16e27",
+    "plan": "c56f9309a18b2a6fd28f614430ee540cc10909489a39d259f47926825458dccc",
+    "review": "ee9959a75b788e71d002036c049b05a20b703f601d19b67eefa5d3c829cba91c",
+    "text": "c909c7bf082b9f8d5bcb99be6d81e75e4ea02ac4765b910537f75c72590c0d86"
+  },
+  "number": 3,
+  "previous_record_sha256": "a85b63b8c18045ba336f9c4651f0c2d260f481cebc08e847c02d7529f223aca2",
+  "request_id": "CH003-20261116-c4001c4cf94d40f5af3b0972a0693bd3",
+  "schema": "novel-v6-chapter",
+  "text_path": "book/chapters/CH003_c909c7bf082b9f8d5bcb99be6d81e75e4ea02ac4765b910537f75c72590c0d86.txt",
+  "text_sha256": "c909c7bf082b9f8d5bcb99be6d81e75e4ea02ac4765b910537f75c72590c0d86",
+  "title": "先松手的人"
+}

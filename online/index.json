@@ -36,14 +36,22 @@
       "sha256": "4990fdfcc5339cd6f6af97cf315e451f5317d774bff27438af255c70d25b3051",
       "text_path": "book/chapters/CH004_4990fdfcc5339cd6f6af97cf315e451f5317d774bff27438af255c70d25b3051.txt",
       "title": "给它留一口"
+    },
+    {
+      "han_count": 5723,
+      "number": 5,
+      "publication_status": "unconfirmed",
+      "sha256": "c05357ecb1abb6d011e31cc235a14cc8d20fc335e6d90c976ffda5358fc6d433",
+      "text_path": "book/chapters/CH005_c05357ecb1abb6d011e31cc235a14cc8d20fc335e6d90c976ffda5358fc6d433.txt",
+      "title": "它回头了"
     }
   ],
   "engine": "novel-v6",
-  "generated_at": "2026-11-16T05:22:13.676762+00:00",
+  "generated_at": "2026-11-16T10:28:45.467860+00:00",
   "initialized": true,
   "progress": {
-    "actual_han": 23111,
-    "adopted_chapters": 4,
+    "actual_han": 28834,
+    "adopted_chapters": 5,
     "target_chapters": 150,
     "target_han": 900000
   },
@@ -51,11 +59,11 @@
   "source": {
     "branch": "main",
     "repository_url": "https://github.com/1464356758/XS1",
-    "state_sha256": "4ec95cf953751abea2528c55c1f5fc9e09bc251d1d318d56d6d648e4a3210e68"
+    "state_sha256": "c736e36f7c2a21237ae1ae851ca8d016542d4d47afa5a33689fa60901e3a003f"
   },
   "task": {
-    "label": "接续草稿",
+    "label": "等待作者指令",
     "next_action": "读取WORKFLOW.md并按当前作品继续",
-    "phase": "WRITING"
+    "phase": "WAITING_NEXT"
   }
 }

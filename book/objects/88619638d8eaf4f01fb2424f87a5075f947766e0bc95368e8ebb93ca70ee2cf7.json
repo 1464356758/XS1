@@ -1,0 +1,25 @@
+{
+  "assessment_path": "book/objects/68a81c9d57d2a6e524101c21d297a2be6a582f6cdac5af475306027050319688.json",
+  "assessment_sha256": "68a81c9d57d2a6e524101c21d297a2be6a582f6cdac5af475306027050319688",
+  "attachments": {
+    "memory": "book/objects/876b611e999298f20982e27207218902565141a613f4552d96c1e365ab76ac88.md",
+    "plan": "book/objects/314ca71a5f5138f6460e786c0f38e8f141e032c01da884764fdd370647872f16.md",
+    "review": "book/objects/8a57e8046e2504e1cd3a33c05398de0781667bed6ab3a43e576bdfd35c3a195e.md"
+  },
+  "book_id": "e52be1a5-df40-4e7e-9b60-573b82124c1d",
+  "frozen_at": "2026-11-16T10:28:45.467860+00:00",
+  "han_count": 5723,
+  "hashes": {
+    "memory": "876b611e999298f20982e27207218902565141a613f4552d96c1e365ab76ac88",
+    "plan": "314ca71a5f5138f6460e786c0f38e8f141e032c01da884764fdd370647872f16",
+    "review": "8a57e8046e2504e1cd3a33c05398de0781667bed6ab3a43e576bdfd35c3a195e",
+    "text": "c05357ecb1abb6d011e31cc235a14cc8d20fc335e6d90c976ffda5358fc6d433"
+  },
+  "number": 5,
+  "previous_record_sha256": "5e9d229ffe8fad6b96dbd1724c3d7132c93c9e8a2e234a20274455eccd1617e1",
+  "request_id": "CH005-20261116-7f8cf42f0f804bfbad631e092ab937b4",
+  "schema": "novel-v6-chapter",
+  "text_path": "book/chapters/CH005_c05357ecb1abb6d011e31cc235a14cc8d20fc335e6d90c976ffda5358fc6d433.txt",
+  "text_sha256": "c05357ecb1abb6d011e31cc235a14cc8d20fc335e6d90c976ffda5358fc6d433",
+  "title": "它回头了"
+}

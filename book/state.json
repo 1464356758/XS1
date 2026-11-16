@@ -49,14 +49,25 @@
       "text_path": "chapters/CH004_4990fdfcc5339cd6f6af97cf315e451f5317d774bff27438af255c70d25b3051.txt",
       "text_sha256": "4990fdfcc5339cd6f6af97cf315e451f5317d774bff27438af255c70d25b3051",
       "title": "给它留一口"
+    },
+    "5": {
+      "frozen_at": "2026-11-16T10:28:45.467860+00:00",
+      "han_count": 5723,
+      "number": 5,
+      "record_path": "objects/88619638d8eaf4f01fb2424f87a5075f947766e0bc95368e8ebb93ca70ee2cf7.json",
+      "record_sha256": "88619638d8eaf4f01fb2424f87a5075f947766e0bc95368e8ebb93ca70ee2cf7",
+      "request_id": "CH005-20261116-7f8cf42f0f804bfbad631e092ab937b4",
+      "text_path": "chapters/CH005_c05357ecb1abb6d011e31cc235a14cc8d20fc335e6d90c976ffda5358fc6d433.txt",
+      "text_sha256": "c05357ecb1abb6d011e31cc235a14cc8d20fc335e6d90c976ffda5358fc6d433",
+      "title": "它回头了"
     }
   },
   "platform": "七猫中文网",
   "repository_url": "https://github.com/1464356758/XS1",
-  "revision": 4,
+  "revision": 5,
   "schema": "novel-v6",
   "target_chapters": 150,
   "title": "别人献祭灵兽，我把祭品养成了神",
-  "updated_at": "2026-11-16T05:22:13.676762+00:00",
+  "updated_at": "2026-11-16T10:28:45.467860+00:00",
   "version": "6.3.0"
 }

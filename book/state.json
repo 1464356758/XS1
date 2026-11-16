@@ -38,14 +38,25 @@
       "text_path": "chapters/CH003_c909c7bf082b9f8d5bcb99be6d81e75e4ea02ac4765b910537f75c72590c0d86.txt",
       "text_sha256": "c909c7bf082b9f8d5bcb99be6d81e75e4ea02ac4765b910537f75c72590c0d86",
       "title": "先松手的人"
+    },
+    "4": {
+      "frozen_at": "2026-11-16T05:22:13.676762+00:00",
+      "han_count": 5828,
+      "number": 4,
+      "record_path": "objects/5e9d229ffe8fad6b96dbd1724c3d7132c93c9e8a2e234a20274455eccd1617e1.json",
+      "record_sha256": "5e9d229ffe8fad6b96dbd1724c3d7132c93c9e8a2e234a20274455eccd1617e1",
+      "request_id": "CH004-20261116-1c20bd40dcc34de697707d3f5ea8788e",
+      "text_path": "chapters/CH004_4990fdfcc5339cd6f6af97cf315e451f5317d774bff27438af255c70d25b3051.txt",
+      "text_sha256": "4990fdfcc5339cd6f6af97cf315e451f5317d774bff27438af255c70d25b3051",
+      "title": "给它留一口"
     }
   },
   "platform": "七猫中文网",
   "repository_url": "https://github.com/1464356758/XS1",
-  "revision": 3,
+  "revision": 4,
   "schema": "novel-v6",
   "target_chapters": 150,
   "title": "别人献祭灵兽，我把祭品养成了神",
-  "updated_at": "2026-11-16T04:31:37.014550+00:00",
+  "updated_at": "2026-11-16T05:22:13.676762+00:00",
   "version": "6.3.0"
 }

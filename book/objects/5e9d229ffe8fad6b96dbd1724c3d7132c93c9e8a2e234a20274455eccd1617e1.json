@@ -1,0 +1,25 @@
+{
+  "assessment_path": "book/objects/03992779cad7711c58e4dfe46e9d39dcd0fef785d960635ed17a31576f594cdc.json",
+  "assessment_sha256": "03992779cad7711c58e4dfe46e9d39dcd0fef785d960635ed17a31576f594cdc",
+  "attachments": {
+    "memory": "book/objects/efb7364870d4df5cab8ac8614fe4607c7818b73f7be10770b3323378e1050664.md",
+    "plan": "book/objects/be099caf145adf6425409d40718cd5bd469d08186c493baf375143aac4f842e3.md",
+    "review": "book/objects/7b042f4f5496bcddf5d4e981fadb800afcf8df5fe4e1f1a2bb041c0d5ddf7031.md"
+  },
+  "book_id": "e52be1a5-df40-4e7e-9b60-573b82124c1d",
+  "frozen_at": "2026-11-16T05:22:13.676762+00:00",
+  "han_count": 5828,
+  "hashes": {
+    "memory": "efb7364870d4df5cab8ac8614fe4607c7818b73f7be10770b3323378e1050664",
+    "plan": "be099caf145adf6425409d40718cd5bd469d08186c493baf375143aac4f842e3",
+    "review": "7b042f4f5496bcddf5d4e981fadb800afcf8df5fe4e1f1a2bb041c0d5ddf7031",
+    "text": "4990fdfcc5339cd6f6af97cf315e451f5317d774bff27438af255c70d25b3051"
+  },
+  "number": 4,
+  "previous_record_sha256": "248086e64baf881334b1c507346133d590efc676bd79bc61f41403e16b973872",
+  "request_id": "CH004-20261116-1c20bd40dcc34de697707d3f5ea8788e",
+  "schema": "novel-v6-chapter",
+  "text_path": "book/chapters/CH004_4990fdfcc5339cd6f6af97cf315e451f5317d774bff27438af255c70d25b3051.txt",
+  "text_sha256": "4990fdfcc5339cd6f6af97cf315e451f5317d774bff27438af255c70d25b3051",
+  "title": "给它留一口"
+}

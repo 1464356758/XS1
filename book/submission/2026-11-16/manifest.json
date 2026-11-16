@@ -1,0 +1,59 @@
+{
+  "blurb_han": 215,
+  "book_id": "e52be1a5-df40-4e7e-9b60-573b82124c1d",
+  "branch": "main",
+  "cover": {
+    "format": "JPEG",
+    "height": 800,
+    "pen_name": null,
+    "platform_logo": false,
+    "width": 600
+  },
+  "files": [
+    {
+      "bytes": 739,
+      "git_blob_sha": "8a2f861ee4b9ecc0a69cde0cd70f1770cfccca1a",
+      "path": "book/submission/2026-11-16/blurb.txt",
+      "sha256": "dd50d9d840d7297f6c85ffad2c580b8c27a69d324f242a1e73d77738412b224c"
+    },
+    {
+      "bytes": 243853,
+      "git_blob_sha": "b409a4c63115a2ea62e4b4c77c6b0591e5b28d95",
+      "path": "book/submission/2026-11-16/cover_600x800.jpg",
+      "sha256": "15170d5d2d2cf171daeffbfd7bcc4946816d115d5dfe5b0b29a2057f9ed9a42f"
+    },
+    {
+      "bytes": 2524,
+      "git_blob_sha": "b8b2c4abd82639288c0eeab93777223dd2e721b3",
+      "path": "book/submission/2026-11-16/cover_prompt.txt",
+      "sha256": "b3d660a893d9696d100d62e5fb4352818ba02f9b1b09915dd9a797b591ddca68"
+    },
+    {
+      "bytes": 7436,
+      "git_blob_sha": "9022938a1fbab17936ab10000c4b839614086831",
+      "path": "book/submission/2026-11-16/outline.txt",
+      "sha256": "75ee0b69fded563a20676aad822be712b41bc8a60788dbfaf166d72287fe9f2b"
+    },
+    {
+      "bytes": 3068,
+      "git_blob_sha": "0411110bb738ec4b39cb20edd1c6184b715a97f8",
+      "path": "book/submission/2026-11-16/research.md",
+      "sha256": "7a2c2e397befe30939351ad1246a5d57baf2e368d07280d7c1c4efec82f4cc04"
+    },
+    {
+      "bytes": 12284,
+      "git_blob_sha": "ee6df162422fe26b5f5d5be0fa48ce8066dc28f8",
+      "path": "book/submission/2026-11-16/别人献祭灵兽，我把祭品养成了神.txt",
+      "sha256": "0b3608ff6df89c5f1c4ce263ce01c3daed2ab77263a1473cab48a3aaa33c023f"
+    }
+  ],
+  "frozen_chapters": 5,
+  "frozen_han": 28834,
+  "outline_han": 2252,
+  "platform": "七猫中文网",
+  "platform_submission_performed": false,
+  "prepared_on": "2026-11-16",
+  "scope": "submission_materials_only",
+  "source_commit": "1d648f94b35e2fd8fcfb6bc0ec79eeafa9df9e48",
+  "title": "别人献祭灵兽，我把祭品养成了神"
+}
